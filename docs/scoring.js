@@ -207,6 +207,14 @@ export function whyCopy(result, profile, { withIntro = true } = {}) {
   return line.trim();
 }
 
+/** Amounts in the Shark Tank data are in ₹ lakhs. */
+export function formatLakh(lakh) {
+  if (lakh == null) return "";
+  if (lakh >= 100) return `₹${+(lakh / 100).toFixed(1)} Cr`;
+  if (lakh >= 1) return `₹${+lakh.toFixed(1)}L`;
+  return `₹${Math.round(lakh * 100000).toLocaleString("en-IN")}`;
+}
+
 export const BUDGET_LABELS = { 1: "Under ₹50K", 2: "₹50K–2L", 3: "₹2–10L", 4: "₹10L+" };
 export const RELAX_LABELS = {
   time: "full-time ideas",

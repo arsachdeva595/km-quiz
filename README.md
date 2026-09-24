@@ -8,9 +8,12 @@ See [PLAN.md](PLAN.md) for decisions, architecture and the 30-day plan.
 
 ```
 data/ideas_seed.csv        fixed list of business ideas (edit this)
-data/onet/                 O*NET-derived occupation scores (generated)
+data/onet/                 O*NET occupation list + derived scores
+data/sharktank/            Shark Tank India dataset, pitch → idea map, overrides
 pipeline/fetch_onet.py     download O*NET → data/onet/occupations.csv
-pipeline/tag_ideas.py      seed + O*NET → docs/data/ideas.json
+pipeline/import_shark_tank.py  pitches → data/sharktank/pitches.json (+ pitch_map.csv for review)
+pipeline/sharktank_rules.py    keyword rules mapping pitches to ideas
+pipeline/tag_ideas.py      seed + O*NET + Shark Tank → docs/data/ideas.json
 docs/                      the static site (GitHub Pages)
 tests/                     scoring tests (node:test)
 ```
@@ -19,8 +22,9 @@ tests/                     scoring tests (node:test)
 
 ```bash
 python3 pipeline/fetch_onet.py   # needs access to onetcenter.org
+python3 pipeline/import_shark_tank.py
 npm run build                    # regenerate docs/data/ideas.json
-npm test
+npm test                         # JS scoring + Python importer tests
 npm run serve                    # http://localhost:8000
 ```
 

@@ -12,17 +12,22 @@ For each idea:
     ↔ openness, Social/Enterprising ↔ extraversion, Social ↔ agreeableness,
     Conventional ↔ conscientiousness).
 
+It also attaches Shark Tank India evidence (pitch count, deal rate, median
+revenue, example brands) from data/sharktank/pitches.json when present.
+
 Run:  python3 pipeline/tag_ideas.py
 Output: docs/data/ideas.json
 """
 
-import csv, json, sys
+import csv, json, statistics, sys
 from datetime import date
 from pathlib import Path
 
 ROOT      = Path(__file__).resolve().parent.parent
 SEED      = ROOT / "data" / "ideas_seed.csv"
 ONET      = ROOT / "data" / "onet" / "occupations.csv"
+ONET_LIST = ROOT / "data" / "onet" / "all_occupations.csv"
+PITCHES   = ROOT / "data" / "sharktank" / "pitches.json"
 OUT       = ROOT / "docs" / "data" / "ideas.json"
 
 DIMS   = list("RIASEC")
@@ -59,6 +64,47 @@ def load_onet():
         return {row["soc"]: row for row in csv.DictReader(f)}
 
 
+def load_valid_codes():
+    if not ONET_LIST.exists():
+        return None
+    with open(ONET_LIST, encoding="utf-8-sig") as f:
+        return {row["Code"] for row in csv.DictReader(f)}
+
+
+def example_rank(p):
+    # Deals first, then pitches with revenue data, then newest.
+    return (p["deal"] is None, p["yearly_revenue_lakh"] is None, -p["season"], -p["episode"])
+
+
+def shark_tank_summary(pitches):
+    if not pitches:
+        return None
+    revenues = [p["yearly_revenue_lakh"] for p in pitches if p["yearly_revenue_lakh"]]
+    examples = []
+    for p in sorted(pitches, key=example_rank)[:3]:
+        deal = p["deal"]
+        examples.append({
+            "name":    p["name"],
+            "what":    p.get("brief") or p["description"],
+            "season":  p["season"],
+            "episode": p["episode"],
+            "city":    p["city"].split(",")[0],
+            "revenue_lakh": p["yearly_revenue_lakh"],
+            "ask":     {"amount_lakh": p["ask"]["amount_lakh"], "equity_pct": p["ask"]["equity_pct"]},
+            "deal":    None if not deal else {
+                "amount_lakh": deal["amount_lakh"], "equity_pct": deal["equity_pct"],
+                "sharks": deal["sharks"],
+            },
+        })
+    return {
+        "pitches": len(pitches),
+        "deals":   sum(p["deal"] is not None for p in pitches),
+        "median_revenue_lakh": round(statistics.median(revenues), 1) if revenues else None,
+        "revenue_reported": len(revenues),
+        "examples": examples,
+    }
+
+
 def average(rows, keys):
     out = {}
     for k in keys:
@@ -79,6 +125,18 @@ def main():
 
     with open(SEED, encoding="utf-8") as f:
         seed = list(csv.DictReader(f))
+
+    valid = load_valid_codes()
+    if valid is not None:
+        unknown = sorted({c for r in seed for c in r["onet_codes"].split(";") if c and c not in valid})
+        if unknown:
+            print(f"! O*NET codes not in all_occupations.csv: {unknown}")
+
+    by_idea = {}
+    if PITCHES.exists():
+        for p in json.loads(PITCHES.read_text(encoding="utf-8")):
+            if p.get("idea_slug"):
+                by_idea.setdefault(p["idea_slug"], []).append(p)
 
     ideas, missing_codes, agree = [], set(), []
     for row in seed:
@@ -113,6 +171,7 @@ def main():
             "traits":   [round(t[k], 3) for k in TRAITS],
             "code":     top_code(r),
             "source":   source,
+            "sharktank": shark_tank_summary(by_idea.get(row["slug"], [])),
         })
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
@@ -124,7 +183,8 @@ def main():
     }, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
     n_onet = sum(i["source"] == "onet" for i in ideas)
-    print(f"✓ {len(ideas)} ideas → {OUT.relative_to(ROOT)}  (onet: {n_onet}, provisional: {len(ideas) - n_onet})")
+    n_st = sum(1 for i in ideas if i["sharktank"])
+    print(f"✓ {len(ideas)} ideas → {OUT.relative_to(ROOT)}  (onet: {n_onet}, provisional: {len(ideas) - n_onet}, with Shark Tank evidence: {n_st})")
     if missing_codes:
         print(f"! O*NET codes not found (fix in ideas_seed.csv): {sorted(missing_codes)}")
     if agree:

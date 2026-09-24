@@ -59,13 +59,17 @@ evidence_count, quality_score (0–100), last_updated
 
 ## Sources
 
-1. **Shark Tank India pitch list** (user-supplied).
-   - Each pitch maps to a generic idea. For example, a millet-cookie brand maps to "Millet Snacks Brand".
-   - If a pitch fits no existing idea, propose a new one (with O*NET codes) for manual approval.
-   - Each pitch then becomes a case study with real numbers (ask, valuation, revenue, margins).
+1. **Shark Tank India, all 5 seasons.** 789 pitches in `data/sharktank/shark_tank_india.csv` (₹ amounts in lakhs). This is the base.
+   - `pipeline/import_shark_tank.py` maps each pitch to a seed idea. It uses ordered keyword rules (`pipeline/sharktank_rules.py`) plus manual fixes (`data/sharktank/overrides.csv`).
+   - Current result: 787 of 789 mapped. Review everything in `data/sharktank/pitch_map.csv`.
+   - Each idea then gets evidence: pitch count, deal count, median yearly revenue, and 3 example brands with ask, deal, sharks and city. The result cards show this.
+   - The Season 1 sheet adds brief profiles and Reddit links for 114 pitches. It stays out of git (`data/sharktank/raw/`) because it contains internal assignee names.
 2. **r/SharkTankIndia.** Discussion threads per pitch: public reaction, follow-ups, "where are they now".
 3. **r/StartUpIndia.** First-hand founder posts: costs, revenue, what went wrong. Keep only posts with numbers or concrete detail.
-4. **KidharMilega ODOP data (787 districts).** Links the manufacturing and craft ideas to the districts where the raw material and clusters are. 62 of KidharMilega's 76 existing ideas map into the seed via `km_legacy_id` (from `business_ideas.csv`).
+4. **O*NET.**
+   - `data/onet/career_interest_types.csv` has RIASEC interest scores for 923 occupations. Every idea is now tagged from it (`fetch_onet.py --offline`).
+   - `data/onet/all_occupations.csv` (occupation list plus Job Zones) validates every occupation code in the seed.
+5. **KidharMilega ODOP data (787 districts).** Links manufacturing and craft ideas to districts. 62 of KidharMilega's 76 existing ideas map into the seed via `km_legacy_id`.
 
 **Collection method (low cost).**
 - Reddit: the official API (free, non-commercial tier) or the public `.json` listings, rate-limited and cached to `data/raw/`.
@@ -73,18 +77,18 @@ evidence_count, quality_score (0–100), last_updated
 - Summaries are written in our own words, with a link back to the source. Never copy post text word for word.
 
 **LLM use.**
-- One extraction call per source document, turning raw text into structured facts, with results cached.
-- Use Claude Haiku through the Batch API (about half price) with prompt caching.
-- Mapping pitches to ideas is done in bulk: one call handles about 50 pitches, with the idea list in a cached prompt.
-- The cost estimate in PRD v2 used out-of-date pricing. Re-estimate once the Shark Tank list size is known.
+- The pitch → idea mapping uses keyword rules plus manual review, so it costs nothing.
+- An LLM is only needed later, to extract costs and lessons from Reddit posts. Use Claude Haiku through the Batch API with prompt caching, and cache every result.
 
 ## 30-day plan (revised)
 
 | Days | Work | Output |
 |---|---|---|
-| 1–2 ✅ | Seed list, O*NET tagging pipeline, quiz and matching, tests | 131 ideas, working quiz (this commit) |
-| 3 | Run `fetch_onet.py`, fix any unknown SOC codes, review provisional-vs-O*NET disagreements | O*NET-grounded tags |
-| 4–6 | Import the Shark Tank list, map pitches to ideas, approve new ideas | Seed grows (target 250–400 ideas), each with ≥1 Shark Tank case study where possible |
+| 1–2 ✅ | Seed list, O*NET tagging pipeline, quiz and matching, tests | 131 ideas, working quiz |
+| 3 ✅ | Shark Tank India import (789 pitches, 5 seasons), pitch → idea mapping, evidence on result cards | 169 ideas, 89 with Shark Tank evidence |
+| 4 ✅ | O*NET interest scores for all ideas (923 occupations); codes validated | 169 ideas O*NET-tagged, 85% agreement with hand tags |
+| 5 | Add owner/manager occupations where needed; add Work Styles | Sharper tags |
+| 6–7 | Review `pitch_map.csv`. Split broad buckets (consumer apps: 81 pitches, hardware: 80) into sharper ideas | Seed of 200–250 sharper ideas |
 | 7–10 | Reddit collectors for r/SharkTankIndia and r/StartUpIndia; link threads to pitches and ideas | `data/raw/reddit/`, evidence linked per idea |
 | 11–15 | Extraction pass (Haiku batch): costs, revenue, lessons, risks per idea; `quality_score` | `data/ideas_enriched.json` |
 | 16–19 | Idea pages: one static page per idea (costs, case studies, how to start, related ideas) | `docs/ideas/<slug>/` |
@@ -95,7 +99,9 @@ evidence_count, quality_score (0–100), last_updated
 
 ## Open items
 
-- **Shark Tank list.** Need the file (format and columns) to write the importer.
+- **Work Styles.** Trait demands per idea are still estimated from RIASEC. O*NET `Work Styles.txt` (onetcenter.org → Database → Text files) would ground them too. Drop it in `data/onet/raw/`.
+- **Owner vs worker occupations.** O*NET disagrees with the hand-assigned top letter on 25 of 169 ideas. Most of them (kiosks, food brands, rentals) list only worker-level occupations, which O*NET rates Conventional or Realistic. Add a manager or owner occupation (e.g. 11-9051 Food Service Managers, 11-1021 General and Operations Managers) so the Enterprising side of running the business shows up.
+- **Broad buckets.** "Consumer App Startup" (81 pitches) and "Hardware Product Startup" (80) are too broad to be useful results. Split them next.
 - **Hosting domain.** Subdomain of kidharmilega.in, or a path on it?
 - **Network.** This build environment can't reach `onetcenter.org` or `reddit.com`. Run those steps locally, or allow the hosts in the cloud environment's network settings.
 - **Consult CTA.** Booking link for the result screen.

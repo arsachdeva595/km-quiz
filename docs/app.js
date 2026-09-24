@@ -1,7 +1,7 @@
 import { QUESTIONS, INTEREST_SCALE, AGREE_SCALE } from "./questions.js";
 import {
   computeProfile, match, whyCopy, typeCode, archetype, topDims,
-  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS,
+  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, formatLakh,
 } from "./scoring.js";
 
 const $ = (id) => document.getElementById(id);
@@ -64,6 +64,21 @@ async function finish() {
   show("result");
 }
 
+function sharkTank(st, isTop) {
+  if (!st) return "";
+  const summary = `${st.pitches} Shark Tank India pitch${st.pitches > 1 ? "es" : ""} in this space · ${st.deals} got a deal` +
+    (st.median_revenue_lakh ? ` · median revenue ${formatLakh(st.median_revenue_lakh)}/yr` : "");
+  const examples = (isTop ? st.examples : st.examples.slice(0, 1)).map((e) => {
+    const deal = e.deal
+      ? `got ${formatLakh(e.deal.amount_lakh)} for ${+e.deal.equity_pct.toFixed(2)}%${e.deal.sharks.length ? ` from ${e.deal.sharks.join(", ")}` : ""}`
+      : `asked ${formatLakh(e.ask.amount_lakh)} for ${e.ask.equity_pct}%, no deal`;
+    const rev = e.revenue_lakh ? `, ${formatLakh(e.revenue_lakh)} yearly revenue` : "";
+    return `<li><strong>${esc(e.name)}</strong> <span class="muted">(S${e.season} E${e.episode}${e.city ? `, ${esc(e.city)}` : ""})</span> — ${esc(e.what)}${rev}; ${deal}.</li>`;
+  }).join("");
+  const note = isTop ? `<p class="fine">These brands scaled far enough to pitch on TV — most started much smaller.</p>` : "";
+  return `<div class="shark"><p class="shark-head">🦈 ${summary}</p><ul>${examples}</ul>${note}</div>`;
+}
+
 function ideaCard(r, profile, isTop) {
   const i = r.idea;
   return `
@@ -78,6 +93,7 @@ function ideaCard(r, profile, isTop) {
         <span class="chip">${i.time === "full" ? "Full-time" : "Can start part-time"}</span>
       </div>
       <p class="why">${esc(whyCopy(r, profile, { withIntro: isTop }))}</p>
+      ${sharkTank(i.sharktank, isTop)}
     </article>`;
 }
 

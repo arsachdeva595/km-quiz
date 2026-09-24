@@ -14,7 +14,12 @@ added to TRAIT_KEYWORDS.
 
 Run:  python3 pipeline/fetch_onet.py                # try newest release first
       python3 pipeline/fetch_onet.py --version 29_3
-      python3 pipeline/fetch_onet.py --offline      # re-derive from data/onet/raw/
+      python3 pipeline/fetch_onet.py --offline      # use local files only
+
+Offline, interests come from data/onet/raw/Interests.txt or, failing that, the
+committed data/onet/career_interest_types.csv (same columns, comma-separated).
+Work Styles is optional: without it, trait columns are left blank and
+tag_ideas.py estimates traits from the RIASEC profile.
 
 Output: data/onet/occupations.csv
 License: O*NET data is CC BY 4.0 — attribution lives in README and the site footer.
@@ -26,6 +31,7 @@ from pathlib import Path
 
 ROOT    = Path(__file__).resolve().parent.parent
 RAW_DIR = ROOT / "data" / "onet" / "raw"
+INTERESTS_CSV = ROOT / "data" / "onet" / "career_interest_types.csv"
 OUT     = ROOT / "data" / "onet" / "occupations.csv"
 
 BASE_URL = "https://www.onetcenter.org/dl_files/database/db_{ver}_text/{name}"
@@ -72,8 +78,21 @@ def download(version):
 
 
 def read_tsv(name):
-    with open(RAW_DIR / name, encoding="utf-8") as f:
+    path = RAW_DIR / name
+    if not path.exists():
+        return None
+    with open(path, encoding="utf-8") as f:
         return list(csv.DictReader(f, delimiter="\t"))
+
+
+def read_interests():
+    rows = read_tsv("Interests.txt")
+    if rows is not None:
+        return rows
+    if INTERESTS_CSV.exists():
+        with open(INTERESTS_CSV, encoding="utf-8-sig") as f:
+            return list(csv.DictReader(f))
+    sys.exit("No interest data: need data/onet/raw/Interests.txt or data/onet/career_interest_types.csv")
 
 
 def trait_for(element_name):
@@ -85,16 +104,20 @@ def trait_for(element_name):
 
 
 def derive():
-    titles = {r["O*NET-SOC Code"]: r["Title"] for r in read_tsv("Occupation Data.txt")}
+    interests = read_interests()
+    titles = {r["O*NET-SOC Code"]: r["Title"] for r in (read_tsv("Occupation Data.txt") or interests) if r.get("Title")}
 
     riasec = defaultdict(dict)
-    for r in read_tsv("Interests.txt"):
+    for r in interests:
         if r.get("Scale ID") == "OI" and r["Element Name"] in RIASEC:
             riasec[r["O*NET-SOC Code"]][r["Element Name"][0]] = (float(r["Data Value"]) - 1) / 6
 
     trait_vals = defaultdict(lambda: defaultdict(list))
     unmapped = set()
-    for r in read_tsv("Work Styles.txt"):
+    work_styles = read_tsv("Work Styles.txt")
+    if work_styles is None:
+        print("  ! Work Styles.txt not found — trait columns left blank (estimated later from RIASEC).")
+    for r in work_styles or []:
         if r.get("Scale ID") != "IM":
             continue
         t = trait_for(r["Element Name"])

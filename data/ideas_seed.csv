@@ -1,55 +1,55 @@
 id,slug,name,category,sub_category,pitch,onet_codes,riasec_provisional,budget_band,location,team,time_mode,km_legacy_id
 1,home-bakery,Home Bakery,Food,Baking,"Cakes, cookies and breads baked at home and sold through WhatsApp, Instagram and local cafes.",51-3011.00;35-1011.00,ARE,1,local,solo,both,20
 2,tiffin-service,Tiffin Service,Food,Meal Delivery,"Daily home-style lunch and dinner boxes for students, office-goers and PG residents.",35-2012.00;11-9051.00,SEC,1,local,small,full,73
-3,cloud-kitchen,Cloud Kitchen,Food,Meal Delivery,"A delivery-only kitchen selling one focused cuisine on Swiggy and Zomato.",35-1011.00;11-9051.00,ERC,3,local,team,full,3
+3,cloud-kitchen,Cloud Kitchen,Food,Meal Delivery,A delivery-only kitchen selling one focused cuisine on Swiggy and Zomato.,35-1011.00;11-9051.00,ERC,3,local,team,full,3
 4,breakfast-takeaway-counter,Breakfast Takeaway Counter,Food,Street Food,"Poha, idli, parathas and chai for the morning office and college rush.",35-3023.00;35-2014.00,RES,2,local,small,full,61
 5,juice-and-shake-bar,Juice & Shake Bar,Food,Beverages,"Fresh juices, shakes and smoothies near gyms, colleges or markets.",35-3023.00;11-9051.00,RES,2,local,small,full,62
 6,event-catering,Event Catering,Food,Catering,"Food for weddings, birthdays and office events with a hired crew per booking.",35-1011.00;11-9051.00;13-1121.00,ESR,3,local,team,full,17
 7,pickle-and-papad-brand,Pickle & Papad Brand,Food,Packaged Foods,"Regional pickles, papads and masalas packed and sold online and to local kiranas.",51-3092.00;41-4012.00,REC,2,any,small,both,
 8,spice-processing-unit,Spice Processing Unit,Food,Packaged Foods,"Grinding, blending and packing spices for retail and bulk buyers.",51-3092.00;51-9111.00;51-1011.00,RCE,4,rural,team,full,19
-9,millet-snacks-brand,Millet Snacks Brand,Food,Packaged Foods,"Healthy millet-based snacks and mixes for urban health-conscious buyers.",51-3092.00;11-2021.00,ERA,3,any,small,full,
+9,healthy-snacks-brand,Healthy Snacks Brand,Food,Packaged Foods,"Better-for-you snacks — millet, popped, roasted or baked — for health-conscious city buyers.",51-3092.00;11-2021.00,ERA,3,any,small,full,
 10,home-cooked-meals-for-elders,Home-Cooked Meals for Elders,Food,Meal Delivery,"Low-oil, low-salt meal subscriptions for senior citizens living alone.",35-2012.00;31-1122.00,SRC,1,local,small,full,57
 11,chai-kiosk-franchise,Chai Kiosk,Food,Beverages,"A small chai and snacks kiosk at a high-footfall spot, own brand or franchise.",35-3023.00;11-9051.00,ERS,2,local,small,full,75
-12,sweet-shop,Sweet Shop (Mithai),Food,Retail Food,"Traditional sweets and namkeen with festive-season gift boxes.",51-3011.00;41-1011.00,ERC,3,local,team,full,
+12,sweet-shop,Sweet Shop (Mithai),Food,Retail Food,Traditional sweets and namkeen with festive-season gift boxes.,51-3011.00;41-1011.00,ERC,3,local,team,full,
 13,honey-and-organic-produce,Honey & Organic Produce Brand,Agri & Rural,Farm-to-Consumer,"Source honey, jaggery and organic staples from farmers and sell direct to city homes.",11-9013.00;41-4012.00,ERC,2,rural,small,both,
-14,mushroom-farming,Mushroom Farming,Agri & Rural,Farming,"Oyster or button mushrooms grown in a small shed and sold to hotels and mandis.",11-9013.00;45-2092.00,RIC,1,rural,solo,both,
+14,mushroom-farming,Mushroom Farming,Agri & Rural,Farming,Oyster or button mushrooms grown in a small shed and sold to hotels and mandis.,11-9013.00;45-2092.00,RIC,1,rural,solo,both,
 15,dairy-farm,Dairy Farm,Agri & Rural,Livestock,"A small herd supplying milk, paneer and ghee to the neighbourhood.",11-9013.00;45-2093.00,RCE,4,rural,small,full,
-16,poultry-farm,Poultry Farm,Agri & Rural,Livestock,"Broiler or desi egg poultry supplying local shops and restaurants.",11-9013.00;45-2093.00,RCE,3,rural,small,full,
+16,poultry-farm,Poultry Farm,Agri & Rural,Livestock,Broiler or desi egg poultry supplying local shops and restaurants.,11-9013.00;45-2093.00,RCE,3,rural,small,full,
 17,nursery-and-plants,Plant Nursery,Agri & Rural,Horticulture,"Potted plants, saplings and garden supplies for homes, offices and landscapers.",45-2092.00;37-3011.00,RAE,2,any,small,both,
-18,vermicompost-unit,Vermicompost Unit,Agri & Rural,Agri Inputs,"Turn farm and kitchen waste into packed organic manure for gardeners and farmers.",45-2092.00;19-4012.00,RIC,1,rural,solo,both,
+18,vermicompost-unit,Vermicompost Unit,Agri & Rural,Agri Inputs,Turn farm and kitchen waste into packed organic manure for gardeners and farmers.,45-2092.00;19-4012.00,RIC,1,rural,solo,both,
 19,agro-processing-unit,Agro Processing Unit,Agri & Rural,Food Processing,"Process local produce like dal, flour or dried fruit for wholesale buyers.",51-1011.00;51-3092.00;11-9013.00,REC,4,rural,team,full,19
 20,farm-equipment-rental,Farm Equipment Rental,Agri & Rural,Agri Services,"Rent tractors, sprayers and harvesters to small farmers by the hour or acre.",41-2021.00;49-3023.00,ERC,4,rural,small,full,
-21,kirana-store,Kirana / Grocery Store,Retail & Trading,Grocery,"A neighbourhood grocery store with home delivery on WhatsApp.",41-1011.00;41-2011.00,CES,3,local,small,full,71
+21,kirana-store,Kirana / Grocery Store,Retail & Trading,Grocery,A neighbourhood grocery store with home delivery on WhatsApp.,41-1011.00;41-2011.00,CES,3,local,small,full,71
 22,crockery-and-kitchenware-store,Crockery & Kitchenware Store,Retail & Trading,Home Goods,"Crockery, cookware and gifting sets for households and wedding buyers.",41-2031.00;13-1022.00,ECS,3,local,small,full,6
-23,online-thrift-store,Online Thrift Store,Retail & Trading,Fashion Resale,"Curate pre-loved clothes and sell through Instagram drops.",13-1022.00;41-2031.00;27-1022.00,EAC,1,online,solo,both,1
+23,online-thrift-store,Online Thrift Store,Retail & Trading,Fashion Resale,Curate pre-loved clothes and sell through Instagram drops.,13-1022.00;41-2031.00;27-1022.00,EAC,1,online,solo,both,1
 24,dropshipping-niche-store,Niche E-commerce Store,Retail & Trading,E-commerce,"An online store in one tight niche, fulfilled by suppliers or a 3PL.",13-1161.00;41-2031.00;15-1254.00,ECI,2,online,solo,both,22
 25,mobile-accessories-store,Mobile Covers & Accessories,Retail & Trading,Electronics,"Phone covers, chargers and screen guards from a kiosk and online.",41-2031.00;13-1022.00,ECR,2,local,solo,full,54
 26,stationery-and-art-supplies,Stationery & Art Supplies Store,Retail & Trading,Stationery,"School, office and hobby-art supplies near schools and colleges.",41-2031.00;41-1011.00,CEA,2,local,small,full,10
 27,used-book-store,Second-Hand Book Store,Retail & Trading,Books,"Buy and resell used books, textbooks and exam guides, in a shop and online.",41-2031.00;25-4022.00,CIE,1,any,solo,both,70
-28,wholesale-trading-fmcg,FMCG Distributorship,Retail & Trading,Distribution,"Become the area distributor for FMCG brands supplying local retailers.",41-4012.00;11-3071.00,ECR,4,local,team,full,
+28,wholesale-trading-fmcg,FMCG Distributorship,Retail & Trading,Distribution,Become the area distributor for FMCG brands supplying local retailers.,41-4012.00;11-3071.00,ECR,4,local,team,full,
 29,bridal-accessories-store,Bridal Accessories Store,Retail & Trading,Wedding,"Bridal jewellery, dupattas and accessories for the wedding season.",41-2031.00;27-1022.00,EAS,3,local,small,full,95
-30,pharmacy,Pharmacy / Medical Store,Retail & Trading,Health Retail,"A licensed chemist shop with home delivery and generic medicine options.",29-2052.00;41-1011.00,CSE,4,local,small,full,
+30,pharmacy,Pharmacy / Medical Store,Retail & Trading,Health Retail,A licensed chemist shop with home delivery and generic medicine options.,29-2052.00;41-1011.00,CSE,4,local,small,full,
 31,optical-store,Optical Store,Retail & Trading,Health Retail,"Spectacles, lenses and eye-check camps in a growing neighbourhood.",29-2081.00;41-2031.00,SCE,3,local,small,full,
-32,franchise-outlet,Franchise Outlet,Retail & Trading,Franchise,"Run an established brand's outlet with its playbook and supply chain.",11-1021.00;41-1011.00,ECS,4,local,team,full,75
+32,franchise-outlet,Franchise Outlet,Retail & Trading,Franchise,Run an established brand's outlet with its playbook and supply chain.,11-1021.00;41-1011.00,ECS,4,local,team,full,75
 33,custom-gifting-store,Custom Gifting Studio,Crafts & Manufacturing,Gifting,"Personalised hampers, mugs, frames and corporate gift boxes.",27-1012.00;41-2031.00;27-1024.00,AES,2,any,small,both,5
 34,candle-making,Candle Making,Crafts & Manufacturing,Home Decor,"Scented and decorative candles sold online, at fairs and to gift shops.",27-1012.00,ARC,1,any,solo,both,31
 35,handcrafted-home-decor,Handcrafted Home Decor Brand,Crafts & Manufacturing,Home Decor,"Lamps, wall art and décor made with local crafts and sold online.",27-1012.00;27-1025.00,ARE,2,any,small,both,7
 36,oxidised-jewellery,Oxidised & Handmade Jewellery,Crafts & Manufacturing,Jewellery,"Handmade and oxidised jewellery sold on Instagram, Meesho and at exhibitions.",51-9071.00;27-1012.00,ARE,1,any,solo,both,51
 37,wooden-name-boards,Wooden Name Plates & Signage,Crafts & Manufacturing,Woodwork,"Custom wooden name plates, signs and décor for homes and cafes.",51-7011.00;27-1012.00,RAE,2,any,solo,both,40
-38,pottery-studio,Pottery & Ceramics Studio,Crafts & Manufacturing,Ceramics,"Handmade tableware plus weekend pottery workshops.",27-1012.00;25-3021.00,ARS,3,local,small,both,41
+38,pottery-studio,Pottery & Ceramics Studio,Crafts & Manufacturing,Ceramics,Handmade tableware plus weekend pottery workshops.,27-1012.00;25-3021.00,ARS,3,local,small,both,41
 39,soft-toys,Handmade Soft Toys,Crafts & Manufacturing,Toys,"Safe, cuddly handmade toys for gifting and baby-shower hampers.",51-6052.00;27-1012.00,ARS,1,any,solo,both,55
-40,upcycled-furniture,Upcycled Furniture,Crafts & Manufacturing,Furniture,"Restore and redesign old furniture for cafes and style-conscious homes.",51-7011.00;51-7021.00;27-1025.00,RAE,2,local,small,both,76
+40,upcycled-furniture,Upcycled Furniture,Crafts & Manufacturing,Furniture,Restore and redesign old furniture for cafes and style-conscious homes.,51-7011.00;51-7021.00;27-1025.00,RAE,2,local,small,both,76
 41,furniture-workshop,Furniture Workshop,Crafts & Manufacturing,Furniture,"Custom beds, wardrobes and office furniture made to order.",51-7011.00;47-2031.00;51-1011.00,REC,4,local,team,full,
 42,handloom-textiles-brand,Handloom Textiles Brand,Crafts & Manufacturing,Textiles,"Work with local weavers and sell sarees, stoles and fabric direct to buyers.",51-6063.00;27-1022.00;41-4012.00,AER,3,any,small,full,
 43,printing-press,Printing & Packaging Unit,Crafts & Manufacturing,Printing,"Visiting cards, labels, boxes and packaging for local businesses.",51-5112.00;51-1011.00,RCE,4,local,team,full,
-44,paper-bag-unit,Paper Bag Manufacturing,Crafts & Manufacturing,Packaging,"Paper and cloth bags for shops as plastic bans tighten.",51-9111.00;51-1011.00,RCE,3,any,small,full,
+44,paper-bag-unit,Paper Bag Manufacturing,Crafts & Manufacturing,Packaging,Paper and cloth bags for shops as plastic bans tighten.,51-9111.00;51-1011.00,RCE,3,any,small,full,
 45,leather-goods-workshop,Leather Goods Workshop,Crafts & Manufacturing,Leather,"Wallets, belts and bags made to order and sold wholesale and online.",51-6041.00;27-1012.00,RAE,3,any,small,full,
 46,metal-fabrication-shop,Metal Fabrication Shop,Crafts & Manufacturing,Fabrication,"Gates, grills, sheds and racks welded to order.",51-4121.00;51-1011.00,RCE,3,local,small,full,
-47,export-of-handicrafts,Handicraft Export House,Crafts & Manufacturing,Export,"Aggregate district crafts and ship to overseas buyers and marketplaces.",41-4012.00;13-1081.00;27-1012.00,ECA,4,any,team,full,
+47,export-of-handicrafts,Handicraft Export House,Crafts & Manufacturing,Export,Aggregate district crafts and ship to overseas buyers and marketplaces.,41-4012.00;13-1081.00;27-1012.00,ECA,4,any,team,full,
 48,ethnic-wear-label,Ethnic Wear Label,Fashion & Apparel,Womenswear,"Kurtas, lehengas and festive wear designed in-house and sold online.",27-1022.00;51-6052.00,AER,3,any,small,full,45
 49,boutique-tailoring,Boutique & Tailoring,Fashion & Apparel,Tailoring,"Custom stitching, blouse design and alterations in the neighbourhood.",51-6052.00;27-1022.00,RAS,2,local,small,full,
 50,custom-tshirt-printing,Custom T-Shirt Printing,Fashion & Apparel,Printwear,"Printed tees for colleges, events and startups, sold online too.",51-5112.00;27-1024.00,ARE,2,any,solo,both,47
-51,fitness-apparel-brand,Fitness Apparel Brand,Fashion & Apparel,Activewear,"Activewear designed for Indian body types and climate.",27-1022.00;11-2021.00,EAR,3,online,small,full,38
+51,fitness-apparel-brand,Fitness Apparel Brand,Fashion & Apparel,Activewear,Activewear designed for Indian body types and climate.,27-1022.00;11-2021.00,EAR,3,online,small,full,38
 52,hair-accessories-brand,Hair Accessories Brand,Fashion & Apparel,Accessories,"Scrunchies, clips and hair bands sold via Instagram and marketplaces.",27-1012.00;41-2031.00,AER,1,online,solo,both,53
 53,laundry-and-ironing,Laundry & Ironing Service,Home & Trade Services,Laundry,"Pickup-and-drop laundry, dry cleaning and ironing for apartments.",51-6011.00;51-6021.00,RCS,3,local,small,full,
 54,home-cleaning-service,Home Cleaning Service,Home & Trade Services,Cleaning,"Deep cleaning of homes, sofas and offices with a trained crew.",37-2012.00;37-2011.00,RCS,2,local,team,full,16
@@ -58,75 +58,113 @@ id,slug,name,category,sub_category,pitch,onet_codes,riasec_provisional,budget_ba
 57,plumbing-service,Plumbing Service,Home & Trade Services,Repairs,"Leaks, fittings and bathroom installs for homes and builders.",47-2152.00,RCI,1,local,solo,full,
 58,ac-repair-service,AC & Appliance Repair,Home & Trade Services,Repairs,"AC servicing, fridge and washing machine repair with annual contracts.",49-9021.00;49-9031.00,RIC,2,local,small,full,
 59,mobile-and-laptop-repair,Mobile & Laptop Repair Shop,Home & Trade Services,Electronics Repair,"Screen, battery and board repairs for phones and laptops.",49-2011.00;49-2022.00,RIC,2,local,solo,full,
-60,home-painting-contractor,Painting Contractor,Home & Trade Services,Construction,"Interior and exterior painting with a small crew.",47-2141.00;47-1011.00,REC,2,local,team,full,
-61,interior-design-studio,Interior Design Studio,Home & Trade Services,Interiors,"Design and execute homes and small offices with trusted contractors.",27-1025.00;11-9021.00,AER,3,local,small,full,
+60,home-painting-contractor,Painting Contractor,Home & Trade Services,Construction,Interior and exterior painting with a small crew.,47-2141.00;47-1011.00,REC,2,local,team,full,
+61,interior-design-studio,Interior Design Studio,Home & Trade Services,Interiors,Design and execute homes and small offices with trusted contractors.,27-1025.00;11-9021.00,AER,3,local,small,full,
 62,solar-installation,Solar Installation Business,Home & Trade Services,Energy,"Rooftop solar for homes and shops, using PM Surya Ghar subsidies.",47-2231.00;47-2111.00;41-9031.00,REI,4,any,team,full,87
 63,cctv-installation,CCTV & Smart Home Installation,Home & Trade Services,Security,"Install and maintain CCTV, video doorbells and smart locks.",49-2097.00;47-2111.00,RIC,2,local,small,full,
 64,landscaping-service,Landscaping & Garden Maintenance,Home & Trade Services,Gardening,"Design and maintain terrace gardens, society lawns and office plants.",37-3011.00;37-1012.00,RAE,2,local,small,both,
 65,car-detailing,Car Wash & Detailing,Mobility & Logistics,Auto Services,"Doorstep car washing, detailing and ceramic coating.",49-3023.00;37-2011.00,REC,2,local,small,full,
 66,two-wheeler-garage,Two-Wheeler Garage,Mobility & Logistics,Auto Services,"Servicing and repair for bikes and scooters, including EVs.",49-3052.00,RIC,2,local,small,full,
-67,ev-charging-and-rental,EV Scooter Rental,Mobility & Logistics,EV,"Rent electric scooters to delivery riders and students by the day or month.",41-2021.00;49-3052.00,ERC,4,local,small,full,
-68,local-delivery-service,Local Delivery Service,Mobility & Logistics,Logistics,"Same-day parcel delivery for shops and home businesses in your city.",53-3033.00;43-5032.00,RCE,2,local,team,full,
+67,ev-charging-and-rental,EV Scooter Rental,Mobility & Logistics,EV,Rent electric scooters to delivery riders and students by the day or month.,41-2021.00;49-3052.00,ERC,4,local,small,full,
+68,local-delivery-service,Local Delivery Service,Mobility & Logistics,Logistics,Same-day parcel delivery for shops and home businesses in your city.,53-3033.00;43-5032.00,RCE,2,local,team,full,
 69,packers-and-movers,Packers & Movers,Mobility & Logistics,Logistics,"House and office shifting with packing, transport and unpacking.",53-3032.00;11-3071.00,REC,4,local,team,full,
-70,driving-school,Driving School,Mobility & Logistics,Training,"Teach new drivers with dual-control cars and help with licence paperwork.",53-3053.00;25-3021.00,RSC,3,local,small,full,2
+70,driving-school,Driving School,Mobility & Logistics,Training,Teach new drivers with dual-control cars and help with licence paperwork.,53-3053.00;25-3021.00,RSC,3,local,small,full,2
 71,travel-agency,Travel Agency,Events & Hospitality,Travel,"Plan domestic trips, pilgrimages and group tours with local partners.",41-3041.00;39-7011.00,ESC,1,any,small,both,
 72,homestay,Homestay / Bed & Breakfast,Events & Hospitality,Stays,"Rent rooms in a home or farmhouse to travellers, listed on Airbnb and OTAs.",11-9081.00;43-4081.00,SEC,4,any,small,full,14
-73,paying-guest-hostel,PG / Hostel,Events & Hospitality,Stays,"Furnished rooms with meals for students and working professionals.",11-9141.00;41-2021.00,ECS,4,local,small,full,56
+73,paying-guest-hostel,PG / Hostel,Events & Hospitality,Stays,Furnished rooms with meals for students and working professionals.,11-9141.00;41-2021.00,ECS,4,local,small,full,56
 74,event-planning,Event Planning,Events & Hospitality,Events,"Birthdays, corporate offsites and small functions managed end to end.",13-1121.00,ESA,1,local,small,both,9
 75,wedding-planning,Wedding Planning,Events & Hospitality,Weddings,"Plan and run weddings with a vendor network: décor, catering and logistics.",13-1121.00;11-1021.00,ESA,2,local,team,full,97
 76,tent-and-decor-rental,"Tent, Décor & Sound Rental",Events & Hospitality,Rentals,"Rent tents, lighting, sound and décor for local functions.",41-2021.00;49-2097.00,REC,4,local,team,full,
 77,local-tour-guide,Local Experiences & Walks,Events & Hospitality,Tourism,"Food walks, heritage walks and village experiences for tourists.",39-7011.00,SEA,1,local,solo,both,
-78,coaching-centre,Coaching Centre,Education & Coaching,Tutoring,"Coaching for school boards or competitive exams in your subject.",25-3041.00;25-2021.00,SIE,2,local,small,full,58
+78,coaching-centre,Coaching Centre,Education & Coaching,Tutoring,Coaching for school boards or competitive exams in your subject.,25-3041.00;25-2021.00,SIE,2,local,small,full,58
 79,test-prep-online,Online Test Prep,Education & Coaching,Test Prep,"Online batches and mock tests for exams like CAT, SSC or NEET.",25-3041.00;25-9031.00,ISE,1,online,solo,both,15
-80,home-tuition,Home Tuition,Education & Coaching,Tutoring,"One-on-one tutoring at students' homes or online.",25-3041.00,SIA,1,local,solo,both,
-81,spoken-english-classes,Spoken English & Communication Classes,Education & Coaching,Language,"Spoken English and interview-skills batches for students and job seekers.",25-3021.00;27-3091.00,SAE,1,any,solo,both,11
-82,language-learning-platform,Language Learning Platform,Education & Coaching,EdTech,"An app or cohort programme teaching a language to learners online.",25-9031.00;15-1252.00,SIA,3,online,small,full,11
-83,playschool-and-daycare,Playschool & Daycare,Education & Coaching,Early Childhood,"A safe preschool and daycare for working parents.",25-2011.00;39-9011.00,SAE,4,local,team,full,
+80,home-tuition,Home Tuition,Education & Coaching,Tutoring,One-on-one tutoring at students' homes or online.,25-3041.00,SIA,1,local,solo,both,
+81,spoken-english-classes,Spoken English & Communication Classes,Education & Coaching,Language,Spoken English and interview-skills batches for students and job seekers.,25-3021.00;27-3091.00,SAE,1,any,solo,both,11
+82,language-learning-platform,Language Learning Platform,Education & Coaching,EdTech,An app or cohort programme teaching a language to learners online.,25-9031.00;15-1252.00,SIA,3,online,small,full,11
+83,playschool-and-daycare,Playschool & Daycare,Education & Coaching,Early Childhood,A safe preschool and daycare for working parents.,25-2011.00;39-9011.00,SAE,4,local,team,full,
 84,career-counselling,Career Counselling,Education & Coaching,Counselling,"Help students choose streams, colleges and careers.",21-1012.00,SIE,1,any,solo,both,
 85,skill-training-institute,Skill Training Institute,Education & Coaching,Vocational,"Short courses in trades, tally, digital marketing or beauty.",25-3021.00;13-1151.00,SER,3,local,team,full,
-86,dance-studio,Dance Studio,Education & Coaching,Performing Arts,"Classes for kids and adults plus wedding choreography.",27-2032.00;27-2031.00,ASE,3,local,small,both,13
+86,dance-studio,Dance Studio,Education & Coaching,Performing Arts,Classes for kids and adults plus wedding choreography.,27-2032.00;27-2031.00,ASE,3,local,small,both,13
 87,music-classes,Music Classes,Education & Coaching,Performing Arts,"Teach vocals, guitar or keyboard in person and online.",27-2042.00;25-3021.00,ASI,1,any,solo,both,
-88,art-and-craft-classes,Art & Craft Workshops,Education & Coaching,Hobby,"Weekend workshops and kids' art classes.",27-1013.00;25-3021.00,ASR,1,local,solo,both,
-89,fitness-coaching,Fitness Coaching,Health & Wellness,Fitness,"Personal training and online fitness programmes.",39-9031.00,SRE,1,any,solo,both,26
+88,art-and-craft-classes,Art & Craft Workshops,Education & Coaching,Hobby,Weekend workshops and kids' art classes.,27-1013.00;25-3021.00,ASR,1,local,solo,both,
+89,fitness-coaching,Fitness Coaching,Health & Wellness,Fitness,Personal training and online fitness programmes.,39-9031.00,SRE,1,any,solo,both,26
 90,yoga-studio,Yoga & Meditation Studio,Health & Wellness,Yoga,"Group and private yoga classes, offline and on Zoom.",39-9031.00;25-3021.00,SRA,2,any,solo,both,18
-91,zumba-and-dance-fitness,Zumba & Dance Fitness,Health & Wellness,Fitness,"High-energy dance fitness batches in societies and studios.",39-9031.00;27-2031.00,SAR,1,local,solo,both,36
+91,zumba-and-dance-fitness,Zumba & Dance Fitness,Health & Wellness,Fitness,High-energy dance fitness batches in societies and studios.,39-9031.00;27-2031.00,SAR,1,local,solo,both,36
 92,nutrition-coaching,Nutrition & Diet Coaching,Health & Wellness,Nutrition,"Personalised diet plans and habit coaching, mostly online.",29-1031.00,ISE,1,online,solo,both,25
 93,gym,Neighbourhood Gym,Health & Wellness,Fitness,"An affordable, well-equipped gym with trainers and memberships.",39-9031.00;11-1021.00,ERS,4,local,team,full,
 94,beauty-salon,Beauty Salon & Spa,Health & Wellness,Beauty,"Hair, skin and grooming services, with bridal packages.",39-5012.00;39-5094.00,ASE,3,local,team,full,59
-95,makeup-artist,Freelance Makeup Artist,Health & Wellness,Beauty,"Bridal and party makeup at clients' homes and venues.",39-5091.00,ASE,1,local,solo,both,34
-96,barbershop,Barbershop / Men's Grooming,Health & Wellness,Grooming,"A modern men's grooming salon with memberships.",39-5011.00,RSE,3,local,small,full,
-97,nail-studio,Nail Art Studio,Health & Wellness,Beauty,"Nail extensions and nail art in a small studio.",39-5092.00,ARS,2,local,solo,full,
-98,elder-care-service,Elder Care Service,Health & Wellness,Care,"Trained attendants and check-in visits for elderly people living alone.",31-1122.00;31-1121.00;11-9111.00,SCE,2,local,team,full,
-99,physio-and-massage,Massage & Physio Clinic,Health & Wellness,Therapy,"Therapeutic massage and recovery sessions for athletes and office workers.",31-9011.00,SRI,2,local,solo,full,
-100,diagnostic-collection-centre,Diagnostic Sample Collection,Health & Wellness,Diagnostics,"A franchise collection centre with home sample pickup for a lab chain.",31-9097.00;11-9111.00,SCR,3,local,small,full,
-101,pet-grooming,Pet Grooming,Pets,Grooming,"Grooming at a salon or doorstep van for dogs and cats.",39-2021.00,RSA,2,local,small,full,12
+95,makeup-artist,Freelance Makeup Artist,Health & Wellness,Beauty,Bridal and party makeup at clients' homes and venues.,39-5091.00,ASE,1,local,solo,both,34
+96,barbershop,Barbershop / Men's Grooming,Health & Wellness,Grooming,A modern men's grooming salon with memberships.,39-5011.00,RSE,3,local,small,full,
+97,nail-studio,Nail Art Studio,Health & Wellness,Beauty,Nail extensions and nail art in a small studio.,39-5092.00,ARS,2,local,solo,full,
+98,elder-care-service,Elder Care Service,Health & Wellness,Care,Trained attendants and check-in visits for elderly people living alone.,31-1122.00;31-1121.00;11-9111.00,SCE,2,local,team,full,
+99,physio-and-massage,Massage & Physio Clinic,Health & Wellness,Therapy,Therapeutic massage and recovery sessions for athletes and office workers.,31-9011.00,SRI,2,local,solo,full,
+100,diagnostic-collection-centre,Diagnostic Sample Collection,Health & Wellness,Diagnostics,A franchise collection centre with home sample pickup for a lab chain.,31-9097.00;11-9111.00,SCR,3,local,small,full,
+101,pet-grooming,Pet Grooming,Pets,Grooming,Grooming at a salon or doorstep van for dogs and cats.,39-2021.00,RSA,2,local,small,full,12
 102,pet-boarding-and-walking,Pet Boarding & Walking,Pets,Care,"Daycare, boarding and dog walking for busy pet parents.",39-2021.00;39-2011.00,RS,1,local,solo,both,77
-103,pet-food-and-treats,Homemade Pet Treats,Pets,Food,"Fresh pet food and treats sold online and through pet shops.",51-3092.00;39-2021.00,REA,1,online,solo,both,
+103,pet-food-and-treats,Homemade Pet Treats,Pets,Food,Fresh pet food and treats sold online and through pet shops.,51-3092.00;39-2021.00,REA,1,online,solo,both,
 104,social-media-agency,Social Media Marketing Agency,Digital & Tech,Marketing,"Run Instagram, reels and ads for local brands on monthly retainers.",13-1161.00;27-1024.00;27-3031.00,EAS,1,online,small,both,4
 105,digital-agency,Performance & Digital Agency,Digital & Tech,Marketing,"Websites, SEO and paid ads for small and mid-size businesses.",11-2021.00;13-1161.00;15-1254.00,EIC,2,online,team,full,98
-106,website-development,Website & App Development,Digital & Tech,Development,"Build websites and simple apps for local businesses and startups.",15-1254.00;15-1252.00,IRC,1,online,solo,both,
-107,saas-micro-product,Micro SaaS Product,Digital & Tech,Software,"A small subscription software tool that solves one business problem well.",15-1252.00;15-1211.00,IEC,1,online,solo,both,
+106,website-development,Website & App Development,Digital & Tech,Development,Build websites and simple apps for local businesses and startups.,15-1254.00;15-1252.00,IRC,1,online,solo,both,
+107,saas-micro-product,Micro SaaS Product,Digital & Tech,Software,A small subscription software tool that solves one business problem well.,15-1252.00;15-1211.00,IEC,1,online,solo,both,
 108,graphic-design-studio,Graphic Design Studio,Digital & Tech,Design,"Logos, packaging and brand identity for small businesses.",27-1024.00,AEC,1,online,solo,both,
 109,video-editing-service,Video Editing Service,Digital & Tech,Video,"Edit reels, YouTube videos and ads for creators and brands.",27-4032.00,ARI,1,online,solo,both,
 110,virtual-assistant,Virtual Assistant Service,Digital & Tech,Admin,"Handle inboxes, calendars and admin for founders and professionals.",43-6014.00;43-4051.00,CSE,1,online,solo,both,23
 111,data-and-analytics-freelance,Data Analytics Consulting,Digital & Tech,Data,"Dashboards, Excel automation and analytics for small businesses.",15-2051.00;15-1211.00,ICR,1,online,solo,both,
 112,it-support-amc,IT Support & AMC,Digital & Tech,IT Services,"Annual contracts to manage computers, networks and printers for offices.",15-1232.00;49-2011.00,RIC,2,local,small,full,
 113,content-writing-agency,Content Writing Service,Creative & Media,Writing,"Blogs, website copy and product descriptions for brands.",27-3043.00;27-3041.00,AIC,1,online,solo,both,21
-114,niche-blog,Niche Blog / Website,Creative & Media,Publishing,"A content site in one niche earning from ads and affiliate links.",27-3043.00;13-1161.00,AIE,1,online,solo,side,100
-115,newsletter-business,Paid Newsletter,Creative & Media,Publishing,"A focused newsletter that earns from subscriptions and sponsors.",27-3043.00;27-3041.00,AIE,1,online,solo,side,90
+114,niche-blog,Niche Blog / Website,Creative & Media,Publishing,A content site in one niche earning from ads and affiliate links.,27-3043.00;13-1161.00,AIE,1,online,solo,side,100
+115,newsletter-business,Paid Newsletter,Creative & Media,Publishing,A focused newsletter that earns from subscriptions and sponsors.,27-3043.00;27-3041.00,AIE,1,online,solo,side,90
 116,youtube-channel,YouTube / Creator Channel,Creative & Media,Creator,"A channel in one niche earning from ads, brand deals and products.",27-4031.00;27-4032.00;27-3043.00,AES,1,online,solo,both,
-117,podcast-studio,Podcast & Podcast Studio,Creative & Media,Audio,"Host a podcast or rent a recording studio to creators and brands.",27-4014.00;27-3011.00,AES,2,any,small,both,94
+117,podcast-studio,Podcast & Podcast Studio,Creative & Media,Audio,Host a podcast or rent a recording studio to creators and brands.,27-4014.00;27-3011.00,AES,2,any,small,both,94
 118,photography-studio,Photography Studio,Creative & Media,Photography,"Portfolio, product, wedding and baby shoots.",27-4021.00,ARE,2,local,solo,both,80
-119,stock-photography,Stock Photography & Footage,Creative & Media,Photography,"Shoot India-specific stock images and footage for global libraries.",27-4021.00,ARI,1,online,solo,side,28
+119,stock-photography,Stock Photography & Footage,Creative & Media,Photography,Shoot India-specific stock images and footage for global libraries.,27-4021.00,ARI,1,online,solo,side,28
 120,illustration-studio,Illustration & Caricature,Creative & Media,Illustration,"Commissioned illustrations, caricatures at events and book art.",27-1013.00,AI,1,any,solo,both,33
 121,translation-services,Translation & Localisation,Creative & Media,Language,"Translate documents, subtitles and apps between Indian languages and English.",27-3091.00,AIC,1,online,solo,both,
-122,affiliate-marketing,Affiliate Marketing,Creative & Media,Marketing,"Earn commissions recommending products through content and deals channels.",13-1161.00;27-3043.00,EAI,1,online,solo,side,24
+122,affiliate-marketing,Affiliate Marketing,Creative & Media,Marketing,Earn commissions recommending products through content and deals channels.,13-1161.00;27-3043.00,EAI,1,online,solo,side,24
 123,accounting-and-gst,Accounting & GST Filing,Professional Services,Finance,"Bookkeeping, GST returns and ITR filing for small businesses.",13-2011.00;43-3031.00;13-2082.00,CEI,1,any,solo,both,
 124,insurance-agency,Insurance Advisory,Professional Services,Finance,"Sell and service life, health and motor insurance for families and shops.",41-3021.00,ESC,1,any,solo,both,
 125,financial-advisory,Mutual Fund Distribution & Advisory,Professional Services,Finance,"Help families plan savings, SIPs and insurance as a registered distributor.",13-2052.00,ECS,1,any,solo,both,
 126,real-estate-brokerage,Real Estate Brokerage,Professional Services,Real Estate,"Help people buy, sell and rent property in your area.",41-9022.00;41-9021.00,ESC,1,local,solo,full,60
 127,business-consulting,Business Consulting,Professional Services,Consulting,"Advise small businesses on operations, sales or finance in your area of expertise.",13-1111.00,EIC,1,any,solo,both,29
-128,life-coaching,Life & Career Coaching,Professional Services,Coaching,"One-on-one and group coaching for career changes and personal growth.",21-1012.00;13-1151.00,SEA,1,online,solo,both,50
+128,life-coaching,Life & Career Coaching,Professional Services,Coaching,One-on-one and group coaching for career changes and personal growth.,21-1012.00;13-1151.00,SEA,1,online,solo,both,50
 129,recruitment-agency,Recruitment & Staffing Agency,Professional Services,HR,"Source and place staff for local businesses, on commission.",13-1071.00,ESC,1,any,small,full,
 130,legal-documentation,Legal Documentation Services,Professional Services,Legal,"Rent agreements, affidavits, company registration and trademark filing.",23-2011.00,CES,1,local,solo,both,
 131,import-export-trading,Import-Export Trading,Professional Services,Trade,"Source products in India and sell to buyers abroad, or the reverse.",41-4012.00;13-1081.00;13-1023.00,ECI,3,any,small,full,
+132,frozen-and-ready-to-cook-foods,Frozen & Ready-to-Cook Foods Brand,Food,Packaged Foods,"Frozen momos, snacks or ready-to-cook meals supplied to cafés, hotels and grocery stores.",51-3092.00;51-9111.00;11-2021.00,RCE,3,any,small,full,
+133,d2c-apparel-brand,D2C Apparel Brand,Fashion & Apparel,Casualwear,"Streetwear, innerwear or basics with a sharp brand, sold on your own site and Instagram.",27-1022.00;11-2021.00;13-1022.00,AER,3,online,small,full,
+134,kids-enrichment-classes,Kids Enrichment Classes,Education & Coaching,Kids Learning,"Abacus, brain-training, phonics or coding programmes for children.",25-3021.00;25-2011.00,SAI,2,local,small,both,
+135,hardware-product-startup,Hardware Product Startup,Crafts & Manufacturing,Product Innovation,"Invent a useful gadget or device, prototype it, patent it and get it manufactured.",17-2141.00;27-1021.00,IRE,4,any,team,full,
+136,agritech-devices,Agri-Tech Tools & Devices,Agri & Rural,Agri-Tech,"Low-cost tools and sensors that save farmers time, water or crop losses.",17-2021.00;19-4012.00,RIE,3,rural,small,full,
+137,medical-devices-startup,Medical Device Startup,Health & Wellness,Med-Tech,"Affordable diagnostic or care devices for clinics, hospitals and homes.",17-2031.00;41-9031.00,IRE,4,any,team,full,
+138,ev-assembly,EV Assembly & Conversion,Mobility & Logistics,EV,"Assemble electric bikes or scooters, or convert existing vehicles to electric.",49-3023.00;51-2092.00;17-2141.00,RIE,4,local,team,full,
+139,consumer-app-startup,Consumer App Startup,Digital & Tech,Apps,"A mobile app that solves one everyday problem, funded by subscriptions or ads.",15-1252.00;15-1255.00;11-2021.00,IEA,3,online,team,full,
+140,b2b-marketplace,B2B Marketplace,Digital & Tech,Marketplaces,"An online platform connecting buyers and suppliers in one industry, like yarn or spare parts.",15-1252.00;41-4012.00;11-2021.00,EIC,3,online,team,full,
+141,sneaker-and-streetwear-resale,Sneaker & Streetwear Resale,Retail & Trading,Fashion Resale,Source limited-edition sneakers and streetwear and resell them to collectors.,13-1022.00;41-2031.00,ECA,3,online,solo,both,
+142,funeral-services,Funeral Services,Professional Services,Life Events,"Arrange last rites end to end — permits, priest, transport and rituals — for grieving families.",39-4031.00,SEC,2,local,small,full,
+143,quick-service-food-outlet,Quick-Service Food Outlet,Food,Street Food,"A small outlet selling one hero item — Maggi, rolls, kunafa or kheer — fast and cheap.",35-3023.00;35-2014.00;11-9051.00,RES,3,local,small,full,
+144,cafe,Café / Coffee Shop,Food,Cafés,A neighbourhood café with a clear vibe and a menu people come back for.,35-3023.00;11-9051.00;35-2014.00,ESR,4,local,team,full,
+145,ice-cream-and-desserts-brand,Ice Cream & Desserts Brand,Food,Desserts,"Ice creams, ice pops or desserts with a twist, sold through stores and delivery apps.",51-3092.00;11-2021.00,ERA,3,any,small,full,
+146,beverage-brand,Beverage Brand,Food,Beverages,"Drinks, premixes or health beverages made by a co-packer and sold under your brand.",51-3092.00;11-2021.00;41-4012.00,ERC,3,any,small,full,
+147,traditional-health-foods,Traditional & Ayurvedic Foods Brand,Food,Packaged Foods,"Postpartum ladoos, herbal teas and ferments made from grandma's recipes.",51-3092.00;29-1031.00,RSE,2,any,small,both,
+148,cold-pressed-oil-mill,Cold-Pressed Oil Mill,Food,Food Processing,"Wood-pressed (ghani) mustard, groundnut and coconut oils sold locally and online.",51-9111.00;51-3092.00,RCE,3,any,small,full,
+149,fresh-meat-and-fish-store,Fresh Meat & Fish Store,Food,Retail Food,"Hygienic, cleanly cut meat and fish with home delivery.",51-3021.00;41-2031.00,RCE,3,local,small,full,
+150,personal-care-brand,Skincare & Personal Care Brand,Health & Wellness,Personal Care,"Skincare, hygiene or fragrance products made by a contract manufacturer and sold online.",19-4031.00;11-2021.00,EIA,3,online,small,full,
+151,handmade-soap-and-cosmetics,Handmade Soaps & Natural Cosmetics,Crafts & Manufacturing,Personal Care,"Small-batch soaps, lip balms and body butters made at home.",27-1012.00;19-4031.00,ARI,1,any,solo,both,
+152,eco-friendly-products-brand,Eco-Friendly Products Brand,Crafts & Manufacturing,Sustainable Goods,"Bamboo, compostable or plastic-free everyday products for homes and businesses.",11-2021.00;51-9111.00,ERA,3,any,small,full,
+153,florist-and-flower-delivery,Florist & Flower Delivery,Retail & Trading,Gifting,"Fresh bouquets and flower arrangements for gifting, events and offices.",27-1023.00;41-2031.00,AER,2,local,small,full,
+154,publishing-and-comics,Books & Comics Publishing,Creative & Media,Publishing,"Self-publish books, comics or webcomics on topics you care about.",27-3043.00;27-1013.00;27-3041.00,AIE,2,online,small,both,
+155,toys-and-games-brand,Toys & Educational Games Brand,Crafts & Manufacturing,Toys,"Wooden, educational or traditional Indian toys and games, made with craft clusters like Channapatna.",51-7011.00;27-1021.00,RAE,3,any,small,full,
+156,footwear-brand,Footwear Brand,Fashion & Apparel,Footwear,"Comfort, orthopaedic or style footwear made with local manufacturers.",51-6041.00;27-1022.00,RAE,3,any,small,full,
+157,farm-stay-agri-tourism,Farm Stays & Agri-Tourism,Agri & Rural,Tourism,"Host city families on your farm for stays, harvest days and village experiences.",11-9013.00;11-9081.00;39-7011.00,SER,3,rural,small,full,
+158,hydroponics-and-urban-farming,Hydroponics & Urban Farming,Agri & Rural,Farming,Grow leafy greens and exotic vegetables in hydroponic setups and sell to cafés and homes.,11-9013.00;45-2092.00;19-4012.00,RIE,3,any,small,both,
+159,nutrition-supplements-brand,Nutrition & Supplements Brand,Health & Wellness,Supplements,"Protein, vitamins or Ayurvedic supplements made by a licensed manufacturer and sold online.",29-1031.00;11-2021.00,EIS,3,online,small,full,39
+160,sports-coaching-academy,Sports Coaching Academy,Education & Coaching,Sports,"Coaching in cricket, chess, calisthenics or any sport for kids and adults.",27-2022.00;39-9031.00,SRE,2,local,small,both,
+161,sports-goods-brand,Sports Goods Brand,Retail & Trading,Sports,"Bats, paddles, gear or sportswear made with Indian manufacturers like Jalandhar and Meerut.",41-4012.00;27-1021.00,ERA,3,any,small,full,
+162,capsule-and-budget-hotel,Capsule & Budget Hotel,Events & Hospitality,Stays,"Pod-style or hourly rooms near stations, airports and hospitals.",11-9081.00;43-4081.00,ECS,4,local,team,full,
+163,pooja-and-incense-products,Pooja & Incense Products,Crafts & Manufacturing,Devotional,"Incense, dhoop, pooja kits and temple-flower products for homes and temples.",51-9111.00;27-1012.00,RCA,1,any,small,both,
+164,coworking-and-coliving,Co-working & Co-living Space,Events & Hospitality,Spaces,"Shared desks or furnished shared homes for freelancers, students and young professionals.",11-9141.00;41-2021.00,ECS,4,local,small,full,
+165,recycling-and-waste,Recycling & Waste Management,Crafts & Manufacturing,Recycling,"Collect and process scrap, plastic or organic waste into saleable material.",53-7081.00;11-3051.00,REC,3,any,team,full,
+166,clothing-rental,Clothing & Outfit Rental,Retail & Trading,Fashion Rental,"Rent out designer ethnic wear, lehengas and sherwanis for weddings and events.",41-2021.00;27-1022.00,ECA,2,local,solo,both,
+167,jewellery-brand,Jewellery Brand,Fashion & Apparel,Jewellery,"Demi-fine, silver or lab-grown diamond jewellery sold online under your own brand.",51-9071.00;27-1022.00;11-2021.00,AER,3,online,small,full,
+168,bags-and-accessories-brand,Bags & Accessories Brand,Fashion & Apparel,Accessories,"Handbags, travel bags, eyewear or watches designed in-house and made by local workshops.",27-1022.00;51-6041.00,AER,3,online,small,full,
+169,home-cleaning-products-brand,Home Cleaning Products Brand,Retail & Trading,Home Care,"Natural or plant-based cleaners, detergents and fresheners made by a contract manufacturer.",19-4031.00;11-2021.00,ERC,2,any,small,full,

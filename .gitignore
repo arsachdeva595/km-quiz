@@ -2,3 +2,4 @@ data/onet/raw/
 node_modules/
 __pycache__/
 .env
+data/sharktank/raw/
