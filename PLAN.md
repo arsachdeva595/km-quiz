@@ -37,11 +37,11 @@ data/onet/occupations.csv (pipeline/fetch_onet.py)
 - "Why this fits you" copy is template-based and never shows RIASEC or Big Five jargon.
 - Type code: E/I from extraversion, N/S from openness, F/T from agreeableness, J/P from conscientiousness.
 
-**Idea tags.** Each idea averages its O*NET occupations. Examples:
+**Idea tags.** Each idea averages its O*NET occupations: interests from Career Interest Types, trait demands from Work Styles. Examples:
 - "Home Bakery" = Bakers + Chefs
 - "Social Media Agency" = Marketing Specialists + Graphic Designers + PR Specialists
 
-Until O*NET is fetched, ideas use hand-assigned provisional codes. `tag_ideas.py` reports how often the provisional code agrees with O*NET, so disagreements can be reviewed.
+The hand-assigned `riasec_provisional` codes are only a fallback. `tag_ideas.py` reports how often they agree with O*NET (currently 85%), so disagreements can be reviewed.
 
 ## Idea record (target schema for enrichment)
 
@@ -68,6 +68,7 @@ evidence_count, quality_score (0–100), last_updated
 3. **r/StartUpIndia.** First-hand founder posts: costs, revenue, what went wrong. Keep only posts with numbers or concrete detail.
 4. **O*NET.**
    - `data/onet/career_interest_types.csv` has RIASEC interest scores for 923 occupations. Every idea is now tagged from it (`fetch_onet.py --offline`).
+   - `data/onet/work_styles.csv` (O*NET 30, "Work Styles Impact" scale) supplies trait demands. All 21 work styles are mapped to five traits, and each trait is converted to a percentile across occupations, so 0.5 means a typical job.
    - `data/onet/all_occupations.csv` (occupation list plus Job Zones) validates every occupation code in the seed.
 5. **KidharMilega ODOP data (787 districts).** Links manufacturing and craft ideas to districts. 62 of KidharMilega's 76 existing ideas map into the seed via `km_legacy_id`.
 
@@ -87,7 +88,7 @@ evidence_count, quality_score (0–100), last_updated
 | 1–2 ✅ | Seed list, O*NET tagging pipeline, quiz and matching, tests | 131 ideas, working quiz |
 | 3 ✅ | Shark Tank India import (789 pitches, 5 seasons), pitch → idea mapping, evidence on result cards | 169 ideas, 89 with Shark Tank evidence |
 | 4 ✅ | O*NET interest scores for all ideas (923 occupations); codes validated | 169 ideas O*NET-tagged, 85% agreement with hand tags |
-| 5 | Add owner/manager occupations where needed; add Work Styles | Sharper tags |
+| 5 | Work Styles trait demands ✅. Add owner/manager occupations where needed | Sharper tags |
 | 6–7 | Review `pitch_map.csv`. Split broad buckets (consumer apps: 81 pitches, hardware: 80) into sharper ideas | Seed of 200–250 sharper ideas |
 | 7–10 | Reddit collectors for r/SharkTankIndia and r/StartUpIndia; link threads to pitches and ideas | `data/raw/reddit/`, evidence linked per idea |
 | 11–15 | Extraction pass (Haiku batch): costs, revenue, lessons, risks per idea; `quality_score` | `data/ideas_enriched.json` |
@@ -99,7 +100,6 @@ evidence_count, quality_score (0–100), last_updated
 
 ## Open items
 
-- **Work Styles.** Trait demands per idea are still estimated from RIASEC. O*NET `Work Styles.txt` (onetcenter.org → Database → Text files) would ground them too. Drop it in `data/onet/raw/`.
 - **Owner vs worker occupations.** O*NET disagrees with the hand-assigned top letter on 25 of 169 ideas. Most of them (kiosks, food brands, rentals) list only worker-level occupations, which O*NET rates Conventional or Realistic. Add a manager or owner occupation (e.g. 11-9051 Food Service Managers, 11-1021 General and Operations Managers) so the Enterprising side of running the business shows up.
 - **Broad buckets.** "Consumer App Startup" (81 pitches) and "Hardware Product Startup" (80) are too broad to be useful results. Split them next.
 - **Hosting domain.** Subdomain of kidharmilega.in, or a path on it?
