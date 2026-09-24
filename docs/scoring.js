@@ -26,6 +26,7 @@ const WEIGHT_INTEREST = 0.72;
 const WEIGHT_TRAITS = 0.28;
 const OVERSHOOT_PENALTY = 0.25; // having more of a trait than an idea needs costs little
 const LOCAL_BONUS = 0.05; // the user's district ODOP: raw material, artisans and buyers are nearby
+const EXACT_LOCAL_BONUS = 0.03; // extra when the idea is that exact district product, not just the same model
 const TRAIT_FIT_KEYS = ["openness", "conscientiousness", "extraversion", "agreeableness"];
 
 // ── Data ─────────────────────────────────────────────────────────────────────
@@ -81,6 +82,7 @@ export function computeProfile(questions, answers) {
       time: answers.time ?? "full",
       // The ODOP product of the user's district, if they picked one and it maps to an idea.
       localIdea: answers.district?.idea || null,
+      localKey: answers.district ? `${answers.district.district}|${answers.district.state}` : null,
     },
   };
 }
@@ -179,11 +181,12 @@ export function scoreIdea(idea, profile) {
   const userVec = DIMS.map((d) => profile.riasec[d]);
   const interest = interestFit(userVec, idea.riasec);
   const traits = traitFit(profile.traits, idea.traits);
-  const local = profile.constraints.localIdea === idea.slug;
+  const exact = !!profile.constraints.localKey && !!idea.odop_here?.keys?.includes(profile.constraints.localKey);
+  const local = exact || profile.constraints.localIdea === idea.slug;
   const score =
     WEIGHT_INTEREST * interest + WEIGHT_TRAITS * traits -
     teamPenalty(idea, profile.constraints.team) - riskPenalty(idea, profile.traits) +
-    (local ? LOCAL_BONUS : 0);
+    (local ? LOCAL_BONUS : 0) + (exact ? EXACT_LOCAL_BONUS : 0);
   return { idea, score, interest, traits, local };
 }
 

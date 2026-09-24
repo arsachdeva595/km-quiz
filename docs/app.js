@@ -135,7 +135,8 @@ function odopLine(odop) {
   if (!odop) return "";
   const links = odop.examples.map((e) =>
     `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.district)}</a>`).join(", ");
-  return `<p class="odop-line">📍 ODOP product of ${odop.districts} district${odop.districts > 1 ? "s" : ""}, including ${links}.</p>`;
+  const more = odop.districts > odop.examples.length ? ", and more" : "";
+  return `<p class="odop-line">📍 ODOP product of ${odop.districts} district${odop.districts > 1 ? "s" : ""}: ${links}${more}.</p>`;
 }
 
 function districtCard(district, profile) {
@@ -179,8 +180,9 @@ function ideaCard(r, profile, isTop) {
       <p class="why">${esc(whyCopy(r, profile, { withIntro: isTop, district: answers.district }))}</p>
       ${i.name !== i.modelName ? `<p class="fine">Business model: ${esc(i.modelName)}</p>` : ""}
       ${isTop ? similarIdeas(i) : ""}
-      ${odopLine(m.odop)}
-      ${sharkTank(m.sharktank, isTop)}
+      ${i.inspired_by ? `<div class="shark"><p class="shark-head">🦈 The Shark Tank India pitch behind this idea</p><ul>${stExample(i.inspired_by)}</ul></div>` : ""}
+      ${odopLine(i.odop_here || m.odop)}
+      ${i.inspired_by && !isTop ? "" : sharkTank(m.sharktank, isTop)}
       ${i.d2c && (isTop || !m.sharktank) ? d2cBlock(isTop ? m.sharktank_d2c : m.sharktank_d2c?.slice(0, 1)) : ""}
     </article>`;
 }

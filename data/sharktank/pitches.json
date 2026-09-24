@@ -3191,8 +3191,8 @@
   "deal": null,
   "brief": "One-stop subscription for OTT and Live TV services (for local ISPs or cable operators)",
   "reddit_url": null,
-  "idea_slug": "publishing-and-comics",
-  "mapped_by": "publishing|web series|movie|audio content|streaming"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "web series|movie|audio content|streaming"
  },
  {
   "key": "S1E30P96",
@@ -5083,8 +5083,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "publishing-and-comics",
-  "mapped_by": "publishing|web series|movie|audio content|streaming"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "web series|movie|audio content|streaming"
  },
  {
   "key": "S2E3P161",
@@ -14930,8 +14930,8 @@
    "valuation_lakh": 666.6666667
   },
   "deal": null,
-  "idea_slug": "publishing-and-comics",
-  "mapped_by": "publishing|web series|movie|audio content|streaming"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "web series|movie|audio content|streaming"
  },
  {
   "key": "S3E51P475",
@@ -16934,7 +16934,7 @@
   },
   "deal": null,
   "idea_slug": "publishing-and-comics",
-  "mapped_by": "publishing|web series|movie|audio content|streaming"
+  "mapped_by": "publishing"
  },
  {
   "key": "S4E21P538",
@@ -19918,8 +19918,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "publishing-and-comics",
-  "mapped_by": "publishing|web series|movie|audio content|streaming"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "web series|movie|audio content|streaming"
  },
  {
   "key": "S5E1P635",

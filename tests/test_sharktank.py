@@ -66,5 +66,23 @@ class RulesTest(unittest.TestCase):
                 self.assertIn(r["key"], keys)
 
 
+class DerivedIdeasTest(unittest.TestCase):
+    def test_no_duplicate_names_and_valid_overrides(self):
+        from derive_ideas import norm_key
+        with open(ROOT / "data" / "ideas_catalog.csv", encoding="utf-8") as f:
+            names = [r["name"] for r in csv.DictReader(f)]
+        with open(ROOT / "data" / "ideas_derived.csv", encoding="utf-8") as f:
+            derived = list(csv.DictReader(f))
+        names += [r["name"] for r in derived]
+        keys = [norm_key(n) for n in names]
+        self.assertEqual(len(keys), len(set(keys)))
+        pitches = {p["key"] for p in json.loads((ROOT / "data" / "sharktank" / "pitches.json").read_text(encoding="utf-8"))}
+        odop = {"odop:" + norm_key(d["product"]).replace(" ", "-")
+                for d in json.loads((ROOT / "docs" / "data" / "odop.json").read_text(encoding="utf-8"))}
+        with open(ROOT / "data" / "ideas_derived_overrides.csv", encoding="utf-8") as f:
+            bad = [r["ref"] for r in csv.DictReader(f) if r["ref"] not in pitches | odop]
+        self.assertEqual(bad, [], "overrides point at unknown pitches or ODOP products")
+
+
 if __name__ == "__main__":
     unittest.main()

@@ -5,9 +5,12 @@ tag_ideas.py — build the index the quiz loads (docs/data/ideas.json).
 Two layers:
   - Business models (data/business_models.csv): tagged with O*NET occupations,
     they carry the personality profile and the evidence.
-  - Ideas (data/ideas_catalog.csv): the specific ideas users see. Each points
-    at one model and inherits its profile and evidence; budget, location, team
-    and time can be overridden per idea. Models no catalog idea uses are
+  - Ideas: the specific ideas users see — hand-curated (data/ideas_catalog.csv)
+    plus ones derived from Shark Tank pitches and ODOP products
+    (data/ideas_derived.csv). Each points at one model and inherits its profile
+    and evidence; budget, location, team and time can be overridden per idea.
+    Derived ideas also carry their own evidence: the pitch that inspired them,
+    or the districts whose ODOP they are. Models no catalog idea uses are
     offered as ideas themselves, so their evidence stays reachable.
 
 Each model's profile is the average of its O*NET occupations in
@@ -35,6 +38,7 @@ ONET_LIST = ROOT / "data" / "onet" / "all_occupations.csv"
 PITCHES   = ROOT / "data" / "sharktank" / "pitches.json"
 ODOP      = ROOT / "docs" / "data" / "odop.json"
 CATALOG   = ROOT / "data" / "ideas_catalog.csv"
+DERIVED   = ROOT / "data" / "ideas_derived.csv"   # built by derive_ideas.py
 
 # Models that are consumer brands selling online. Their pitches form the pool of
 # D2C examples, and ideas built on them count as D2C.
@@ -153,7 +157,8 @@ def odop_summary(districts):
         if d["state"] not in seen:
             seen.add(d["state"])
             examples.append({"district": d["district"], "state": d["state"], "product": d["product"], "url": d["url"]})
-    return {"districts": len(districts), "examples": examples[:5]}
+    return {"districts": len(districts), "examples": examples[:5],
+            "keys": sorted(f"{d['district']}|{d['state']}" for d in districts)}
 
 
 def top_code(r, n=3):
@@ -227,6 +232,18 @@ def main():
 
     with open(CATALOG, encoding="utf-8") as f:
         catalog = list(csv.DictReader(f))
+    if DERIVED.exists():
+        with open(DERIVED, encoding="utf-8") as f:
+            catalog += list(csv.DictReader(f))
+
+    pitch_by_key = {}
+    if PITCHES.exists():
+        pitch_by_key = {p["key"]: p for p in json.loads(PITCHES.read_text(encoding="utf-8"))}
+    odop_by_ref = {}
+    if ODOP.exists():
+        from derive_ideas import norm_key
+        for d in json.loads(ODOP.read_text(encoding="utf-8")):
+            odop_by_ref.setdefault("odop:" + norm_key(d["product"]).replace(" ", "-"), []).append(d)
     unknown = sorted({r["model_slug"] for r in catalog} - set(model_by_slug))
     if unknown:
         sys.exit(f"ideas_catalog.csv uses unknown model slugs: {unknown}")
@@ -249,7 +266,13 @@ def main():
             "team":     r["team"] or m["team"],
             "time":     r["time_mode"] or m["time"],
             "d2c":      is_d2c(r["sector"], r["name"], m["slug"]),
+            "source":   r.get("source") or "sheet-500",
         })
+        ref = r.get("ref") or ""
+        if ref in pitch_by_key:
+            ideas[-1]["inspired_by"] = pitch_example(pitch_by_key[ref])
+        elif ref in odop_by_ref:
+            ideas[-1]["odop_here"] = odop_summary(odop_by_ref[ref])
     used = {i["model"] for i in ideas}
     for m in models:
         if m["slug"] not in used:  # keep uncovered models reachable, with their evidence
@@ -257,7 +280,7 @@ def main():
                 "id": 1000 + m["id"], "name": m["name"], "pitch": m["pitch"], "market": "",
                 "sector": m["category"], "model": m["slug"], "budget": m["budget"],
                 "location": m["location"], "team": m["team"], "time": m["time"],
-                "d2c": is_d2c("", m["name"], m["slug"]),
+                "d2c": is_d2c("", m["name"], m["slug"]), "source": "model",
             })
 
     d2c_used = {i["model"] for i in ideas if i["d2c"]}
@@ -274,9 +297,10 @@ def main():
         "ideas": ideas,
     }, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    n_catalog = len(catalog)
-    print(f"✓ {len(ideas)} ideas ({n_catalog} from the catalog + {len(ideas) - n_catalog} uncovered models) "
-          f"on {len(models)} models → {OUT.relative_to(ROOT)}")
+    from collections import Counter
+    by_source = Counter(i["source"] for i in ideas)
+    print(f"✓ {len(ideas)} ideas on {len(models)} models → {OUT.relative_to(ROOT)}  "
+          + ", ".join(f"{k}: {v}" for k, v in sorted(by_source.items())))
     print(f"  Models with Shark Tank evidence: {sum(1 for m in models if m['sharktank'])}, "
           f"with ODOP districts: {sum(1 for m in models if m['odop'])}, "
           f"D2C ideas: {sum(i['d2c'] for i in ideas)}")
@@ -286,4 +310,5 @@ def main():
 
 
 if __name__ == "__main__":
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
     sys.exit(main())

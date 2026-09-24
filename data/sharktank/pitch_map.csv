@@ -93,7 +93,7 @@ S1E28P91,Kunafa World,Food and Beverage,Kunafa food products,quick-service-food-
 S1E28P92,Gold Safe Solutions,Manufacturing,Anti-Suicidal Fan Rod,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S1E29P93,Wakao Foods,Food and Beverage,Jackfruit Products,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S1E29P94,PDDFalcon,Manufacturing,Stainless Steel Items,crockery-and-kitchenware-store,stainless steel|kitchenware|dinnerware|plates|borosilicate|lunch box
-S1E29P95,Play Box TV,Business Services,Streaming Platform,publishing-and-comics,publishing|web series|movie|audio content|streaming
+S1E29P95,Play Box TV,Business Services,Streaming Platform,content-and-media-platform,web series|movie|audio content|streaming
 S1E30P96,Sippline,Manufacturing,Portable Glass Attachment Drinking Shields,industrial-solutions,override
 S1E30P97,Kabaddi Adda,Fitness/Sports/Outdoors,All-Kabaddi App,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S1E30P98,Shadesof Spring,Business Services,Flowers,florist-and-flower-delivery,flowers?\b
@@ -158,7 +158,7 @@ S2E2P156,Very Much Indian,Beauty/Fashion,Paithani Handloom Sarees,handloom-texti
 S2E2P157,Watchout Wearables,Electronics,Smart watches,consumer-gadgets-brand,@hardware → default
 S2E2P158,Soup X,Food and Beverage,Soup based meals,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S2E3P159,ATMOSPHERE,Food and Beverage,Varieties of kombucha,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S2E3P160,Stage,Entertainment,Web series and movies in Indian languages,publishing-and-comics,publishing|web series|movie|audio content|streaming
+S2E3P160,Stage,Entertainment,Web series and movies in Indian languages,content-and-media-platform,web series|movie|audio content|streaming
 S2E3P161,Girgit,Beauty/Fashion,color-changing clothing products,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E4P162,Gear Head Motors,Vehicles/Electrical Vehicles,Electric vehicles bikes,ev-assembly,.
 S2E4P163,Patil Kaki,Food and Beverage,Homemade snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
@@ -472,7 +472,7 @@ S3E50P470,PTal,Lifestyle/Home,"Copper, Brass, and Bronze Kitchenware",handcrafte
 S3E50P471,Road Pilot,Technology/Software,App for Truck Drivers and Fleet Owners,b2b-marketplace,marketplace|kirana|truck drivers|recruiters|design marketplace
 S3E51P472,Smart Mop,Lifestyle/Home,Caspian smart household cleaning device,consumer-gadgets-brand,@hardware → default
 S3E51P473,Lea,Beauty/Fashion,"With real curves, to celebrate and accentuate the skin",personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S3E51P474,$Krishna Rama,Entertainment,Movie,publishing-and-comics,publishing|web series|movie|audio content|streaming
+S3E51P474,$Krishna Rama,Entertainment,Movie,content-and-media-platform,web series|movie|audio content|streaming
 S3E51P475,Rentit4me,Business Services,Marketplace where people can “Give on Rent” & “Take on Rent,clothing-rental,rental|on rent|give on rent
 S3E52P476,Cool The Globe,Green/CleanTech,Movement to combat climate change,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S3E52P477,Canvaloop,Green/CleanTech,Sustainable fabrics manufacturer,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
@@ -535,7 +535,7 @@ S4E19P533,Sonic Lamb,Lifestyle/Home,Premium headphones,consumer-gadgets-brand,@h
 S4E19P534,Woolah,Food and Beverage,World’s first bagless tea dip,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S4E20P535,EM5,Beauty/Fashion,Pocket perfumes,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E20P536,Woman Like U,Beauty/Fashion,Body-type-specific womenswear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S4E20P537,Book Leaf Publishing,Others,Self-publishing platform,publishing-and-comics,publishing|web series|movie|audio content|streaming
+S4E20P537,Book Leaf Publishing,Others,Self-publishing platform,publishing-and-comics,publishing
 S4E21P538,Str8bat,Fitness/Sports/Outdoors,A batting sensor,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
 S4E21P539,Ruby's Organics,Beauty/Fashion,"Natural and Vegan, Cruelty Free, Clean Cosmetics & Makeup Products",personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E21P540,The Good Doll,Children/Education,Sustainable fabric dolls,toys-and-games-brand,toy|doll|busy board|games|collectible
@@ -632,7 +632,7 @@ S4E51P630,Ecoil,Green/CleanTech,Food oil recycling,recycling-and-waste,waste|scr
 S4E51P631,Rescript,Green/CleanTech,Sustainable stationery Recycled Paper Products,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S4E52P632,Tickle Your Art,Others,Art by artists with Down syndrome,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S4E52P633,Symbionic,Medical/Health,Advanced prosthetic arms easy-to-use prosthetics,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S4E52P634,XLCinema,Entertainment,Audio content platform for the visually impaired Automatic Content Augmentation Services,publishing-and-comics,publishing|web series|movie|audio content|streaming
+S4E52P634,XLCinema,Entertainment,Audio content platform for the visually impaired Automatic Content Augmentation Services,content-and-media-platform,web series|movie|audio content|streaming
 S5E1P635,The Croffle Guys,Food and Beverage,Desserts and waffles,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S5E1P636,Lewisia Wellness,Beauty/Fashion,natural skincare and haircare wellness,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E1P637,Guugly Wuugly,Children/Education,kidswear clothing,d2c-apparel-brand,kidswear|baby|furniture|makeup

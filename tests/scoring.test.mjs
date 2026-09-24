@@ -122,10 +122,22 @@ test("every ODOP district links to a KidharMilega product page", () => {
   for (const d of districts) assert.match(d.url, /^https:\/\/kidharmilega\.in\/products\/[a-z0-9-]+\/$/);
 });
 
-test("all 500 catalog ideas are offered, each on a known model", () => {
-  const catalog = ideas.filter((i) => i.id <= 500);
-  assert.equal(catalog.length, 500);
-  for (const i of catalog) assert.ok(i.modelData && i.riasec.length === 6, i.name);
+test("1000+ ideas: the 500-idea sheet, every model, Shark Tank and ODOP ideas", () => {
+  assert.ok(ideas.length >= 1000, `${ideas.length}`);
+  assert.equal(ideas.filter((i) => i.source === "sheet-500").length, 500);
+  assert.equal(new Set(ideas.map((i) => i.id)).size, ideas.length);
+  assert.equal(new Set(ideas.map((i) => i.model)).size, data.models.length);
+  for (const i of ideas) assert.ok(i.modelData && i.riasec.length === 6, i.name);
+  for (const i of ideas.filter((x) => x.source === "sharktank")) assert.ok(i.inspired_by?.name, i.name);
+  for (const i of ideas.filter((x) => x.source === "odop")) assert.ok(i.odop_here?.keys.length, i.name);
+});
+
+test("the exact ODOP product of the user's district beats its sibling ideas", () => {
+  const lucknow = districts.find((d) => d.district === "Lucknow");
+  const p = computeProfile(QUESTIONS, { ...answersFor({ likes: ["A", "R"] }), district: lucknow });
+  const exact = ideas.find((i) => i.odop_here?.keys.includes("Lucknow|Uttar Pradesh"));
+  const sibling = ideas.find((i) => i.model === exact.model && i.id !== exact.id);
+  assert.ok(scoreIdea(exact, p).score > scoreIdea(sibling, p).score);
 });
 
 test("D2C ideas without enough own Shark Tank pitches get D2C brand examples", () => {

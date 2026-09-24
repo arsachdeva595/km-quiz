@@ -7,7 +7,9 @@ See [PLAN.md](PLAN.md) for decisions, architecture and the 30-day plan.
 ## Layout
 
 ```
-data/ideas_catalog.csv     the 500 ideas users see, each mapped to a business model (edit this)
+data/ideas_catalog.csv     hand-curated ideas (500-idea sheet + 63 models), each mapped to a business model (edit this)
+data/ideas_derived.csv     ideas derived from Shark Tank pitches and ODOP products (generated)
+data/ideas_derived_overrides.csv  rename or skip derived ideas (edit this)
 data/business_models.csv   business models: O*NET occupations, budget, location, team, time
 data/onet/                 O*NET occupation list + derived scores
 data/sharktank/            Shark Tank India dataset, pitch → idea map, overrides
@@ -17,7 +19,8 @@ pipeline/import_shark_tank.py  pitches → data/sharktank/pitches.json (+ pitch_
 pipeline/sharktank_rules.py    keyword rules mapping pitches to ideas
 pipeline/import_odop.py    ODOP districts → docs/data/odop.json (+ odop_map.csv for review)
 pipeline/odop_rules.py     keyword rules mapping ODOP products to ideas
-pipeline/tag_ideas.py      models + catalog + O*NET + Shark Tank + ODOP → docs/data/ideas.json
+pipeline/derive_ideas.py   Shark Tank + ODOP → data/ideas_derived.csv
+pipeline/tag_ideas.py      models + ideas + O*NET + Shark Tank + ODOP → docs/data/ideas.json
 docs/                      the static site (GitHub Pages)
 tests/                     scoring tests (node:test)
 ```
@@ -26,9 +29,7 @@ tests/                     scoring tests (node:test)
 
 ```bash
 python3 pipeline/fetch_onet.py --offline   # uses the committed O*NET CSVs
-python3 pipeline/import_shark_tank.py
-python3 pipeline/import_odop.py
-npm run build                    # regenerate docs/data/ideas.json
+npm run build                    # Shark Tank + ODOP import → derived ideas → docs/data/ideas.json
 npm test                         # JS scoring + Python importer tests
 npm run serve                    # http://localhost:8000
 ```

@@ -42,12 +42,19 @@ data/onet/occupations.csv (pipeline/fetch_onet.py)
 - "Home Bakery" = Bakers + Chefs
 - "Social Media Agency" = Marketing Specialists + Graphic Designers + PR Specialists
 
-**Ideas vs business models.**
-- Users see ideas from `data/ideas_catalog.csv`: the 500-idea list, with sector, one-liner and target market.
-- Each idea points to one of 191 business models in `data/business_models.csv` and inherits its O*NET profile, Shark Tank and ODOP evidence. Budget, location, team and time can be overridden per idea (49 are).
-- The 63 models no catalog idea uses (e.g. Jewellery Brand, Footwear, Seafood Processing, Wedding Planning) are also offered as ideas, so their evidence and ODOP matches stay reachable. That makes 563 ideas.
+**Ideas vs business models.** 1,528 ideas sit on 191 business models. Each idea inherits its model's O*NET profile and evidence; budget, location, team and time can be overridden per idea. The ideas come from four places:
+
+| Source | Ideas | File |
+|---|---|---|
+| 500-idea sheet | 500 | `data/ideas_catalog.csv` (`source = sheet-500`) |
+| KidharMilega models not in the sheet (Jewellery, Footwear, Seafood…) | 63 | `data/ideas_catalog.csv` (`source = kidharmilega`, target market blank, to research) |
+| Shark Tank India pitches, one generic idea per pitch | 633 | `data/ideas_derived.csv` (`source = sharktank`) |
+| ODOP district products | 332 | `data/ideas_derived.csv` (`source = odop`) |
+
+- `pipeline/derive_ideas.py` builds the Shark Tank and ODOP ideas. It drops names that duplicate the catalog or each other (161 dropped). `data/ideas_derived_overrides.csv` renames or skips individual ideas (577 fixes so far).
+- Shark Tank ideas show the pitch that inspired them. ODOP ideas list their districts with KidharMilega links, and the exact ODOP of the user's own district gets an extra boost.
 - Ideas on the same model score the same. Ties are broken by a hash of the user's answers, so different people see different ideas from one model. The top card lists "Similar ideas" from the same model.
-- **D2C rule:** 153 ideas count as D2C (a consumer-brand model, a D2C sector, or "D2C / Online / Subscription / Brand" in the name). When their model has fewer than 3 Shark Tank pitches of its own, the card adds "D2C brands on Shark Tank India": funded D2C brands from the same category first, then the strongest overall.
+- **D2C rule:** 708 ideas count as D2C (a consumer-brand model, a D2C sector, or "D2C / Online / Subscription / Brand" in the name). When their model has fewer than 3 Shark Tank pitches of its own, the card adds "D2C brands on Shark Tank India": funded D2C brands from the same category first, then the strongest overall.
 
 **Tech and hardware ideas are bucketed by what the founder does day to day**, assuming a co-founder or team builds the tech:
 - Apps: EdTech, HealthTech, FinTech, Community & Social, Services Marketplace, Content & Media, Gaming & Esports, B2B SaaS.
@@ -104,7 +111,8 @@ evidence_count, quality_score (0–100), last_updated
 | 4 ✅ | O*NET interest scores for all ideas (923 occupations); codes validated | 169 ideas O*NET-tagged, 85% agreement with hand tags |
 | 5 ✅ | Work Styles traits; manager occupations on 63 ideas; App/Hardware split into 12 behavior buckets; hand codes removed | 183 O*NET-tagged ideas |
 | 6 ✅ | ODOP plug: district question, local boost, district card and ODOP links to kidharmilega.in | 755 districts mapped |
-| 7 | Review `pitch_map.csv` and `odop_map.csv` | Clean mappings |
+| 7 ✅ | 500-idea catalog, 63 models added, 965 ideas derived from Shark Tank and ODOP; D2C Shark Tank examples | 1,528 ideas |
+| 8 | Research the 63 KidharMilega-model ideas (target market, costs) and review `ideas_derived.csv` names | Cleaner catalog |
 | 7–10 | Reddit collectors for r/SharkTankIndia and r/StartUpIndia; link threads to pitches and ideas | `data/raw/reddit/`, evidence linked per idea |
 | 11–15 | Extraction pass (Haiku batch): costs, revenue, lessons, risks per idea; `quality_score` | `data/ideas_enriched.json` |
 | 16–19 | Idea pages: one static page per idea (costs, case studies, how to start, related ideas) | `docs/ideas/<slug>/` |
