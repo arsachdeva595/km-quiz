@@ -23,7 +23,8 @@ data/ideas_seed.csv ──┐
 data/onet/occupations.csv (pipeline/fetch_onet.py)
 ```
 
-**Quiz (32 taps, about 3 min)**
+**Quiz (33 taps, about 3 min)**
+- Optional district picker (state → district). If the district's ODOP product maps to an idea, that idea gets a +0.05 local-advantage boost. The result page always shows a "Your district" card linking to the KidharMilega product page.
 - 4 constraint questions: budget, location, team, time. These are hard filters. If fewer than 3 ideas survive, the filters relax in this order: time → location → budget. The result screen says when that happened.
 - 18 interest items (3 per RIASEC dimension)
 - 10 trait items (2 per Big Five trait, one reverse-keyed)
@@ -37,11 +38,13 @@ data/onet/occupations.csv (pipeline/fetch_onet.py)
 - "Why this fits you" copy is template-based and never shows RIASEC or Big Five jargon.
 - Type code: E/I from extraversion, N/S from openness, F/T from agreeableness, J/P from conscientiousness.
 
-**Idea tags.** Each idea averages its O*NET occupations: interests from Career Interest Types, trait demands from Work Styles. Examples:
+**Idea tags.** Each idea averages its O*NET occupations: interests from Career Interest Types, trait demands from Work Styles. O*NET is the only source; there are no hand-assigned codes. Every non-solo idea also lists a manager or owner occupation (e.g. Food Service Managers, Retail Supervisors), so the work of running the business counts, not just the frontline work. Examples:
 - "Home Bakery" = Bakers + Chefs
 - "Social Media Agency" = Marketing Specialists + Graphic Designers + PR Specialists
 
-The hand-assigned `riasec_provisional` codes are only a fallback. `tag_ideas.py` reports how often they agree with O*NET (currently 85%), so disagreements can be reviewed.
+**Tech and hardware ideas are bucketed by what the founder does day to day**, assuming a co-founder or team builds the tech:
+- Apps: EdTech, HealthTech, FinTech, Community & Social, Services Marketplace, Content & Media, Gaming & Esports, B2B SaaS.
+- Hardware: Consumer Gadgets, Safety & Security Devices, Deep-Tech, Industrial Solutions, Medical Devices.
 
 ## Idea record (target schema for enrichment)
 
@@ -70,7 +73,11 @@ evidence_count, quality_score (0–100), last_updated
    - `data/onet/career_interest_types.csv` has RIASEC interest scores for 923 occupations. Every idea is now tagged from it (`fetch_onet.py --offline`).
    - `data/onet/work_styles.csv` (O*NET 30, "Work Styles Impact" scale) supplies trait demands. All 21 work styles are mapped to five traits, and each trait is converted to a percentile across occupations, so 0.5 means a typical job.
    - `data/onet/all_occupations.csv` (occupation list plus Job Zones) validates every occupation code in the seed.
-5. **KidharMilega ODOP data (787 districts).** Links manufacturing and craft ideas to districts. 62 of KidharMilega's 76 existing ideas map into the seed via `km_legacy_id`.
+5. **KidharMilega ODOP data (787 districts).** `data/odop/districts.csv` is a trimmed export of kidharmilega's `data/districts.csv`. Refresh it when that changes.
+   - `pipeline/import_odop.py` maps each ODOP product to an idea using `pipeline/odop_rules.py`. Current result: 755 of 787 mapped; the rest are heavy industry (pharma, cement, steel…), left unmapped on purpose.
+   - It writes `docs/data/odop.json`: district, product, setup cost, margins, break-even, why this district, and a link to its kidharmilega.in/products page. All 787 links match existing pages.
+   - Idea cards show "ODOP product of N districts, including …" with links.
+   - 62 of KidharMilega's 76 existing business ideas map into the seed via `km_legacy_id`.
 
 **Collection method (low cost).**
 - Reddit: the official API (free, non-commercial tier) or the public `.json` listings, rate-limited and cached to `data/raw/`.
@@ -88,8 +95,9 @@ evidence_count, quality_score (0–100), last_updated
 | 1–2 ✅ | Seed list, O*NET tagging pipeline, quiz and matching, tests | 131 ideas, working quiz |
 | 3 ✅ | Shark Tank India import (789 pitches, 5 seasons), pitch → idea mapping, evidence on result cards | 169 ideas, 89 with Shark Tank evidence |
 | 4 ✅ | O*NET interest scores for all ideas (923 occupations); codes validated | 169 ideas O*NET-tagged, 85% agreement with hand tags |
-| 5 | Work Styles trait demands ✅. Add owner/manager occupations where needed | Sharper tags |
-| 6–7 | Review `pitch_map.csv`. Split broad buckets (consumer apps: 81 pitches, hardware: 80) into sharper ideas | Seed of 200–250 sharper ideas |
+| 5 ✅ | Work Styles traits; manager occupations on 63 ideas; App/Hardware split into 12 behavior buckets; hand codes removed | 183 O*NET-tagged ideas |
+| 6 ✅ | ODOP plug: district question, local boost, district card and ODOP links to kidharmilega.in | 755 districts mapped |
+| 7 | Review `pitch_map.csv` and `odop_map.csv` | Clean mappings |
 | 7–10 | Reddit collectors for r/SharkTankIndia and r/StartUpIndia; link threads to pitches and ideas | `data/raw/reddit/`, evidence linked per idea |
 | 11–15 | Extraction pass (Haiku batch): costs, revenue, lessons, risks per idea; `quality_score` | `data/ideas_enriched.json` |
 | 16–19 | Idea pages: one static page per idea (costs, case studies, how to start, related ideas) | `docs/ideas/<slug>/` |
@@ -100,8 +108,6 @@ evidence_count, quality_score (0–100), last_updated
 
 ## Open items
 
-- **Owner vs worker occupations.** O*NET disagrees with the hand-assigned top letter on 25 of 169 ideas. Most of them (kiosks, food brands, rentals) list only worker-level occupations, which O*NET rates Conventional or Realistic. Add a manager or owner occupation (e.g. 11-9051 Food Service Managers, 11-1021 General and Operations Managers) so the Enterprising side of running the business shows up.
-- **Broad buckets.** "Consumer App Startup" (81 pitches) and "Hardware Product Startup" (80) are too broad to be useful results. Split them next.
 - **Hosting domain.** Subdomain of kidharmilega.in, or a path on it?
 - **Network.** This build environment can't reach `onetcenter.org` or `reddit.com`. Run those steps locally, or allow the hosts in the cloud environment's network settings.
 - **Consult CTA.** Booking link for the result screen.

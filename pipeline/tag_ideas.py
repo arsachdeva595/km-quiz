@@ -3,17 +3,15 @@
 tag_ideas.py — give every idea in data/ideas_seed.csv a RIASEC profile and
 trait-demand profile, then write the compact index the quiz loads.
 
-For each idea:
-  - If its O*NET codes are found in data/onet/occupations.csv, the profile is
-    the average of those occupations (tag_source = "onet").
-  - Otherwise it falls back to the hand-assigned `riasec_provisional` code
-    (tag_source = "provisional"), with traits estimated from RIASEC using the
-    well-documented interest↔personality correlations (Artistic/Investigative
-    ↔ openness, Social/Enterprising ↔ extraversion, Social ↔ agreeableness,
-    Conventional ↔ conscientiousness).
+Each idea's profile is the average of its O*NET occupations in
+data/onet/occupations.csv (built by fetch_onet.py). Every idea must have at
+least one occupation with O*NET interest data. For the few occupations without
+work-style data, traits are estimated from the RIASEC profile using the
+well-documented interest↔personality correlations.
 
-It also attaches Shark Tank India evidence (pitch count, deal rate, median
-revenue, example brands) from data/sharktank/pitches.json when present.
+It also attaches evidence when present:
+  - Shark Tank India pitches (data/sharktank/pitches.json)
+  - ODOP districts whose product maps to the idea (docs/data/odop.json)
 
 Run:  python3 pipeline/tag_ideas.py
 Output: docs/data/ideas.json
@@ -28,23 +26,15 @@ SEED      = ROOT / "data" / "ideas_seed.csv"
 ONET      = ROOT / "data" / "onet" / "occupations.csv"
 ONET_LIST = ROOT / "data" / "onet" / "all_occupations.csv"
 PITCHES   = ROOT / "data" / "sharktank" / "pitches.json"
+ODOP      = ROOT / "docs" / "data" / "odop.json"
 OUT       = ROOT / "docs" / "data" / "ideas.json"
 
 DIMS   = list("RIASEC")
 TRAITS = ["openness", "conscientiousness", "extraversion", "agreeableness", "stability"]
-LETTER_WEIGHTS = [1.0, 0.75, 0.55]
-BASELINE = 0.2
 
 
 def clamp(x):
     return max(0.0, min(1.0, x))
-
-
-def provisional_riasec(code):
-    v = {d: BASELINE for d in DIMS}
-    for letter, w in zip(code, LETTER_WEIGHTS):
-        v[letter] = w
-    return v
 
 
 def traits_from_riasec(r):
@@ -113,6 +103,18 @@ def average(rows, keys):
     return out
 
 
+def odop_summary(districts):
+    if not districts:
+        return None
+    # One example per state first, so the list isn't five districts of one state.
+    seen, examples = set(), []
+    for d in districts:
+        if d["state"] not in seen:
+            seen.add(d["state"])
+            examples.append({"district": d["district"], "state": d["state"], "product": d["product"], "url": d["url"]})
+    return {"districts": len(districts), "examples": examples[:5]}
+
+
 def top_code(r, n=3):
     return "".join(sorted(DIMS, key=lambda d: -r[d])[:n])
 
@@ -120,8 +122,7 @@ def top_code(r, n=3):
 def main():
     onet = load_onet()
     if not onet:
-        print("! data/onet/occupations.csv not found — using provisional tags for every idea.\n"
-              "  Run `python3 pipeline/fetch_onet.py` to ground tags in O*NET.")
+        sys.exit("data/onet/occupations.csv not found — run `python3 pipeline/fetch_onet.py --offline` first.")
 
     with open(SEED, encoding="utf-8") as f:
         seed = list(csv.DictReader(f))
@@ -138,23 +139,25 @@ def main():
             if p.get("idea_slug"):
                 by_idea.setdefault(p["idea_slug"], []).append(p)
 
-    ideas, missing_codes, agree = [], set(), []
+    odop_by_idea = {}
+    if ODOP.exists():
+        for d in json.loads(ODOP.read_text(encoding="utf-8")):
+            if d.get("idea"):
+                odop_by_idea.setdefault(d["idea"], []).append(d)
+
+    ideas, missing_codes, untagged = [], set(), []
     for row in seed:
         codes = [c.strip() for c in row["onet_codes"].split(";") if c.strip()]
         found = [onet[c] for c in codes if c in onet]
-        missing_codes.update(c for c in codes if onet and c not in onet)
+        missing_codes.update(c for c in codes if c not in onet)
+        if not found:
+            untagged.append(row["slug"])
+            continue
 
-        if found:
-            r = average(found, DIMS)
-            t = average(found, TRAITS)
-            fallback = traits_from_riasec(r)
-            t = {k: (v if v is not None else fallback[k]) for k, v in t.items()}
-            source = "onet"
-            agree.append(top_code(r, 1) in row["riasec_provisional"][:2])
-        else:
-            r = provisional_riasec(row["riasec_provisional"])
-            t = traits_from_riasec(r)
-            source = "provisional"
+        r = average(found, DIMS)
+        t = average(found, TRAITS)
+        fallback = traits_from_riasec(r)
+        t = {k: (v if v is not None else fallback[k]) for k, v in t.items()}
 
         ideas.append({
             "id":       int(row["id"]),
@@ -170,9 +173,12 @@ def main():
             "riasec":   [round(r[d], 3) for d in DIMS],
             "traits":   [round(t[k], 3) for k in TRAITS],
             "code":     top_code(r),
-            "source":   source,
             "sharktank": shark_tank_summary(by_idea.get(row["slug"], [])),
+            "odop":     odop_summary(odop_by_idea.get(row["slug"], [])),
         })
+
+    if untagged:
+        sys.exit(f"No O*NET interest data for any occupation of: {untagged} — fix onet_codes in ideas_seed.csv")
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
@@ -182,14 +188,11 @@ def main():
         "ideas": ideas,
     }, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    n_onet = sum(i["source"] == "onet" for i in ideas)
     n_st = sum(1 for i in ideas if i["sharktank"])
-    print(f"✓ {len(ideas)} ideas → {OUT.relative_to(ROOT)}  (onet: {n_onet}, provisional: {len(ideas) - n_onet}, with Shark Tank evidence: {n_st})")
+    n_odop = sum(1 for i in ideas if i["odop"])
+    print(f"✓ {len(ideas)} ideas → {OUT.relative_to(ROOT)}  (Shark Tank evidence: {n_st}, ODOP districts: {n_odop})")
     if missing_codes:
-        print(f"! O*NET codes not found (fix in ideas_seed.csv): {sorted(missing_codes)}")
-    if agree:
-        print(f"  Provisional vs O*NET top-letter agreement: {sum(agree)}/{len(agree)} "
-              f"({100 * sum(agree) / len(agree):.0f}%) — review disagreements by hand.")
+        print(f"! O*NET codes without interest data (ignored): {sorted(missing_codes)}")
     return 0
 
 

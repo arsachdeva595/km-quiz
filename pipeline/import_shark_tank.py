@@ -16,7 +16,7 @@ from collections import Counter
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from sharktank_rules import RULES
+from sharktank_rules import RULES, APP_BUCKETS, APP_DEFAULT, HARDWARE_BUCKETS, HARDWARE_DEFAULT
 
 ROOT      = Path(__file__).resolve().parent.parent
 ST_DIR    = ROOT / "data" / "sharktank"
@@ -29,6 +29,10 @@ SEED      = ROOT / "data" / "ideas_seed.csv"
 
 SHARKS = ["Namita", "Vineeta", "Anupam", "Aman", "Peyush", "Ritesh", "Amit"]
 COMPILED = [(slug, re.compile(pat, re.I), inds) for slug, pat, inds in RULES]
+SECOND_PASS = {
+    "@app":      ([(s, re.compile(p, re.I)) for s, p in APP_BUCKETS], APP_DEFAULT),
+    "@hardware": ([(s, re.compile(p, re.I)) for s, p in HARDWARE_BUCKETS], HARDWARE_DEFAULT),
+}
 
 
 def num(v):
@@ -62,6 +66,12 @@ def map_pitch(desc, industry):
         if inds and industry not in inds:
             continue
         if rx.search(desc):
+            if slug in SECOND_PASS:
+                buckets, default = SECOND_PASS[slug]
+                for bucket, brx in buckets:
+                    if brx.search(desc):
+                        return bucket, f"{slug} → {brx.pattern[:40]}"
+                return default, f"{slug} → default"
             return slug, rx.pattern
     return "", ""
 
@@ -133,6 +143,9 @@ def main():
         valid_slugs = {r["slug"] for r in csv.DictReader(f)}
     s1 = load_season1()
     overrides = load_overrides()
+    rule_slugs = {s for s, _, _ in RULES if not s.startswith("@")} | {s for s, _ in APP_BUCKETS + HARDWARE_BUCKETS} | {APP_DEFAULT, HARDWARE_DEFAULT}
+    if rule_slugs - valid_slugs:
+        sys.exit(f"sharktank_rules.py uses unknown idea slugs: {sorted(rule_slugs - valid_slugs)}")
     bad = {k: v for k, v in overrides.items() if v and v not in valid_slugs}
     if bad:
         sys.exit(f"overrides.csv uses unknown idea slugs: {bad}")

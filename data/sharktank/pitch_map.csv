@@ -5,7 +5,7 @@ S1E1P3,Heart Up My Sleeves,Beauty/Fashion,Detachable Sleeves,d2c-apparel-brand,w
 S1E2P4,Tagz Foods,Food and Beverage,Healthy Potato Chips Snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E2P5,Head And Heart,Children/Education,Brain Development Course,kids-enrichment-classes,course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic
 S1E2P6,Agritourism,Agriculture,Tourism,farm-stay-agri-tourism,tourism
-S1E3P7,q Zense Labs,Food and Beverage,Food Freshness Detector,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E3P7,q Zense Labs,Food and Beverage,Food Freshness Detector,agritech-devices,override
 S1E3P8,Peeschute,Beauty/Fashion,Disposable Urine Bag,personal-care-brand,override
 S1E3P9,NOCD,Food and Beverage,Energy Drink,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S1E4P10,Cos IQ,Beauty/Fashion,Intelligent Skincare,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
@@ -16,43 +16,43 @@ S1E5P14,Hungry Head,Food and Beverage,Restaurant serving 80 types of Maggi,quick
 S1E5P15,Shrawani Engineers,Beauty/Fashion,Belly Button Shaper,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S1E6P16,Skippi Ice Pops,Food and Beverage,Ice-Pops,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S1E6P17,Menstrupedia,Children/Education,Menstrual Awareness Comic,publishing-and-comics,comic|book
-S1E6P18,Hecoll,Beauty/Fashion,Pollution Resistant Fabric - Healthy Cover For All,hardware-product-startup,override
-S1E7P19,Raising Superstars,Children/Education,Child Development App,consumer-app-startup,.
-S1E7P20,Torch-it,Children/Education,Gadgets for visually impaired people,hardware-product-startup,device|gadget
-S1E7P21,Kavach,Children/Education,Report bullying incidents,consumer-app-startup,.
+S1E6P18,Hecoll,Beauty/Fashion,Pollution Resistant Fabric - Healthy Cover For All,industrial-solutions,override
+S1E7P19,Raising Superstars,Children/Education,Child Development App,edtech-startup,@app → learn|edtech|education|school|student|co
+S1E7P20,Torch-it,Children/Education,Gadgets for visually impaired people,medical-devices-startup,@hardware → wheelchair|visually impaired|braille|mas
+S1E7P21,Kavach,Children/Education,Report bullying incidents,edtech-startup,@app → learn|edtech|education|school|student|co
 S1E7P22,La Kheer Deli,Food and Beverage,Kheer in variety of flavors,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S1E8P23,Beyond Snack,Food and Beverage,Kerala Banana Chips,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E8P24,Vivalyf Innovations,Medical/Health,Easy Life Prickless Diabetes Testing Machine,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S1E8P25,Motion Breeze,Vehicles/Electrical Vehicles,Smart Electric Motorcycle,ev-assembly,.
-S1E9P26,Altor,Manufacturing,Smart Helmets,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E9P26,Altor,Manufacturing,Smart Helmets,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S1E9P27,Ariro,Manufacturing,Wooden Toys,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
 S1E9P28,Kabira Handmad,Food and Beverage,Healthy Edible Oils dairy products spices flour,spice-processing-unit,spice|\batta\b|flour|\baata\b
 S1E10P29,Nuutjob,Beauty/Fashion,Male Intimate Hygiene deo spray,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S1E10P30,Meatyour,Food and Beverage,Eggs,poultry-farm,override
-S1E10P31,Event Beep,Children/Education,Student Community App EdTech,consumer-app-startup,.
+S1E10P31,Event Beep,Children/Education,Student Community App EdTech,edtech-startup,@app → learn|edtech|education|school|student|co
 S1E11P32,Gopal's56,Food and Beverage,Fiber Ice Cream,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S1E11P33,ARRCOATSurface Textures,Manufacturing,Wall Building Surface Textures,home-painting-contractor,wall building|surface textures|tiles
 S1E11P34,Farda,Beauty/Fashion,Customised Streetwear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S1E12P35,Auli,Beauty/Fashion,Ayurvedic Products Skincare Lifestyle,personal-care-brand,ayurved
 S1E12P36,Swee Desi,Food and Beverage,Indian Sweets Online,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
-S1E12P37,LOKA,Technology/Software,Metaverse App,consumer-app-startup,.
-S1E13P38,Annie,Children/Education,Thinkerbell labs Braille Literary Device,hardware-product-startup,device|gadget
+S1E12P37,LOKA,Technology/Software,Metaverse App,gaming-and-esports,@app → gam|esport|metaverse|roblox|virtual real
+S1E13P38,Annie,Children/Education,Thinkerbell labs Braille Literary Device,medical-devices-startup,@hardware → wheelchair|visually impaired|braille|mas
 S1E13P39,Carragreen,Green/CleanTech,Eco-Friendly boxes,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S1E13P40,The Yarn Bazaar,Manufacturing,Yarn-Trading App Online Marketplace for Yarn,b2b-marketplace,yarn|b2b|fabric sourcing
 S1E14P41,The Renal Project,Medical/Health,Home Dialysis Treatment,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S1E14P42,Morriko Pure Foods,Food and Beverage,Healthy Food Snacks Kamdhenu foods,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S1E14P43,Good Good Piggy,Technology/Software,Digital Piggy Bank,consumer-app-startup,.
-S1E15P44,Hammer Lifestyle,Electronics,Smart Audio Products,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S1E15P45,PNTRobotics,Technology/Software,Robotics and Automation Solutions,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S1E14P43,Good Good Piggy,Technology/Software,Digital Piggy Bank,fintech-startup,@app → credit|lending|stock|trading|expense|upi
+S1E15P44,Hammer Lifestyle,Electronics,Smart Audio Products,consumer-gadgets-brand,@hardware → default
+S1E15P45,PNTRobotics,Technology/Software,Robotics and Automation Solutions,deeptech-hardware,override
 S1E15P46,Cocofit,Food and Beverage,Coconut based beverage franchise,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S1E16P47,Bamboo India,Manufacturing,Bamboo Products,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S1E16P48,Flying Fur,Animal/Pets,Dog pets Hygiene,pet-grooming,.
 S1E16P49,Beyond Water,Food and Beverage,Liquid Water Enhancer,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S1E16P50,Let's Try,Food and Beverage,Healthy Snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E17P51,Find Your Kicks India,Beauty/Fashion,Sneaker Resale,sneaker-and-streetwear-resale,sneaker resale|sneaker collection|pre-owned|thrift|refurbished
-S1E17P52,Aas Vidyalaya,Children/Education,EdTech App,consumer-app-startup,.
+S1E17P52,Aas Vidyalaya,Children/Education,EdTech App,edtech-startup,@app → learn|edtech|education|school|student|co
 S1E17P53,Outbox,Business Services,Premium Surprise-Planning,event-planning,surprise|proposal|event platform|celebration|private theatre
-S1E17P54,Road Bounce,Technology/Software,Pothole Detection Software and Data,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S1E17P54,Road Bounce,Technology/Software,Pothole Detection Software and Data,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S1E18P55,Mommy's Kitchen,Food and Beverage,Thin Crust Pizza,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S1E18P56,India Hempand Co,Food and Beverage,Hemp Food Products,traditional-health-foods,ayurved|herbal|vegan fermented|hemp|fermented
 S1E18P57,Otua,Vehicles/Electrical Vehicles,Electric Auto Vehicle Dandera,ev-assembly,.
@@ -60,12 +60,12 @@ S1E18P58,Anthyesti,Business Services,Funeral Service the last rites,funeral-serv
 S1E19P59,Ethik,Manufacturing,Leather-free Shoes,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S1E19P60,We STOCK,Animal/Pets,Brainwired Livestock health monitoring AI pets ear tag,agritech-devices,livestock|cattle|ear tag
 S1E19P61,Keto India,Food and Beverage,Customised Keto Diets for various Medical/Health issues,nutrition-coaching,keto|diet
-S1E19P62,Magiclock,Hardware,LPG Cylinder lock,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E19P62,Magiclock,Hardware,LPG Cylinder lock,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S1E20P63,The State Plate,Food and Beverage,Delicacies,cloud-kitchen,cloud.?kitchen|virtual restaurant|where's the food|homemade after delivery|homemade delicacies|delicacies
 S1E20P64,Bakarmax,Technology/Software,Comics & Animation,video-editing-service,animation|comics|content studio|dubbing|localisation|localization
 S1E20P65,INACAN,Food and Beverage,Can Cocktails,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S1E21P66,Get-A-Whey,Food and Beverage,Sugar-Free Icecream,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
-S1E21P67,Sid07Designs,Hardware,Inventions,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E21P67,Sid07Designs,Hardware,Inventions,consumer-gadgets-brand,@hardware → default
 S1E21P68,The Quirky Naari,Beauty/Fashion,Customised Apparels,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S1E22P69,Hair Originals,Beauty/Fashion,Natural Hair Extensions,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S1E22P70,Poo-de-Cologne,Beauty/Fashion,Toilet Spray with Essential Oils,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
@@ -82,114 +82,114 @@ S1E25P80,Paws India,Animal/Pets,Dog Products,pet-grooming,.
 S1E25P81,Sunfox Technologies,Medical/Health,Portable ECG Device,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S1E25P82,Alpino,Food and Beverage,Roasted Peanut butter Products,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E26P83,Isak Fragrances,Beauty/Fashion,Perfumes Fragrances,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S1E26P84,Julaa Automation,Manufacturing,Automatic Cradle,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E26P84,Julaa Automation,Manufacturing,Automatic Cradle,consumer-gadgets-brand,@hardware → default
 S1E26P85,Rare Planet,Manufacturing,Handicrafts,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S1E27P86,Theka Coffee,Food and Beverage,Coffee Products,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S1E27P87,Watt Technovations,Medical/Health,Ventilated PPE Kits,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S1E27P88,Aliste Technologies,Technology/Software,Automation Solutions,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S1E27P88,Aliste Technologies,Technology/Software,Automation Solutions,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S1E27P89,Insurance Samadhan,Business Services,Insurance Solutions,insurance-agency,insurance
 S1E28P90,Humpy A2,Food and Beverage,Organic Milk A2 Products,dairy-farm,milk|a2|dairy|cheese|eggs
 S1E28P91,Kunafa World,Food and Beverage,Kunafa food products,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
-S1E28P92,Gold Safe Solutions,Manufacturing,Anti-Suicidal Fan Rod,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E28P92,Gold Safe Solutions,Manufacturing,Anti-Suicidal Fan Rod,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S1E29P93,Wakao Foods,Food and Beverage,Jackfruit Products,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S1E29P94,PDDFalcon,Manufacturing,Stainless Steel Items,crockery-and-kitchenware-store,stainless steel|kitchenware|dinnerware|plates|borosilicate|lunch box
 S1E29P95,Play Box TV,Business Services,Streaming Platform,publishing-and-comics,publishing|web series|movie|audio content|streaming
-S1E30P96,Sippline,Manufacturing,Portable Glass Attachment Drinking Shields,hardware-product-startup,override
-S1E30P97,Kabaddi Adda,Fitness/Sports/Outdoors,All-Kabaddi App,consumer-app-startup,.
+S1E30P96,Sippline,Manufacturing,Portable Glass Attachment Drinking Shields,industrial-solutions,override
+S1E30P97,Kabaddi Adda,Fitness/Sports/Outdoors,All-Kabaddi App,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S1E30P98,Shadesof Spring,Business Services,Flowers,florist-and-flower-delivery,flowers?\b
-S1E30P99,Scholify,Children/Education,Scholarship Platform,consumer-app-startup,.
+S1E30P99,Scholify,Children/Education,Scholarship Platform,edtech-startup,@app → learn|edtech|education|school|student|co
 S1E31P100,Scrapshala,Manufacturing,Handmade Reusable Scrap Materials,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
-S1E31P101,Sabjikothi,Manufacturing,Vegetables Storage SaptKrishi,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E31P101,Sabjikothi,Manufacturing,Vegetables Storage SaptKrishi,agritech-devices,override
 S1E31P102,Ayu Rythm,Medical/Health,Ayurvedic Wellness App,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
-S1E31P103,Astrix,Manufacturing,Smart Locks Qtouch,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E31P103,Astrix,Manufacturing,Smart Locks Qtouch,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S1E32P104,Thea And Sid,Business Services,Proposal Solutions,event-planning,surprise|proposal|event platform|celebration|private theatre
 S1E32P105,Experential Etc,Technology/Software,Technology layered advertisement services,digital-agency,advertisement|influencer|sales agent|beauty brands
-S1E32P106,Grow Fitter,Technology/Software,Rewards App,consumer-app-startup,.
+S1E32P106,Grow Fitter,Technology/Software,Rewards App,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S1E32P107,C3Med-Tech,Medical/Health,Portable ophthalmic vision devices,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S1E33P108,Colour Me Mad-CMM,Beauty/Fashion,Insoles,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S1E33P109,Mavi's,Food and Beverage,Vegan Fermented Food,traditional-health-foods,ayurved|herbal|vegan fermented|hemp|fermented
 S1E33P110,Tweek Labs,Fitness/Sports/Outdoors,Sportswear,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
-S1E33P111,Proxgy,Technology/Software,Virtual Reality,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S1E33P111,Proxgy,Technology/Software,Virtual Reality,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S1E34P112,Nomad Food Project,Food and Beverage,Bacon Jams Relishes,pickle-and-papad-brand,pickle|chutney|sauce|relish|jam|marinade|fruit spread|mukhwas|mouth fresh
 S1E34P113,Twee In One,Beauty/Fashion,Reversible and convertible clothing,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S1E34P114,Green Protein,Food and Beverage,Plant-Based Protein,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S1E34P115,On2Cook,Food and Beverage,Fastest Cooking Device,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E34P115,On2Cook,Food and Beverage,Fastest Cooking Device,consumer-gadgets-brand,@hardware → default
 S1E35P116,Jain Shikanji,Food and Beverage,Lemonade,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S1E35P117,Woloo,Technology/Software,Washroom Finder,consumer-app-startup,.
+S1E35P117,Woloo,Technology/Software,Washroom Finder,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S1E35P118,Elcare India,Medical/Health,Carenting for Elders,elder-care-service,elder
 S1E36P119,Snea Kare,Beauty/Fashion,Shoe Sneaker kits storage crates,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S1E36P120,French Crown,Beauty/Fashion,Clothes,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S1E36P121,Store My Goods,Business Services,Storage solutions,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E36P121,Store My Goods,Business Services,Storage solutions,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S1E36P122,Devnagri,Technology/Software,Translation of language content,translation-services,translation
 S1E0P123,Wit Blox,Manufacturing,Kids playing equipment,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
 S1E0P124,Kineer,Food and Beverage,Packaged drinking water,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S1E0P125,Pi Chem,Manufacturing,Chemical products,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S1E0P126,Clensta,Beauty/Fashion,Waterless bathing technology products,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S1E0P125,Pi Chem,Manufacturing,Chemical products,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S1E0P126,Clensta,Beauty/Fashion,Waterless bathing technology products,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S1E0P127,Infiniti Insects,Animal/Pets,Live insect feed for pets,pet-food-and-treats,food|treat|feed|ice cream
 S1E0P128,Ashwa Pro,Business Services,Outdoor cycling gym,gym,\bgym
 S1E0P129,Mine4Nine,Beauty/Fashion,Trendy maternity dresses,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S1E0P130,Studio Beej,Beauty/Fashion,Sustainable leather accessories,bags-and-accessories-brand,override
 S1E0P131,Sattuz,Food and Beverage,Foods Beverages super food,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E0P132,Scintiglo,Medical/Health,Diagnostic device for microalbuminuria estimation,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S1E0P133,Glii,Business Services,Dating app for LGBTQ,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
-S1E0P134,Stanlee India,Electronics,Televisions,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E0P133,Glii,Business Services,Dating app for LGBTQ,community-and-social-app,@app → social|community|dating|meetup|club|conv
+S1E0P134,Stanlee India,Electronics,Televisions,consumer-gadgets-brand,@hardware → default
 S1E0P135,Space Kidz India,Manufacturing,Small Satellites by kids,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
 S1E0P136,Urban Naps,Business Services,Smart Napping Pod,capsule-and-budget-hotel,napping pod|hotels for hours|pod hotel
 S1E0P137,Gizmoswala,Entertainment,Sex toys and games,personal-care-brand,override
 S1E0P138,Zypp Electric,Vehicles/Electrical Vehicles,Electrical Vehicles,ev-assembly,.
-S1E0P139,Picsniff,Technology/Software,Face recognition based image sharing,consumer-app-startup,.
-S1E0P140,Deciwood,Electronics,Portable wooden Bluetooth speakers,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S1E0P139,Picsniff,Technology/Software,Face recognition based image sharing,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
+S1E0P140,Deciwood,Electronics,Portable wooden Bluetooth speakers,consumer-gadgets-brand,@hardware → default
 S1E0P141,Happy Bar,Food and Beverage,FitSport delicious snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S1E0P142,Tathastulive,Business Services,"Offer Daan, Puja and Yajna",pooja-and-incense-products,pooja|puja|daan|yajna|incense|temple|for gods|devotional|spiritual
 S1E0P143,Bandsand Cups,Beauty/Fashion,Bra fitting service,beauty-salon,salon|skincare services|bra fitting
 S1E0P144,My Wealth Protector,Business Services,Beyond Life Service,funeral-services,funeral|last rites|beyond life
 S1E0P145,The Iris,Manufacturing,Pocket Microscopes,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
-S1E0P146,Canebot,Food and Beverage,Juice making machine,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S1E0P146,Canebot,Food and Beverage,Juice making machine,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S1E0P147,Oye Delhi Oye,Food and Beverage,Delhi Ke Chole Kulche,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S1E0P148,Inali Assistive Tech,Medical/Health,Prosthetics,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S1E0P149,Meera's Celebrations,Business Services,Wedding ceremonial items,wedding-planning,wedding planner|wedding hall|wedding ceremonial
 S1E0P150,Artment,Lifestyle/Home,Exquisite pieces of home decor,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S1E0P151,Powertree,Manufacturing,Beautiful efficient solar panels,solar-installation,solar
-S1E0P152,Eume,Beauty/Fashion,Massager Backpack,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S1E0P152,Eume,Beauty/Fashion,Massager Backpack,consumer-gadgets-brand,override
 S2E1P153,Hoovu,Business Services,Fresh Pooja flowers,pooja-and-incense-products,pooja|puja|daan|yajna|incense|temple|for gods|devotional|spiritual
 S2E1P154,Dorji,Food and Beverage,Flavors of Tea,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S2E1P155,Recode,Beauty/Fashion,Beauty & cosmetics,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E2P156,Very Much Indian,Beauty/Fashion,Paithani Handloom Sarees,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
-S2E2P157,Watchout Wearables,Electronics,Smart watches,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S2E2P157,Watchout Wearables,Electronics,Smart watches,consumer-gadgets-brand,@hardware → default
 S2E2P158,Soup X,Food and Beverage,Soup based meals,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S2E3P159,ATMOSPHERE,Food and Beverage,Varieties of kombucha,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S2E3P160,Stage,Entertainment,Web series and movies in Indian languages,publishing-and-comics,publishing|web series|movie|audio content|streaming
 S2E3P161,Girgit,Beauty/Fashion,color-changing clothing products,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E4P162,Gear Head Motors,Vehicles/Electrical Vehicles,Electric vehicles bikes,ev-assembly,.
 S2E4P163,Patil Kaki,Food and Beverage,Homemade snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S2E4P164,Brandsdaddy,Manufacturing,Auto Fire Extinguisher,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E4P164,Brandsdaddy,Manufacturing,Auto Fire Extinguisher,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S2E5P165,Winston,Beauty/Fashion,Techno beauty products at home,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E5P166,Flatheads,Beauty/Fashion,Shoes Sneakers Loafers,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S2E5P167,Organic Smokes,Beauty/Fashion,Organic Cigarettes Cigarillos Smokes,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E6P168,Tea Fit,Food and Beverage,Refreshing beverages,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S2E6P169,Haqdarshak,Business Services,Platform to know about welfare schemes for MSMEs,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S2E6P169,Haqdarshak,Business Services,Platform to know about welfare schemes for MSMEs,b2b-saas-startup,@app → business|enterprise|software|automation|
 S2E6P170,Bhaskar's Puranpoli Ghar,Food and Beverage,Varieties of Puranpoli snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E7P171,Gunjan Apps Studios,Technology/Software,CHILDREN'S PLAYFUL LEARNING PARTNER,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S2E7P172,The Simply Salad,Food and Beverage,Freshly chopped salads,juice-and-shake-bar,fruit juices|fruit salad|fresh fruits|salads|smoothie
 S2E7P173,Ayu Synk,Medical/Health,Digital Stethoscopes,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S2E8P174,Atypical Advantage,Technology/Software,Platform for persons with disabilities,consumer-app-startup,.
+S2E8P174,Atypical Advantage,Technology/Software,Platform for persons with disabilities,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E8P175,House Of Chikankari,Beauty/Fashion,HANDMADE BY ARTISANS OF LUCKNOW,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
 S2E8P176,Magic Of Memories,Beauty/Fashion,DNA Jewllery,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
 S2E9P177,Paradyes,Beauty/Fashion,Semi Permanent Hair Color,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E9P178,Nestroots,Lifestyle/Home,"House of design, aesthetics and elegance",handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S2E10P179,Zillionaire,Beauty/Fashion,Unique styles of stones and jewels,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
-S2E10P180,Credmate,Technology/Software,Platform for credit score,consumer-app-startup,.
+S2E10P180,Credmate,Technology/Software,Platform for credit score,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S2E10P181,Freebowler,Fitness/Sports/Outdoors,Non-Electric & Portable Bowling Machines,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
 S2E11P182,ABCSports&Fitness,Fitness/Sports/Outdoors,Sports training institute,sports-coaching-academy,institute|academy|training|calisthenics|chess|sport for|recreation
-S2E11P183,Primebook,Technology/Software,Android Apps on Windows laptops,consumer-app-startup,.
+S2E11P183,Primebook,Technology/Software,Android Apps on Windows laptops,b2b-saas-startup,@app → business|enterprise|software|automation|
 S2E11P184,Daily Dump,Manufacturing,Compost Bins,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S2E12P185,Ghar Soaps,Beauty/Fashion,Pure Organic Soaps,handmade-soap-and-cosmetics,soap|lipstick|crochet
 S2E12P186,Janitri,Medical/Health,Pregnancy Monitoring systems,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S2E12P187,Jaipur Watch Company,Manufacturing,Made in India Imperial Automatic Watches,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
-S2E13P188,Inside FPV,Manufacturing,Plug and Fly Drones,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E13P188,Inside FPV,Manufacturing,Plug and Fly Drones,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S2E13P189,Angrakhaa,Beauty/Fashion,Contemporary Indian clothing,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E13P190,Diabexy,Food and Beverage,Diabetes Friendly Food Products,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S2E14P191,Kyari,Manufacturing,Smart stick Guardian,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E14P191,Kyari,Manufacturing,Smart stick Guardian,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S2E14P192,Mopp Foods,Food and Beverage,Mad over Parathas Pakodas,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S2E14P193,Econiture,Green/CleanTech,Furniture from plastic waste,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S2E15P194,Dobiee,Food and Beverage,CANDIES MUSKIEE TOYS,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
@@ -197,12 +197,12 @@ S2E15P195,Fast Beetle,Business Services,Local courier and parcel service,local-d
 S2E15P196,Pflow,Medical/Health,Disposable uroflowmetry system,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S2E16P197,VSMani,Food and Beverage,Coffee and snacks,cafe,cafe|coffee and snacks
 S2E16P198,Sepal,Manufacturing,Bike Accessories,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
-S2E16P199,Solinas,Business Services,"Products organise the management of pipelines,manholes and septic tanks",hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E16P199,Solinas,Business Services,"Products organise the management of pipelines,manholes and septic tanks",industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S2E17P200,Avimee Herbal,Beauty/Fashion,Ayurveda hair skin products,personal-care-brand,ayurved
 S2E17P201,eyenic,Beauty/Fashion,Eyewear,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
 S2E17P202,ekatra,Lifestyle/Home,Handmade paper goods,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S2E18P203,Raasa,Food and Beverage,Food karts,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
-S2E18P204,Neo Motion,Manufacturing,Wheelchairs,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S2E18P204,Neo Motion,Manufacturing,Wheelchairs,medical-devices-startup,@hardware → wheelchair|visually impaired|braille|mas
 S2E18P205,licksters,Food and Beverage,Icecreams ice-pops,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S2E18P206,Sayonara,Beauty/Fashion,Petticoat,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E19P207,PMV,Vehicles/Electrical Vehicles,Personal Mobility Vehicle,ev-assembly,.
@@ -214,11 +214,11 @@ S2E20P212,Fat To Slim,Beauty/Fashion,Diet Plan Weight Loss,nutrition-coaching,ke
 S2E21P213,Cheese Cake&Co.,Food and Beverage,Cakes Slices,home-bakery,cake|bakery|cookie|bread
 S2E21P214,Dabble,Manufacturing,Paints Crayons Brushes,stationery-and-art-supplies,override
 S2E21P215,Cloud Tailor,Business Services,Custom tailor online,boutique-tailoring,tailor
-S2E21P216,Be Unic,Business Services,Platform for LGBTQ+ creators and entrepreneurs,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S2E21P216,Be Unic,Business Services,Platform for LGBTQ+ creators and entrepreneurs,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S2E22P217,Broomees,Business Services,Helpers homemakers for your home,home-cleaning-service,helpers|homemakers|service request
 S2E22P218,Ravel,Beauty/Fashion,Custom Hair Products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E22P219,Honey Veda,Food and Beverage,Honey in natural nutritious form,honey-and-organic-produce,\bhoney\b|organic products|organic grocery|jaggery|jamun|organic spices
-S2E23P220,Pad Care,Manufacturing,Menstrual hygiene disposal solution,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E23P220,Pad Care,Manufacturing,Menstrual hygiene disposal solution,medical-devices-startup,@hardware → wheelchair|visually impaired|braille|mas
 S2E23P221,Swadeshi Blessings,Lifestyle/Home,Clay utensils and cookwares,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S2E23P222,OLL,Technology/Software,Online Live Learning Skill development classes,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S2E23P223,Febris,Medical/Health,"Scrubs, Lab Coats & Medical Apparel",d2c-apparel-brand,scrubs|apparel
@@ -233,81 +233,81 @@ S2E26P231,Un Stop,Technology/Software,Connecting talent colleges recruiters,b2b-
 S2E26P232,Blue Tea,Food and Beverage,Ayurvedic Herbal Tea,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S2E27P233,The Green Snack,Food and Beverage,Healthy Snacks Online,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E27P234,Hobby India,Lifestyle/Home,Online Art & Craft Store,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
-S2E27P235,Flhexible,Lifestyle/Home,Composite paper honeycomb panels,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S2E27P236,Up Thrust,Fitness/Sports/Outdoors,ESPORTS AND GAMING ORGANISATION,consumer-app-startup,.
+S2E27P235,Flhexible,Lifestyle/Home,Composite paper honeycomb panels,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S2E27P236,Up Thrust,Fitness/Sports/Outdoors,ESPORTS AND GAMING ORGANISATION,gaming-and-esports,@app → gam|esport|metaverse|roblox|virtual real
 S2E28P237,Zoff,Food and Beverage,Cool Grind Technology Indian Spices,spice-processing-unit,spice|\batta\b|flour|\baata\b
 S2E28P238,Desi Toys,Manufacturing,Indian Traditional Toys and Indoor Games,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
-S2E28P239,Cloud Worx,Technology/Software,NoCode Enterprise Metaverse App Builder,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
-S2E29P240,Mahantam,Manufacturing,Tea Glass Washing Machine,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
-S2E29P241,Mind Peers,Medical/Health,For Mental Strength,consumer-app-startup,.
+S2E28P239,Cloud Worx,Technology/Software,NoCode Enterprise Metaverse App Builder,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S2E29P240,Mahantam,Manufacturing,Tea Glass Washing Machine,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S2E29P241,Mind Peers,Medical/Health,For Mental Strength,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E29P242,Barosi,Food and Beverage,Fresh & pure milk products,dairy-farm,milk|a2|dairy|cheese|eggs
 S2E30P243,Daryaganj,Food and Beverage,North Indian Cuisine restaurant,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S2E30P244,Dhruv Vidyut,Vehicles/Electrical Vehicles,Invention converts cycle into an electric cycle,ev-assembly,.
 S2E30P245,CELLBELL,Lifestyle/Home,Gaming Office Chairs,furniture-workshop,furniture|chair|mattress|kitchens
 S2E31P246,Tipayi,Manufacturing,Balance Bike for Kids,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
-S2E31P247,Digi Qure,Medical/Health,Book Doctors Appointments Video Consultation,consumer-app-startup,.
+S2E31P247,Digi Qure,Medical/Health,Book Doctors Appointments Video Consultation,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E31P248,Nirmalaya,Manufacturing,Incense products made from temple flowers,pooja-and-incense-products,pooja|puja|daan|yajna|incense|temple|for gods|devotional|spiritual
 S2E32P249,Pabiben,Beauty/Fashion,Handcrafted products sold directly by artisans,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S2E32P250,Homestrap,Lifestyle/Home,Collection of organizer for home and travelling,bags-and-accessories-brand,override
-S2E32P251,u Breathe,Manufacturing,Smart Natural Air Purifier,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
-S2E32P252,Deyor,Technology/Software,Chatbot integrated experiential travel website,consumer-app-startup,.
-S2E33P253,i Mumz,Medical/Health,Transforming pregnancy and parenting with app,consumer-app-startup,.
+S2E32P251,u Breathe,Manufacturing,Smart Natural Air Purifier,consumer-gadgets-brand,@hardware → default
+S2E32P252,Deyor,Technology/Software,Chatbot integrated experiential travel website,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
+S2E33P253,i Mumz,Medical/Health,Transforming pregnancy and parenting with app,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E33P254,The Healthy Binge,Food and Beverage,Assorted Pack Baked Chips,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E33P255,Freakins,Beauty/Fashion,Fashionable Denim Apparel,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E34P256,Perfora,Lifestyle/Home,Toothpaste Electric Toothbrush,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S2E34P257,Mid Night Angels By PC,Beauty/Fashion,Lounge & Travel wear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S2E34P258,Cure See,Medical/Health,Artificial Intelligence (AI) based vision therapy,consumer-app-startup,.
-S2E35P259,Medu Lance,Medical/Health,One-stop solution for all healthcare needs,consumer-app-startup,.
+S2E34P258,Cure See,Medical/Health,Artificial Intelligence (AI) based vision therapy,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
+S2E35P259,Medu Lance,Medical/Health,One-stop solution for all healthcare needs,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E35P260,Cakelicious,Food and Beverage,Cakes Online,home-bakery,cake|bakery|cookie|bread
-S2E35P261,Bowled.io,Fitness/Sports/Outdoors,Play-to-Earn Social Gaming Platform,consumer-app-startup,.
+S2E35P261,Bowled.io,Fitness/Sports/Outdoors,Play-to-Earn Social Gaming Platform,gaming-and-esports,@app → gam|esport|metaverse|roblox|virtual real
 S2E35P262,Toyshine,Manufacturing,Collection of Toys,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
 S2E36P263,neuphony,Medical/Health,Wearable EEG Headband,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S2E36P264,Amrutam,Food and Beverage,Ayurvedic Lifestyle products,traditional-health-foods,ayurved|herbal|vegan fermented|hemp|fermented
-S2E36P265,Holo Kitab,Technology/Software,Augmented Reality content for books,consumer-app-startup,.
+S2E36P265,Holo Kitab,Technology/Software,Augmented Reality content for books,edtech-startup,@app → learn|edtech|education|school|student|co
 S2E37P266,Zoe,Food and Beverage,Nutrition For Life. Shop health & wellness products,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E37P267,Hornback,Vehicles/Electrical Vehicles,Diamond frame folding bicycles,ev-assembly,.
 S2E37P268,Malaki,Food and Beverage,Non-Alcoholic Beverages,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S2E37P269,nanoclean,Manufacturing,Contamination Control Solutions,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E37P269,nanoclean,Manufacturing,Contamination Control Solutions,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S2E38P270,Desmond Ji,Liquor/Alcohol,"Spirits, Liqueurs & Cocktail Blends",beverage-brand,.
 S2E38P271,Cremeitalia,Food and Beverage,Fresh Italian Cheese Products,dairy-farm,milk|a2|dairy|cheese|eggs
-S2E38P272,nawgati,Business Services,Congestion Management for Fuel Stations,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E38P272,nawgati,Business Services,Congestion Management for Fuel Stations,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S2E38P273,Swytchd,Vehicles/Electrical Vehicles,All-inclusive Electric Vehicle Subscription,ev-charging-and-rental,rent|leasing|subscription|sharing
 S2E39P274,Glad Ful,Food and Beverage,Natural High Protein Rich & Healthy Foods,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S2E39P275,Pharmallama,Medical/Health,Simplified pharmacy,consumer-app-startup,.
+S2E39P275,Pharmallama,Medical/Health,Simplified pharmacy,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E39P276,Crave Raja Foods,Food and Beverage,Cloud-kitchen service,cloud-kitchen,cloud.?kitchen|virtual restaurant|where's the food|homemade after delivery|homemade delicacies|delicacies
 S2E39P277,VAPerfume,Lifestyle/Home,"Devotional, meditational, and romantic incense",pooja-and-incense-products,pooja|puja|daan|yajna|incense|temple|for gods|devotional|spiritual
-S2E40P278,Hood,Technology/Software,Pseudonymous social network,consumer-app-startup,.
+S2E40P278,Hood,Technology/Software,Pseudonymous social network,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S2E40P279,Twisting Scoops,Food and Beverage,Authentic turkish ice cream,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S2E40P280,GROWi T,Agriculture,Protective farming products,agritech-devices,.
 S2E41P281,Makino,Food and Beverage,Nachos & Nuts,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S2E41P282,Trunome,Medical/Health,Post Transplant Care,consumer-app-startup,.
-S2E41P283,Wol3D,Manufacturing,3D printing technology,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E41P282,Trunome,Medical/Health,Post Transplant Care,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
+S2E41P283,Wol3D,Manufacturing,3D printing technology,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S2E41P284,What's Up Wellness,Food and Beverage,Wellness in the form of quick bites,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E42P285,Proost Beer,Food and Beverage,Freshly brewed beer,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S2E42P286,Dr Cubes,Food and Beverage,Frozen Fresh cubes,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S2E42P287,Metro Ride,Vehicles/Electrical Vehicles,Metro Shuttle Service Access Transportation,local-delivery-service,taxi|shuttle
 S2E42P288,Conker,Technology/Software,Skill Based Learning Online Courses,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S2E43P289,WTF,Food and Beverage,Where's The Food,cloud-kitchen,cloud.?kitchen|virtual restaurant|where's the food|homemade after delivery|homemade delicacies|delicacies
-S2E43P290,funngro,Technology/Software,Smart Teens work with Smart companies,consumer-app-startup,.
+S2E43P290,funngro,Technology/Software,Smart Teens work with Smart companies,edtech-startup,@app → learn|edtech|education|school|student|co
 S2E43P291,Aadvik,Food and Beverage,Buy Camel & Goat Milk,dairy-farm,milk|a2|dairy|cheese|eggs
 S2E43P292,oyehappy,Business Services,"Unique Gifts, Customized Gifts, Romantic Gifts, Thoughtful Gifts",custom-gifting-store,gift
 S2E44P293,Healthy Master,Food and Beverage,"Online Dry Fruits, Snacks, Berries, Chips",healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E44P294,Kitsons,Lifestyle/Home,"Stationery, Art & Craft, Books & Toy Retail Space",stationery-and-art-supplies,override
 S2E44P295,London Bubble,Food and Beverage,Waffle Chips Online,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E44P296,Waggy Zone,Animal/Pets,"Ice Cream Treat for Dogs, Puppies and Cats",pet-food-and-treats,food|treat|feed|ice cream
-S2E45P297,Nutri Cook,Food and Beverage,"Smart Pots, Air Fryers, Air Fryer Oven",hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S2E45P298,Subhag,Medical/Health,Health-tech IUI Treatment Procedure for Infertility,consumer-app-startup,.
+S2E45P297,Nutri Cook,Food and Beverage,"Smart Pots, Air Fryers, Air Fryer Oven",consumer-gadgets-brand,@hardware → default
+S2E45P298,Subhag,Medical/Health,Health-tech IUI Treatment Procedure for Infertility,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S2E45P299,Singh Styled,Beauty/Fashion,Sikh Gentleman to maintain their Guru-gifted identity,personal-care-brand,override
 S2E46P300,ZSports Tech,Fitness/Sports/Outdoors,Cricket Sport Shop,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
 S2E46P301,The Plated Project,Business Services,Decor Plates & Dinnerware,crockery-and-kitchenware-store,override
 S2E46P302,Vsnap U,Business Services,Professional Photography service,photography-studio,photography
 S2E46P303,The Healthy Factory,Food and Beverage,Protein bread,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E47P304,Brevistay,Business Services,Booking hotels for hours,capsule-and-budget-hotel,napping pod|hotels for hours|pod hotel
-S2E47P305,Soul Up,Business Services,Real Conversations Real People,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S2E47P305,Soul Up,Business Services,Real Conversations Real People,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S2E47P306,The Big Book Box Chapter One Books,Lifestyle/Home,New paperback and hardcover books,used-book-store,books
 S2E48P307,Rubans,Beauty/Fashion,Artificial Jewellery Set Online,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
-S2E48P308,Same Notification,Technology/Software,parental monitoring app,consumer-app-startup,.
-S2E48P309,Bottom Line Sprays,Lifestyle/Home,portable jet spray,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S2E48P308,Same Notification,Technology/Software,parental monitoring app,community-and-social-app,@app → default
+S2E48P309,Bottom Line Sprays,Lifestyle/Home,portable jet spray,consumer-gadgets-brand,@hardware → default
 S2E48P310,Lil Goodness,Food and Beverage,Healthy Snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S2E49P311,Forever Modest,Beauty/Fashion,premium Muslim women's clothing,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S2E49P312,Sahayatha,Medical/Health,smart wheelchair with an assistive cleansing device,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
@@ -319,7 +319,7 @@ S2E51P317,GODESi,Food and Beverage,Handmade lollipops,sweet-shop,sweet|mithai|ca
 S2E51P318,TAC,Beauty/Fashion,"ayurveda co for glowing skin, makeup & open pores",personal-care-brand,ayurved
 S2E51P319,Naara-Aaba,Liquor/Alcohol,pears and plum wine,beverage-brand,.
 S2E51P320,Stylo Bug,Beauty/Fashion,Girls Dresses Online,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S2E0P321,Zen Onco,Medical/Health,saving lives from cancer,consumer-app-startup,.
+S2E0P321,Zen Onco,Medical/Health,saving lives from cancer,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S3E1P322,Honest Home,Green/CleanTech,Eco friendly products,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S3E1P323,Adil Qadri,Beauty/Fashion,Perfumes and Attar,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S3E1P324,Conscious Chemist,Beauty/Fashion,Skincare Products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
@@ -327,13 +327,13 @@ S3E2P325,The Cinnamon Kitchen,Food and Beverage,Plant-based healthy snacks,healt
 S3E2P326,Wtf Gyms,Business Services,Gyms service,gym,\bgym
 S3E2P327,Intervue,Technology/Software,Conducts technical interviews online,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S3E3P328,Rod Bez,Vehicles/Electrical Vehicles,Taxi-service for Bihar,local-delivery-service,taxi|shuttle
-S3E3P329,Blix,Technology/Software,Robotics toys,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
-S3E3P330,Homversity,Technology/Software,Digital student housing app,consumer-app-startup,.
+S3E3P329,Blix,Technology/Software,Robotics toys,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
+S3E3P330,Homversity,Technology/Software,Digital student housing app,edtech-startup,@app → learn|edtech|education|school|student|co
 S3E4P331,TURMS,Beauty/Fashion,Intelligent Clothing,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S3E4P332,mintree,Beauty/Fashion,Skincare products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S3E4P333,80Wash,Manufacturing,Waterless washing machine,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S3E4P333,80Wash,Manufacturing,Waterless washing machine,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S3E5P334,Dil Foods,Food and Beverage,Virtual restaurant service,cloud-kitchen,cloud.?kitchen|virtual restaurant|where's the food|homemade after delivery|homemade delicacies|delicacies
-S3E5P335,AIKavach/Panoplia,Technology/Software,Online security app,consumer-app-startup,.
+S3E5P335,AIKavach/Panoplia,Technology/Software,Online security app,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S3E5P336,Bartisans,Liquor/Alcohol,Cocktail Mocktail mixers,beverage-brand,.
 S3E6P337,Aretto,Manufacturing,Expandable Shoes For Kids,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S3E6P338,Kalakaram,Manufacturing,"Unique, creative and exciting DIY kits for all ages",toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
@@ -342,14 +342,14 @@ S3E7P340,Zorko,Food and Beverage,Quick service restaurant,quick-service-food-out
 S3E7P341,Tramboo,Fitness/Sports/Outdoors,Kashmir willow bats,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
 S3E7P342,We Hear,Medical/Health,Hearing Solutions,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S3E8P343,Tiggle,Food and Beverage,Chocolate mixes,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
-S3E8P344,WYLDCard,Technology/Software,Customer as Infulencer,consumer-app-startup,.
-S3E8P345,upliance.ai,Lifestyle/Home,Smart Cooker,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S3E8P344,WYLDCard,Technology/Software,Customer as Infulencer,community-and-social-app,@app → default
+S3E8P345,upliance.ai,Lifestyle/Home,Smart Cooker,consumer-gadgets-brand,@hardware → default
 S3E9P346,Pizza Galleria,Food and Beverage,100% Veg Pizza,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
-S3E9P347,Ai Cars,Vehicles/Electrical Vehicles,Hydrogen powered AI Car,hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
+S3E9P347,Ai Cars,Vehicles/Electrical Vehicles,Hydrogen powered AI Car,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E9P348,Rooftop App,Technology/Software,Art Learning platform,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S3E10P349,Goenchi Feni,Liquor/Alcohol,Alcohol brand,beverage-brand,.
 S3E10P350,Arata,Beauty/Fashion,Hair care,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S3E10P351,Vecros,Technology/Software,Spatial AI drone,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S3E10P351,Vecros,Technology/Software,Spatial AI drone,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E11P352,Gud Gum,Food and Beverage,Healthy Chewing Gum brand,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S3E11P353,Eva Scalp,Medical/Health,Post Chemo Scalp Cooling brand,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S3E11P354,Elitty,Beauty/Fashion,Teenage Make-up,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
@@ -367,15 +367,15 @@ S3E15P365,Assembly,Beauty/Fashion,Travel Bags,bags-and-accessories-brand,\bbags?
 S3E15P366,Nasher Miles,Beauty/Fashion,Travel Bags,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
 S3E16P367,Alt Co,Food and Beverage,Plant based dairy products,dairy-farm,milk|a2|dairy|cheese|eggs
 S3E16P368,Without,Beauty/Fashion,Products made from Waste Plastic,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
-S3E16P369,Kibo,Technology/Software,TrestleLabs Optical Character Recognition,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S3E16P369,Kibo,Technology/Software,TrestleLabs Optical Character Recognition,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S3E17P370,VOLD,Food and Beverage,Energy Drink,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S3E17P371,Quirksmith,Beauty/Fashion,Jewellery,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
 S3E17P372,Urban Space,Lifestyle/Home,Home Interiors,interior-design-studio,interior|3d home|three-dimensional home|pre-?fabricated|construction
-S3E18P373,Hyper Lab,Fitness/Sports/Outdoors,"Sports analytics for agility, strength, reflexes, and stamina",consumer-app-startup,.
-S3E18P374,Eco Biotraps,Green/CleanTech,Mosquito Breeding Prevention,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S3E18P375,Hoora,Technology/Software,Auto Care App,consumer-app-startup,.
-S3E19P376,Yes Madam,Beauty/Fashion,Saloon service app,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
-S3E19P377,Zerodor,Lifestyle/Home,Waterless Urinal Technology,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S3E18P373,Hyper Lab,Fitness/Sports/Outdoors,"Sports analytics for agility, strength, reflexes, and stamina",b2b-saas-startup,override
+S3E18P374,Eco Biotraps,Green/CleanTech,Mosquito Breeding Prevention,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
+S3E18P375,Hoora,Technology/Software,Auto Care App,services-marketplace-app,override
+S3E19P376,Yes Madam,Beauty/Fashion,Saloon service app,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
+S3E19P377,Zerodor,Lifestyle/Home,Waterless Urinal Technology,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S3E19P378,Toffee Coffee Roasters,Food and Beverage,Coffee brand,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S3E20P379,Push Sports,Fitness/Sports/Outdoors,Kids & young adults for recreation & professional sport,sports-coaching-academy,institute|academy|training|calisthenics|chess|sport for|recreation
 S3E20P380,ORBO,Technology/Software,AI-powered tools for beauty brands,digital-agency,advertisement|influencer|sales agent|beauty brands
@@ -387,19 +387,19 @@ S3E22P385,D'chica,Beauty/Fashion,Innerwears for Teenage Girls,d2c-apparel-brand,
 S3E22P386,Refit,Electronics,Refurbished Phones,sneaker-and-streetwear-resale,sneaker resale|sneaker collection|pre-owned|thrift|refurbished
 S3E22P387,House Of Beauty India,Beauty/Fashion,Skin care Products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S3E23P388,Artinci,Food and Beverage,Zero Sugar Desserts,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
-S3E23P389,The Rage Room,Business Services,Anger Management activities,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S3E23P389,The Rage Room,Business Services,Anger Management activities,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S3E23P390,Aastey,Beauty/Fashion,Athleisure Wear Company,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S3E24P391,Matri,Medical/Health,Period Pain Relieving Devices,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S3E24P392,Rubbabu,Manufacturing,Rubber Foam Toys for kids,toys-and-games-brand,toy|games|balance bike|playing equipment|diy kits|satellites by kids|microscope|crayon
 S3E24P393,Gulabo Jaipur,Beauty/Fashion,Traditional Jaipur Clothing,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
 S3E25P394,Arista Vault,Manufacturing,Follow me suitcases,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
-S3E25P395,To Hands,Technology/Software,App to sync transactions with calculator,consumer-app-startup,.
-S3E25P396,Plus Gold,Technology/Software,Jewellery savings app that integrates digital gold investment,consumer-app-startup,.
-S3E26P397,Aroleap,Medical/Health,Smart Home Gym,hardware-product-startup,override
+S3E25P395,To Hands,Technology/Software,App to sync transactions with calculator,fintech-startup,@app → credit|lending|stock|trading|expense|upi
+S3E25P396,Plus Gold,Technology/Software,Jewellery savings app that integrates digital gold investment,fintech-startup,@app → credit|lending|stock|trading|expense|upi
+S3E26P397,Aroleap,Medical/Health,Smart Home Gym,consumer-gadgets-brand,override
 S3E26P398,Cosmix,Medical/Health,Herbal Super Supplements,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
 S3E26P399,Fabriclore,Beauty/Fashion,Custom Fabric Sourcing,b2b-marketplace,yarn|b2b|fabric sourcing
 S3E27P400,Polish Me Pretty,Beauty/Fashion,Nail Art Brand,nail-studio,nail
-S3E27P401,Grid Mats,Manufacturing,PotHoleRaja Mats for Concrete Road making,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S3E27P401,Grid Mats,Manufacturing,PotHoleRaja Mats for Concrete Road making,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S3E27P402,Uncle Peters Pan Cakes,Food and Beverage,Pancake focused QSR,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S3E28P403,Creative Hatti,Business Services,Graphic Sticker Designing Brand,graphic-design-studio,override
 S3E28P404,Candid Men,Beauty/Fashion,Fashion Rental Platform for Men,clothing-rental,rental|on rent|give on rent
@@ -411,13 +411,13 @@ S3E30P409,Avataar Skincare,Beauty/Fashion,Skincare Services,beauty-salon,salon|s
 S3E30P410,Chalte Firte Mangalkaryalay,Business Services,Portable Wedding Hall,wedding-planning,wedding planner|wedding hall|wedding ceremonial
 S3E30P411,Kryzen Biotech,Agriculture,Hydrophonic Farming,hydroponics-and-urban-farming,hydro?phonic|hydroponic
 S3E31P412,FOMO,Food and Beverage,Brew Ice Tea,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S3E31P413,Model Verse,Technology/Software,Advance AI based Image Model Wrapper,consumer-app-startup,.
-S3E31P414,Vikrant Bikes,Vehicles/Electrical Vehicles,Hydrogen Ethanol fuel based bike,hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
+S3E31P413,Model Verse,Technology/Software,Advance AI based Image Model Wrapper,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
+S3E31P414,Vikrant Bikes,Vehicles/Electrical Vehicles,Hydrogen Ethanol fuel based bike,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E32P415,The Shell Hair,Beauty/Fashion,Hair Extensions,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S3E32P416,Rize,Food and Beverage,Energy Bars,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S3E32P417,MEPACK,Business Services,Custom Gym Subscription,gym,\bgym
 S3E33P418,Bacca Bucci,Beauty/Fashion,Footwear,footwear-brand,shoe|footwear|sneaker|insole|loafer
-S3E33P419,Vobble,Children/Education,Kids Audio Platform,consumer-app-startup,.
+S3E33P419,Vobble,Children/Education,Kids Audio Platform,edtech-startup,@app → learn|edtech|education|school|student|co
 S3E33P420,Be UNatural,Beauty/Fashion,Unisex Salon,beauty-salon,salon|skincare services|bra fitting
 S3E34P421,Erotissch,Beauty/Fashion,Lingerie and Swimwear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S3E34P422,Niblerzz,Food and Beverage,Sugar Free Candy,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
@@ -430,7 +430,7 @@ S3E36P428,Deeva,Beauty/Fashion,Online Saree Platform,handloom-textiles-brand,han
 S3E36P429,Design Template,Technology/Software,Online Design Marketplace,b2b-marketplace,marketplace|kirana|truck drivers|recruiters|design marketplace
 S3E37P430,Sama,Business Services,Online Despite Resolution,legal-documentation,dispute|despite resolution
 S3E37P431,Golden Feathers,Manufacturing,Fabrics made from Butchery Chicken Waste,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
-S3E37P432,Myracle.io,Technology/Software,4D Edutainment,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S3E37P432,Myracle.io,Technology/Software,4D Edutainment,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E38P433,Cup-ji,Food and Beverage,Flavoured Instant Tea in Cups,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S3E38P434,AToddler Thing,Beauty/Fashion,Baby Clothing and Essentials,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S3E38P435,Flexify Me,Medical/Health,Body Pain Management Platform,physio-and-massage,pain management|rehabilitation
@@ -438,9 +438,9 @@ S3E39P436,Dharaksha,Green/CleanTech,Ecosolution Sustainable Material Science,eco
 S3E39P437,i Dream Career,Technology/Software,Career Counseling Platform,career-counselling,override
 S3E39P438,Rock Paper Rum,Liquor/Alcohol,Innovative Indian Rum,beverage-brand,.
 S3E40P439,Fit&Flex,Food and Beverage,"Variety of snacks, Muesli, Granola",healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S3E40P440,Sukham,Medical/Health,Holistic sexual male wellness,consumer-app-startup,.
+S3E40P440,Sukham,Medical/Health,Holistic sexual male wellness,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S3E40P441,Smotect,Medical/Health,Quit Smoking by tablets,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
-S3E41P442,Katidhan,Manufacturing,Autonomus Light Deterrence System,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S3E41P442,Katidhan,Manufacturing,Autonomus Light Deterrence System,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S3E41P443,NEMAAI,Technology/Software,AI and Neuroscience based EdTech Platform,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
 S3E41P444,Maple Pods,Business Services,Tech Hospitality and Entertainment Company,,
 S3E42P445,Spec Ops,Others,Tactical clothing for Military,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
@@ -448,18 +448,18 @@ S3E42P446,Kaabil Kids,Technology/Software,Online Chess Training Academy,test-pre
 S3E42P447,Odd Giraffe,Lifestyle/Home,Journals and Planners for Mental Wellness,stationery-and-art-supplies,stationery|journal|planner|paints
 S3E43P448,Nemocare,Medical/Health,NeoNatel Wearable Vital Monitor,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S3E43P449,Why So Blue,Beauty/Fashion,Clothing Brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S3E43P450,Coratia Technologies,Technology/Software,Unmanned Underwater Robots,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
-S3E44P451,Coolant,Manufacturing,Nature-Based Cooling Technology,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S3E44P452,Xmachines,Technology/Software,Robotics and AI for Agriculture,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S3E43P450,Coratia Technologies,Technology/Software,Unmanned Underwater Robots,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
+S3E44P451,Coolant,Manufacturing,Nature-Based Cooling Technology,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S3E44P452,Xmachines,Technology/Software,Robotics and AI for Agriculture,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E44P453,Luvottica,Lifestyle/Home,Love-Making Yoga intimate Furniture,furniture-workshop,furniture|chair|mattress|kitchens
-S3E45P454,Farm Didi,Food and Beverage,Food Business training App,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S3E45P454,Farm Didi,Food and Beverage,Food Business training App,edtech-startup,override
 S3E45P455,Popcorn,Food and Beverage,Ready to Eat Popcorn,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S3E45P456,Prorata,Business Services,Fractional Car Ownership Platform,consumer-app-startup,override
+S3E45P456,Prorata,Business Services,Fractional Car Ownership Platform,fintech-startup,override
 S3E46P457,Indigifts,Business Services,Personal Festive Corporate Gifting,custom-gifting-store,gift
-S3E46P458,Alien Versions,Vehicles/Electrical Vehicles,FuelV Smart Fuel Caps,hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
+S3E46P458,Alien Versions,Vehicles/Electrical Vehicles,FuelV Smart Fuel Caps,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S3E46P459,Rocca,Food and Beverage,Premium Chocolates,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
 S3E47P460,Kiko Live,Technology/Software,Listing and Creating Websites for Kirana Sellers,b2b-marketplace,marketplace|kirana|truck drivers|recruiters|design marketplace
-S3E47P461,Melooha,Others,AI Powered Astrology Platform,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S3E47P461,Melooha,Others,AI Powered Astrology Platform,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S3E47P462,FUTRStudios,Technology/Software,Kyra Virtual Influencer for Businesses,digital-agency,advertisement|influencer|sales agent|beauty brands
 S3E48P463,Allter,Lifestyle/Home,Certified Organic Rash-Free Diapers,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S3E48P464,First Bud Organics,Food and Beverage,Organic Products,honey-and-organic-produce,\bhoney\b|organic products|organic grocery|jaggery|jamun|organic spices
@@ -470,30 +470,30 @@ S3E49P468,Kiosk Kaffee,Food and Beverage,Premium Coffee,beverage-brand,coffee|es
 S3E50P469,Neon Attack,Lifestyle/Home,Premium Quality Neon Signs,handcrafted-home-decor,override
 S3E50P470,PTal,Lifestyle/Home,"Copper, Brass, and Bronze Kitchenware",handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
 S3E50P471,Road Pilot,Technology/Software,App for Truck Drivers and Fleet Owners,b2b-marketplace,marketplace|kirana|truck drivers|recruiters|design marketplace
-S3E51P472,Smart Mop,Lifestyle/Home,Caspian smart household cleaning device,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S3E51P472,Smart Mop,Lifestyle/Home,Caspian smart household cleaning device,consumer-gadgets-brand,@hardware → default
 S3E51P473,Lea,Beauty/Fashion,"With real curves, to celebrate and accentuate the skin",personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S3E51P474,$Krishna Rama,Entertainment,Movie,publishing-and-comics,publishing|web series|movie|audio content|streaming
 S3E51P475,Rentit4me,Business Services,Marketplace where people can “Give on Rent” & “Take on Rent,clothing-rental,rental|on rent|give on rent
 S3E52P476,Cool The Globe,Green/CleanTech,Movement to combat climate change,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S3E52P477,Canvaloop,Green/CleanTech,Sustainable fabrics manufacturer,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
-S3E52P478,Digital Paani,Green/CleanTech,"Manage plants, deliver safe, compliant operations",saas-micro-product,manage plants
+S3E52P478,Digital Paani,Green/CleanTech,"Manage plants, deliver safe, compliant operations",b2b-saas-startup,manage plants
 S4E1P479,FAEBeauty,Beauty/Fashion,Innovative beauty products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E1P480,CONFECT,Food and Beverage,Delectable premium confectionery,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
-S4E1P481,Indulge,Technology/Software,Global luxury app,consumer-app-startup,.
+S4E1P481,Indulge,Technology/Software,Global luxury app,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S4E2P482,BLFabric,Beauty/Fashion,Fabric retail offerings,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
 S4E2P483,Culture Circle,Beauty/Fashion,Authentic and affordable sneaker collection,sneaker-and-streetwear-resale,sneaker resale|sneaker collection|pre-owned|thrift|refurbished
-S4E2P484,Nexera Health,Medical/Health,Healthcare solution for employees,consumer-app-startup,.
+S4E2P484,Nexera Health,Medical/Health,Healthcare solution for employees,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S4E3P485,NOOE,Technology/Software,Premium lifestyle accessories,bags-and-accessories-brand,override
 S4E3P486,Go Zero,Food and Beverage,Indulgent guilt-free ice creams,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
 S4E3P487,Curve Electric,Technology/Software,e-bike sharing system,ev-charging-and-rental,override
 S4E4P488,Gudworld,Food and Beverage,Organic jaggery delights,honey-and-organic-produce,\bhoney\b|organic products|organic grocery|jaggery|jamun|organic spices
-S4E4P489,airth,Lifestyle/Home,Innovative air purifiers for ACs,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S4E4P489,airth,Lifestyle/Home,Innovative air purifiers for ACs,consumer-gadgets-brand,@hardware → default
 S4E4P490,One Dios,Lifestyle/Home,Convenient service request platform,home-cleaning-service,helpers|homemakers|service request
 S4E5P491,Inner Gize,Medical/Health,Mental wellness wearables,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S4E5P492,Personal Touch Skincare,Beauty/Fashion,Premium skin body home care,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E5P493,KIWIKisan Window,Lifestyle/Home,Organic grocery solutions,honey-and-organic-produce,\bhoney\b|organic products|organic grocery|jaggery|jamun|organic spices
 S4E6P494,Tripole Gear,Fitness/Sports/Outdoors,Trekking gear essentials backpacks,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
-S4E6P495,Neosapien,Technology/Software,AI-powered superhuman personal assistant,consumer-app-startup,.
+S4E6P495,Neosapien,Technology/Software,AI-powered superhuman personal assistant,b2b-saas-startup,@app → business|enterprise|software|automation|
 S4E6P496,Miss Cheesecake,Food and Beverage,Delightful affordable cheesecakes,ice-cream-and-desserts-brand,override
 S4E7P497,Speed Kitchen,Food and Beverage,Ready-to-move kitchens,furniture-workshop,furniture|chair|mattress|kitchens
 S4E7P498,Mudgar Club,Fitness/Sports/Outdoors,Traditional fitness tools,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
@@ -507,19 +507,19 @@ S4E10P505,Project Clay,Children/Education,One-on-one college application mentors
 S4E10P506,Deni Bikes,Vehicles/Electrical Vehicles,Affordable and eco-friendly electric motorcycles,ev-assembly,.
 S4E10P507,Pretty Little Shop,Lifestyle/Home,Personalized gift solutions,custom-gifting-store,gift
 S4E11P508,Aquapeya,Lifestyle/Home,Natural mineral water,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S4E11P509,Jarsh,Manufacturing,Innovative safety wearables,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S4E11P509,Jarsh,Manufacturing,Innovative safety wearables,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S4E11P510,DACBY,Beauty/Fashion,Platform for pre-owned gaming consoles,sneaker-and-streetwear-resale,sneaker resale|sneaker collection|pre-owned|thrift|refurbished
 S4E12P511,Shyle,Beauty/Fashion,Handcrafted jewellery silver,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
-S4E12P512,Savani Heritage,Business Services,Innovative restoration techniques,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S4E12P512,Savani Heritage,Business Services,Innovative restoration techniques,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S4E12P513,SNEAKINN,Beauty/Fashion,Premium sneaker care solutions,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S4E13P514,fupro,Medical/Health,Affordable prosthetics Orthotics,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S4E13P515,Kanvas,Beauty/Fashion,Heritage-inspired fashion footwear,footwear-brand,shoe|footwear|sneaker|insole|loafer
-S4E13P516,ezo,Manufacturing,Innovative billing machines,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
-S4E14P517,Seven,Technology/Software,Innovative payment wearables developed,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S4E13P516,ezo,Manufacturing,Innovative billing machines,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S4E14P517,Seven,Technology/Software,Innovative payment wearables developed,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S4E14P518,The Future Animations,Technology/Software,Captivating two-dimensional animations,video-editing-service,animation|comics|content studio|dubbing|localisation|localization
-S4E14P519,Aignosis,Technology/Software,"Early screening, diagnosis, and detection of autism",consumer-app-startup,.
-S4E15P520,Rosha,Manufacturing,"Wireless, portable, and rechargeable lighting lamps",hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S4E15P521,Make My Payment,Technology/Software,Automated online fees payment reminder system,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S4E14P519,Aignosis,Technology/Software,"Early screening, diagnosis, and detection of autism",healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
+S4E15P520,Rosha,Manufacturing,"Wireless, portable, and rechargeable lighting lamps",consumer-gadgets-brand,@hardware → default
+S4E15P521,Make My Payment,Technology/Software,Automated online fees payment reminder system,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S4E15P522,Patch Up,Medical/Health,Patches that provide vitamins through skin absorption,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
 S4E16P523,tikitoro,Beauty/Fashion,Personal care products for kids and teens,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E16P524,Ashva,Medical/Health,Musculoskeletal healthcare wearables,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
@@ -531,7 +531,7 @@ S4E18P529,The Naturik Co,Food and Beverage,High protein breakfast options,frozen
 S4E18P530,Metashot,Fitness/Sports/Outdoors,Console-like cricket game,toys-and-games-brand,override
 S4E18P531,Gabru Di Chaap,Food and Beverage,Flavourful soya chaap,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S4E19P532,Yaan Man,Beauty/Fashion,Makeup for men,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S4E19P533,Sonic Lamb,Lifestyle/Home,Premium headphones,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S4E19P533,Sonic Lamb,Lifestyle/Home,Premium headphones,consumer-gadgets-brand,@hardware → default
 S4E19P534,Woolah,Food and Beverage,World’s first bagless tea dip,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S4E20P535,EM5,Beauty/Fashion,Pocket perfumes,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S4E20P536,Woman Like U,Beauty/Fashion,Body-type-specific womenswear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
@@ -568,12 +568,12 @@ S4E30P566,Pinq Polka,Beauty/Fashion,Lifestyle products for women,d2c-apparel-bra
 S4E30P567,Vibrasense,Medical/Health,Life-saving innovations,medical-devices-startup,override
 S4E31P568,Near Book,Children/Education,A used books marketplace,used-book-store,override
 S4E31P569,Memotag,Medical/Health,IoT wearable for monitoring cognitive and physical health,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S4E31P570,Klimate,Beauty/Fashion,Climate impact solutions cooling vests,hardware-product-startup,override
+S4E31P570,Klimate,Beauty/Fashion,Climate impact solutions cooling vests,consumer-gadgets-brand,override
 S4E32P571,Health Fab,Medical/Health,Leakproof period panties,personal-care-brand,nasal strip|body adhesive|period panties|dental care brand|cannabis|cannibis
-S4E32P572,Pie Matrix,Others,Premium telescopes and binoculars,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S4E32P572,Pie Matrix,Others,Premium telescopes and binoculars,consumer-gadgets-brand,@hardware → default
 S4E32P573,Sudathi,Beauty/Fashion,Elegant sarees kurtas,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
 S4E33P574,Moderate,Medical/Health,Calorie-burning tablets,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
-S4E33P575,Hire For Care,Medical/Health,Digital nanny-hiring platform,consumer-app-startup,.
+S4E33P575,Hire For Care,Medical/Health,Digital nanny-hiring platform,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S4E33P576,Dream Smile,Medical/Health,Advanced affordable dental solutions veneers,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S4E34P577,Madmix,Food and Beverage,Healthy snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S4E34P578,Palmonas,Beauty/Fashion,Demi-fine jewellery,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
@@ -584,32 +584,32 @@ S4E35P582,Born Good,Lifestyle/Home,Plant-based home cleaners fabric Laundry Dete
 S4E36P583,Dorabi And Amili,Beauty/Fashion,Online sustainable clothing brand,d2c-apparel-brand,override
 S4E36P584,Zebra Learn,Children/Education,Modern book platform,publishing-and-comics,comic|book
 S4E36P585,Exclusive Lane,Lifestyle/Home,Unique hand-painted handloom products,handloom-textiles-brand,handloom|saree|paithani|silk|handwoven|lucknow|jaipur|fabric retail|fabric sourcing|fabrics
-S4E37P586,Medial,Technology/Software,Indian startup news and tech,consumer-app-startup,.
+S4E37P586,Medial,Technology/Software,Indian startup news and tech,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S4E37P587,Panchal Dairy,Food and Beverage,Artisanal and pastoral cheese,dairy-farm,milk|a2|dairy|cheese|eggs
 S4E37P588,Music Pandit,Children/Education,Music classes for kids,kids-enrichment-classes,course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic
 S4E38P589,Cograd,Children/Education,Innovative and affordable education teaching,kids-enrichment-classes,course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic
 S4E38P590,Eat Better Co,Food and Beverage,Healthy delicious snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S4E38P591,Earthful,Medical/Health,Health-boosting supplements,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
-S4E39P592,Trajectory,Vehicles/Electrical Vehicles,"Car seat pillows, backrests, and lumbar support",hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
+S4E39P592,Trajectory,Vehicles/Electrical Vehicles,"Car seat pillows, backrests, and lumbar support",consumer-gadgets-brand,@hardware → default
 S4E39P593,Kavi The Poetry-Art Project,Green/CleanTech,"Upcycled products eco-conscious glassware Raise, reuse, recycle with class Hand made",recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S4E39P594,F2DF,Agriculture,e-commerce platform for farmers,b2b-marketplace,e-commerce platform
-S4E40P595,Sugar Strings.ai,Medical/Health,Multiomic platform for managing chronic genetic DNA conditions,consumer-app-startup,.
+S4E40P595,Sugar Strings.ai,Medical/Health,Multiomic platform for managing chronic genetic DNA conditions,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S4E40P596,Moms Home,Children/Education,Sustainable baby essentials,d2c-apparel-brand,kidswear|baby|furniture|makeup
 S4E40P597,Catwalk,Food and Beverage,Non-alcoholic spirits,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S4E41P598,Beautywise,Beauty/Fashion,Science-backed supplements for skin and hair,nutrition-supplements-brand,override
-S4E41P599,Ivory,Medical/Health,Neuroscience-based gaming app,consumer-app-startup,.
+S4E41P599,Ivory,Medical/Health,Neuroscience-based gaming app,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S4E41P600,The House Party By Savar,Business Services,Luxury culinary catering service,event-catering,catering
 S4E42P601,Glow Glossary,Food and Beverage,Ceremonial-grade matcha Matcha Kit,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S4E42P602,Singh Dental Care,Medical/Health,Comprehensive dental care by specialist,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S4E42P603,Tribal Veda,Food and Beverage,Premium jamun products superfoods made by tribal,honey-and-organic-produce,\bhoney\b|organic products|organic grocery|jaggery|jamun|organic spices
 S4E43P604,Anuvad,Beauty/Fashion,E-textile fashion Humansing,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S4E43P605,Fitelo,Fitness/Sports/Outdoors,Holistic health and weight management,consumer-app-startup,.
+S4E43P605,Fitelo,Fitness/Sports/Outdoors,Holistic health and weight management,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S4E43P606,Nanighar,Food and Beverage,Homemade delicacies Dishes,cloud-kitchen,cloud.?kitchen|virtual restaurant|where's the food|homemade after delivery|homemade delicacies|delicacies
 S4E44P607,Good Monk,Fitness/Sports/Outdoors,"Multivitamins, probiotics, and fiber mix Lysine, Ashwagandha & Brahmi",nutrition-supplements-brand,multivitamin|probiotic
 S4E44P608,Artbuzz,Business Services,Creative co-living and coworking spaces,coworking-and-coliving,co-?working|co-?living|working spaces|accomodation|student housing
 S4E44P609,Tulua,Food and Beverage,"Pure, unadulterated spices",spice-processing-unit,spice|\batta\b|flour|\baata\b
 S4E45P610,Taffykids,Children/Education,Playful kidswear for every occasion,d2c-apparel-brand,kidswear|baby|furniture|makeup
-S4E45P611,Whale Wearables,Lifestyle/Home,Groundbreaking women's safety wearable solutions,hardware-product-startup,machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch
+S4E45P611,Whale Wearables,Lifestyle/Home,Groundbreaking women's safety wearable solutions,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S4E45P612,Zingavita,Medical/Health,High-quality modern Ayurvedic supplements shilajit,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
 S4E45P613,Dhaaga Life,Beauty/Fashion,Accessories Handbags,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
 S4E46P614,Tileskraft,Lifestyle/Home,Wide range of tiles,home-painting-contractor,wall building|surface textures|tiles
@@ -620,10 +620,10 @@ S4E47P618,Hive School,Children/Education,Sales school college,kids-enrichment-cl
 S4E47P619,Tintbox,Lifestyle/Home,Borosilicate glass bottles and lunch boxes,crockery-and-kitchenware-store,stainless steel|kitchenware|dinnerware|plates|borosilicate|lunch box
 S4E48P620,Easy Rugs,Lifestyle/Home,"Sustainable, low-maintenance rugs",eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
 S4E48P621,Styles Try,Beauty/Fashion,Stylish women's footwear,footwear-brand,shoe|footwear|sneaker|insole|loafer
-S4E48P622,Quitci,Lifestyle/Home,"Innovative anti-smoking device Smoke-Free, Nicotine-Free",hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S4E48P622,Quitci,Lifestyle/Home,"Innovative anti-smoking device Smoke-Free, Nicotine-Free",medical-devices-startup,@hardware → wheelchair|visually impaired|braille|mas
 S4E49P623,Fit Feast,Food and Beverage,Protein-packed foods Protein Snacks,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S4E49P624,The Bear House,Beauty/Fashion,Stylish and affordable menswear,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S4E49P625,Urban Animal,Animal/Pets,Dog DNA tests,hardware-product-startup,gps|tracker|dna
+S4E49P625,Urban Animal,Animal/Pets,Dog DNA tests,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S4E50P626,Nooky,Lifestyle/Home,Aphrodisiac Mood Uplifting chocolates,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
 S4E50P627,Subculture,Beauty/Fashion,Fetish leather Fashion,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S4E50P628,Woodsmen,Liquor/Alcohol,Himalayan whiskey,beverage-brand,.
@@ -639,11 +639,11 @@ S5E1P637,Guugly Wuugly,Children/Education,kidswear clothing,d2c-apparel-brand,ki
 S5E2P638,EMo Mee,Children/Education,Educational and emotional toys,toys-and-games-brand,toy|doll|busy board|games|collectible
 S5E2P639,Capture ATrip,Entertainment,Community Travel company,travel-agency,travel
 S5E2P640,Loopie,Children/Education,Baby gear brand,d2c-apparel-brand,kidswear|baby|furniture|makeup
-S5E3P641,Save Sage,Technology/Software,Rewards Optimization,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
-S5E3P642,Kalam Labs,Technology/Software,Research Labs for aerial vechicles,hardware-product-startup,robot|drone|aerial|underwater|wearable|virtual reality|4d
+S5E3P641,Save Sage,Technology/Software,Rewards Optimization,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S5E3P642,Kalam Labs,Technology/Software,Research Labs for aerial vechicles,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
 S5E3P643,Panteazy,Beauty/Fashion,Intimate clothing brand for men,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S5E4P644,Goat Life,Food and Beverage,Overnight Oats brand,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
-S5E4P645,Planyt,Green/CleanTech,Smart plants,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S5E4P645,Planyt,Green/CleanTech,Smart plants,consumer-gadgets-brand,@hardware → default
 S5E4P646,Avishkaar,Children/Education,AI based toys for kids,toys-and-games-brand,toy|doll|busy board|games|collectible
 S5E5P647,Emori,Beauty/Fashion,Lab-grown diamond jewellery,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
 S5E5P648,True Diamond,Beauty/Fashion,Lab-grown diamond jewellery,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
@@ -651,30 +651,30 @@ S5E6P649,Smylo,Animal/Pets,Pet food brand,pet-food-and-treats,food|treat|feed|ic
 S5E6P650,Nootie,Animal/Pets,Pet food brand,pet-food-and-treats,food|treat|feed|ice cream
 S5E7P651,Pistabarfi,Food and Beverage,Traditional sweets brand,sweet-shop,sweet|mithai|candy|candies|lollipop|chocolate|confection|chewing gum
 S5E7P652,Corel Lifecare,Food and Beverage,Nutrient food for fish farming,vermicompost-unit,override
-S5E7P653,vryse,Technology/Software,AI optimization platform,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S5E7P653,vryse,Technology/Software,AI optimization platform,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S5E8P654,My PB,Food and Beverage,Peanut butter brand,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S5E8P655,x STEP,Medical/Health,Non evasive device for spine injuries,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
 S5E8P656,Truth And Hair,Beauty/Fashion,Curly hair care brand,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S5E9P657,Meta Fashion,Technology/Software,Digital products company for Roblox,consumer-app-startup,.
+S5E9P657,Meta Fashion,Technology/Software,Digital products company for Roblox,gaming-and-esports,@app → gam|esport|metaverse|roblox|virtual real
 S5E9P658,Japam,Lifestyle/Home,Spiritual wearables brand,pooja-and-incense-products,override
 S5E9P659,Zen Barefoot,Beauty/Fashion,Barefoot shoes brand,footwear-brand,shoe|footwear|sneaker|insole|loafer
 S5E10P660,RIDEV,Vehicles/Electrical Vehicles,E-scooter leasing renting company,ev-charging-and-rental,rent|leasing|subscription|sharing
 S5E10P661,Stroom,Food and Beverage,Protein bar brand,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S5E10P662,TBFO,Beauty/Fashion,Women clothing brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S5E11P663,Neurapexai,Medical/Health,AI assisted diagnostic platform,medical-devices-startup,device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid
-S5E11P664,Wrestlefanent,Fitness/Sports/Outdoors,Wrestling fan event platform,consumer-app-startup,.
+S5E11P664,Wrestlefanent,Fitness/Sports/Outdoors,Wrestling fan event platform,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S5E11P665,Ayuvyaandimfresh,Medical/Health,Ayurveda based supplements and beauty products,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
 S5E12P666,Every Morning Cartel,Food and Beverage,Dining cafe brand,cafe,cafe|coffee and snacks
 S5E12P667,Cinefaistudios,Technology/Software,Gen-AI powered content studio,video-editing-service,animation|comics|content studio|dubbing|localisation|localization
-S5E12P668,Sampark,Vehicles/Electrical Vehicles,QR based vehicle tag,consumer-app-startup,qr based
-S5E13P669,Sovrenn,Technology/Software,Stock discovery platform,consumer-app-startup,.
-S5E13P670,Multibagg.ai,Technology/Software,AI Stock research platform,consumer-app-startup,.
+S5E12P668,Sampark,Vehicles/Electrical Vehicles,QR based vehicle tag,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
+S5E13P669,Sovrenn,Technology/Software,Stock discovery platform,fintech-startup,@app → credit|lending|stock|trading|expense|upi
+S5E13P670,Multibagg.ai,Technology/Software,AI Stock research platform,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S5E14P671,Uprear Build,Business Services,Pre-fabricated construction company,interior-design-studio,interior|3d home|three-dimensional home|pre-?fabricated|construction
 S5E14P672,Paper Pro,Food and Beverage,Milk Adulting Kit,dairy-farm,milk|a2|dairy|cheese|eggs
-S5E14P673,Cosmohealth,Medical/Health,Emergency health services,consumer-app-startup,.
+S5E14P673,Cosmohealth,Medical/Health,Emergency health services,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S5E15P674,Gullylabs,Beauty/Fashion,Hand crafted shoewear brand,footwear-brand,shoe|footwear|sneaker|insole|loafer
-S5E15P675,Twin,Technology/Software,AI powered clothes try-on platform,consumer-app-startup,.
-S5E15P676,RCXlight,Technology/Software,Digital fasade company,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S5E15P675,Twin,Technology/Software,AI powered clothes try-on platform,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
+S5E15P676,RCXlight,Technology/Software,Digital fasade company,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
 S5E16P677,Awsum,Food and Beverage,Packaged cakes brand,home-bakery,cake|bakery|cookie|bread
 S5E16P678,Phitku,Beauty/Fashion,Alum based natural deodorants,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E16P679,9DXRlabs,Technology/Software,VR based platform for schools,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
@@ -687,12 +687,12 @@ S5E18P685,Sepoy&co,Food and Beverage,Premium mixer brand,beverage-brand,coffee|e
 S5E19P686,Bonkerscorner,Beauty/Fashion,Unisex streetwear brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S5E19P687,Bubbleme,Medical/Health,Magnesium driven wellness brand,nutrition-supplements-brand,supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved
 S5E19P688,Outlive,Medical/Health,Fasting guidance program,nutrition-coaching,weight|fasting|diet
-S5E20P689,Metadrive,Entertainment,Motion based driving platform,hardware-product-startup,override
+S5E20P689,Metadrive,Entertainment,Motion based driving platform,gaming-and-esports,override
 S5E20P690,Sparshbrush,Animal/Pets,Automatic grooming brushes for cattle,agritech-devices,livestock|cattle|ear tag
 S5E20P691,Shesha Ayurveda,Beauty/Fashion,Ayurvedic beauty and hair care brand,personal-care-brand,ayurved
 S5E21P692,Cookiecartel,Food and Beverage,Baked homemade cookies brand,home-bakery,cake|bakery|cookie|bread
-S5E21P693,Avia Litewings,Vehicles/Electrical Vehicles,Gyrocopter and aircraft company,hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
-S5E21P694,Aabo,Fitness/Sports/Outdoors,Smart wellness tracking ring,hardware-product-startup,sensor|ring
+S5E21P693,Avia Litewings,Vehicles/Electrical Vehicles,Gyrocopter and aircraft company,deeptech-hardware,@hardware → robot|drone|aerial|underwater|aircraft|g
+S5E21P694,Aabo,Fitness/Sports/Outdoors,Smart wellness tracking ring,consumer-gadgets-brand,@hardware → default
 S5E22P695,Krvvy,Beauty/Fashion,Women's innerwear and shapewear brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S5E22P696,Invogue,Beauty/Fashion,Women's shapewear brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
 S5E23P697,Taashacraft,Beauty/Fashion,Handcrafted jewelry and bangles,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
@@ -701,79 +701,79 @@ S5E23P699,Indian School Of Calisthenics,Fitness/Sports/Outdoors,Calisthenics tra
 S5E24P700,Wholeleaf,Medical/Health,Cannibis wellness brand,personal-care-brand,nasal strip|body adhesive|period panties|dental care brand|cannabis|cannibis
 S5E24P701,Mankomb,Green/CleanTech,Wet waste to soil converter,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S5E24P702,Madrasi Kaapihouse,Food and Beverage,Coffee brand,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
-S5E25P703,Soundverse,Technology/Software,AI based music generator,consumer-app-startup,.
+S5E25P703,Soundverse,Technology/Software,AI based music generator,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S5E25P704,Kilrr,Food and Beverage,Marinades and spices brand,spice-processing-unit,spice|\batta\b|flour|\baata\b
-S5E25P705,Offline,Lifestyle/Home,Offline social meetup platform,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S5E25P705,Offline,Lifestyle/Home,Offline social meetup platform,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S5E26P706,Pandas Box,Children/Education,Devotional toys brand,toys-and-games-brand,toy|doll|busy board|games|collectible
 S5E26P707,The Bindi Project,Beauty/Fashion,Hand-crafted bindi brand,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
 S5E26P708,Voxturn AI,Technology/Software,AI powered sales agent,digital-agency,advertisement|influencer|sales agent|beauty brands
 S5E27P709,My Wonder,Technology/Software,AI powered learning companion,test-prep-online,learning|courses|chess|edtech|interviews|career|school|classes|learn
-S5E27P710,Cotopay,Technology/Software,UPI based expense management,consumer-app-startup,.
+S5E27P710,Cotopay,Technology/Software,UPI based expense management,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S5E27P711,Local All Natural Soda,Food and Beverage,Farm to bottle beverage brand,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S5E28P712,The Binge Town,Entertainment,Private theatre for celebrations,event-planning,surprise|proposal|event platform|celebration|private theatre
 S5E28P713,Prop FTX,Business Services,Fractional real estate investments,real-estate-brokerage,real estate|fractional
 S5E28P714,Eight Times Eight,Fitness/Sports/Outdoors,Chess classes,sports-coaching-academy,institute|academy|training|calisthenics|chess|sport for|recreation
 S5E29P715,Warriorworld,Beauty/Fashion,Indian army inspired apparel brand,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S5E29P716,Currently,Technology/Software,Real time activity sharing app,consumer-app-startup,.
+S5E29P716,Currently,Technology/Software,Real time activity sharing app,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S5E29P717,Anjanibooks,Technology/Software,Online bookstore,used-book-store,override
 S5E30P718,Booon,Beauty/Fashion,Curated fashion quick commerce platform,d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S5E30P719,Me Meraki,Lifestyle/Home,Culture tech platform for indian arts,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S5E30P719,Me Meraki,Lifestyle/Home,Culture tech platform for indian arts,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S5E30P720,3Sisters,Food and Beverage,Non alcoholic beverages brand,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S5E31P721,Artociti,Lifestyle/Home,Relief mural home decor brand,handcrafted-home-decor,"decor|handicraft|handcrafted|artisan|art & craft|art by|mural|neon|rug|clay|copper|brass|marble|handmade|hand-painted|design, aesthetics"
-S5E31P722,Kreo,Fitness/Sports/Outdoors,Gaming peripherals brand,hardware-product-startup,override
+S5E31P722,Kreo,Fitness/Sports/Outdoors,Gaming peripherals brand,consumer-gadgets-brand,override
 S5E31P723,Rosada,Beauty/Fashion,Customised kids bags,bags-and-accessories-brand,\bbags?\b|backpack|sling|clutch|handbag|luggage|suitcase|accessories|eyewear|eye wear|watches
 S5E32P724,Babyworks By Swapnil,Beauty/Fashion,Baby jewellery brand,jewellery-brand,jewel|jewll|diamond|bangle|bindi|stones
 S5E32P725,Gramiyaa,Food and Beverage,Wood cold pressed oils,cold-pressed-oil-mill,cold pressed|edible oil
 S5E32P726,Mama Nourish,Food and Beverage,Nutrious energy bars,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
 S5E33P727,Kelvin6k,Business Services,Robotic construction company,interior-design-studio,interior|3d home|three-dimensional home|pre-?fabricated|construction
 S5E33P728,ANAApparels,Beauty/Fashion,"Abayas, naquabs and dupatta brand",d2c-apparel-brand,wear|cloth|apparel|fashion|lifestyle products for women|dress|denim|streetwear|lingerie|swim|underwear|innerwear|shapewear|petticoat|sleeves|abaya|kurta|sarees|sikh|tactical|vest|maternity|textile
-S5E33P729,Ez Pac,Business Services,Smart packaging solutions,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S5E33P729,Ez Pac,Business Services,Smart packaging solutions,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
 S5E34P730,Gappu,Beauty/Fashion,Percussion music instruments,,
 S5E34P731,Mister Veg,Food and Beverage,Plant based meat brand,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
-S5E34P732,Saras,Technology/Software,Stock trading recommendations app,consumer-app-startup,.
+S5E34P732,Saras,Technology/Software,Stock trading recommendations app,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S5E35P733,Speechgears,Children/Education,Therapeutic solutions for children with special needs,kids-enrichment-classes,course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic
-S5E35P734,Heizen,Technology/Software,AI powered software development firm,saas-micro-product,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
-S5E35P735,Pukaar.ai,Technology/Software,AI powered parenting app,consumer-app-startup,.
+S5E35P734,Heizen,Technology/Software,AI powered software development firm,b2b-saas-startup,software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade
+S5E35P735,Pukaar.ai,Technology/Software,AI powered parenting app,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S5E36P736,upsnac,Food and Beverage,Wellness coffee brand,beverage-brand,coffee|espresso|cocktail|\btea\b|tea dip|matcha|kombucha|beverage|drink|juice|lemonade|shake|water|mixer|bubble tea|spirit|beer|mead
 S5E36P737,Kotson Mattress,Lifestyle/Home,Organic latex mattress brand,furniture-workshop,furniture|chair|mattress|kitchens
 S5E36P738,Kalakrit,Technology/Software,AI based content localisation platform,video-editing-service,animation|comics|content studio|dubbing|localisation|localization
 S5E36P739,SVSFood,Food and Beverage,Vegetarian qsr food chain,quick-service-food-outlet,qsr|restaurant|food kart|food truck|maggi|pizza|kulche|parathas|cuisine|dining|pancake|kunafa
 S5E37P740,Be Clinical,Beauty/Fashion,Skincare brand,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
-S5E37P741,Misfits,Lifestyle/Home,Hobby and meetup club,consumer-app-startup,\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing
+S5E37P741,Misfits,Lifestyle/Home,Hobby and meetup club,community-and-social-app,@app → social|community|dating|meetup|club|conv
 S5E37P742,Krimmy Thickshakes,Food and Beverage,Guilt-free shakes,beverage-brand,override
 S5E38P743,Curry It,Food and Beverage,Instant curries and paste brand,frozen-and-ready-to-cook-foods,momo|frozen|ready to cook|jackfruit|instant curr|soup|ready-to-eat|soya chaap|plant based meat|plant-based meat|diy food|breakfast option|overnight oats
 S5E38P744,dubpro.ai,Technology/Software,AI-powered dubbing platform,video-editing-service,animation|comics|content studio|dubbing|localisation|localization
 S5E38P745,Boingg,Children/Education,Custom kids furniture brand,furniture-workshop,override
 S5E39P746,Pragyan,Children/Education,Pediatric therapy services for children,kids-enrichment-classes,course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic
 S5E39P747,Sanchvi,Beauty/Fashion,Exclusive rental wear,clothing-rental,rental|on rent|give on rent
-S5E39P748,Trring,Lifestyle/Home,Bluetooth call mirroring devices,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S5E39P748,Trring,Lifestyle/Home,Bluetooth call mirroring devices,consumer-gadgets-brand,@hardware → default
 S5E40P749,Edinora,Food and Beverage,Edible grade toothpaste brand,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E40P750,Rehab Veda,Medical/Health,Home Neuro rehabilitation solution,physio-and-massage,pain management|rehabilitation
-S5E40P751,Freshpod,Vehicles/Electrical Vehicles,Helmet disinfectant device,hardware-product-startup,fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen
+S5E40P751,Freshpod,Vehicles/Electrical Vehicles,Helmet disinfectant device,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
 S5E41P752,Modge,Food and Beverage,Vegetarian cakes and desserts brand,ice-cream-and-desserts-brand,ice.?cream|ice-?pops|gelato|dessert|kheer|cheesecake|waffles
-S5E41P753,Orbit Wallet,Others,One tap smart card,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
-S5E41P754,Hobfit,Fitness/Sports/Outdoors,Women focused fitness tracking app,consumer-app-startup,.
+S5E41P753,Orbit Wallet,Others,One tap smart card,industrial-solutions,@hardware → pothole|contamination|pipeline|congestio
+S5E41P754,Hobfit,Fitness/Sports/Outdoors,Women focused fitness tracking app,healthtech-startup,@app → health|doctor|pharmacy|pregnan|parenting
 S5E42P755,Shichisoru,Children/Education,Collectible characters,toys-and-games-brand,toy|doll|busy board|games|collectible
-S5E42P756,Rimigo,Technology/Software,AI generated iteneries platform,consumer-app-startup,.
+S5E42P756,Rimigo,Technology/Software,AI generated iteneries platform,services-marketplace-app,override
 S5E42P757,Everaw,Food and Beverage,Fruit spread and snacks,pickle-and-papad-brand,pickle|chutney|sauce|relish|jam|marinade|fruit spread|mukhwas|mouth fresh
 S5E43P758,Coro,Business Services,Family first co-working hub,coworking-and-coliving,co-?working|co-?living|working spaces|accomodation|student housing
 S5E43P759,Luzo,Beauty/Fashion,Salon and Spa discovery app,beauty-salon,salon|skincare services|bra fitting
-S5E43P760,F2Fintech,Technology/Software,AI powered digital lending platform,consumer-app-startup,.
+S5E43P760,F2Fintech,Technology/Software,AI powered digital lending platform,fintech-startup,@app → credit|lending|stock|trading|expense|upi
 S5E44P761,Wellwith,Beauty/Fashion,Sea-buckthorn based wellness brand,nutrition-supplements-brand,sea-buckthorn
 S5E44P762,Indian Hair World,Beauty/Fashion,Hair patches and extension brand,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E44P763,awenest,Beauty/Fashion,Clean home and personal care products,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E45P764,HOOKd,Food and Beverage,Chicken chips brand,poultry-farm,chicken chips
 S5E45P765,Littlecherrymom,Food and Beverage,Nutritious snacks for kids,healthy-snacks-brand,snack|chips|nachos|nuts|dry fruits|popcorn|muesli|granola|energy bar|protein bar|bars\b|peanut butter|millet|superfood|super food|guilt|protein|diabetes|gluten|healthy|nutri|kamdhenu|puranpoli|ayurvedic enriched|wellness in the form
-S5E45P766,Stubb,Lifestyle/Home,Portable ashtray brand,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S5E45P766,Stubb,Lifestyle/Home,Portable ashtray brand,consumer-gadgets-brand,@hardware → default
 S5E45P767,Soil Sens,Agriculture,Soil intelligence tools,agritech-devices,.
-S5E46P768,Flashoot,Technology/Software,Real time content creation platform,consumer-app-startup,.
+S5E46P768,Flashoot,Technology/Software,Real time content creation platform,content-and-media-platform,@app → content|audio|news|music|stream|comic|an
 S5E46P769,Nap Tap Go,Fitness/Sports/Outdoors,POD hotel chain capsule pod hotels,capsule-and-budget-hotel,pod hotel
 S5E46P770,Blr Pods,Fitness/Sports/Outdoors,Japanese style capsule pod hotels,capsule-and-budget-hotel,pod hotel
 S5E47P771,Nytarra,Lifestyle/Home,Home freshner brand,home-cleaning-products-brand,clean|detergent|undergarment wash|freshner|air purifier
 S5E47P772,BYLX,Fitness/Sports/Outdoors,Archery equipment brand,sports-goods-brand,bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals
-S5E47P773,Greenpista,Others,Marketplace for currency notes,consumer-app-startup,override
-S5E48P774,CTRUH,Technology/Software,AI-powered XR commerce studio,consumer-app-startup,.
-S5E48P775,Steam PRO,Lifestyle/Home,Home steam and Sauna solution,hardware-product-startup,smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass
+S5E47P773,Greenpista,Others,Marketplace for currency notes,fintech-startup,override
+S5E48P774,CTRUH,Technology/Software,AI-powered XR commerce studio,b2b-saas-startup,@app → business|enterprise|software|automation|
+S5E48P775,Steam PRO,Lifestyle/Home,Home steam and Sauna solution,consumer-gadgets-brand,@hardware → default
 S5E48P776,Uptown,Business Services,Coliving and accomodation,coworking-and-coliving,co-?working|co-?living|working spaces|accomodation|student housing
 S5E49P777,Korin Mi,Beauty/Fashion,Korean hair and skincare brand,personal-care-brand,skin|\bhair|beauty|cosmetic|makeup|make-up|perfume|fragrance|attar|deo|toilet spray|intimate hygiene|urine bag|waterless bathing|oil|cigarette|cannabis|care products|toothpaste|toothbrush|diaper|home care|belly button
 S5E49P778,Dent@home,Medical/Health,At-home dental care brand,personal-care-brand,nasal strip|body adhesive|period panties|dental care brand|cannabis|cannibis
@@ -784,7 +784,7 @@ S5E50P782,Namovardan,Agriculture,Cow dung and urine collection devices,agritech-
 S5E51P783,Circato,Green/CleanTech,Plastic waste based construction solutions,recycling-and-waste,override
 S5E51P784,Green Avartan,Green/CleanTech,Solid waste recycling company,recycling-and-waste,waste|scrap|recycl|compost|upcycl|plastic
 S5E51P785,Dharti Amrit,Green/CleanTech,Afforestation initiatives company,eco-friendly-products-brand,\beco|sustainab|bamboo|bioplastic|afforestation|climate|biodegrad|paper goods|handmade paper
-S5E52P786,Two Words Away,Technology/Software,Private event platform,consumer-app-startup,.
+S5E52P786,Two Words Away,Technology/Software,Private event platform,services-marketplace-app,@app → booking|hiring|nanny|salon|saloon|auto c
 S5E52P787,Floreal,Beauty/Fashion,Crochet gifting brand,custom-gifting-store,gift
-S5E52P788,My Perro,Animal/Pets,Smart pets gps and health tracker,hardware-product-startup,gps|tracker|dna
-S5E52P789,Peer X,Technology/Software,Student opportunities platform,consumer-app-startup,.
+S5E52P788,My Perro,Animal/Pets,Smart pets gps and health tracker,safety-and-security-devices,@hardware → helmet|lock|safety|security|fire|extingu
+S5E52P789,Peer X,Technology/Software,Student opportunities platform,edtech-startup,@app → learn|edtech|education|school|student|co

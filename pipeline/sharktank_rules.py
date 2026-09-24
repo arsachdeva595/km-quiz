@@ -1,7 +1,12 @@
 """
 Keyword rules that map a Shark Tank India pitch to a seed idea slug.
 
-Each rule is (slug, regex, industries). The first rule that matches the pitch's
+Each rule is (slug, regex, industries). Two slugs are placeholders that a
+second pass resolves by what the founder actually does day to day (the tech
+itself can be built by a co-founder or team):
+  "@app"      → APP_BUCKETS      (EdTech, FinTech, B2B SaaS, …)
+  "@hardware" → HARDWARE_BUCKETS (gadgets, safety devices, deep tech, …)
+ The first rule that matches the pitch's
 "Business Description" wins. `industries` limits a rule to those dataset
 industries (None = any). Manual fixes go in data/sharktank/overrides.csv,
 which beats every rule.
@@ -23,7 +28,7 @@ RULES = [
     ("beverage-brand",               r".", LIQUOR),
     ("pet-food-and-treats",          r"food|treat|feed|ice cream", PETS),
     ("agritech-devices",             r"livestock|cattle|ear tag", PETS),
-    ("hardware-product-startup",     r"gps|tracker|dna", PETS),
+    ("@hardware",                    r"gps|tracker|dna", PETS),
     ("pet-grooming",                 r".", PETS),
     ("farm-stay-agri-tourism",       r"tourism", AGRI),
     ("hydroponics-and-urban-farming", r"hydro?phonic|hydroponic", AGRI),
@@ -31,8 +36,8 @@ RULES = [
     ("agritech-devices",             r".", AGRI),
     ("ev-charging-and-rental",       r"rent|leasing|subscription|sharing", VEHICLES),
     ("local-delivery-service",       r"taxi|shuttle", VEHICLES),
-    ("consumer-app-startup",         r"qr based", VEHICLES),
-    ("hardware-product-startup",     r"fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen", VEHICLES),
+    ("@app",                         r"qr based", VEHICLES),
+    ("@hardware",                    r"fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen", VEHICLES),
     ("ev-assembly",                  r".", VEHICLES),
     ("elder-care-service",           r"elder", HEALTH),
     ("nutrition-supplements-brand",  r"supplement|protein|tablet|shilajit|vitamin|magnesium|ayurved", HEALTH),
@@ -41,36 +46,36 @@ RULES = [
     ("physio-and-massage",           r"pain management|rehabilitation", HEALTH),
     ("d2c-apparel-brand",            r"scrubs|apparel", HEALTH),
     ("medical-devices-startup",      r"device|machine|system|test|wearable|monitor|stethoscope|prosthetic|kit|wheelchair|ecg|eeg|headband|hearing|screening|diagnos|dialysis|cooling|uroflow|dental|orthotic|aid", HEALTH),
-    ("consumer-app-startup",         r".", HEALTH),
+    ("@app",                         r".", HEALTH),
     ("kids-enrichment-classes",      r"course|school|classes|brain development|chess|music classes|teaching|therapy|therapeutic", KIDS),
     ("coaching-centre",              r"coaching|iit|jee", KIDS),
     ("toys-and-games-brand",         r"toy|doll|busy board|games|collectible", KIDS),
     ("publishing-and-comics",        r"comic|book", KIDS),
     ("d2c-apparel-brand",            r"kidswear|baby|furniture|makeup", KIDS),
-    ("hardware-product-startup",     r"device|gadget", KIDS),
-    ("consumer-app-startup",         r".", KIDS),
+    ("@hardware",                    r"device|gadget", KIDS),
+    ("@app",                         r".", KIDS),
     ("sports-coaching-academy",      r"institute|academy|training|calisthenics|chess|sport for|recreation", SPORTS),
     ("sports-goods-brand",           r"bat|bowling|paddle|archery|shop|skateboard|gear|equipment|tools|sportswear|apparel|peripherals", SPORTS),
     ("capsule-and-budget-hotel",     r"pod hotel", SPORTS),
     ("nutrition-supplements-brand",  r"multivitamin|probiotic", SPORTS),
     ("nutrition-supplements-brand",  r"sea-buckthorn", FASHION),
-    ("hardware-product-startup",     r"sensor|ring", SPORTS),
-    ("consumer-app-startup",         r".", SPORTS),
+    ("@hardware",                    r"sensor|ring", SPORTS),
+    ("@app",                         r".", SPORTS),
 
     # Tech industry: apps, AI, platforms
-    ("saas-micro-product",           r"software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade", TECH),
+    ("b2b-saas-startup",             r"software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade", TECH),
     ("b2b-marketplace",              r"marketplace|kirana|truck drivers|recruiters|design marketplace", TECH),
     ("video-editing-service",        r"animation|comics|content studio|dubbing|localisation|localization", TECH),
     ("translation-services",         r"translation", TECH),
-    ("saas-micro-product",           r"manage plants", None),
+    ("b2b-saas-startup",             r"manage plants", None),
     ("digital-agency",               r"advertisement|influencer|sales agent|beauty brands", TECH),
     ("website-development",          r"software development|websites", TECH),
-    ("hardware-product-startup",     r"robot|drone|aerial|underwater|wearable|virtual reality|4d", TECH),
+    ("@hardware",                    r"robot|drone|aerial|underwater|wearable|virtual reality|4d", TECH),
     ("test-prep-online",             r"learning|courses|chess|edtech|interviews|career|school|classes|learn", TECH),
-    ("consumer-app-startup",         r".", TECH),
+    ("@app",                         r".", TECH),
 
     # ── Generic rules (any industry) ─────────────────────────────────────────
-    ("hardware-product-startup",     r"machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch", None),
+    ("@hardware",                    r"machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch", None),
     ("personal-care-brand",          r"ayurved", FASHION),
     ("b2b-marketplace",              r"yarn|b2b|fabric sourcing", None),
     # Services and events
@@ -145,6 +150,29 @@ RULES = [
     ("home-painting-contractor",     r"wall building|surface textures|tiles", None),
     ("publishing-and-comics",        r"publishing|web series|movie|audio content|streaming", None),
     ("travel-agency",                r"travel", None),
-    ("consumer-app-startup",         r"\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing", None),
-    ("hardware-product-startup",     r"smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass", None),
+    ("@app",                         r"\bapp\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing", None),
+    ("@hardware",                    r"smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass", None),
 ]
+
+
+# Second pass for "@app": first match on the description wins.
+APP_BUCKETS = [
+    ("fintech-startup",            r"credit|lending|stock|trading|expense|upi|payment|piggy|gold|money|financ|rewards|fractional|currency|calculator|transaction"),
+    ("healthtech-startup",         r"health|doctor|pharmacy|pregnan|parenting|mental|wellness|ayurved|transplant|cancer|infertility|iui|vision|autism|fitness|weight|diagnos|emergency|genetic|dna|neuro|therap|disabilit|care\b"),
+    ("edtech-startup",             r"learn|edtech|education|school|student|course|skill|teach|child|kids|scholarship|career|interview|chess|book|bullying|talent|teens"),
+    ("gaming-and-esports",         r"gam|esport|metaverse|roblox|virtual reality|cricket game"),
+    ("content-and-media-platform", r"content|audio|news|music|stream|comic|animation|astrology|influencer|image|creator|dubbing|localis|web series|movie|culture"),
+    ("services-marketplace-app",   r"booking|hiring|nanny|salon|saloon|auto care|travel|itiner|housing|washroom|service|truck|kabaddi|wrestling|event|luxury|try-on|vehicle tag|security"),
+    ("community-and-social-app",   r"social|community|dating|meetup|club|conversations|lgbt|network|sharing|anger|letter|activity"),
+    ("b2b-saas-startup",           r"business|enterprise|software|automation|ai|sales|reminder|brands|kirana|b2b|msme|welfare|android|character"),
+]
+APP_DEFAULT = "community-and-social-app"
+
+# Second pass for "@hardware".
+HARDWARE_BUCKETS = [
+    ("medical-devices-startup",     r"wheelchair|visually impaired|braille|massager|menstrual|anti-smoking"),
+    ("safety-and-security-devices", r"helmet|lock|safety|security|fire|extinguisher|deterrence|suicid|fan rod|gps|tracker|disinfect|guardian|stick|mosquito|lpg|pollution"),
+    ("deeptech-hardware",           r"robot|drone|aerial|underwater|aircraft|gyrocopter|hydrogen|satellite|3d printing|virtual reality|4d|sensor|iot|spatial|fuel caps|payment wearables|dna"),
+    ("industrial-solutions",        r"pothole|contamination|pipeline|congestion|packaging|billing|chemical|construction|material|mats|panels|restoration|cooling|storage solutions|urinal|waterless|washing machine|tea glass|juice making|smart card|currency|detector|disposal"),
+]
+HARDWARE_DEFAULT = "consumer-gadgets-brand"

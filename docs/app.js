@@ -1,7 +1,7 @@
 import { QUESTIONS, INTEREST_SCALE, AGREE_SCALE } from "./questions.js";
 import {
-  computeProfile, match, whyCopy, typeCode, archetype, topDims,
-  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, formatLakh,
+  computeProfile, match, scoreIdea, whyCopy, typeCode, archetype, topDims,
+  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, formatLakh, formatRupees,
 } from "./scoring.js";
 
 const $ = (id) => document.getElementById(id);
@@ -11,13 +11,16 @@ const PROMPTS = {
   interest: "How would you feel spending a good part of your day…",
   trait: "How much do you agree?",
   choice: "",
+  district: "",
 };
 
 let ideas = [];
+let districts = []; // ODOP index: one entry per district
 let answers = {};
 let idx = 0;
 
 const ideasReady = fetch("data/ideas.json").then((r) => r.json()).then((d) => { ideas = d.ideas; });
+const districtsReady = fetch("data/odop.json").then((r) => r.json()).then((d) => { districts = d; });
 
 function show(id) {
   for (const s of document.querySelectorAll(".screen")) s.hidden = s.id !== id;
@@ -28,9 +31,14 @@ function render() {
   const q = QUESTIONS[idx];
   $("bar").style.width = `${(idx / QUESTIONS.length) * 100}%`;
   $("counter").textContent = `Question ${idx + 1} of ${QUESTIONS.length}`;
-  $("prompt").textContent = PROMPTS[q.kind];
+  $("prompt").textContent = q.hint || PROMPTS[q.kind];
   $("qtext").textContent = q.text;
   $("back").hidden = idx === 0;
+
+  if (q.kind === "district") {
+    renderDistrictPicker(q);
+    return;
+  }
 
   const opts = q.kind === "choice"
     ? q.options
@@ -46,6 +54,40 @@ function render() {
   }
 }
 
+async function renderDistrictPicker(q) {
+  $("options").innerHTML = `<p class="fine">Loading districts…</p>`;
+  await districtsReady;
+  if (QUESTIONS[idx] !== q) return; // user moved on while loading
+
+  const current = answers[q.id];
+  const states = [...new Set(districts.map((d) => d.state))];
+  $("options").innerHTML = `
+    <label class="field">State
+      <select id="state-select"><option value="">Choose your state</option>
+        ${states.map((st) => `<option ${current?.state === st ? "selected" : ""}>${esc(st)}</option>`).join("")}
+      </select>
+    </label>
+    <label class="field">District
+      <select id="district-select" disabled><option value="">Choose your district</option></select>
+    </label>
+    <button id="district-next" class="btn primary" disabled>Continue</button>
+    <button id="district-skip" class="btn ghost">Skip this question</button>`;
+
+  const stateSel = $("state-select"), distSel = $("district-select"), next = $("district-next");
+  const fillDistricts = () => {
+    const list = districts.filter((d) => d.state === stateSel.value);
+    distSel.innerHTML = `<option value="">Choose your district</option>` +
+      list.map((d) => `<option ${current?.district === d.district && current?.state === d.state ? "selected" : ""}>${esc(d.district)}</option>`).join("");
+    distSel.disabled = !list.length;
+    next.disabled = !distSel.value;
+  };
+  stateSel.onchange = fillDistricts;
+  distSel.onchange = () => { next.disabled = !distSel.value; };
+  next.onclick = () => choose(q.id, districts.find((d) => d.state === stateSel.value && d.district === distSel.value));
+  $("district-skip").onclick = () => choose(q.id, null);
+  if (current) fillDistricts();
+}
+
 function choose(id, value) {
   answers[id] = value;
   if (idx < QUESTIONS.length - 1) {
@@ -57,7 +99,7 @@ function choose(id, value) {
 }
 
 async function finish() {
-  await ideasReady;
+  await Promise.all([ideasReady, districtsReady]);
   const profile = computeProfile(QUESTIONS, answers);
   const result = match(ideas, profile);
   renderResult(profile, result);
@@ -79,6 +121,31 @@ function sharkTank(st, isTop) {
   return `<div class="shark"><p class="shark-head">🦈 ${summary}</p><ul>${examples}</ul>${note}</div>`;
 }
 
+function odopLine(odop) {
+  if (!odop) return "";
+  const links = odop.examples.map((e) =>
+    `<a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.district)}</a>`).join(", ");
+  return `<p class="odop-line">📍 ODOP product of ${odop.districts} district${odop.districts > 1 ? "s" : ""}, including ${links}.</p>`;
+}
+
+function districtCard(district, profile) {
+  if (!district) return "";
+  const idea = ideas.find((i) => i.slug === district.idea);
+  const fit = idea ? scoreIdea(idea, profile) : null;
+  const cost = district.cost[0] ? `Setup ${formatRupees(district.cost[0])}–${formatRupees(district.cost[1])}` : "";
+  const facts = [cost, district.margin && `D2C margins ${esc(district.margin)}`, district.breakeven && `break-even ${esc(district.breakeven)}`]
+    .filter(Boolean).join(" · ");
+  return `
+    <article class="card odop">
+      <p class="eyebrow">Your district · ${esc(district.district)}, ${esc(district.state)}${fit ? ` · ${Math.round(fit.score * 100)}% fit for you` : ""}</p>
+      <h3>ODOP: ${esc(district.product)}</h3>
+      <p>${esc(district.why)}</p>
+      ${facts ? `<p class="fine">${facts}</p>` : ""}
+      ${idea ? `<p class="fine">Closest business model: ${esc(idea.name)}.</p>` : ""}
+      <a class="btn primary" href="${esc(district.url)}" target="_blank" rel="noopener">See the ${esc(district.product)} playbook on KidharMilega →</a>
+    </article>`;
+}
+
 function ideaCard(r, profile, isTop) {
   const i = r.idea;
   return `
@@ -92,7 +159,8 @@ function ideaCard(r, profile, isTop) {
         <span class="chip">${i.team === "solo" ? "Solo-friendly" : i.team === "small" ? "Small team" : "Needs a team"}</span>
         <span class="chip">${i.time === "full" ? "Full-time" : "Can start part-time"}</span>
       </div>
-      <p class="why">${esc(whyCopy(r, profile, { withIntro: isTop }))}</p>
+      <p class="why">${esc(whyCopy(r, profile, { withIntro: isTop, district: answers.district }))}</p>
+      ${odopLine(i.odop)}
       ${sharkTank(i.sharktank, isTop)}
     </article>`;
 }
@@ -120,6 +188,7 @@ function renderResult(profile, { top, runnersUp, relaxed }) {
     ${relaxNote}
     ${ideaCard(top, profile, true)}
     ${runnersUp.map((r) => ideaCard(r, profile, false)).join("")}
+    ${districtCard(answers.district, profile)}
     <div class="actions">
       <button id="share" class="btn primary">Share my result</button>
       <button id="retake" class="btn">Retake quiz</button>
