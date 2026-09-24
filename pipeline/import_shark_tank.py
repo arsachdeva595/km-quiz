@@ -25,7 +25,7 @@ RAW_S1    = ST_DIR / "raw" / "season1.csv"
 OVERRIDES = ST_DIR / "overrides.csv"
 OUT_JSON  = ST_DIR / "pitches.json"
 OUT_MAP   = ST_DIR / "pitch_map.csv"
-SEED      = ROOT / "data" / "ideas_seed.csv"
+SEED      = ROOT / "data" / "business_models.csv"
 
 SHARKS = ["Namita", "Vineeta", "Anupam", "Aman", "Peyush", "Ritesh", "Amit"]
 COMPILED = [(slug, re.compile(pat, re.I), inds) for slug, pat, inds in RULES]

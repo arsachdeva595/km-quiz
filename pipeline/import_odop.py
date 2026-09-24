@@ -26,7 +26,7 @@ SRC       = ODOP_DIR / "districts.csv"
 OVERRIDES = ODOP_DIR / "overrides.csv"
 OUT_MAP   = ODOP_DIR / "odop_map.csv"
 OUT_JSON  = ROOT / "docs" / "data" / "odop.json"
-SEED      = ROOT / "data" / "ideas_seed.csv"
+SEED      = ROOT / "data" / "business_models.csv"
 
 SITE = "https://kidharmilega.in/products/"
 COMPILED = [(slug, re.compile(pat, re.I)) for slug, pat in RULES]

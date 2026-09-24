@@ -1,6 +1,6 @@
 import { QUESTIONS, INTEREST_SCALE, AGREE_SCALE } from "./questions.js";
 import {
-  computeProfile, match, scoreIdea, whyCopy, typeCode, archetype, topDims,
+  hydrate, computeProfile, match, scoreIdea, whyCopy, typeCode, archetype, topDims,
   DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, formatLakh, formatRupees,
 } from "./scoring.js";
 
@@ -19,7 +19,7 @@ let districts = []; // ODOP index: one entry per district
 let answers = {};
 let idx = 0;
 
-const ideasReady = fetch("data/ideas.json").then((r) => r.json()).then((d) => { ideas = d.ideas; });
+const ideasReady = fetch("data/ideas.json").then((r) => r.json()).then((d) => { ideas = hydrate(d); });
 const districtsReady = fetch("data/odop.json").then((r) => r.json()).then((d) => { districts = d; });
 
 function show(id) {
@@ -106,17 +106,27 @@ async function finish() {
   show("result");
 }
 
+function stExample(e) {
+  const deal = e.deal
+    ? `got ${formatLakh(e.deal.amount_lakh)} for ${+e.deal.equity_pct.toFixed(2)}%${e.deal.sharks.length ? ` from ${e.deal.sharks.join(", ")}` : ""}`
+    : `asked ${formatLakh(e.ask.amount_lakh)} for ${e.ask.equity_pct}%, no deal`;
+  const rev = e.revenue_lakh ? `, ${formatLakh(e.revenue_lakh)} yearly revenue` : "";
+  const space = e.space ? ` <span class="muted">[${esc(e.space)}]</span>` : "";
+  return `<li><strong>${esc(e.name)}</strong>${space} <span class="muted">(S${e.season} E${e.episode}${e.city ? `, ${esc(e.city)}` : ""})</span> — ${esc(e.what)}${rev}; ${deal}.</li>`;
+}
+
+function d2cBlock(examples) {
+  if (!examples?.length) return "";
+  return `<div class="shark"><p class="shark-head">🛒 D2C brands on Shark Tank India</p>
+    <p class="fine">Other direct-to-consumer brands that built online, even if their product is different. Their playbook for sourcing, pricing and selling online carries over.</p>
+    <ul>${examples.map(stExample).join("")}</ul></div>`;
+}
+
 function sharkTank(st, isTop) {
   if (!st) return "";
   const summary = `${st.pitches} Shark Tank India pitch${st.pitches > 1 ? "es" : ""} in this space · ${st.deals} got a deal` +
     (st.median_revenue_lakh ? ` · median revenue ${formatLakh(st.median_revenue_lakh)}/yr` : "");
-  const examples = (isTop ? st.examples : st.examples.slice(0, 1)).map((e) => {
-    const deal = e.deal
-      ? `got ${formatLakh(e.deal.amount_lakh)} for ${+e.deal.equity_pct.toFixed(2)}%${e.deal.sharks.length ? ` from ${e.deal.sharks.join(", ")}` : ""}`
-      : `asked ${formatLakh(e.ask.amount_lakh)} for ${e.ask.equity_pct}%, no deal`;
-    const rev = e.revenue_lakh ? `, ${formatLakh(e.revenue_lakh)} yearly revenue` : "";
-    return `<li><strong>${esc(e.name)}</strong> <span class="muted">(S${e.season} E${e.episode}${e.city ? `, ${esc(e.city)}` : ""})</span> — ${esc(e.what)}${rev}; ${deal}.</li>`;
-  }).join("");
+  const examples = (isTop ? st.examples : st.examples.slice(0, 1)).map(stExample).join("");
   const note = isTop ? `<p class="fine">These brands scaled far enough to pitch on TV — most started much smaller.</p>` : "";
   return `<div class="shark"><p class="shark-head">🦈 ${summary}</p><ul>${examples}</ul>${note}</div>`;
 }
@@ -141,13 +151,19 @@ function districtCard(district, profile) {
       <h3>ODOP: ${esc(district.product)}</h3>
       <p>${esc(district.why)}</p>
       ${facts ? `<p class="fine">${facts}</p>` : ""}
-      ${idea ? `<p class="fine">Closest business model: ${esc(idea.name)}.</p>` : ""}
+      ${idea ? `<p class="fine">Closest business model: ${esc(idea.modelName)}.</p>` : ""}
       <a class="btn primary" href="${esc(district.url)}" target="_blank" rel="noopener">See the ${esc(district.product)} playbook on KidharMilega →</a>
     </article>`;
 }
 
+function similarIdeas(i) {
+  const sibs = ideas.filter((x) => x.model === i.model && x.id !== i.id).slice(0, 4);
+  return sibs.length ? `<p class="fine">Similar ideas: ${sibs.map((x) => esc(x.name)).join(" · ")}</p>` : "";
+}
+
 function ideaCard(r, profile, isTop) {
   const i = r.idea;
+  const m = i.modelData;
   return `
     <article class="card ${isTop ? "top" : ""}">
       <p class="eyebrow">${isTop ? "Your best match" : "Also a strong fit"} · ${Math.round(r.score * 100)}% fit</p>
@@ -155,13 +171,17 @@ function ideaCard(r, profile, isTop) {
       <p>${esc(i.pitch)}</p>
       <div class="meta">
         <span class="chip">${esc(i.category)}</span>
+        ${i.market ? `<span class="chip">For: ${esc(i.market)}</span>` : ""}
         <span class="chip">Start: ${BUDGET_LABELS[i.budget]}</span>
         <span class="chip">${i.team === "solo" ? "Solo-friendly" : i.team === "small" ? "Small team" : "Needs a team"}</span>
         <span class="chip">${i.time === "full" ? "Full-time" : "Can start part-time"}</span>
       </div>
       <p class="why">${esc(whyCopy(r, profile, { withIntro: isTop, district: answers.district }))}</p>
-      ${odopLine(i.odop)}
-      ${sharkTank(i.sharktank, isTop)}
+      ${i.name !== i.modelName ? `<p class="fine">Business model: ${esc(i.modelName)}</p>` : ""}
+      ${isTop ? similarIdeas(i) : ""}
+      ${odopLine(m.odop)}
+      ${sharkTank(m.sharktank, isTop)}
+      ${i.d2c && (isTop || !m.sharktank) ? d2cBlock(isTop ? m.sharktank_d2c : m.sharktank_d2c?.slice(0, 1)) : ""}
     </article>`;
 }
 

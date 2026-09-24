@@ -2,9 +2,10 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { QUESTIONS } from "../docs/questions.js";
-import { computeProfile, match, scoreIdea, typeCode, archetype, interestFit, whyCopy } from "../docs/scoring.js";
+import { hydrate, computeProfile, match, scoreIdea, typeCode, archetype, interestFit, whyCopy } from "../docs/scoring.js";
 
-const { ideas } = JSON.parse(readFileSync(new URL("../docs/data/ideas.json", import.meta.url)));
+const data = JSON.parse(readFileSync(new URL("../docs/data/ideas.json", import.meta.url)));
+const ideas = hydrate(data);
 const districts = JSON.parse(readFileSync(new URL("../docs/data/odop.json", import.meta.url)));
 
 function answersFor({ likes = [], traits = {}, ...constraints }) {
@@ -119,4 +120,34 @@ test("skipping the district question changes nothing", () => {
 
 test("every ODOP district links to a KidharMilega product page", () => {
   for (const d of districts) assert.match(d.url, /^https:\/\/kidharmilega\.in\/products\/[a-z0-9-]+\/$/);
+});
+
+test("all 500 catalog ideas are offered, each on a known model", () => {
+  const catalog = ideas.filter((i) => i.id <= 500);
+  assert.equal(catalog.length, 500);
+  for (const i of catalog) assert.ok(i.modelData && i.riasec.length === 6, i.name);
+});
+
+test("D2C ideas without enough own Shark Tank pitches get D2C brand examples", () => {
+  const d2c = ideas.filter((i) => i.d2c && (i.modelData.sharktank?.examples.length ?? 0) < 3);
+  assert.ok(d2c.length > 0);
+  for (const i of d2c) {
+    const ex = i.modelData.sharktank_d2c;
+    assert.ok(ex?.length, i.name);
+    for (const e of ex) assert.ok(e.space && e.deal, e.name);
+  }
+});
+
+test("ideas sharing a model are tie-broken per answer set, not always the same", () => {
+  const siblings = ideas.filter((i) => i.model === "handloom-textiles-brand");
+  assert.ok(siblings.length > 10);
+  const tops = new Set();
+  for (let n = 0; n < 12; n++) {
+    const a = answersFor({ likes: ["A", "R"] });
+    a.o1 = 1 + (n % 5); a.x1 = 1 + ((n * 2) % 5);
+    tops.add(match(siblings, computeProfile(QUESTIONS, a)).top.idea.id);
+  }
+  assert.ok(tops.size > 1);
+  const fixed = computeProfile(QUESTIONS, answersFor({ likes: ["A", "R"] }));
+  assert.equal(match(siblings, fixed).top.idea.id, match(siblings, fixed).top.idea.id);
 });

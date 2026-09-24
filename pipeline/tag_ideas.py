@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 """
-tag_ideas.py — give every idea in data/ideas_seed.csv a RIASEC profile and
-trait-demand profile, then write the compact index the quiz loads.
+tag_ideas.py — build the index the quiz loads (docs/data/ideas.json).
 
-Each idea's profile is the average of its O*NET occupations in
+Two layers:
+  - Business models (data/business_models.csv): tagged with O*NET occupations,
+    they carry the personality profile and the evidence.
+  - Ideas (data/ideas_catalog.csv): the specific ideas users see. Each points
+    at one model and inherits its profile and evidence; budget, location, team
+    and time can be overridden per idea. Models no catalog idea uses are
+    offered as ideas themselves, so their evidence stays reachable.
+
+Each model's profile is the average of its O*NET occupations in
 data/onet/occupations.csv (built by fetch_onet.py). Every idea must have at
 least one occupation with O*NET interest data. For the few occupations without
 work-style data, traits are estimated from the RIASEC profile using the
@@ -22,11 +29,28 @@ from datetime import date
 from pathlib import Path
 
 ROOT      = Path(__file__).resolve().parent.parent
-SEED      = ROOT / "data" / "ideas_seed.csv"
+SEED      = ROOT / "data" / "business_models.csv"
 ONET      = ROOT / "data" / "onet" / "occupations.csv"
 ONET_LIST = ROOT / "data" / "onet" / "all_occupations.csv"
 PITCHES   = ROOT / "data" / "sharktank" / "pitches.json"
 ODOP      = ROOT / "docs" / "data" / "odop.json"
+CATALOG   = ROOT / "data" / "ideas_catalog.csv"
+
+# Models that are consumer brands selling online. Their pitches form the pool of
+# D2C examples, and ideas built on them count as D2C.
+D2C_MODELS = {
+    "personal-care-brand", "d2c-apparel-brand", "healthy-snacks-brand", "beverage-brand",
+    "jewellery-brand", "bags-and-accessories-brand", "footwear-brand", "eco-friendly-products-brand",
+    "home-cleaning-products-brand", "nutrition-supplements-brand", "toys-and-games-brand",
+    "handcrafted-home-decor", "ice-cream-and-desserts-brand", "pickle-and-papad-brand",
+    "frozen-and-ready-to-cook-foods", "traditional-health-foods", "sweet-shop", "consumer-gadgets-brand",
+    "handmade-soap-and-cosmetics", "pet-food-and-treats", "custom-gifting-store", "handloom-textiles-brand",
+    "dropshipping-niche-store", "online-thrift-store", "sneaker-and-streetwear-resale", "spice-processing-unit",
+    "honey-and-organic-produce", "cold-pressed-oil-mill", "fitness-apparel-brand", "ethnic-wear-label",
+    "hair-accessories-brand", "oxidised-jewellery", "pottery-studio", "crockery-and-kitchenware-store",
+    "candle-making", "soft-toys", "wooden-name-boards", "custom-tshirt-printing", "leather-goods-workshop",
+}
+D2C_WORDS = ("d2c", "online", "subscription", "e-commerce", "ecommerce", "brand")
 OUT       = ROOT / "docs" / "data" / "ideas.json"
 
 DIMS   = list("RIASEC")
@@ -70,22 +94,7 @@ def shark_tank_summary(pitches):
     if not pitches:
         return None
     revenues = [p["yearly_revenue_lakh"] for p in pitches if p["yearly_revenue_lakh"]]
-    examples = []
-    for p in sorted(pitches, key=example_rank)[:3]:
-        deal = p["deal"]
-        examples.append({
-            "name":    p["name"],
-            "what":    p.get("brief") or p["description"],
-            "season":  p["season"],
-            "episode": p["episode"],
-            "city":    p["city"].split(",")[0],
-            "revenue_lakh": p["yearly_revenue_lakh"],
-            "ask":     {"amount_lakh": p["ask"]["amount_lakh"], "equity_pct": p["ask"]["equity_pct"]},
-            "deal":    None if not deal else {
-                "amount_lakh": deal["amount_lakh"], "equity_pct": deal["equity_pct"],
-                "sharks": deal["sharks"],
-            },
-        })
+    examples = [pitch_example(p) for p in sorted(pitches, key=example_rank)[:3]]
     return {
         "pitches": len(pitches),
         "deals":   sum(p["deal"] is not None for p in pitches),
@@ -101,6 +110,38 @@ def average(rows, keys):
         vals = [float(r[k]) for r in rows if r.get(k)]
         out[k] = sum(vals) / len(vals) if vals else None
     return out
+
+
+def pitch_example(p, space=None):
+    deal = p["deal"]
+    ex = {
+        "name":    p["name"],
+        "what":    p.get("brief") or p["description"],
+        "season":  p["season"],
+        "episode": p["episode"],
+        "city":    p["city"].split(",")[0],
+        "revenue_lakh": p["yearly_revenue_lakh"],
+        "ask":     {"amount_lakh": p["ask"]["amount_lakh"], "equity_pct": p["ask"]["equity_pct"]},
+        "deal":    None if not deal else {
+            "amount_lakh": deal["amount_lakh"], "equity_pct": deal["equity_pct"], "sharks": deal["sharks"],
+        },
+    }
+    if space:
+        ex["space"] = space
+    return ex
+
+
+def d2c_examples(slug, category, by_idea, model_names, model_category, n=3):
+    """D2C Shark Tank brands for a model: its own pitches first, then D2C brands
+    from the same category, then the strongest D2C brands overall."""
+    own = sorted(by_idea.get(slug, []), key=example_rank)
+    if len(own) >= n:
+        return None  # the model's own Shark Tank block already covers it
+    pool = [p for s in D2C_MODELS if s != slug for p in by_idea.get(s, []) if p["deal"]]
+    pool.sort(key=lambda p: (model_category.get(p["idea_slug"]) != category,
+                             -(p["yearly_revenue_lakh"] or 0)))
+    picked = pool[: n - len(own)]
+    return [pitch_example(p, model_names[p["idea_slug"]]) for p in picked]
 
 
 def odop_summary(districts):
@@ -145,7 +186,7 @@ def main():
             if d.get("idea"):
                 odop_by_idea.setdefault(d["idea"], []).append(d)
 
-    ideas, missing_codes, untagged = [], set(), []
+    models, missing_codes, untagged = [], set(), []
     for row in seed:
         codes = [c.strip() for c in row["onet_codes"].split(";") if c.strip()]
         found = [onet[c] for c in codes if c in onet]
@@ -159,7 +200,7 @@ def main():
         fallback = traits_from_riasec(r)
         t = {k: (v if v is not None else fallback[k]) for k, v in t.items()}
 
-        ideas.append({
+        models.append({
             "id":       int(row["id"]),
             "slug":     row["slug"],
             "name":     row["name"],
@@ -178,19 +219,67 @@ def main():
         })
 
     if untagged:
-        sys.exit(f"No O*NET interest data for any occupation of: {untagged} — fix onet_codes in ideas_seed.csv")
+        sys.exit(f"No O*NET interest data for any occupation of: {untagged} — fix onet_codes in business_models.csv")
+
+    model_by_slug = {m["slug"]: m for m in models}
+    model_names = {m["slug"]: m["name"] for m in models}
+    model_category = {m["slug"]: m["category"] for m in models}
+
+    with open(CATALOG, encoding="utf-8") as f:
+        catalog = list(csv.DictReader(f))
+    unknown = sorted({r["model_slug"] for r in catalog} - set(model_by_slug))
+    if unknown:
+        sys.exit(f"ideas_catalog.csv uses unknown model slugs: {unknown}")
+
+    def is_d2c(sector, name, model):
+        return model in D2C_MODELS or sector.lower().startswith("d2c") or any(w in name.lower() for w in D2C_WORDS)
+
+    ideas = []
+    for r in catalog:
+        m = model_by_slug[r["model_slug"]]
+        ideas.append({
+            "id":       int(r["id"]),
+            "name":     r["name"],
+            "pitch":    r["pitch"],
+            "market":   r["target_market"],
+            "sector":   r["sector"],
+            "model":    m["slug"],
+            "budget":   int(r["budget_band"] or m["budget"]),
+            "location": r["location"] or m["location"],
+            "team":     r["team"] or m["team"],
+            "time":     r["time_mode"] or m["time"],
+            "d2c":      is_d2c(r["sector"], r["name"], m["slug"]),
+        })
+    used = {i["model"] for i in ideas}
+    for m in models:
+        if m["slug"] not in used:  # keep uncovered models reachable, with their evidence
+            ideas.append({
+                "id": 1000 + m["id"], "name": m["name"], "pitch": m["pitch"], "market": "",
+                "sector": m["category"], "model": m["slug"], "budget": m["budget"],
+                "location": m["location"], "team": m["team"], "time": m["time"],
+                "d2c": is_d2c("", m["name"], m["slug"]),
+            })
+
+    d2c_used = {i["model"] for i in ideas if i["d2c"]}
+    for m in models:
+        m["sharktank_d2c"] = (d2c_examples(m["slug"], m["category"], by_idea, model_names, model_category)
+                              if m["slug"] in d2c_used else None)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({
         "generated": date.today().isoformat(),
         "dims": DIMS,
         "traits": TRAITS,
+        "models": models,
         "ideas": ideas,
     }, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
 
-    n_st = sum(1 for i in ideas if i["sharktank"])
-    n_odop = sum(1 for i in ideas if i["odop"])
-    print(f"✓ {len(ideas)} ideas → {OUT.relative_to(ROOT)}  (Shark Tank evidence: {n_st}, ODOP districts: {n_odop})")
+    n_catalog = len(catalog)
+    print(f"✓ {len(ideas)} ideas ({n_catalog} from the catalog + {len(ideas) - n_catalog} uncovered models) "
+          f"on {len(models)} models → {OUT.relative_to(ROOT)}")
+    print(f"  Models with Shark Tank evidence: {sum(1 for m in models if m['sharktank'])}, "
+          f"with ODOP districts: {sum(1 for m in models if m['odop'])}, "
+          f"D2C ideas: {sum(i['d2c'] for i in ideas)}")
     if missing_codes:
         print(f"! O*NET codes without interest data (ignored): {sorted(missing_codes)}")
     return 0

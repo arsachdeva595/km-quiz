@@ -28,6 +28,30 @@ const OVERSHOOT_PENALTY = 0.25; // having more of a trait than an idea needs cos
 const LOCAL_BONUS = 0.05; // the user's district ODOP: raw material, artisans and buyers are nearby
 const TRAIT_FIT_KEYS = ["openness", "conscientiousness", "extraversion", "agreeableness"];
 
+// ── Data ─────────────────────────────────────────────────────────────────────
+
+/**
+ * ideas.json has two layers: business models (profile + evidence) and the
+ * ideas users see. Each idea inherits its model's profile; `slug` is the
+ * model's slug so ODOP and other model-level links keep working.
+ */
+export function hydrate(data) {
+  const models = Object.fromEntries(data.models.map((m) => [m.slug, m]));
+  return data.ideas.map((i) => {
+    const m = models[i.model];
+    return {
+      ...i, slug: m.slug, riasec: m.riasec, traits: m.traits, code: m.code,
+      sub: m.sub, category: m.category, modelName: m.name, modelData: m,
+    };
+  });
+}
+
+function hash(str) {
+  let h = 2166136261;
+  for (let i = 0; i < str.length; i++) h = Math.imul(h ^ str.charCodeAt(i), 16777619);
+  return h >>> 0;
+}
+
 // ── Profile ──────────────────────────────────────────────────────────────────
 
 /** answers: { [questionId]: number 1–5 | choice value } */
@@ -42,7 +66,12 @@ export function computeProfile(questions, answers) {
     counts[key] = (counts[key] ?? 0) + 1;
   }
   const norm = (k) => (counts[k] ? sums[k] / counts[k] : 0.5);
+  // Ideas on the same model score the same; the seed breaks those ties per
+  // answer set, so different people see different ideas from one model.
+  const seed = hash(questions.filter((q) => q.kind === "interest" || q.kind === "trait")
+    .map((q) => answers[q.id] ?? "-").join(""));
   return {
+    seed,
     riasec: Object.fromEntries(DIMS.map((d) => [d, norm(d)])),
     traits: Object.fromEntries(TRAITS.map((t) => [t, norm(t)])),
     constraints: {
@@ -161,10 +190,11 @@ export function scoreIdea(idea, profile) {
 /** Returns { top, runnersUp, relaxed } — runners-up prefer different sub-categories. */
 export function match(ideas, profile, { runnersUp = 2 } = {}) {
   const want = 1 + runnersUp;
+  const tiebreak = (idea) => hash(`${profile.seed ?? 0}:${idea.id}`);
   const { pool, relaxed } = applyFilters(ideas, profile.constraints, want);
   const ranked = pool
     .map((i) => scoreIdea(i, profile))
-    .sort((a, b) => b.score - a.score || a.idea.id - b.idea.id);
+    .sort((a, b) => b.score - a.score || tiebreak(a.idea) - tiebreak(b.idea) || a.idea.id - b.idea.id);
 
   const picks = [];
   for (const r of ranked) {

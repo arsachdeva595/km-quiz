@@ -11,7 +11,7 @@ from odop_rules import RULES as ODOP_RULES
 
 class RulesTest(unittest.TestCase):
     def test_rule_slugs_exist_in_seed(self):
-        with open(ROOT / "data" / "ideas_seed.csv", encoding="utf-8") as f:
+        with open(ROOT / "data" / "business_models.csv", encoding="utf-8") as f:
             slugs = {r["slug"] for r in csv.DictReader(f)}
         used = {s for s, _, _ in RULES if not s.startswith("@")}
         used |= {s for s, _ in APP_BUCKETS + HARDWARE_BUCKETS} | {APP_DEFAULT, HARDWARE_DEFAULT}

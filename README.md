@@ -7,7 +7,8 @@ See [PLAN.md](PLAN.md) for decisions, architecture and the 30-day plan.
 ## Layout
 
 ```
-data/ideas_seed.csv        fixed list of business ideas (edit this)
+data/ideas_catalog.csv     the 500 ideas users see, each mapped to a business model (edit this)
+data/business_models.csv   business models: O*NET occupations, budget, location, team, time
 data/onet/                 O*NET occupation list + derived scores
 data/sharktank/            Shark Tank India dataset, pitch → idea map, overrides
 data/odop/                 ODOP districts (from kidharmilega), product → idea map
@@ -16,7 +17,7 @@ pipeline/import_shark_tank.py  pitches → data/sharktank/pitches.json (+ pitch_
 pipeline/sharktank_rules.py    keyword rules mapping pitches to ideas
 pipeline/import_odop.py    ODOP districts → docs/data/odop.json (+ odop_map.csv for review)
 pipeline/odop_rules.py     keyword rules mapping ODOP products to ideas
-pipeline/tag_ideas.py      seed + O*NET + Shark Tank + ODOP → docs/data/ideas.json
+pipeline/tag_ideas.py      models + catalog + O*NET + Shark Tank + ODOP → docs/data/ideas.json
 docs/                      the static site (GitHub Pages)
 tests/                     scoring tests (node:test)
 ```
@@ -36,7 +37,11 @@ No dependencies beyond Python 3 and Node 18+.
 
 ## Adding an idea
 
-Add a row to `data/ideas_seed.csv`:
+Add a row to `data/ideas_catalog.csv` with the `model_slug` of the business model it belongs to. Leave `budget_band`, `location`, `team` and `time_mode` blank to inherit them from the model, or fill them in where this idea differs. Then run `npm run build`.
+
+## Adding a business model
+
+Add a row to `data/business_models.csv`:
 - `onet_codes`: 1–3 O*NET-SOC codes for the work the founder actually does day to day, plus a manager occupation if the founder runs a team.
 - `budget_band`: 1 = under ₹50K, 2 = ₹50K–2L, 3 = ₹2–10L, 4 = over ₹10L.
 - `location`: `online`, `local`, `rural` or `any`.

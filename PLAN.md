@@ -18,7 +18,7 @@ It supersedes the two earlier drafts (business-fit quiz PRD v0.1, overhaul PRD v
 ## How it works
 
 ```
-data/ideas_seed.csv ──┐
+data/business_models.csv ──┐
                       ├─ pipeline/tag_ideas.py ──► docs/data/ideas.json ──► quiz (docs/)
 data/onet/occupations.csv (pipeline/fetch_onet.py)
 ```
@@ -41,6 +41,13 @@ data/onet/occupations.csv (pipeline/fetch_onet.py)
 **Idea tags.** Each idea averages its O*NET occupations: interests from Career Interest Types, trait demands from Work Styles. O*NET is the only source; there are no hand-assigned codes. Every non-solo idea also lists a manager or owner occupation (e.g. Food Service Managers, Retail Supervisors), so the work of running the business counts, not just the frontline work. Examples:
 - "Home Bakery" = Bakers + Chefs
 - "Social Media Agency" = Marketing Specialists + Graphic Designers + PR Specialists
+
+**Ideas vs business models.**
+- Users see ideas from `data/ideas_catalog.csv`: the 500-idea list, with sector, one-liner and target market.
+- Each idea points to one of 191 business models in `data/business_models.csv` and inherits its O*NET profile, Shark Tank and ODOP evidence. Budget, location, team and time can be overridden per idea (49 are).
+- The 63 models no catalog idea uses (e.g. Jewellery Brand, Footwear, Seafood Processing, Wedding Planning) are also offered as ideas, so their evidence and ODOP matches stay reachable. That makes 563 ideas.
+- Ideas on the same model score the same. Ties are broken by a hash of the user's answers, so different people see different ideas from one model. The top card lists "Similar ideas" from the same model.
+- **D2C rule:** 153 ideas count as D2C (a consumer-brand model, a D2C sector, or "D2C / Online / Subscription / Brand" in the name). When their model has fewer than 3 Shark Tank pitches of its own, the card adds "D2C brands on Shark Tank India": funded D2C brands from the same category first, then the strongest overall.
 
 **Tech and hardware ideas are bucketed by what the founder does day to day**, assuming a co-founder or team builds the tech:
 - Apps: EdTech, HealthTech, FinTech, Community & Social, Services Marketplace, Content & Media, Gaming & Esports, B2B SaaS.
