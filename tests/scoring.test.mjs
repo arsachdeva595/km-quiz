@@ -2,9 +2,10 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { QUESTIONS } from "../docs/questions.js";
-import { computeProfile, match, typeCode, archetype, interestFit, whyCopy } from "../docs/scoring.js";
+import { computeProfile, match, scoreIdea, typeCode, archetype, interestFit, whyCopy } from "../docs/scoring.js";
 
 const { ideas } = JSON.parse(readFileSync(new URL("../docs/data/ideas.json", import.meta.url)));
+const districts = JSON.parse(readFileSync(new URL("../docs/data/odop.json", import.meta.url)));
 
 function answersFor({ likes = [], traits = {}, ...constraints }) {
   const a = { budget: 4, location: "open", team: "small", time: "full", ...constraints };
@@ -96,4 +97,26 @@ test("why copy is plain language (no jargon)", () => {
 test("matching is deterministic", () => {
   const p = computeProfile(QUESTIONS, answersFor({ likes: ["E"] }));
   assert.equal(match(ideas, p).top.idea.id, match(ideas, p).top.idea.id);
+});
+
+test("district ODOP idea gets a local-advantage boost and a mention", () => {
+  const lucknow = districts.find((d) => d.district === "Lucknow");
+  assert.equal(lucknow.idea, "handloom-textiles-brand");
+  const base = computeProfile(QUESTIONS, answersFor({ likes: ["A", "R"] }));
+  const local = computeProfile(QUESTIONS, { ...answersFor({ likes: ["A", "R"] }), district: lucknow });
+  const idea = ideas.find((i) => i.slug === lucknow.idea);
+  const before = scoreIdea(idea, base), after = scoreIdea(idea, local);
+  assert.ok(after.score > before.score);
+  assert.ok(after.local && !before.local);
+  assert.match(whyCopy(after, local, { district: lucknow }), /Lucknow's ODOP product/);
+});
+
+test("skipping the district question changes nothing", () => {
+  const a = answersFor({ likes: ["S"] });
+  const skipped = computeProfile(QUESTIONS, { ...a, district: null });
+  assert.equal(match(ideas, skipped).top.idea.id, match(ideas, computeProfile(QUESTIONS, a)).top.idea.id);
+});
+
+test("every ODOP district links to a KidharMilega product page", () => {
+  for (const d of districts) assert.match(d.url, /^https:\/\/kidharmilega\.in\/products\/[a-z0-9-]+\/$/);
 });

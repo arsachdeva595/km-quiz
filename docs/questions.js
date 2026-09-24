@@ -2,6 +2,7 @@
 // kind "interest": how much you'd enjoy an activity → RIASEC dimension
 // kind "trait":    how much you agree with a statement → Big Five trait (reverse = negatively keyed)
 // kind "choice":   practical constraints used as filters before matching
+// kind "district": optional home district (state → district picker); its ODOP product gets a local-advantage boost
 
 export const INTEREST_SCALE = ["Hate it", "Dislike", "Neutral", "Like", "Love it"];
 export const AGREE_SCALE = ["Strongly disagree", "Disagree", "Neutral", "Agree", "Strongly agree"];
@@ -22,6 +23,9 @@ export const QUESTIONS = [
       { value: "rural", label: "In a village or rural area" },
       { value: "open", label: "I'm open to anything" },
     ] },
+  { id: "district", kind: "district", optional: true,
+    text: "Which district are you from?",
+    hint: "Optional. Every district has an ODOP (One District One Product). If yours suits you, we'll show it." },
   { id: "team", kind: "choice", text: "Who's building it with you?",
     options: [
       { value: "solo", label: "Just me" },

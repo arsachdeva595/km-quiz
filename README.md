@@ -10,10 +10,13 @@ See [PLAN.md](PLAN.md) for decisions, architecture and the 30-day plan.
 data/ideas_seed.csv        fixed list of business ideas (edit this)
 data/onet/                 O*NET occupation list + derived scores
 data/sharktank/            Shark Tank India dataset, pitch → idea map, overrides
+data/odop/                 ODOP districts (from kidharmilega), product → idea map
 pipeline/fetch_onet.py     download O*NET → data/onet/occupations.csv
 pipeline/import_shark_tank.py  pitches → data/sharktank/pitches.json (+ pitch_map.csv for review)
 pipeline/sharktank_rules.py    keyword rules mapping pitches to ideas
-pipeline/tag_ideas.py      seed + O*NET + Shark Tank → docs/data/ideas.json
+pipeline/import_odop.py    ODOP districts → docs/data/odop.json (+ odop_map.csv for review)
+pipeline/odop_rules.py     keyword rules mapping ODOP products to ideas
+pipeline/tag_ideas.py      seed + O*NET + Shark Tank + ODOP → docs/data/ideas.json
 docs/                      the static site (GitHub Pages)
 tests/                     scoring tests (node:test)
 ```
@@ -21,8 +24,9 @@ tests/                     scoring tests (node:test)
 ## Commands
 
 ```bash
-python3 pipeline/fetch_onet.py   # needs access to onetcenter.org
+python3 pipeline/fetch_onet.py --offline   # uses the committed O*NET CSVs
 python3 pipeline/import_shark_tank.py
+python3 pipeline/import_odop.py
 npm run build                    # regenerate docs/data/ideas.json
 npm test                         # JS scoring + Python importer tests
 npm run serve                    # http://localhost:8000
@@ -33,8 +37,7 @@ No dependencies beyond Python 3 and Node 18+.
 ## Adding an idea
 
 Add a row to `data/ideas_seed.csv`:
-- `onet_codes`: 1–3 O*NET-SOC codes for the work the founder actually does day to day.
-- `riasec_provisional`: a fallback code.
+- `onet_codes`: 1–3 O*NET-SOC codes for the work the founder actually does day to day, plus a manager occupation if the founder runs a team.
 - `budget_band`: 1 = under ₹50K, 2 = ₹50K–2L, 3 = ₹2–10L, 4 = over ₹10L.
 - `location`: `online`, `local`, `rural` or `any`.
 - `team`: `solo`, `small` or `team`.

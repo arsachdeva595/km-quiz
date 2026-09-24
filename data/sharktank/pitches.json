@@ -228,8 +228,8 @@
   "deal": null,
   "brief": "Advanced device to check farm produce's freshness",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "agritech-devices",
+  "mapped_by": "override"
  },
  {
   "key": "S1E3P8",
@@ -608,7 +608,7 @@
   "deal": null,
   "brief": "Anti-viral, anti-bacterial fabric for multiple uses (healthy cover for all)",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "industrial-solutions",
   "mapped_by": "override"
  },
  {
@@ -645,8 +645,8 @@
   },
   "brief": "Early-stage learning and brain development program for children",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S1E7P20",
@@ -673,8 +673,8 @@
   "deal": null,
   "brief": "Special devices to improve access and accessibility for visually impaired people",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "device|gadget"
+  "idea_slug": "medical-devices-startup",
+  "mapped_by": "@hardware → wheelchair|visually impaired|braille|mas"
  },
  {
   "key": "S1E7P21",
@@ -708,8 +708,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S1E7P22",
@@ -883,8 +883,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S1E9P27",
@@ -1060,8 +1060,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S1E11P32",
@@ -1261,8 +1261,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "gaming-and-esports",
+  "mapped_by": "@app → gam|esport|metaverse|roblox|virtual real"
  },
  {
   "key": "S1E13P38",
@@ -1299,8 +1299,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "device|gadget"
+  "idea_slug": "medical-devices-startup",
+  "mapped_by": "@hardware → wheelchair|visually impaired|braille|mas"
  },
  {
   "key": "S1E13P39",
@@ -1468,8 +1468,8 @@
   "deal": null,
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S1E15P44",
@@ -1504,8 +1504,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E15P45",
@@ -1540,8 +1540,8 @@
   },
   "brief": null,
   "reddit_url": null,
-  "idea_slug": "saas-micro-product",
-  "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "override"
  },
  {
   "key": "S1E15P46",
@@ -1795,8 +1795,8 @@
   },
   "brief": "India's first online school for class VI-X",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S1E17P53",
@@ -1859,7 +1859,7 @@
   },
   "brief": "Mobile app powered by vibration-based road roughness technology",
   "reddit_url": null,
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -2102,8 +2102,8 @@
   "deal": null,
   "brief": "Safety Valve for Gas Leakage",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S1E20P63",
@@ -2280,8 +2280,8 @@
   },
   "brief": "Inventor and patent-holder of several life-simplifying products",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E21P68",
@@ -2826,8 +2826,8 @@
    "valuation_lakh": 500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E26P85",
@@ -2957,7 +2957,7 @@
   "deal": null,
   "brief": "Smart home device for switchboards (both b2b and b2c)",
   "reddit_url": null,
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -3097,8 +3097,8 @@
   },
   "brief": "Supplementary rod for fans to prevent suicides",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S1E29P93",
@@ -3219,7 +3219,7 @@
   "deal": null,
   "brief": "A plastic ring as a cover for glass rims",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "industrial-solutions",
   "mapped_by": "override"
  },
  {
@@ -3256,8 +3256,8 @@
   },
   "brief": "Organising OTT kabaddi games",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S1E30P98",
@@ -3312,8 +3312,8 @@
   "deal": null,
   "brief": "Matching students with scholarships",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S1E31P100",
@@ -3368,8 +3368,8 @@
   "deal": null,
   "brief": "Device to preserve fruits and vegetables",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "agritech-devices",
+  "mapped_by": "override"
  },
  {
   "key": "S1E31P102",
@@ -3432,8 +3432,8 @@
   "deal": null,
   "brief": "Smart door locks and wardrobe locks",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S1E32P104",
@@ -3524,8 +3524,8 @@
   },
   "brief": "Rewards app for physical activity, selling health insurance",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S1E32P107",
@@ -3691,8 +3691,8 @@
   },
   "brief": "Bodycam and audio system for field professional surveillance",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S1E34P112",
@@ -3813,8 +3813,8 @@
   "deal": null,
   "brief": "Hybrid Cooktop with Induction at Bottom and Microwave Tech on Lid for Fast Cooking",
   "reddit_url": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E35P116",
@@ -3880,8 +3880,8 @@
   "deal": null,
   "brief": "Nearby Washroom Locator & Personal Hygeine App on Subscription Model",
   "reddit_url": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S1E35P118",
@@ -4005,8 +4005,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S1E36P122",
@@ -4118,8 +4118,8 @@
    "valuation_lakh": 800.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S1E0P126",
@@ -4144,8 +4144,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S1E0P127",
@@ -4326,8 +4326,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S1E0P134",
@@ -4352,8 +4352,8 @@
    "valuation_lakh": 2000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E0P135",
@@ -4482,8 +4482,8 @@
    "valuation_lakh": 5500.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S1E0P140",
@@ -4508,8 +4508,8 @@
    "valuation_lakh": 1429.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S1E0P141",
@@ -4664,8 +4664,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S1E0P147",
@@ -4820,8 +4820,8 @@
    "valuation_lakh": 7500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "override"
  },
  {
   "key": "S2E1P153",
@@ -4987,8 +4987,8 @@
     "Anupam"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S2E2P158",
@@ -5221,8 +5221,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S2E5P165",
@@ -5381,8 +5381,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "b2b-saas-startup",
+  "mapped_by": "@app → business|enterprise|software|automation|"
  },
  {
   "key": "S2E6P170",
@@ -5537,8 +5537,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E8P175",
@@ -5727,8 +5727,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S2E10P181",
@@ -5830,8 +5830,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "b2b-saas-startup",
+  "mapped_by": "@app → business|enterprise|software|automation|"
  },
  {
   "key": "S2E11P184",
@@ -5995,8 +5995,8 @@
     "Amit"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S2E13P189",
@@ -6090,8 +6090,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S2E14P192",
@@ -6357,8 +6357,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S2E17P200",
@@ -6512,8 +6512,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "medical-devices-startup",
+  "mapped_by": "@hardware → wheelchair|visually impaired|braille|mas"
  },
  {
   "key": "S2E18P205",
@@ -6879,8 +6879,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S2E22P217",
@@ -7021,8 +7021,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "medical-devices-startup",
+  "mapped_by": "@hardware → wheelchair|visually impaired|braille|mas"
  },
  {
   "key": "S2E23P221",
@@ -7498,8 +7498,8 @@
    "valuation_lakh": 666.6666667
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S2E27P236",
@@ -7524,8 +7524,8 @@
    "valuation_lakh": 2500.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "gaming-and-esports",
+  "mapped_by": "@app → gam|esport|metaverse|roblox|virtual real"
  },
  {
   "key": "S2E28P237",
@@ -7619,7 +7619,7 @@
     "Anupam"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -7657,8 +7657,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S2E29P241",
@@ -7694,8 +7694,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E29P242",
@@ -7866,8 +7866,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E31P248",
@@ -7994,8 +7994,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S2E32P252",
@@ -8020,8 +8020,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S2E33P253",
@@ -8054,8 +8054,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E33P254",
@@ -8219,8 +8219,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E35P259",
@@ -8255,8 +8255,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E35P260",
@@ -8315,8 +8315,8 @@
    "valuation_lakh": 8000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "gaming-and-esports",
+  "mapped_by": "@app → gam|esport|metaverse|roblox|virtual real"
  },
  {
   "key": "S2E35P262",
@@ -8436,8 +8436,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S2E37P266",
@@ -8557,8 +8557,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S2E38P270",
@@ -8644,8 +8644,8 @@
     "Amit"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S2E38P273",
@@ -8744,8 +8744,8 @@
     "Amit"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E39P276",
@@ -8831,8 +8831,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S2E40P279",
@@ -8955,8 +8955,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E41P283",
@@ -8989,8 +8989,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S2E41P284",
@@ -9190,8 +9190,8 @@
     "Amit"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S2E43P291",
@@ -9404,8 +9404,8 @@
     "Vineeta"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S2E45P298",
@@ -9438,8 +9438,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S2E45P299",
@@ -9646,8 +9646,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S2E47P306",
@@ -9734,8 +9734,8 @@
    "valuation_lakh": 166.6666667
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → default"
  },
  {
   "key": "S2E48P309",
@@ -9760,8 +9760,8 @@
    "valuation_lakh": 700.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S2E48P310",
@@ -10145,8 +10145,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S3E1P322",
@@ -10403,8 +10403,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E3P330",
@@ -10429,8 +10429,8 @@
    "valuation_lakh": 3250.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S3E4P331",
@@ -10524,8 +10524,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S3E5P334",
@@ -10596,8 +10596,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S3E5P336",
@@ -10874,8 +10874,8 @@
     "Anupam"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → default"
  },
  {
   "key": "S3E8P345",
@@ -10900,8 +10900,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S3E9P346",
@@ -10952,8 +10952,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E9P348",
@@ -11081,8 +11081,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E11P352",
@@ -11665,7 +11665,7 @@
     "Ronnie Screwvala"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -11785,8 +11785,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "b2b-saas-startup",
+  "mapped_by": "override"
  },
  {
   "key": "S3E18P374",
@@ -11811,8 +11811,8 @@
    "valuation_lakh": 2500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S3E18P375",
@@ -11837,8 +11837,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "override"
  },
  {
   "key": "S3E19P376",
@@ -11874,8 +11874,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S3E19P377",
@@ -11900,8 +11900,8 @@
    "valuation_lakh": 3333.333333
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S3E19P378",
@@ -12275,8 +12275,8 @@
    "valuation_lakh": 66.66666667
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S3E23P390",
@@ -12456,8 +12456,8 @@
     "Varun Dua,Radhika Gupta"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S3E25P396",
@@ -12490,8 +12490,8 @@
     "Varun Dua"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S3E26P397",
@@ -12527,7 +12527,7 @@
     "Azhar Iqubal"
    ]
   },
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "consumer-gadgets-brand",
   "mapped_by": "override"
  },
  {
@@ -12647,8 +12647,8 @@
    "valuation_lakh": 25000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S3E27P402",
@@ -13041,8 +13041,8 @@
     "Amit"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S3E31P414",
@@ -13067,8 +13067,8 @@
    "valuation_lakh": 600.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E32P415",
@@ -13222,8 +13222,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  },
  {
   "key": "S3E33P420",
@@ -13624,8 +13624,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E38P433",
@@ -13877,8 +13877,8 @@
    "valuation_lakh": 3003.003003
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S3E40P441",
@@ -13945,8 +13945,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S3E41P443",
@@ -14204,8 +14204,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E44P451",
@@ -14230,8 +14230,8 @@
    "valuation_lakh": 9000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S3E44P452",
@@ -14265,8 +14265,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E44P453",
@@ -14326,8 +14326,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "edtech-startup",
+  "mapped_by": "override"
  },
  {
   "key": "S3E45P455",
@@ -14395,7 +14395,7 @@
     "Peyush"
    ]
   },
-  "idea_slug": "consumer-app-startup",
+  "idea_slug": "fintech-startup",
   "mapped_by": "override"
  },
  {
@@ -14456,8 +14456,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S3E46P459",
@@ -14542,8 +14542,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S3E47P462",
@@ -14867,8 +14867,8 @@
    "valuation_lakh": 1500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S3E51P473",
@@ -15054,7 +15054,7 @@
    "valuation_lakh": 7000.0
   },
   "deal": null,
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "manage plants"
  },
  {
@@ -15149,8 +15149,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S4E2P482",
@@ -15245,8 +15245,8 @@
    "valuation_lakh": 7500.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S4E3P485",
@@ -15408,8 +15408,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S4E4P490",
@@ -15598,8 +15598,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "b2b-saas-startup",
+  "mapped_by": "@app → business|enterprise|software|automation|"
  },
  {
   "key": "S4E6P496",
@@ -16012,8 +16012,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S4E11P510",
@@ -16107,8 +16107,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S4E12P513",
@@ -16229,8 +16229,8 @@
    "valuation_lakh": 15151.51515
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S4E14P517",
@@ -16265,8 +16265,8 @@
     "Varun Dua"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S4E14P518",
@@ -16335,8 +16335,8 @@
     "Varun Dua"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S4E15P520",
@@ -16370,8 +16370,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S4E15P521",
@@ -16396,7 +16396,7 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -16805,8 +16805,8 @@
     "Peyush"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S4E19P534",
@@ -17974,7 +17974,7 @@
    "valuation_lakh": 1800.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "consumer-gadgets-brand",
   "mapped_by": "override"
  },
  {
@@ -18037,8 +18037,8 @@
    "valuation_lakh": 3333.333333
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S4E32P573",
@@ -18146,8 +18146,8 @@
     "Kunal Bahl"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S4E33P576",
@@ -18490,8 +18490,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S4E37P587",
@@ -18680,8 +18680,8 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S4E39P593",
@@ -18766,8 +18766,8 @@
    "valuation_lakh": 4000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S4E40P596",
@@ -18894,8 +18894,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S4E41P600",
@@ -19075,8 +19075,8 @@
     "Vineeta"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S4E43P606",
@@ -19257,8 +19257,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "machine|waterless|wheelchair|wearable|air purifier|cleaning device|massager|smart watch"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S4E45P612",
@@ -19552,8 +19552,8 @@
    "valuation_lakh": 2500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "medical-devices-startup",
+  "mapped_by": "@hardware → wheelchair|visually impaired|braille|mas"
  },
  {
   "key": "S4E49P623",
@@ -19647,8 +19647,8 @@
    "valuation_lakh": 900.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "gps|tracker|dna"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S4E50P626",
@@ -20135,7 +20135,7 @@
     "Kunal Bahl,Mohit Yadav"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -20169,8 +20169,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "robot|drone|aerial|underwater|wearable|virtual reality|4d"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S5E3P643",
@@ -20256,8 +20256,8 @@
    "valuation_lakh": 1615.384615
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S5E4P646",
@@ -20510,7 +20510,7 @@
     "Anupam"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -20642,8 +20642,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "gaming-and-esports",
+  "mapped_by": "@app → gam|esport|metaverse|roblox|virtual real"
  },
  {
   "key": "S5E9P658",
@@ -20858,8 +20858,8 @@
    "valuation_lakh": 750.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S5E11P665",
@@ -20979,8 +20979,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "qr based"
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S5E13P669",
@@ -21005,8 +21005,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S5E13P670",
@@ -21039,8 +21039,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S5E14P671",
@@ -21134,8 +21134,8 @@
     "Kunal Bahl,Kanika Tekriwal"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S5E15P674",
@@ -21202,8 +21202,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S5E15P676",
@@ -21236,7 +21236,7 @@
     "Aman"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -21633,7 +21633,7 @@
    "valuation_lakh": 9000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "gaming-and-esports",
   "mapped_by": "override"
  },
  {
@@ -21765,8 +21765,8 @@
    "valuation_lakh": 10000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "deeptech-hardware",
+  "mapped_by": "@hardware → robot|drone|aerial|underwater|aircraft|g"
  },
  {
   "key": "S5E21P694",
@@ -21791,8 +21791,8 @@
    "valuation_lakh": 15000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "sensor|ring"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S5E22P695",
@@ -22068,8 +22068,8 @@
     "Namita"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S5E25P704",
@@ -22128,8 +22128,8 @@
    "valuation_lakh": 1000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S5E26P706",
@@ -22276,8 +22276,8 @@
     "Kunal Bahl"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S5E27P711",
@@ -22448,8 +22448,8 @@
    "valuation_lakh": 12000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S5E29P717",
@@ -22535,8 +22535,8 @@
     "Kunal Bahl,Varun Alagh,Viraj Bahl"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S5E30P720",
@@ -22630,7 +22630,7 @@
     "Ritesh"
    ]
   },
-  "idea_slug": "hardware-product-startup",
+  "idea_slug": "consumer-gadgets-brand",
   "mapped_by": "override"
  },
  {
@@ -22846,8 +22846,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S5E34P730",
@@ -22932,8 +22932,8 @@
    "valuation_lakh": 3500.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S5E35P733",
@@ -22992,7 +22992,7 @@
     "Amit"
    ]
   },
-  "idea_slug": "saas-micro-product",
+  "idea_slug": "b2b-saas-startup",
   "mapped_by": "software|automation|enterprise|optimization|character recognition|fees payment|builder|analytics|facade|fasade"
  },
  {
@@ -23018,8 +23018,8 @@
    "valuation_lakh": 3200.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S5E36P736",
@@ -23182,8 +23182,8 @@
     "Kanika Tekriwal"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "\\bapp\\b|platform|dating|social|meetup|club|conversations|anger management|astrology|letter writing"
+  "idea_slug": "community-and-social-app",
+  "mapped_by": "@app → social|community|dating|meetup|club|conv"
  },
  {
   "key": "S5E37P742",
@@ -23381,8 +23381,8 @@
    "valuation_lakh": 666.6666667
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S5E40P749",
@@ -23476,8 +23476,8 @@
    "valuation_lakh": 3333.333333
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "fuel caps|helmet|pillow|gyrocopter|aircraft|hydrogen"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S5E41P752",
@@ -23544,8 +23544,8 @@
     "Aman"
    ]
   },
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "industrial-solutions",
+  "mapped_by": "@hardware → pothole|contamination|pipeline|congestio"
  },
  {
   "key": "S5E41P754",
@@ -23570,8 +23570,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "healthtech-startup",
+  "mapped_by": "@app → health|doctor|pharmacy|pregnan|parenting"
  },
  {
   "key": "S5E42P755",
@@ -23638,8 +23638,8 @@
     "Shaily Mehrotra"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "override"
  },
  {
   "key": "S5E42P757",
@@ -23750,8 +23750,8 @@
    "valuation_lakh": 3333.333333
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "fintech-startup",
+  "mapped_by": "@app → credit|lending|stock|trading|expense|upi"
  },
  {
   "key": "S5E44P761",
@@ -23922,8 +23922,8 @@
    "valuation_lakh": 500.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S5E45P767",
@@ -23983,8 +23983,8 @@
    "valuation_lakh": 7500.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "content-and-media-platform",
+  "mapped_by": "@app → content|audio|news|music|stream|comic|an"
  },
  {
   "key": "S5E46P769",
@@ -24113,7 +24113,7 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
+  "idea_slug": "fintech-startup",
   "mapped_by": "override"
  },
  {
@@ -24148,8 +24148,8 @@
     "Anupam"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "b2b-saas-startup",
+  "mapped_by": "@app → business|enterprise|software|automation|"
  },
  {
   "key": "S5E48P775",
@@ -24174,8 +24174,8 @@
    "valuation_lakh": 5000.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "smart|device|detector|disposal|deterrence|machine|lock|invention|automatic|autonomous|portable|wearable|3d printing|drone|television|speaker|audio|headphone|jet spray|urinal|cradle|fan rod|drinking shield|storage|fire extinguisher|cooker|cooling|billing|lighting|dryer|stick|telescope|card|currency|packaging|chemical|contamination|pipelines|congestion|fuel|mosquito|material|mats|panels|restoration|construction|robot|attachment|ashtray|mirroring|sauna|glass"
+  "idea_slug": "consumer-gadgets-brand",
+  "mapped_by": "@hardware → default"
  },
  {
   "key": "S5E48P776",
@@ -24492,8 +24492,8 @@
     "Kunal Bahl,Mohit Yadav,Pratham Mittal"
    ]
   },
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "services-marketplace-app",
+  "mapped_by": "@app → booking|hiring|nanny|salon|saloon|auto c"
  },
  {
   "key": "S5E52P787",
@@ -24552,8 +24552,8 @@
    "valuation_lakh": 750.0
   },
   "deal": null,
-  "idea_slug": "hardware-product-startup",
-  "mapped_by": "gps|tracker|dna"
+  "idea_slug": "safety-and-security-devices",
+  "mapped_by": "@hardware → helmet|lock|safety|security|fire|extingu"
  },
  {
   "key": "S5E52P789",
@@ -24578,7 +24578,7 @@
    "valuation_lakh": 120.0
   },
   "deal": null,
-  "idea_slug": "consumer-app-startup",
-  "mapped_by": "."
+  "idea_slug": "edtech-startup",
+  "mapped_by": "@app → learn|edtech|education|school|student|co"
  }
 ]

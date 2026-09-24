@@ -25,6 +25,7 @@ const ARCHETYPES = {
 const WEIGHT_INTEREST = 0.72;
 const WEIGHT_TRAITS = 0.28;
 const OVERSHOOT_PENALTY = 0.25; // having more of a trait than an idea needs costs little
+const LOCAL_BONUS = 0.05; // the user's district ODOP: raw material, artisans and buyers are nearby
 const TRAIT_FIT_KEYS = ["openness", "conscientiousness", "extraversion", "agreeableness"];
 
 // ── Profile ──────────────────────────────────────────────────────────────────
@@ -34,7 +35,7 @@ export function computeProfile(questions, answers) {
   const sums = {}, counts = {};
   for (const q of questions) {
     const a = answers[q.id];
-    if (a == null || q.kind === "choice") continue;
+    if (a == null || (q.kind !== "interest" && q.kind !== "trait")) continue;
     const key = q.kind === "interest" ? q.dim : q.trait;
     const v = q.reverse ? 6 - a : a;
     sums[key] = (sums[key] ?? 0) + (v - 1) / 4;
@@ -49,6 +50,8 @@ export function computeProfile(questions, answers) {
       location: answers.location ?? "open",
       team: answers.team ?? "small",
       time: answers.time ?? "full",
+      // The ODOP product of the user's district, if they picked one and it maps to an idea.
+      localIdea: answers.district?.idea || null,
     },
   };
 }
@@ -147,10 +150,12 @@ export function scoreIdea(idea, profile) {
   const userVec = DIMS.map((d) => profile.riasec[d]);
   const interest = interestFit(userVec, idea.riasec);
   const traits = traitFit(profile.traits, idea.traits);
+  const local = profile.constraints.localIdea === idea.slug;
   const score =
     WEIGHT_INTEREST * interest + WEIGHT_TRAITS * traits -
-    teamPenalty(idea, profile.constraints.team) - riskPenalty(idea, profile.traits);
-  return { idea, score, interest, traits };
+    teamPenalty(idea, profile.constraints.team) - riskPenalty(idea, profile.traits) +
+    (local ? LOCAL_BONUS : 0);
+  return { idea, score, interest, traits, local };
 }
 
 /** Returns { top, runnersUp, relaxed } — runners-up prefer different sub-categories. */
@@ -182,7 +187,7 @@ const TRAIT_LINES = {
   agreeableness: "Happy customers drive it, and you naturally put them first.",
 };
 
-export function whyCopy(result, profile, { withIntro = true } = {}) {
+export function whyCopy(result, profile, { withIntro = true, district = null } = {}) {
   const [a, b] = topDims(profile.riasec, 2);
   const ideaTop = topDims(Object.fromEntries(DIMS.map((d, i) => [d, result.idea.riasec[i]])), 2);
   const shared = ideaTop.filter((d) => d === a || d === b);
@@ -204,7 +209,14 @@ export function whyCopy(result, profile, { withIntro = true } = {}) {
     if (need >= 0.55 && have >= need - 0.05 && (!best || need > best.need)) best = { k, need };
   }
   if (best) line += " " + TRAIT_LINES[best.k];
+  if (result.local && district) {
+    line += ` It's also ${district.district}'s ODOP product, so raw material, skilled workers and buyers are already nearby.`;
+  }
   return line.trim();
+}
+
+export function formatRupees(rupees) {
+  return rupees == null ? "" : formatLakh(rupees / 100000);
 }
 
 /** Amounts in the Shark Tank data are in ₹ lakhs. */
