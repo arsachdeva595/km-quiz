@@ -1,0 +1,162 @@
+{
+  "model": "services-marketplace-app",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹1–5 crore for a product team, supply onboarding and marketing in several cities",
+    "margin_d2c": "Commission of 15–30% on each booking",
+    "margin_production": "Providers keep 70–85% of the booking value",
+    "breakeven": "3–5 years",
+    "distribution_score": 2,
+    "distribution_note": "You must win both customers and providers; quality control is the hard part"
+  },
+  "tailwinds": [
+    "City households book more services online, from salons to repairs.",
+    "UPI and smartphones make booking and paying easy.",
+    "Skilled workers want steady work and fair pay.",
+    "Smaller cities have few organised service options."
+  ],
+  "headwinds": [
+    "Urban Company dominates many home services in metros.",
+    "Providers leave the platform to work directly with customers.",
+    "Quality varies, and one bad experience loses a customer.",
+    "Marketing to both sides is expensive."
+  ],
+  "angle_2026": "Big platforms have set customer expectations for home services, but many service categories and smaller cities are still unorganised. In 2026, marketplaces that grow focus on one service and one city, control quality through training and standards, and treat providers well enough that they stay.",
+  "cost_basis": "Estimated for a team launching a marketplace for one service in one city, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Product build",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Booking app or web, payments, provider app"
+    },
+    {
+      "item": "Provider onboarding and training",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Verification, training, kits"
+    },
+    {
+      "item": "Customer acquisition",
+      "low": "₹1,00,000",
+      "high": "₹4,00,000",
+      "covers": "Ads, referrals, offers"
+    },
+    {
+      "item": "Operations team",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Support and quality checks"
+    },
+    {
+      "item": "Company setup",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Registration, contracts, insurance"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹1,000 booking:",
+    "rows": [
+      [
+        "Provider payout",
+        "₹700–850"
+      ],
+      [
+        "Payment fees",
+        "₹20"
+      ],
+      [
+        "Customer support and quality",
+        "₹30–60"
+      ],
+      [
+        "Marketing per booking",
+        "₹50–150"
+      ],
+      [
+        "What you keep",
+        "₹0–150 per booking at first; more as repeat bookings grow"
+      ]
+    ],
+    "note": "Repeat customers and providers who stay are what make a marketplace profitable."
+  },
+  "investor_probes": [
+    "What share of customers book again?",
+    "How many providers stay after 3 months?",
+    "How do you stop providers taking customers off-platform?",
+    "How do you ensure quality?"
+  ],
+  "bootstrap_takeaway": "Start by running bookings manually with a small group of trusted providers in one area. Build the app once you know demand and quality work.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "Company registration",
+    "GST registration",
+    "Background verification of providers",
+    "Agreements covering payouts and liability",
+    "Compliance with the Code on Social Security rules for gig and platform workers as they take effect"
+  ],
+  "schemes": [
+    "startupindia",
+    "udyam",
+    "mudra"
+  ],
+  "hard_truths": [
+    {
+      "title": "Leakage",
+      "text": "Customers and providers may bypass you. Offer guarantees, insurance and convenience."
+    },
+    {
+      "title": "Quality",
+      "text": "One bad provider can damage your brand. Train and review regularly."
+    },
+    {
+      "title": "Two-sided growth",
+      "text": "You need enough providers and customers at the same time. Start small."
+    },
+    {
+      "title": "Big competitors",
+      "text": "Avoid head-on competition in their strongest categories."
+    }
+  ],
+  "plan_goal": "The aim is 300 bookings a month in one area, with 40% repeat customers.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Validate",
+      "steps": [
+        "Pick one service and area.",
+        "Talk to 30 customers and 20 providers.",
+        "Check competitors."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Run manually",
+      "steps": [
+        "Onboard 10–15 providers.",
+        "Take bookings on WhatsApp.",
+        "Track quality."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Grow",
+      "steps": [
+        "Add referrals.",
+        "Build a simple booking app.",
+        "Train providers."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Measure repeat rates and margins.",
+        "Decide on next area or service.",
+        "Plan funding."
+      ]
+    }
+  ]
+}

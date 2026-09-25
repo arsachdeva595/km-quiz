@@ -1,0 +1,173 @@
+{
+  "model": "consumer-gadgets-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹50 lakh–3 crore for your own designs, certification, stock and retail distribution",
+    "margin_d2c": "35–50% gross margin selling online",
+    "margin_production": "15–25% through retail and distributors",
+    "breakeven": "18–36 months",
+    "distribution_score": 3,
+    "distribution_note": "Marketplaces and creators drive sales; returns and warranty claims are the risk"
+  },
+  "tailwinds": [
+    "Contract manufacturers in India and abroad can make gadgets under your brand in small runs.",
+    "Government production incentives are pushing electronics manufacturing into India.",
+    "Buyers in smaller cities are buying audio, wearables and smart home products online.",
+    "Brands like boAt, Noise and Hammer proved Indian gadget brands can grow fast."
+  ],
+  "headwinds": [
+    "Many gadget brands sell the same factory products, so price wars are constant.",
+    "BIS registration is compulsory for many electronics, which adds time and cost.",
+    "Warranty claims and defective units can wipe out margins.",
+    "Products go out of date quickly, and old stock loses value fast."
+  ],
+  "angle_2026": "The first wave of Indian gadget brands grew by rebranding factory products. That market is now saturated and price-driven. In 2026, gadget brands that grow either design something genuinely new, like a natural air purifier or a smart home gym, or own one audience with better service and design.",
+  "cost_basis": "Estimated for a brand working with a contract manufacturer, 1–2 products and online sales, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Product design and samples",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Industrial design, prototypes, testing"
+    },
+    {
+      "item": "BIS and safety certification",
+      "low": "₹50,000",
+      "high": "₹3,00,000",
+      "covers": "BIS registration, testing for each model"
+    },
+    {
+      "item": "First production run",
+      "low": "₹2,00,000",
+      "high": "₹6,00,000",
+      "covers": "500–2,000 units depending on the product"
+    },
+    {
+      "item": "Packaging and manuals",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Boxes, inserts, manuals, warranty cards"
+    },
+    {
+      "item": "Service and warranty setup",
+      "low": "₹20,000",
+      "high": "₹1,00,000",
+      "covers": "Service partner, spare parts, support line"
+    },
+    {
+      "item": "Launch marketing",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Creators, reviews, ads, marketplace fees"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹2,999 gadget sold online:",
+    "rows": [
+      [
+        "Product cost",
+        "₹1,000–1,400"
+      ],
+      [
+        "Packaging and accessories",
+        "₹100–150"
+      ],
+      [
+        "Shipping and payment fees",
+        "₹120–180"
+      ],
+      [
+        "Marketplace commission or ads",
+        "₹450–700"
+      ],
+      [
+        "Warranty and returns reserve",
+        "5–10% of the price"
+      ],
+      [
+        "What you keep",
+        "₹300–600 per unit"
+      ]
+    ],
+    "note": "Defect rates decide profits. A 5% defect rate on a low-margin gadget can wipe out most of your profit, so test every batch."
+  },
+  "investor_probes": [
+    "What is your defect and return rate?",
+    "What's different about your product from factory rebrands?",
+    "How much stock do you hold, and how fast does it lose value?",
+    "How do you handle warranty and service?"
+  ],
+  "bootstrap_takeaway": "Start with one product that you have designed or improved in a meaningful way, get it certified, and sell through creators and one marketplace before building a range.",
+  "cluster_based": false,
+  "sourcing_edge": "Contract manufacturers in Noida, Chennai and Shenzhen make most consumer electronics. Visiting factories and inspecting batches before shipping avoids defects.",
+  "licences": [
+    "BIS registration under the Compulsory Registration Scheme for listed electronics",
+    "GST registration",
+    "Import-export code if you import",
+    "E-waste (EPR) registration with the Central Pollution Control Board",
+    "Trademark application"
+  ],
+  "schemes": [
+    "udyam",
+    "startupindia",
+    "cgtmse",
+    "mudra"
+  ],
+  "hard_truths": [
+    {
+      "title": "Price wars",
+      "text": "If your product is the same as others from the same factory, buyers will pick the cheapest. Design, features or service must set you apart."
+    },
+    {
+      "title": "Defects and returns",
+      "text": "Electronics break. Budget for testing, spare units and service partners from day one."
+    },
+    {
+      "title": "Fast-changing technology",
+      "text": "Products age quickly. Keep batches small so you're not stuck with last year's model."
+    },
+    {
+      "title": "Certification delays",
+      "text": "BIS approval for each model can take weeks or months. Plan launches around it."
+    }
+  ],
+  "plan_goal": "The aim is 500 units sold with a defect rate below 3% and strong reviews.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Choose the product",
+      "steps": [
+        "Find one problem your gadget solves better than what's available.",
+        "Talk to 30 target buyers about what they use now.",
+        "Get quotes and samples from 3 manufacturers."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Develop and certify",
+      "steps": [
+        "Refine the design and test samples for a month.",
+        "Start BIS and EPR registration.",
+        "Plan packaging and warranty support."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Launch",
+      "steps": [
+        "Produce a small batch and inspect every unit.",
+        "Launch on one marketplace and your own site.",
+        "Send units to 20 reviewers and creators."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Track defects, returns and reviews.",
+        "Calculate margin after all fees.",
+        "Decide whether to improve the product or add a second one."
+      ]
+    }
+  ]
+}

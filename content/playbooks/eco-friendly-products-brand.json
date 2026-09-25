@@ -1,0 +1,163 @@
+{
+  "model": "eco-friendly-products-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹3–8 lakh",
+    "capital_scaled": "₹30 lakh–1.5 crore for your own manufacturing and B2B supply",
+    "margin_d2c": "45–60% gross margin selling direct",
+    "margin_production": "20–35% selling in bulk to businesses",
+    "breakeven": "15–30 months",
+    "distribution_score": 3,
+    "distribution_note": "B2B buyers and conscious consumers; price is the main barrier"
+  },
+  "tailwinds": [
+    "India's single-use plastic ban has created demand for alternatives.",
+    "Companies need sustainable packaging to meet EPR and ESG goals.",
+    "Buyers increasingly prefer eco-friendly products.",
+    "Bamboo, jute and agricultural waste are cheap raw materials."
+  ],
+  "headwinds": [
+    "Eco products usually cost more than plastic.",
+    "Enforcement of plastic bans is uneven.",
+    "Greenwashing claims make buyers sceptical.",
+    "Quality can be inconsistent."
+  ],
+  "angle_2026": "Plastic bans and EPR rules have made sustainable packaging a business need, not just a preference. In 2026, eco brands grow by selling to businesses that must meet rules, and by making products that match plastic on price and quality.",
+  "cost_basis": "Estimated for a brand sourcing from manufacturers and selling to consumers and businesses, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "First production run",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Materials and manufacturing"
+    },
+    {
+      "item": "Product development",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Samples, testing"
+    },
+    {
+      "item": "Certifications",
+      "low": "₹20,000",
+      "high": "₹1,00,000",
+      "covers": "Compostability, food-contact tests"
+    },
+    {
+      "item": "Packaging and branding",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Labels, boxes"
+    },
+    {
+      "item": "Marketing",
+      "low": "₹30,000",
+      "high": "₹1,50,000",
+      "covers": "B2B outreach, creators"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹500 eco product sold online:",
+    "rows": [
+      [
+        "Product cost",
+        "₹150–220"
+      ],
+      [
+        "Packaging",
+        "₹20–40"
+      ],
+      [
+        "Shipping and fees",
+        "₹60–100"
+      ],
+      [
+        "Marketing",
+        "₹60–100"
+      ],
+      [
+        "What you keep",
+        "₹80–150 per unit"
+      ]
+    ],
+    "note": "Bulk orders from businesses have lower margins but no ad costs."
+  },
+  "investor_probes": [
+    "Can your product match plastic on price?",
+    "Are your eco claims certified?",
+    "Who are your business buyers?",
+    "How do you ensure quality?"
+  ],
+  "bootstrap_takeaway": "Start with one product for business buyers who must replace plastic, then build a consumer brand.",
+  "cluster_based": true,
+  "sourcing_edge": "Bamboo from Assam and Tripura, jute from West Bengal, areca leaves from Karnataka and bagasse from sugar mills are cheap raw materials.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "Compostability certification (CIPET or similar) for compostable claims",
+    "Plastic Waste Management and EPR registration where relevant",
+    "Trademark application"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "pmegp",
+    "cgtmse"
+  ],
+  "hard_truths": [
+    {
+      "title": "Price gap",
+      "text": "Eco products usually cost more. Target buyers who must switch or value sustainability."
+    },
+    {
+      "title": "Greenwashing",
+      "text": "Unproven claims damage trust. Certify your claims."
+    },
+    {
+      "title": "Quality",
+      "text": "Natural materials vary. Test every batch."
+    },
+    {
+      "title": "Enforcement",
+      "text": "Plastic bans aren't always enforced. Don't rely on regulation alone."
+    }
+  ],
+  "plan_goal": "The aim is ₹1.5 lakh in sales, including one business buyer.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Choose the product",
+      "steps": [
+        "Pick one product replacing plastic.",
+        "Talk to 20 businesses and 30 consumers.",
+        "Get samples from 3 suppliers."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Develop",
+      "steps": [
+        "Test quality and certify claims.",
+        "Design packaging.",
+        "Register your brand."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Pitch 20 businesses.",
+        "Launch online.",
+        "Collect feedback."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Check margins and reorders.",
+        "Plan the next product.",
+        "Decide on B2B or B2C focus."
+      ]
+    }
+  ]
+}

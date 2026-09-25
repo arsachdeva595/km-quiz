@@ -1,0 +1,163 @@
+{
+  "model": "safety-and-security-devices",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for certification, production and a B2B sales team",
+    "margin_d2c": "40–55% gross margin on devices",
+    "margin_production": "25–35% through dealers and distributors",
+    "breakeven": "18–36 months",
+    "distribution_score": 2,
+    "distribution_note": "Institutions, fleets and dealers buy; certification opens doors"
+  },
+  "tailwinds": [
+    "Mandatory BIS rules for helmets and other safety products push out low-quality imports.",
+    "Companies, factories and fleets must meet safety rules.",
+    "Smart devices with alerts and tracking add value.",
+    "Families pay for personal safety and elder-care devices."
+  ],
+  "headwinds": [
+    "Certification takes time and money.",
+    "Cheap, uncertified products still sell widely.",
+    "Institutions buy slowly and through tenders.",
+    "Device failures can have serious consequences and liability."
+  ],
+  "angle_2026": "Safety products are increasingly regulated, which favours certified Indian makers. In 2026, safety device businesses grow by selling to institutions that must comply, such as factories, fleets and schools, and adding smart features that make safety measurable.",
+  "cost_basis": "Estimated for a brand developing one certified safety product and selling to institutions and consumers, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Product development",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Design, prototypes, testing"
+    },
+    {
+      "item": "Certification",
+      "low": "₹50,000",
+      "high": "₹3,00,000",
+      "covers": "BIS and safety tests"
+    },
+    {
+      "item": "First production run",
+      "low": "₹2,00,000",
+      "high": "₹5,00,000",
+      "covers": "500–1,000 units"
+    },
+    {
+      "item": "Packaging and manuals",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Boxes, instructions"
+    },
+    {
+      "item": "Sales and marketing",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Demos, dealer network, trade shows"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹3,000 safety device:",
+    "rows": [
+      [
+        "Product cost",
+        "₹1,000–1,400"
+      ],
+      [
+        "Packaging",
+        "₹60–100"
+      ],
+      [
+        "Dealer margin",
+        "₹600–900"
+      ],
+      [
+        "Warranty reserve",
+        "₹100–200"
+      ],
+      [
+        "What you keep",
+        "₹500–900 per unit"
+      ]
+    ],
+    "note": "Institutional orders can be large but need certificates, demonstrations and patience."
+  },
+  "investor_probes": [
+    "Is your product certified?",
+    "Who buys, and how long does it take?",
+    "What happens if the device fails?",
+    "How is it different from cheaper options?"
+  ],
+  "bootstrap_takeaway": "Certify one product, win a few institutional buyers with demonstrations, and use their references to reach more.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "BIS certification where mandatory (for example, helmets and fire extinguishers)",
+    "GST registration",
+    "Udyam registration",
+    "Product liability insurance",
+    "Trademark application"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "cgtmse",
+    "startupindia"
+  ],
+  "hard_truths": [
+    {
+      "title": "Certification delays",
+      "text": "Plan for months of testing."
+    },
+    {
+      "title": "Liability",
+      "text": "If a device fails, consequences can be serious. Insure and test thoroughly."
+    },
+    {
+      "title": "Cheap competitors",
+      "text": "Uncertified products undercut you. Sell to buyers who need compliance."
+    },
+    {
+      "title": "Slow institutional sales",
+      "text": "Tenders and approvals take time."
+    }
+  ],
+  "plan_goal": "The aim is a certified product and first orders from 3 institutional buyers.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Validate",
+      "steps": [
+        "Talk to 20 buyers about safety problems.",
+        "Check certification requirements.",
+        "Plan the product."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Develop",
+      "steps": [
+        "Build and test prototypes.",
+        "Start certification.",
+        "Line up a manufacturer."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Demonstrate",
+      "steps": [
+        "Demo to 10 institutions.",
+        "Offer pilots.",
+        "Collect feedback."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Secure first orders.",
+        "Calculate margins.",
+        "Plan dealer network."
+      ]
+    }
+  ]
+}

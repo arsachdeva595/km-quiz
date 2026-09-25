@@ -1,0 +1,163 @@
+{
+  "model": "ice-cream-and-desserts-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for your own plant, cold chain and parlours",
+    "margin_d2c": "55–70% gross margin selling direct",
+    "margin_production": "25–35% through retailers and distributors",
+    "breakeven": "18–36 months",
+    "distribution_score": 2,
+    "distribution_note": "Freezer space and cold chain are the big barriers"
+  },
+  "tailwinds": [
+    "Premium, healthy and artisanal ice creams are growing fast in cities.",
+    "Quick-commerce apps deliver frozen desserts in minutes.",
+    "Sugar-free, protein and vegan desserts attract new buyers.",
+    "Regional and Indian flavours like gulkand and filter coffee appeal to buyers."
+  ],
+  "headwinds": [
+    "Amul, Havmor and Kwality Wall's dominate freezers.",
+    "Cold chain is expensive, and one power cut can destroy stock.",
+    "Sales drop sharply in winter.",
+    "Ingredients like milk and cream keep getting more expensive."
+  ],
+  "angle_2026": "Quick commerce has solved the delivery problem for small ice cream brands in metros. In 2026, the brands that grow own a clear niche, such as healthy, artisanal or regional flavours, and start with parlours or quick commerce instead of fighting for retail freezers.",
+  "cost_basis": "Estimated for a small brand using a co-manufacturer or a small production unit, selling in one city, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Production equipment or co-manufacturing",
+      "low": "₹2,00,000",
+      "high": "₹6,00,000",
+      "covers": "Batch freezer, pasteuriser, hardening freezer, or co-manufacturing fees"
+    },
+    {
+      "item": "Freezers and cold storage",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Deep freezers, storage"
+    },
+    {
+      "item": "Packaging",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Tubs, cups, labels"
+    },
+    {
+      "item": "Licences and tests",
+      "low": "₹15,000",
+      "high": "₹50,000",
+      "covers": "FSSAI licence, lab tests"
+    },
+    {
+      "item": "Launch marketing",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Sampling, creators, listing fees"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹300 tub of premium ice cream (500 ml):",
+    "rows": [
+      [
+        "Ingredients",
+        "₹60–90"
+      ],
+      [
+        "Packaging",
+        "₹15–25"
+      ],
+      [
+        "Cold storage and delivery",
+        "₹30–50"
+      ],
+      [
+        "Retailer or app margin",
+        "₹60–90"
+      ],
+      [
+        "What you keep",
+        "₹60–100 per tub"
+      ]
+    ],
+    "note": "Cold chain and wastage decide profits. Track every melt and power cut."
+  },
+  "investor_probes": [
+    "How do you keep the cold chain unbroken?",
+    "What share of sales comes in summer?",
+    "How do you get freezer space?",
+    "What makes your product different?"
+  ],
+  "bootstrap_takeaway": "Start with a small parlour or quick-commerce sales in one city, and add retail only once buyers reorder.",
+  "cluster_based": false,
+  "sourcing_edge": "Buying milk and cream directly from dairies lowers cost. Sharing cold storage and delivery with other brands cuts overheads.",
+  "licences": [
+    "FSSAI licence",
+    "Udyam registration",
+    "GST registration",
+    "Legal Metrology labelling",
+    "Trade licence for parlours"
+  ],
+  "schemes": [
+    "udyam",
+    "pmfme",
+    "mudra",
+    "pmegp"
+  ],
+  "hard_truths": [
+    {
+      "title": "Cold chain",
+      "text": "Ice cream must stay frozen from production to customer. Every break costs money."
+    },
+    {
+      "title": "Winter slump",
+      "text": "Sales can halve in winter. Add desserts or hot products."
+    },
+    {
+      "title": "Freezer space",
+      "text": "Big brands give free freezers to retailers. You'll struggle for space."
+    },
+    {
+      "title": "Ingredient costs",
+      "text": "Milk and cream prices keep rising. Review prices often."
+    }
+  ],
+  "plan_goal": "The aim is 2,000 units sold, with steady reorders from outlets.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Recipes",
+      "steps": [
+        "Develop 5 flavours.",
+        "Taste-test with 100 people.",
+        "Find a co-manufacturer or plan production."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Set up",
+      "steps": [
+        "Get FSSAI licence.",
+        "Produce a small batch.",
+        "Design packaging."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "List on quick commerce.",
+        "Pitch to 20 cafés and restaurants.",
+        "Sample at events."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Track sales, wastage and margins.",
+        "Plan for winter.",
+        "Decide on next flavours or outlets."
+      ]
+    }
+  ]
+}

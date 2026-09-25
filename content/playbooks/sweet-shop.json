@@ -1,0 +1,169 @@
+{
+  "model": "sweet-shop",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh for a small shop or a packaged range",
+    "capital_scaled": "₹40 lakh–1.5 crore for a larger shop with a kitchen and gifting business",
+    "margin_d2c": "50–65% gross margin on sweets sold at the counter",
+    "margin_production": "25–35% through retail, corporate gifting and marketplaces",
+    "breakeven": "12–24 months",
+    "distribution_score": 3,
+    "distribution_note": "Festivals and gifting bring most sales; location and reputation do the rest"
+  },
+  "tailwinds": [
+    "Festivals such as Diwali, Raksha Bandhan and weddings bring huge demand every year.",
+    "Corporate gifting and premium boxed sweets are growing fast.",
+    "Sugar-free, millet and healthier sweets appeal to a new group of buyers.",
+    "Online and quick-commerce sales let sweet brands reach beyond their neighbourhood."
+  ],
+  "headwinds": [
+    "Most traditional sweets have a very short shelf life.",
+    "Milk, ghee and dry-fruit prices keep rising.",
+    "Food safety inspections are strict around festivals, and adulteration scandals hurt trust.",
+    "Established shops have decades of goodwill."
+  ],
+  "angle_2026": "Sweet buyers are split: some want traditional mithai from a trusted shop, others want premium, healthier or modern confectionery. In 2026, new sweet businesses do well by picking one side, such as premium gifting, sugar-free, or long-shelf-life packaged sweets, rather than competing with the neighbourhood halwai.",
+  "cost_basis": "Estimated for a small sweet shop or packaged sweets brand with its own kitchen, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Kitchen equipment",
+      "low": "₹1,50,000",
+      "high": "₹5,00,000",
+      "covers": "Kadhais, burners, mixers, chillers, moulds"
+    },
+    {
+      "item": "Shop fit-out",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Display counters, refrigeration, signage"
+    },
+    {
+      "item": "Rent deposit",
+      "low": "₹50,000",
+      "high": "₹3,00,000",
+      "covers": "Security deposit for the shop"
+    },
+    {
+      "item": "Opening stock",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Milk, ghee, sugar, dry fruits, packaging"
+    },
+    {
+      "item": "Licences and tests",
+      "low": "₹10,000",
+      "high": "₹40,000",
+      "covers": "FSSAI licence, trade licence, lab tests"
+    },
+    {
+      "item": "Branding and packaging",
+      "low": "₹30,000",
+      "high": "₹1,50,000",
+      "covers": "Gift boxes, labels, website"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹600 box of sweets (500 g):",
+    "rows": [
+      [
+        "Ingredients",
+        "₹180–250"
+      ],
+      [
+        "Box and packaging",
+        "₹30–60"
+      ],
+      [
+        "Labour and power",
+        "₹50–80"
+      ],
+      [
+        "Wastage",
+        "5–10% of the price"
+      ],
+      [
+        "What you keep",
+        "₹150–250 per box at the counter"
+      ]
+    ],
+    "note": "Festivals bring half or more of the year's sales. Plan production, staff and packaging months ahead."
+  },
+  "investor_probes": [
+    "What share of sales comes from festivals?",
+    "What is your wastage from unsold sweets?",
+    "How do you ensure food safety?",
+    "How do you compete with established shops?"
+  ],
+  "bootstrap_takeaway": "Start with a small range of your best sweets, sell through festival pre-orders and corporate gifting, and open a shop only when you have steady demand.",
+  "cluster_based": false,
+  "sourcing_edge": "Buying milk directly from dairies and dry fruits from wholesale markets such as Delhi's Khari Baoli cuts costs.",
+  "licences": [
+    "FSSAI licence",
+    "Trade licence or health licence from the municipality",
+    "Shops and Establishments registration",
+    "GST registration",
+    "Legal Metrology labelling for packaged sweets, including the 'best before' date"
+  ],
+  "schemes": [
+    "udyam",
+    "pmfme",
+    "mudra",
+    "pmegp"
+  ],
+  "hard_truths": [
+    {
+      "title": "Short shelf life",
+      "text": "Milk sweets spoil within days. Make to order and plan stock carefully."
+    },
+    {
+      "title": "Festival crunch",
+      "text": "You'll be overwhelmed at Diwali and quiet at other times. Hire temporary staff and plan cash flow."
+    },
+    {
+      "title": "Food safety",
+      "text": "One case of adulteration or illness can ruin your reputation. Test ingredients and keep records."
+    },
+    {
+      "title": "Rising costs",
+      "text": "Milk and ghee prices rise every year. Review prices regularly."
+    }
+  ],
+  "plan_goal": "The aim is ₹2 lakh in sales, including one festival or corporate order.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Plan your range",
+      "steps": [
+        "Choose 8–10 sweets you make best.",
+        "Taste-test with 50 people.",
+        "Price against local shops."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Set up",
+      "steps": [
+        "Get your FSSAI licence and set up a kitchen.",
+        "Design gift boxes.",
+        "Line up ingredient suppliers."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Take festival pre-orders.",
+        "Pitch corporate gifting to 20 companies.",
+        "List on one quick-commerce or delivery app."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Calculate margins by product.",
+        "Cut slow sellers.",
+        "Plan the next festival season."
+      ]
+    }
+  ]
+}

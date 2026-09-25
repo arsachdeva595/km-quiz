@@ -1,0 +1,173 @@
+{
+  "model": "footwear-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹3–8 lakh",
+    "capital_scaled": "₹40 lakh–1.5 crore for a wide size range, your own moulds and retail presence",
+    "margin_d2c": "55–65% gross margin on your own site, before returns and ads",
+    "margin_production": "25–35% on marketplaces and through dealers",
+    "breakeven": "15–30 months",
+    "distribution_score": 3,
+    "distribution_note": "Instagram and marketplaces work; size-related returns are the main cost"
+  },
+  "tailwinds": [
+    "Agra, Kanpur, Chennai-Ambur and Kolkata are major footwear clusters that make small runs for new brands.",
+    "Comfort, orthopaedic and sneaker categories are growing fast as buyers spend more on their feet.",
+    "BIS quality rules now apply to much footwear, pushing out the cheapest low-quality imports.",
+    "Sneaker culture has turned shoes into a fashion and collecting category for young buyers."
+  ],
+  "headwinds": [
+    "Footwear needs many sizes per design, so stock ties up a lot of cash.",
+    "Returns for fit often run at 20–30% online.",
+    "Bata, Campus, Puma and marketplace labels are strong at every price point.",
+    "Mould and last costs make every new design expensive to develop."
+  ],
+  "angle_2026": "Footwear quality rules have pushed out the cheapest imports, and buyers are paying more for comfort. In 2026, the footwear brands that grow own a clear need, such as orthopaedic support, work shoes for standing jobs or sneakers with a design identity, and solve fit with better size guides and exchanges.",
+  "cost_basis": "Estimated for a brand using a contract manufacturer in a footwear cluster, launching 4–6 designs across sizes, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "First production run",
+      "low": "₹1,50,000",
+      "high": "₹4,00,000",
+      "covers": "500–1,000 pairs across sizes and colours"
+    },
+    {
+      "item": "Design, lasts and moulds",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Design, sample pairs, sole moulds if custom"
+    },
+    {
+      "item": "Photoshoot and content",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Product and on-foot photos, reels"
+    },
+    {
+      "item": "Packaging",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Shoe boxes, tissue, dust bags"
+    },
+    {
+      "item": "Website and marketplaces",
+      "low": "₹15,000",
+      "high": "₹50,000",
+      "covers": "Store, listings, size charts"
+    },
+    {
+      "item": "Launch marketing",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Creators, ads, launch offers"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹2,499 pair sold on your own site:",
+    "rows": [
+      [
+        "Manufacturing",
+        "₹600–900"
+      ],
+      [
+        "Box and packaging",
+        "₹60–100"
+      ],
+      [
+        "Shipping and payment fees",
+        "₹120–180"
+      ],
+      [
+        "Ads per order",
+        "₹400–600"
+      ],
+      [
+        "Returns reserve",
+        "15–25% of the price"
+      ],
+      [
+        "What you keep",
+        "₹300–600 per pair after ads and returns"
+      ]
+    ],
+    "note": "Exchanges instead of refunds, half sizes where possible and honest size charts cut returns more than anything else."
+  },
+  "investor_probes": [
+    "What is your return rate, and how much is due to size?",
+    "How many sizes and colours are sitting unsold?",
+    "What does each first order cost in ads?",
+    "Why would a buyer choose you over Campus or a marketplace label?"
+  ],
+  "bootstrap_takeaway": "Start with 2–3 designs in your core sizes, sell pre-orders or small batches, and reorder only what sells. Add half sizes and wider fits once you know demand.",
+  "cluster_based": true,
+  "sourcing_edge": "Agra and Kanpur (leather and casual shoes), Ambur and Chennai (leather and export shoes), Kolkata and Delhi's Bahadurgarh (sports and PU shoes) will take small orders. Direct relationships with a factory owner get you better prices and priority.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "BIS certification under the footwear quality control orders, where it applies to your product",
+    "Trademark application",
+    "Correct labelling of material, size and maker details"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "pmegp",
+    "cgtmse"
+  ],
+  "hard_truths": [
+    {
+      "title": "Sizes lock up cash",
+      "text": "Every design needs 6–10 sizes. A slow size can leave you with hundreds of pairs you can't sell at full price."
+    },
+    {
+      "title": "Returns",
+      "text": "Fit problems drive returns, and each one costs two-way shipping. Invest in size charts, fit notes and easy exchanges."
+    },
+    {
+      "title": "Moulds are expensive",
+      "text": "Custom soles need moulds that cost lakhs. Use existing sole designs from your manufacturer until you have proven demand."
+    },
+    {
+      "title": "Big brands own the price",
+      "text": "Campus, Bata and marketplace labels sell good-enough shoes cheaply. You need a clear reason to exist beyond price."
+    }
+  ],
+  "plan_goal": "The aim is 300 pairs sold with a return rate below 20%.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Choose your niche",
+      "steps": [
+        "Pick one buyer and one need, such as office comfort, orthopaedic support or sneakers.",
+        "Visit a footwear cluster and meet 3–5 manufacturers.",
+        "Order samples in 2–3 designs."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "First run",
+      "steps": [
+        "Test samples on 20 people for a week each.",
+        "Produce a small run in your core sizes.",
+        "Register GST, Udyam and your trademark."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Launch on your own site and one marketplace.",
+        "Send pairs to 20 creators in your niche.",
+        "Offer free exchanges for size."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Check returns by size and design.",
+        "Reorder the best sellers.",
+        "Decide on the next design or channel."
+      ]
+    }
+  ]
+}

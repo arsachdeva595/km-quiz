@@ -1,0 +1,163 @@
+{
+  "model": "ev-assembly",
+  "snapshot": {
+    "capital_bootstrap": "₹15–40 lakh",
+    "capital_scaled": "₹1–5 crore for a type-approved vehicle, assembly line and dealer network",
+    "margin_d2c": "20–30% gross margin per vehicle",
+    "margin_production": "Dealers take 5–10% of the price",
+    "breakeven": "3–5 years",
+    "distribution_score": 2,
+    "distribution_note": "Dealers, fleets and B2B buyers drive sales; service network matters"
+  },
+  "tailwinds": [
+    "India's EV sales keep growing, especially two- and three-wheelers.",
+    "The PM E-DRIVE scheme and state EV policies support buyers and manufacturers.",
+    "Delivery fleets and e-rickshaw operators need affordable, rugged EVs.",
+    "Battery prices have fallen, making EVs cheaper to build."
+  ],
+  "headwinds": [
+    "Ola, Ather, TVS and Bajaj dominate electric scooters.",
+    "Homologation and safety testing are expensive and slow.",
+    "Battery fires have led to stricter safety rules.",
+    "Service and spare parts need a network."
+  ],
+  "angle_2026": "EV two- and three-wheelers are now mainstream, and big companies dominate consumer scooters. In 2026, smaller EV makers grow in niches such as cargo vehicles, fleets, campus mobility or farm equipment, where buyers value ruggedness and service over brand.",
+  "cost_basis": "Estimated for a small assembly unit building one vehicle type from sourced parts, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Design and prototypes",
+      "low": "₹3,00,000",
+      "high": "₹10,00,000",
+      "covers": "Frame, integration, testing"
+    },
+    {
+      "item": "Homologation and testing",
+      "low": "₹5,00,000",
+      "high": "₹20,00,000",
+      "covers": "ARAI or ICAT type approval, safety tests"
+    },
+    {
+      "item": "Assembly setup",
+      "low": "₹3,00,000",
+      "high": "₹10,00,000",
+      "covers": "Shed, tools, jigs"
+    },
+    {
+      "item": "First batch of parts",
+      "low": "₹5,00,000",
+      "high": "₹15,00,000",
+      "covers": "Motors, batteries, controllers, frames"
+    },
+    {
+      "item": "Service and marketing",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Dealers, demo vehicles"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹90,000 electric two-wheeler:",
+    "rows": [
+      [
+        "Battery",
+        "₹25,000–35,000"
+      ],
+      [
+        "Motor, controller and electronics",
+        "₹15,000–20,000"
+      ],
+      [
+        "Frame, body and assembly",
+        "₹15,000–20,000"
+      ],
+      [
+        "Dealer margin",
+        "₹5,000–9,000"
+      ],
+      [
+        "What you keep",
+        "₹10,000–20,000 per vehicle"
+      ]
+    ],
+    "note": "Batteries are the biggest cost. Battery swapping or leasing can lower the upfront price for buyers."
+  },
+  "investor_probes": [
+    "Do you have type approval?",
+    "What is your battery safety plan?",
+    "Who are your buyers?",
+    "How will you service vehicles?"
+  ],
+  "bootstrap_takeaway": "Pick a niche such as cargo, campus or farm use, get type approval, and sell to fleets first.",
+  "cluster_based": false,
+  "sourcing_edge": "Motors, controllers and battery packs are available from suppliers in Delhi-NCR, Pune and Chennai. Low-speed vehicles under 25 km/h don't need registration, which reduces approvals but limits the market.",
+  "licences": [
+    "ARAI or ICAT type approval (homologation) for road vehicles",
+    "Battery safety certification under AIS standards",
+    "GST registration",
+    "Udyam registration",
+    "Trade certificate for dealers"
+  ],
+  "schemes": [
+    "udyam",
+    "startupindia",
+    "cgtmse",
+    "pmegp"
+  ],
+  "hard_truths": [
+    {
+      "title": "Approvals take time",
+      "text": "Type approval can take months. Budget for testing."
+    },
+    {
+      "title": "Battery safety",
+      "text": "Fires damage trust. Use certified cells and BMS."
+    },
+    {
+      "title": "Big competitors",
+      "text": "Don't fight major brands in consumer scooters."
+    },
+    {
+      "title": "Service network",
+      "text": "Buyers won't buy without service."
+    }
+  ],
+  "plan_goal": "The aim is a type-approved prototype and orders from one fleet buyer.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Choose niche",
+      "steps": [
+        "Pick one use case.",
+        "Talk to fleet operators.",
+        "Map approvals."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Prototype",
+      "steps": [
+        "Build and test.",
+        "Start homologation.",
+        "Source parts."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Pilot",
+      "steps": [
+        "Run a pilot with a fleet.",
+        "Collect data.",
+        "Plan service."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Secure orders.",
+        "Calculate margins.",
+        "Plan production."
+      ]
+    }
+  ]
+}

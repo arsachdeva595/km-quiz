@@ -1,0 +1,163 @@
+{
+  "model": "deeptech-hardware",
+  "snapshot": {
+    "capital_bootstrap": "₹15–50 lakh",
+    "capital_scaled": "₹2–10 crore for a team, prototypes, certification and early production",
+    "margin_d2c": "40–60% gross margin once in production",
+    "margin_production": "Services and pilots often fund the early years",
+    "breakeven": "4–7 years",
+    "distribution_score": 1,
+    "distribution_note": "Sales are to governments, large companies and defence, with long buying cycles"
+  },
+  "tailwinds": [
+    "Drones, robotics, space and defence are priority sectors with government support and liberalised rules.",
+    "Grants from DST, iDEX (defence), BIRAC and state programmes fund early research.",
+    "IIT and university incubators offer labs and mentors.",
+    "Large companies and governments are looking for Indian suppliers instead of imports."
+  ],
+  "headwinds": [
+    "Hardware takes years and a lot of money to develop.",
+    "Buyers such as governments and defence take a long time to decide.",
+    "Certification and testing can take months.",
+    "Talent in robotics, electronics and AI is expensive and scarce."
+  ],
+  "angle_2026": "India's drone rules, defence procurement from startups through iDEX, and the space sector reforms have opened markets that were closed a few years ago. In 2026, the deeptech startups that succeed pick one buyer with a painful, expensive problem and use grants and paid pilots to fund development.",
+  "cost_basis": "Estimated for a team of 3–6 engineers building to a working prototype and first pilots, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Prototype development",
+      "low": "₹5,00,000",
+      "high": "₹20,00,000",
+      "covers": "Components, fabrication, testing rigs"
+    },
+    {
+      "item": "Team costs, first year",
+      "low": "₹10,00,000",
+      "high": "₹40,00,000",
+      "covers": "Engineers and technicians"
+    },
+    {
+      "item": "Testing and certification",
+      "low": "₹1,00,000",
+      "high": "₹10,00,000",
+      "covers": "Type certification, safety tests, field trials"
+    },
+    {
+      "item": "IP and legal",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Patents, company setup, contracts"
+    },
+    {
+      "item": "Lab space",
+      "low": "₹0",
+      "high": "₹5,00,000",
+      "covers": "Incubator space or workshop"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹5 lakh industrial robot or drone system:",
+    "rows": [
+      [
+        "Components and assembly",
+        "₹1,50,000–2,50,000"
+      ],
+      [
+        "Testing and calibration",
+        "₹20,000–40,000"
+      ],
+      [
+        "Installation and training",
+        "₹20,000–50,000"
+      ],
+      [
+        "Service reserve",
+        "₹20,000–40,000"
+      ],
+      [
+        "What you keep",
+        "₹1,00,000–2,00,000 per unit before R&D and sales"
+      ]
+    ],
+    "note": "Software, maintenance contracts and data services often make the business work. Plan for recurring revenue alongside hardware sales."
+  },
+  "investor_probes": [
+    "Who is the buyer, and have they paid for a pilot?",
+    "How long until you have a certified product?",
+    "What grants have you won?",
+    "What does each unit cost to make at 100 units?",
+    "What stops a large company copying you?"
+  ],
+  "bootstrap_takeaway": "Win grants and a paid pilot before raising equity. A paying customer and a working prototype make the first funding round much easier.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "Company registration and DPIIT startup recognition",
+    "Drone registration and type certification under the Drone Rules, 2021, for drones",
+    "Import licences for restricted components",
+    "Patent filings",
+    "Industry-specific safety certifications"
+  ],
+  "schemes": [
+    "startupindia",
+    "udyam",
+    "cgtmse"
+  ],
+  "hard_truths": [
+    {
+      "title": "It takes years",
+      "text": "Most hardware startups take 3–5 years to reach steady revenue. Plan your funding for that."
+    },
+    {
+      "title": "Pilots don't always convert",
+      "text": "Many pilots end without a purchase order. Ask for paid pilots with clear success criteria."
+    },
+    {
+      "title": "Talent is scarce",
+      "text": "Good engineers are in demand. Equity, mission and interesting problems help you compete."
+    },
+    {
+      "title": "Scaling production is hard",
+      "text": "Making ten units is very different from making a thousand. Plan manufacturing early."
+    }
+  ],
+  "plan_goal": "The aim is a working prototype, one grant application and a signed pilot with a paying buyer.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Validate the problem",
+      "steps": [
+        "Talk to 20 potential buyers about the problem and what it costs them.",
+        "Map which grants and programmes fit.",
+        "Join an incubator."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Prototype",
+      "steps": [
+        "Build a rough prototype.",
+        "Apply for grants.",
+        "File a provisional patent if there's something new."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Pilot",
+      "steps": [
+        "Demonstrate to 5 buyers.",
+        "Negotiate one paid pilot.",
+        "Plan certification and testing."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Review pilot feedback.",
+        "Estimate cost at scale.",
+        "Decide on grants, angel funding or more pilots."
+      ]
+    }
+  ]
+}

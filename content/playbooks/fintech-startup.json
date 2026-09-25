@@ -1,0 +1,162 @@
+{
+  "model": "fintech-startup",
+  "snapshot": {
+    "capital_bootstrap": "₹10–30 lakh",
+    "capital_scaled": "₹2–10 crore for licences, a product team, compliance and customer acquisition",
+    "margin_d2c": "Fees, interest spread or subscriptions depending on the product",
+    "margin_production": "Partner banks and NBFCs take a share of revenue",
+    "breakeven": "3–5 years",
+    "distribution_score": 2,
+    "distribution_note": "Trust and compliance are the barriers; partnerships open distribution"
+  },
+  "tailwinds": [
+    "UPI has made digital payments universal in India.",
+    "Account Aggregator and credit data make lending decisions faster.",
+    "Small businesses and new earners are underserved by banks.",
+    "Regulators support innovation through sandboxes."
+  ],
+  "headwinds": [
+    "RBI and SEBI rules are strict and change often.",
+    "Large players like PhonePe, Paytm and banks dominate payments.",
+    "Lending carries default risk.",
+    "Trust takes time to build."
+  ],
+  "angle_2026": "RBI has tightened rules on digital lending, and payments are dominated by large players. In 2026, fintech startups that succeed partner with regulated banks or NBFCs, focus on one underserved group, and make compliance a strength.",
+  "cost_basis": "Estimated for a small team building one financial product with a regulated partner, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Product build",
+      "low": "₹3,00,000",
+      "high": "₹10,00,000",
+      "covers": "App, integrations, security"
+    },
+    {
+      "item": "Compliance and legal",
+      "low": "₹2,00,000",
+      "high": "₹8,00,000",
+      "covers": "Licences, legal advice, audits"
+    },
+    {
+      "item": "Security",
+      "low": "₹1,00,000",
+      "high": "₹4,00,000",
+      "covers": "Audits, data protection"
+    },
+    {
+      "item": "Partnerships",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Bank or NBFC tie-ups"
+    },
+    {
+      "item": "Marketing",
+      "low": "₹2,00,000",
+      "high": "₹6,00,000",
+      "covers": "Customer acquisition"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a customer paying ₹100 a month:",
+    "rows": [
+      [
+        "Partner and payment costs",
+        "₹20–30"
+      ],
+      [
+        "Servicing and support",
+        "₹10–20"
+      ],
+      [
+        "Compliance",
+        "₹5–10"
+      ],
+      [
+        "Cost to win the customer",
+        "₹500–1,500 one time"
+      ],
+      [
+        "What you keep",
+        "₹40–60 a month once acquisition is paid back"
+      ]
+    ],
+    "note": "Retention and default rates decide everything."
+  },
+  "investor_probes": [
+    "Which licences or partners do you need?",
+    "What is your default or fraud rate?",
+    "How long does a customer stay?",
+    "How do you protect data?"
+  ],
+  "bootstrap_takeaway": "Partner with a regulated bank or NBFC instead of seeking your own licence at first. Prove demand with a narrow group of customers.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "RBI licence or a regulated partner (bank or NBFC) depending on the product",
+    "Compliance with RBI digital lending guidelines",
+    "SEBI registration for investment advice or distribution",
+    "Data protection compliance",
+    "Company registration and GST"
+  ],
+  "schemes": [
+    "startupindia",
+    "udyam",
+    "cgtmse"
+  ],
+  "hard_truths": [
+    {
+      "title": "Regulation",
+      "text": "Rules change often. Budget for legal advice."
+    },
+    {
+      "title": "Trust",
+      "text": "People are cautious with money. Transparency is essential."
+    },
+    {
+      "title": "Defaults and fraud",
+      "text": "Lending and payments attract fraud. Invest in risk systems."
+    },
+    {
+      "title": "Big competitors",
+      "text": "Large players have huge user bases. Find a niche."
+    }
+  ],
+  "plan_goal": "The aim is a regulated partner signed and 500 active customers.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Validate",
+      "steps": [
+        "Pick one customer group and problem.",
+        "Talk to 30 target users.",
+        "Map regulations."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Partner",
+      "steps": [
+        "Approach banks and NBFCs.",
+        "Build a prototype.",
+        "Get legal advice."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Pilot",
+      "steps": [
+        "Launch to a small group.",
+        "Track usage and risk.",
+        "Collect feedback."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Measure retention and risk.",
+        "Plan scale.",
+        "Raise funding."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,163 @@
+{
+  "model": "bags-and-accessories-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹2–6 lakh",
+    "capital_scaled": "₹30 lakh–1 crore for a wider range, stock and retail presence",
+    "margin_d2c": "55–70% gross margin selling direct",
+    "margin_production": "25–35% through marketplaces and retail",
+    "breakeven": "12–24 months",
+    "distribution_score": 3,
+    "distribution_note": "Instagram and marketplaces work; no size problem means low returns"
+  },
+  "tailwinds": [
+    "Bags, wallets and travel accessories have no size issues, so returns are low.",
+    "Travel is booming, driving demand for luggage and organisers.",
+    "Kolkata, Kanpur, Mumbai and Delhi have skilled leather and bag workshops.",
+    "Buyers want vegan leather, sustainable and handcrafted options."
+  ],
+  "headwinds": [
+    "Cheap imports dominate marketplaces.",
+    "Big brands like Caprese, Lavie and American Tourister are strong.",
+    "Designs are easily copied.",
+    "Leather prices vary."
+  ],
+  "angle_2026": "Travel and work have made bags an everyday purchase, and buyers want better design than cheap imports offer. In 2026, bag and accessory brands grow by owning a need, such as travel organisation, laptop bags or handcrafted leather, and building a recognisable design.",
+  "cost_basis": "Estimated for a brand working with a contract workshop and selling online, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "First production run",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "200–500 pieces"
+    },
+    {
+      "item": "Design and samples",
+      "low": "₹20,000",
+      "high": "₹80,000",
+      "covers": "Designs, samples"
+    },
+    {
+      "item": "Photoshoot",
+      "low": "₹15,000",
+      "high": "₹50,000",
+      "covers": "Product and lifestyle photos"
+    },
+    {
+      "item": "Packaging",
+      "low": "₹15,000",
+      "high": "₹40,000",
+      "covers": "Dust bags, boxes"
+    },
+    {
+      "item": "Website and marketing",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Store, creators, ads"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹2,500 bag sold online:",
+    "rows": [
+      [
+        "Materials and making",
+        "₹600–900"
+      ],
+      [
+        "Packaging",
+        "₹60–100"
+      ],
+      [
+        "Shipping and fees",
+        "₹120–180"
+      ],
+      [
+        "Ads per order",
+        "₹300–500"
+      ],
+      [
+        "What you keep",
+        "₹600–1,000 per bag"
+      ]
+    ],
+    "note": "Low returns make bags more profitable than clothing."
+  },
+  "investor_probes": [
+    "What makes your design different?",
+    "What share of buyers return?",
+    "How do you control quality?",
+    "How do you handle copies?"
+  ],
+  "bootstrap_takeaway": "Start with 5–8 designs, produce small batches, and reorder what sells.",
+  "cluster_based": true,
+  "sourcing_edge": "Kolkata (leather goods), Kanpur and Agra (leather), Mumbai's Dharavi (bags) and Delhi make small batches. Working directly with workshops cuts costs.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "Trademark application",
+    "Correct labelling of material and maker",
+    "Export registration if selling abroad"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "pmegp",
+    "vishwakarma"
+  ],
+  "hard_truths": [
+    {
+      "title": "Copies",
+      "text": "Designs are easily copied. Build a brand, not just a product."
+    },
+    {
+      "title": "Quality",
+      "text": "Stitching and zips fail. Inspect every batch."
+    },
+    {
+      "title": "Cheap imports",
+      "text": "Compete on design and quality, not price."
+    },
+    {
+      "title": "Stock",
+      "text": "Colours and styles that don't sell tie up cash."
+    }
+  ],
+  "plan_goal": "The aim is ₹1.5 lakh in sales with a clear best-selling design.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Design",
+      "steps": [
+        "Pick one need and buyer.",
+        "Visit workshops.",
+        "Make samples."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Produce",
+      "steps": [
+        "Make a small batch.",
+        "Shoot photos.",
+        "Register your brand."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Launch online.",
+        "Send to creators.",
+        "Collect feedback."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Check margins.",
+        "Reorder best sellers.",
+        "Plan new designs."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "model": "dairy-farm",
+  "snapshot": {
+    "capital_bootstrap": "₹5–12 lakh for 5–10 animals",
+    "capital_scaled": "₹40 lakh–1.5 crore for 50+ animals, a chilling unit and your own milk brand",
+    "margin_d2c": "Selling direct as a branded product earns 40–60% more per litre than selling to the dairy co-operative",
+    "margin_production": "Co-operatives and collection centres pay a fixed rate based on fat and SNF",
+    "breakeven": "2–4 years",
+    "distribution_score": 4,
+    "distribution_note": "Neighbourhood delivery and subscriptions sell milk easily; scaling needs cold chain"
+  },
+  "tailwinds": [
+    "Buyers in cities pay a premium for fresh, unadulterated, A2 and farm-direct milk.",
+    "Paneer, ghee and curd earn more than raw milk and keep longer.",
+    "Subscription delivery apps and WhatsApp orders make direct selling easy.",
+    "Government and NABARD-linked loans support dairy units, and states offer animal insurance and subsidies."
+  ],
+  "headwinds": [
+    "Feed and fodder costs have risen sharply and swing with the monsoon.",
+    "Animal health problems can wipe out a small herd's income.",
+    "Milk must be chilled within hours and delivered daily, with no days off.",
+    "Amul and other co-operatives set a low price benchmark for regular milk."
+  ],
+  "angle_2026": "Urban buyers have become wary of adulterated milk and will pay much more for farm-fresh, A2 or organic milk they can trace. In 2026, the dairy businesses that do well sell direct under their own name, add ghee and paneer, and keep feed costs under control with their own fodder.",
+  "cost_basis": "Estimated for a small farm of 5–10 cows or buffaloes with its own shed, selling direct in a nearby town or city, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Animals",
+      "low": "₹3,00,000",
+      "high": "₹8,00,000",
+      "covers": "5–10 good-yield cows or buffaloes, depending on breed"
+    },
+    {
+      "item": "Shed and water",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Shed, flooring, water supply, drainage"
+    },
+    {
+      "item": "Milking and chilling",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Milking machine, bulk milk chiller or deep freezers"
+    },
+    {
+      "item": "Feed stock and fodder",
+      "low": "₹50,000",
+      "high": "₹1,50,000",
+      "covers": "First months of feed, fodder seeds, silage"
+    },
+    {
+      "item": "Delivery setup",
+      "low": "₹20,000",
+      "high": "₹1,00,000",
+      "covers": "Glass bottles or pouches, a two-wheeler, crates"
+    },
+    {
+      "item": "Vet, insurance and licences",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Animal insurance, vaccination, FSSAI registration"
+    }
+  ],
+  "unit_economics": {
+    "example": "For one litre of branded farm milk sold at ₹80:",
+    "rows": [
+      [
+        "Feed and fodder",
+        "₹30–40"
+      ],
+      [
+        "Labour",
+        "₹8–12"
+      ],
+      [
+        "Vet, power and upkeep",
+        "₹4–6"
+      ],
+      [
+        "Bottles and delivery",
+        "₹6–10"
+      ],
+      [
+        "What you keep",
+        "₹12–25 per litre"
+      ]
+    ],
+    "note": "Selling to the co-operative removes delivery costs but pays much less per litre. Most small farms mix both: premium direct sales plus the co-operative for surplus."
+  },
+  "investor_probes": [
+    "What is your average yield per animal per day?",
+    "What does feed cost per litre?",
+    "How many subscribers renew every month?",
+    "What happens to milk you can't sell the same day?"
+  ],
+  "bootstrap_takeaway": "Start with 5 high-yield animals, sell to 50–100 subscribers, and turn surplus milk into ghee and paneer. Grow your own fodder to control costs.",
+  "cluster_based": false,
+  "sourcing_edge": "Buying animals from established breeding areas and growing your own green fodder cuts costs more than anything else. Local veterinary colleges and state animal husbandry departments offer advice and vaccinations.",
+  "licences": [
+    "FSSAI registration or licence depending on scale",
+    "Local panchayat or municipal permission for the shed",
+    "Animal insurance",
+    "Udyam registration",
+    "Pollution control consent for larger farms"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "pmegp",
+    "standup"
+  ],
+  "hard_truths": [
+    {
+      "title": "No days off",
+      "text": "Animals need feeding and milking twice a day, every day. Plan for reliable help."
+    },
+    {
+      "title": "Feed costs",
+      "text": "Fodder prices rise sharply in dry years. Grow your own fodder and store silage."
+    },
+    {
+      "title": "Animal health",
+      "text": "A sick animal stops producing. Budget for vets, vaccines and insurance."
+    },
+    {
+      "title": "Milk spoils",
+      "text": "Unsold milk must be chilled or processed the same day. Paneer and ghee turn waste into profit."
+    }
+  ],
+  "plan_goal": "The aim is 100 paying subscribers, with surplus milk turned into ghee or paneer.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Plan",
+      "steps": [
+        "Visit 3 working dairy farms and talk to their owners.",
+        "Check the local price for branded milk and what subscribers want.",
+        "Prepare a project report for a bank loan."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Set up",
+      "steps": [
+        "Build the shed and buy 5 animals.",
+        "Arrange a vet and insurance.",
+        "Register for FSSAI and Udyam."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell direct",
+      "steps": [
+        "Start deliveries to 30–50 households.",
+        "Offer trial weeks to neighbours and housing societies.",
+        "Make ghee or paneer from surplus."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Calculate cost per litre and profit.",
+        "Plan your fodder supply for the year.",
+        "Decide whether to add animals or products."
+      ]
+    }
+  ]
+}

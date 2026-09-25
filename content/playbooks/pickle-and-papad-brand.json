@@ -1,0 +1,163 @@
+{
+  "model": "pickle-and-papad-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹1–4 lakh",
+    "capital_scaled": "₹20–60 lakh for a licensed production unit, wider distribution and export",
+    "margin_d2c": "55–70% gross margin selling online",
+    "margin_production": "25–35% through retailers and distributors",
+    "breakeven": "9–18 months",
+    "distribution_score": 3,
+    "distribution_note": "Online, WhatsApp and local shops sell well; national retail is crowded"
+  },
+  "tailwinds": [
+    "Regional pickles, chutneys and papads have loyal buyers across India and among the diaspora.",
+    "Homemade and grandmother's-recipe brands sell well online.",
+    "Long shelf life makes national shipping and export possible.",
+    "PMFME subsidies and ODOP support help small food units."
+  ],
+  "headwinds": [
+    "Many home brands compete, and big brands dominate shelves.",
+    "Oil and raw material prices have risen.",
+    "Jars are heavy and break in shipping.",
+    "Consistency is hard when production grows beyond one kitchen."
+  ],
+  "angle_2026": "Home-style pickle and chutney brands have grown online by selling regional recipes that big brands don't make. In 2026, the brands that grow pick a region and a story, keep recipes authentic, and invest in packaging that ships safely.",
+  "cost_basis": "Estimated for a home or small licensed kitchen making 5–8 products, selling online and locally, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Kitchen equipment",
+      "low": "₹30,000",
+      "high": "₹1,50,000",
+      "covers": "Cutting, mixing, storage jars, drying racks"
+    },
+    {
+      "item": "Raw materials",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Seasonal vegetables and fruits, oil, spices"
+    },
+    {
+      "item": "Packaging",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Glass or PET jars, labels, shipping boxes"
+    },
+    {
+      "item": "Licences and tests",
+      "low": "₹5,000",
+      "high": "₹30,000",
+      "covers": "FSSAI registration, shelf-life tests"
+    },
+    {
+      "item": "Website and marketing",
+      "low": "₹20,000",
+      "high": "₹80,000",
+      "covers": "Store, photos, creators"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹350 jar of pickle (400 g):",
+    "rows": [
+      [
+        "Ingredients",
+        "₹70–110"
+      ],
+      [
+        "Jar and label",
+        "₹25–40"
+      ],
+      [
+        "Shipping and packaging",
+        "₹60–90"
+      ],
+      [
+        "Ads per order",
+        "₹50–80"
+      ],
+      [
+        "What you keep",
+        "₹80–130 per jar"
+      ]
+    ],
+    "note": "Bundles of 3–4 jars cut shipping cost per jar. Seasonal pickles, such as raw mango in summer, drive annual repeat orders."
+  },
+  "investor_probes": [
+    "What share of buyers reorder?",
+    "How do you keep taste consistent at scale?",
+    "What is your breakage rate in shipping?",
+    "How long is your shelf life?"
+  ],
+  "bootstrap_takeaway": "Start from your kitchen with FSSAI registration, sell to friends, WhatsApp groups and local shops, and grow online once buyers reorder.",
+  "cluster_based": false,
+  "sourcing_edge": "Buy seasonal produce directly from farmers or mandis at harvest and cold-pressed oil from local mills.",
+  "licences": [
+    "FSSAI registration or licence",
+    "Udyam registration",
+    "GST registration once above the threshold",
+    "Legal Metrology labelling",
+    "Shelf-life testing"
+  ],
+  "schemes": [
+    "udyam",
+    "pmfme",
+    "mudra",
+    "pmegp"
+  ],
+  "hard_truths": [
+    {
+      "title": "Consistency",
+      "text": "Home recipes vary batch to batch. Write down exact measurements."
+    },
+    {
+      "title": "Breakage",
+      "text": "Glass jars break in courier. Use PET or strong packaging."
+    },
+    {
+      "title": "Seasonal supply",
+      "text": "Raw mangoes and some vegetables are only available for a few weeks. Plan production and cash."
+    },
+    {
+      "title": "Crowded market",
+      "text": "Many brands sell similar pickles. Your region and recipe must stand out."
+    }
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales, with at least 30% repeat buyers.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Recipes and licence",
+      "steps": [
+        "Finalise 5 recipes.",
+        "Register with FSSAI.",
+        "Taste-test with 50 people."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "First batch",
+      "steps": [
+        "Make a small batch.",
+        "Design labels.",
+        "Test shipping."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Sell through WhatsApp, local shops and online.",
+        "Ask for reviews.",
+        "Offer bundles."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Check repeat orders and margins.",
+        "Plan seasonal products.",
+        "Decide whether to add marketplaces."
+      ]
+    }
+  ]
+}

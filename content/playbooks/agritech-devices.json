@@ -1,0 +1,163 @@
+{
+  "model": "agritech-devices",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for manufacturing, a dealer network and field support",
+    "margin_d2c": "35–50% gross margin on devices",
+    "margin_production": "Dealers and FPOs take 15–25%",
+    "breakeven": "2–4 years",
+    "distribution_score": 2,
+    "distribution_note": "Farmers trust demonstrations and dealers; FPOs and government schemes help"
+  },
+  "tailwinds": [
+    "Farm labour shortages push farmers toward machines and tools.",
+    "Government schemes subsidise farm machinery, drones and irrigation.",
+    "Farmer producer organisations buy for many members.",
+    "Low-cost sensors and IoT make smart farming affordable."
+  ],
+  "headwinds": [
+    "Farmers have little cash and buy after harvest.",
+    "Products must survive rough use and weather.",
+    "Farmers trust what they see work, not ads.",
+    "Service in rural areas is hard."
+  ],
+  "angle_2026": "Labour shortages and subsidies are pushing even small farmers toward machines. In 2026, agritech device businesses grow by building rugged, affordable products, demonstrating them in fields, and selling through FPOs, dealers and subsidy schemes.",
+  "cost_basis": "Estimated for a small team developing one farm device and selling through dealers and FPOs, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Product development",
+      "low": "₹1,00,000",
+      "high": "₹5,00,000",
+      "covers": "Prototypes, field testing"
+    },
+    {
+      "item": "Testing and approvals",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Tests for subsidy eligibility"
+    },
+    {
+      "item": "First production run",
+      "low": "₹2,00,000",
+      "high": "₹5,00,000",
+      "covers": "100–500 units"
+    },
+    {
+      "item": "Demonstrations",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Field demos, travel"
+    },
+    {
+      "item": "Service setup",
+      "low": "₹20,000",
+      "high": "₹1,00,000",
+      "covers": "Spare parts, mechanics"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹25,000 farm device:",
+    "rows": [
+      [
+        "Materials and manufacturing",
+        "₹10,000–13,000"
+      ],
+      [
+        "Dealer margin",
+        "₹3,000–5,000"
+      ],
+      [
+        "Transport and demos",
+        "₹1,000–2,000"
+      ],
+      [
+        "Service reserve",
+        "₹500–1,000"
+      ],
+      [
+        "What you keep",
+        "₹5,000–8,000 per unit"
+      ]
+    ],
+    "note": "Sales peak before sowing and harvest. Plan production and cash around the crop calendar."
+  },
+  "investor_probes": [
+    "How much time or money does it save a farmer?",
+    "Is it eligible for subsidies?",
+    "How do you service it in villages?",
+    "Who sells it?"
+  ],
+  "bootstrap_takeaway": "Test the device with 10 farmers for a full season, then sell through FPOs and local dealers with field demonstrations.",
+  "cluster_based": false,
+  "sourcing_edge": "Local fabrication workshops can make prototypes and small batches cheaply. Agricultural universities and KVKs help with testing and farmer introductions.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "Testing at government-approved centres for subsidy eligibility",
+    "BIS standards where applicable",
+    "Trademark application"
+  ],
+  "schemes": [
+    "udyam",
+    "mudra",
+    "pmegp",
+    "startupindia"
+  ],
+  "hard_truths": [
+    {
+      "title": "Cash-poor buyers",
+      "text": "Farmers buy after harvest. Offer credit through FPOs or financing partners."
+    },
+    {
+      "title": "Rough use",
+      "text": "Devices must be rugged. Test in real conditions."
+    },
+    {
+      "title": "Trust",
+      "text": "Farmers need to see it work. Demonstrate in fields."
+    },
+    {
+      "title": "Service",
+      "text": "Rural service is hard. Train local mechanics."
+    }
+  ],
+  "plan_goal": "The aim is 50 devices sold through FPOs or dealers, with positive farmer feedback.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Validate",
+      "steps": [
+        "Talk to 30 farmers.",
+        "Visit a KVK.",
+        "Plan the device."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Prototype",
+      "steps": [
+        "Build and field-test.",
+        "Check subsidy eligibility.",
+        "Line up a manufacturer."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Demonstrate",
+      "steps": [
+        "Demo in 10 villages.",
+        "Partner with 2 FPOs.",
+        "Take orders."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review",
+      "steps": [
+        "Collect feedback.",
+        "Calculate margins.",
+        "Plan production."
+      ]
+    }
+  ]
+}

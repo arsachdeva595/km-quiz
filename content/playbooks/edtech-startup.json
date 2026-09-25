@@ -1,0 +1,161 @@
+{
+  "model": "edtech-startup",
+  "snapshot": {
+    "capital_bootstrap": "₹3–10 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for content, a product team and marketing",
+    "margin_d2c": "60–80% gross margin on digital courses and subscriptions",
+    "margin_production": "Schools and institutions pay less per student but buy in bulk",
+    "breakeven": "18–36 months",
+    "distribution_score": 2,
+    "distribution_note": "Parents and schools are hard to reach; trust and results sell"
+  },
+  "tailwinds": [
+    "Parents spend heavily on education, even in smaller towns.",
+    "Cheap smartphones and data let students learn online anywhere.",
+    "AI makes personalised learning and content creation cheaper.",
+    "The National Education Policy pushes skills, coding and early learning."
+  ],
+  "headwinds": [
+    "Byju's collapse and aggressive sales tactics damaged trust in edtech.",
+    "Free content on YouTube competes with paid courses.",
+    "Student engagement drops quickly after sign-up.",
+    "Schools buy slowly and pay late."
+  ],
+  "angle_2026": "After the edtech boom and bust, parents and schools are wary of big promises. In 2026, edtech startups that grow focus on one clear outcome, like reading, spoken English or a specific exam, prove results, and sell honestly instead of pushing loans and long contracts.",
+  "cost_basis": "Estimated for a small team building a learning product for one age group or outcome, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Content creation",
+      "low": "₹50,000",
+      "high": "₹3,00,000",
+      "covers": "Curriculum, videos, worksheets"
+    },
+    {
+      "item": "Product build",
+      "low": "₹1,00,000",
+      "high": "₹4,00,000",
+      "covers": "App or web platform, or a no-code version"
+    },
+    {
+      "item": "Teachers or mentors",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "First months of live classes"
+    },
+    {
+      "item": "Company setup",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "Registration, privacy policy, terms"
+    },
+    {
+      "item": "Marketing",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "School partnerships, parent communities, ads"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹3,000 course or 3-month subscription:",
+    "rows": [
+      [
+        "Teacher or mentor time",
+        "₹600–1,200"
+      ],
+      [
+        "Platform and payment costs",
+        "₹100–200"
+      ],
+      [
+        "Cost to win the student",
+        "₹800–1,500"
+      ],
+      [
+        "Refunds",
+        "5–10% of the price"
+      ],
+      [
+        "What you keep",
+        "₹500–1,200 per student; more on renewals"
+      ]
+    ],
+    "note": "Completion rates decide renewals and referrals. Students who finish recommend you; those who drop out don't."
+  },
+  "investor_probes": [
+    "What outcomes can you show?",
+    "What share of students complete the course?",
+    "How much does it cost to win a student?",
+    "Why pay for this when YouTube is free?"
+  ],
+  "bootstrap_takeaway": "Start with live classes for a small group, prove results, then turn what works into recorded content and software.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "Company or LLP registration",
+    "GST registration",
+    "Privacy policy and parental consent for children's data under the Digital Personal Data Protection Act",
+    "Compliance with the consumer protection guidelines on online education"
+  ],
+  "schemes": [
+    "startupindia",
+    "udyam",
+    "mudra"
+  ],
+  "hard_truths": [
+    {
+      "title": "Trust is low",
+      "text": "After edtech scandals, parents are sceptical. Offer free trials and honest refund policies."
+    },
+    {
+      "title": "Engagement drops",
+      "text": "Most students stop after the first few weeks. Live elements and progress tracking help."
+    },
+    {
+      "title": "Free content",
+      "text": "YouTube offers much for free. You need structure, feedback and results."
+    },
+    {
+      "title": "Schools are slow",
+      "text": "School sales take months. Plan for long cycles."
+    }
+  ],
+  "plan_goal": "The aim is 100 paying students, with at least 60% completing.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Pick one outcome",
+      "steps": [
+        "Choose one age group and one result.",
+        "Talk to 30 parents or students.",
+        "Check competing courses."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Pilot",
+      "steps": [
+        "Run a live pilot with 10–20 students.",
+        "Measure progress.",
+        "Refine content."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Launch paid classes.",
+        "Partner with 3 schools or coaching centres.",
+        "Collect testimonials."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Track completion and renewals.",
+        "Calculate cost per student.",
+        "Decide what to automate."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,169 @@
+{
+  "model": "spice-processing-unit",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹40 lakh–1.5 crore for automatic grinding, blending and packing lines",
+    "margin_d2c": "40–55% gross margin selling your own brand online",
+    "margin_production": "15–25% selling in bulk to hotels, caterers and retailers",
+    "breakeven": "18–30 months",
+    "distribution_score": 3,
+    "distribution_note": "Local retail and bulk buyers are steady; national brands dominate shelves"
+  },
+  "tailwinds": [
+    "Buyers worry about adulteration and pay more for pure, traceable spices.",
+    "India is the world's biggest spice producer, and many districts are ODOP spice clusters.",
+    "PMFME subsidies support small food-processing units.",
+    "Regional blends and single-origin spices sell well online and abroad."
+  ],
+  "headwinds": [
+    "MDH, Everest and other big brands dominate retail shelves.",
+    "Spice export controversies over pesticide and contamination have increased testing.",
+    "Raw spice prices swing with harvests.",
+    "Grinding heat can reduce flavour unless you invest in better machines."
+  ],
+  "angle_2026": "Recent contamination controversies have made buyers and exporters far more careful about spice quality. In 2026, small spice brands grow by proving purity with lab tests, sourcing directly from farmers in known growing regions, and selling fresh, small-batch or cold-ground spices.",
+  "cost_basis": "Estimated for a small unit grinding and packing spices for retail and bulk buyers, 2026 prices.",
+  "setup_costs": [
+    {
+      "item": "Grinding and blending machines",
+      "low": "₹2,00,000",
+      "high": "₹6,00,000",
+      "covers": "Pulverisers, blenders, sieves"
+    },
+    {
+      "item": "Packing machine",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Pouch filling and sealing"
+    },
+    {
+      "item": "Raw material stock",
+      "low": "₹1,00,000",
+      "high": "₹3,00,000",
+      "covers": "Whole spices bought at harvest"
+    },
+    {
+      "item": "Shed and utilities",
+      "low": "₹50,000",
+      "high": "₹2,00,000",
+      "covers": "Space, electricity, cleaning"
+    },
+    {
+      "item": "Licences and lab tests",
+      "low": "₹20,000",
+      "high": "₹60,000",
+      "covers": "FSSAI licence, pesticide and adulteration tests"
+    },
+    {
+      "item": "Packaging and branding",
+      "low": "₹30,000",
+      "high": "₹1,00,000",
+      "covers": "Pouches, labels, design"
+    }
+  ],
+  "unit_economics": {
+    "example": "For a ₹100 pack of 100 g ground spice:",
+    "rows": [
+      [
+        "Raw spice",
+        "₹25–40"
+      ],
+      [
+        "Grinding, power and labour",
+        "₹5–10"
+      ],
+      [
+        "Packaging",
+        "₹8–12"
+      ],
+      [
+        "Retailer and distributor margin",
+        "₹25–30"
+      ],
+      [
+        "What you keep",
+        "₹10–25 per pack"
+      ]
+    ],
+    "note": "Selling direct online more than doubles your margin per pack, but you'll need to spend on marketing."
+  },
+  "investor_probes": [
+    "How do you prove purity?",
+    "Where do you buy your spices?",
+    "What share of sales is repeat?",
+    "How do you handle price swings?"
+  ],
+  "bootstrap_takeaway": "Start by buying directly from farmers or mandis in a spice-growing region, sell pure, tested spices to local shops and online, and add bulk sales to restaurants.",
+  "cluster_based": true,
+  "sourcing_edge": "Buying spices directly from growers in clusters such as Guntur (chilli), Erode (turmeric), Unjha (cumin) and Kerala (pepper and cardamom) at harvest gives you better quality and prices.",
+  "licences": [
+    "FSSAI licence",
+    "Udyam registration",
+    "GST registration",
+    "Legal Metrology labelling",
+    "Spices Board registration for export"
+  ],
+  "schemes": [
+    "udyam",
+    "pmfme",
+    "pmegp",
+    "mudra"
+  ],
+  "hard_truths": [
+    {
+      "title": "Big brands own shelves",
+      "text": "Retail shelves are dominated by national brands. Build your brand online and through local shops first."
+    },
+    {
+      "title": "Quality testing",
+      "text": "Pesticide residues and contamination must be tested. One bad batch can end export or retail deals."
+    },
+    {
+      "title": "Price swings",
+      "text": "Chilli, turmeric and cardamom prices swing widely. Buy at harvest and store carefully."
+    },
+    {
+      "title": "Moisture and pests",
+      "text": "Poor storage ruins stock. Invest in clean, dry storage."
+    }
+  ],
+  "plan_goal": "The aim is ₹1.5 lakh in sales, with at least 10 repeat buyers.",
+  "plan": [
+    {
+      "days": "1–15",
+      "title": "Source and test",
+      "steps": [
+        "Visit a spice-growing region and meet farmers or traders.",
+        "Buy samples and test them in a lab.",
+        "Plan your product range."
+      ]
+    },
+    {
+      "days": "16–45",
+      "title": "Set up",
+      "steps": [
+        "Get FSSAI licence and set up grinding.",
+        "Design packaging.",
+        "Apply for PMFME support."
+      ]
+    },
+    {
+      "days": "46–75",
+      "title": "Sell",
+      "steps": [
+        "Sell to 20 local shops and 5 restaurants.",
+        "Launch online with lab reports.",
+        "Collect feedback."
+      ]
+    },
+    {
+      "days": "76–90",
+      "title": "Review the numbers",
+      "steps": [
+        "Calculate margins.",
+        "Plan harvest purchases.",
+        "Decide on bulk or retail focus."
+      ]
+    }
+  ]
+}
