@@ -368,7 +368,7 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
             {"@type": "ListItem", "position": 3, "name": name, "item": canonical}]},
     ]
 
-    shark_cta = '<a class="btn ghost" href="#shark-tank">Read the Shark Tank examples ↓</a>' if exs else '<a class="btn ghost" href="#sourcing">See where to source ↓</a>'
+    shark_cta = '<a class="btn ghost" href="#shark-tank">Shark Tank examples ↓</a>' if exs else '<a class="btn ghost" href="#sourcing">See where to source ↓</a>'
 
     body = f"""
 <article class="guide">
@@ -447,7 +447,7 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
   <section id="decide" class="gate">
     <h2>Is this business the right fit for you?</h2>
     <p>Not every profitable business fits every founder. Take the 3-minute fit check to see whether your interests, personality, budget and location match {esc(name)}.</p>
-    <a class="btn primary" href="{quiz}">Check your fit for {esc(name)} →</a>
+    <a class="btn primary" href="{quiz}">Check your fit →</a>
     <div class="gate-links">
       {f'<div><h3>Explore sourcing hubs</h3><ul>{hubs}</ul></div>' if hubs else ''}
       <div><h3>Compare alternatives</h3><ul>{alt_html}</ul></div>
@@ -474,67 +474,87 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
 <meta property="og:description" content="{esc(desc)}">
 <meta property="og:url" content="{canonical}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <style>{CSS}</style>"""
     return head, body
 
 
 CSS = """
-:root{--accent:#00B4D8;--accent-ink:#0077A8;--accent-soft:#E6F8FD;--ink:#111;--mid:#4a4f55;--muted:#6b7378;--line:#E2EEF2;--bg:#fff;--bg-2:#F5FBFD;--good:#2D7D46;
-  --display:'Fraunces',Georgia,serif;--body:'DM Sans',system-ui,sans-serif;color-scheme:light}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--accent:#36c6e6;--accent-ink:#7fdcf2;--accent-soft:#0f2e36;--ink:#eef3f5;--mid:#c3cbcf;--muted:#98a2a7;--line:#23343a;--bg:#0f1719;--bg-2:#152125;color-scheme:dark}}
-:root[data-theme="dark"]{--accent:#36c6e6;--accent-ink:#7fdcf2;--accent-soft:#0f2e36;--ink:#eef3f5;--mid:#c3cbcf;--muted:#98a2a7;--line:#23343a;--bg:#0f1719;--bg-2:#152125;color-scheme:dark}
+/* Hallmark · genre: playful · macrostructure: Long guide (idea pages) · theme: Hum · shares kidharmilega.in tokens */
+:root{--accent:oklch(86% 0.18 95);--accent-deep:oklch(76% 0.20 95);--accent-2:oklch(66% 0.18 235);--accent-soft:oklch(86% 0.18 95 / 0.16);--cyan-soft:oklch(66% 0.18 235 / 0.14);
+  --link:oklch(48% 0.17 240);--ink:oklch(20% 0.012 250);--mid:oklch(38% 0.014 100);--muted:oklch(52% 0.014 90);--line:oklch(86% 0.014 90);--line-2:oklch(70% 0.018 85);
+  --bg:oklch(97% 0.012 95);--bg-2:oklch(94% 0.016 95);--good:oklch(46% 0.13 150);--focus:oklch(66% 0.18 235);
+  --display:"Plus Jakarta Sans","Geist","Inter",ui-sans-serif,system-ui,sans-serif;--body:"Plus Jakarta Sans","Geist","Inter",ui-sans-serif,system-ui,sans-serif;
+  --label:"JetBrains Mono","Geist Mono",ui-monospace,monospace;--ease-press:cubic-bezier(0.2,0.7,0.3,1);color-scheme:light}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--body)}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.65 var(--body);font-variant-numeric:tabular-nums}
 .guide{max-width:760px;margin:0 auto;padding:24px 16px 64px}
-a{color:var(--accent-ink)}
-h1,h2,h3,h4{font-family:var(--display);line-height:1.2;text-wrap:balance;margin:0}
-h1{font-size:clamp(30px,6vw,44px);margin:6px 0 12px}
-h2{font-size:clamp(24px,4.5vw,30px);margin:0 0 14px}
+a{color:var(--link)}
+h1,h2,h3,h4{font-family:var(--display);font-weight:600;letter-spacing:-0.014em;line-height:1.15;text-wrap:balance;margin:0;font-style:normal;overflow-wrap:anywhere}
+h1{font-size:clamp(32px,6vw,52px);letter-spacing:-0.025em;line-height:1.05;margin:6px 0 14px}
+h2{font-size:clamp(24px,4.5vw,32px);letter-spacing:-0.02em;margin:0 0 14px}
 h3{font-size:19px;margin:22px 0 8px}
 h4{font-size:17px;margin:0 0 4px}
-section{padding-top:40px;margin-top:40px;border-top:1px solid var(--line)}
+section{padding-top:40px;margin-top:40px;border-top:1px dashed var(--line-2)}
 p{margin:0 0 12px}
 ul,ol{margin:0 0 12px;padding-left:20px}
 li{margin:6px 0}
-.crumbs,.muted,.eyebrow{color:var(--muted);font-size:14px}
-.eyebrow{text-transform:uppercase;letter-spacing:.06em;margin:18px 0 0}
+.crumbs,.muted{color:var(--muted);font-size:14px}
+.eyebrow{font-family:var(--label);font-size:11px;letter-spacing:0.10em;text-transform:uppercase;color:var(--mid);margin:18px 0 0}
 .dek{font-size:19px;color:var(--mid)}
-.cta-row{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0 0}
-.btn{display:inline-block;border-radius:999px;padding:12px 20px;font-weight:700;text-decoration:none;border:2px solid var(--accent)}
-.btn.primary{background:var(--accent);color:#04262e}
-.btn.ghost{color:var(--accent-ink)}
-.btn:focus-visible{outline:3px solid var(--accent-ink);outline-offset:2px}
-.verdict{font-size:20px;line-height:1.5}
-.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:18px 0}
-.tile{background:var(--bg-2);border:1px solid var(--line);border-radius:12px;padding:14px}
-.tile-label{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;margin:0 0 4px}
-.tile-value{font-weight:700;font-size:17px;margin:0;font-variant-numeric:tabular-nums}
+.cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 0}
+.btn{--face:var(--bg);--edge:var(--line-2);display:inline-flex;align-items:center;gap:0.5em;border-radius:999px;padding:0.8rem 1.4rem;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--ink);background:var(--face);border:0;
+  box-shadow:0 4px 0 0 var(--edge),0 6px 12px -3px oklch(20% 0.012 250 / 0.12);transition:transform 140ms var(--ease-press),box-shadow 140ms var(--ease-press)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 0 var(--edge),0 12px 22px -4px oklch(20% 0.012 250 / 0.14)}
+.btn:active{transform:translateY(3px);box-shadow:0 1px 0 0 var(--edge);transition-duration:70ms}
+.btn.primary{--face:var(--accent);--edge:var(--accent-deep)}
+.btn.ghost{--face:transparent;--edge:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn.ghost:hover{background:var(--accent-soft);box-shadow:inset 0 0 0 1.5px var(--ink)}
+.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.verdict{font-size:20px;line-height:1.55;color:var(--ink)}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:10px;margin:18px 0}
+.tile{background:var(--bg-2);border-radius:16px;padding:14px 16px}
+.tiles .tile:nth-child(1){background:var(--accent-soft)}
+.tiles .tile:nth-child(4){background:var(--cyan-soft)}
+.tile-label{font-family:var(--label);font-size:11px;color:var(--mid);text-transform:uppercase;letter-spacing:0.10em;margin:0 0 6px}
+.tile-value{font-weight:700;font-size:17px;margin:0}
 .tile-note{font-size:14px;color:var(--mid);margin:4px 0 0}
-.fit-line{background:var(--accent-soft);border-radius:12px;padding:12px 14px}
-.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:4px 24px}
+.fit-line{background:var(--cyan-soft);border-radius:16px;padding:14px 16px}
+.two-col{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));gap:4px 24px}
 .table-wrap{overflow-x:auto;margin:0 0 14px}
 table{width:100%;border-collapse:collapse;font-size:15px}
-th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
-th{font-size:13px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted)}
-td.num{white-space:nowrap;font-variant-numeric:tabular-nums;font-weight:700}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px dashed var(--line-2);vertical-align:top}
+th{font-family:var(--label);font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--mid);font-weight:500}
+td.num{white-space:nowrap;font-weight:700}
 table.ue td:first-child{width:55%}
 .stat-line{font-weight:700}
 .pitches,.truths,.plan{list-style:none;padding:0}
-.pitch{border:1px solid var(--line);border-radius:12px;padding:14px;margin:10px 0}
-.pitch-tag{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent-ink);margin:0 0 4px;font-weight:700}
+.pitch{background:var(--bg-2);border-radius:20px;padding:16px 18px;margin:10px 0;transition:transform 220ms cubic-bezier(0.34,1.56,0.64,1)}
+.pitch:first-child{background:var(--accent-soft)}
+.pitch:hover{transform:translateY(-3px)}
+.pitch-tag{font-family:var(--label);font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--mid);margin:0 0 6px}
 .pitch h4 .muted{font-family:var(--body);font-weight:400}
-.truths li{margin:0 0 14px}
-.plan>li{border-left:3px solid var(--accent);padding:2px 0 2px 14px;margin:0 0 18px}
-.phase{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent-ink);font-weight:700;margin:0}
-.gate{background:var(--accent-soft);border:1px solid var(--accent);border-radius:16px;padding:24px 18px;margin-top:48px}
-.gate-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:4px 24px;margin-top:10px}
-details{border-bottom:1px solid var(--line);padding:12px 0}
-summary{font-weight:700;cursor:pointer}
-details p{margin:8px 0 0}
+.truths li{margin:0 0 16px}
+.plan>li{position:relative;padding:2px 0 2px 22px;margin:0 0 20px;border-left:2px dashed var(--line-2)}
+.plan>li::before{content:"";position:absolute;left:-8px;top:6px;width:14px;height:14px;border-radius:50%;background:var(--accent);box-shadow:0 2px 0 0 var(--accent-deep)}
+.phase{font-family:var(--label);font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--mid);margin:0}
+.gate{background:var(--ink);color:var(--bg);border:0;border-radius:24px;padding:28px 22px;margin-top:48px}
+.gate h2,.gate h3{color:var(--bg)}
+.gate p,.gate .muted{color:oklch(97% 0.012 95 / 0.7)}
+.gate a:not(.btn){color:var(--accent)}
+.gate-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:4px 24px;margin-top:14px}
+details{border-bottom:1px dashed var(--line-2);padding:14px 0}
+summary{font-weight:600;cursor:pointer}
+details[open] summary{color:var(--ink)}
+details p{margin:8px 0 0;color:var(--mid)}
 .method{margin-top:40px;font-size:14px;color:var(--muted)}
-@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto}}
+.hub-list{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(260px,100%),1fr));gap:8px}
+.hub-list li{margin:0;background:var(--bg-2);border-radius:12px;padding:10px 14px}
+.hub-toc{margin-top:18px}
+.hub-toc a{white-space:nowrap}
+@media (prefers-reduced-motion:reduce){*{transition-duration:150ms!important}.btn:hover,.btn:active,.pitch:hover{transform:none}}
 html{scroll-behavior:smooth}
 """
 
@@ -551,6 +571,7 @@ def arg(name):
 def scoped_css(css):
     """Guide CSS for use inside kidharmilega's own pages: variables and rules live under .guide, no dark mode
     (the site has none) and no global resets that would restyle the site's header and footer."""
+    css = re.sub(r"/\*.*?\*/", "", css, flags=re.S)
     css = re.sub(r"@media \(prefers-color-scheme:dark\)\{.*?\}\}", "", css, flags=re.S)
     css = re.sub(r":root\[data-theme=\"dark\"\]\{[^}]*\}", "", css)
     css = re.sub(r"@media \(prefers-reduced-motion:reduce\)\{.*?\}\}", "", css, flags=re.S)
@@ -600,7 +621,7 @@ def hub(entries):
   <nav class="crumbs"><a href="/">Home</a> › Business ideas</nav>
   <h1>Business ideas for India, with an honest fit check</h1>
   <p class="dek">{len(entries)} ideas, each with real setup costs, what you keep per sale, what Shark Tank India investors asked, where to source in India's ODOP districts, and a 90-day plan.</p>
-  <div class="cta-row"><a class="btn primary" href="{QUIZ_URL}">Find the business that fits you →</a></div>
+  <div class="cta-row"><a class="btn primary" href="{QUIZ_URL}">Find your business →</a></div>
   <p class="muted hub-toc">{toc}</p>
   {"".join(sections)}
 </article>"""
@@ -613,7 +634,7 @@ def hub(entries):
 <meta property="og:title" content="{esc(title)}">
 <meta property="og:description" content="{esc(desc)}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
 <style>{CSS}</style>"""
     return head, body
@@ -668,6 +689,8 @@ def main():
         if quiz.exists():
             shutil.rmtree(quiz)
         shutil.copytree(ROOT / "docs", quiz)
+        # The quiz links each result to its guide when one is published in this release.
+        (quiz / "data" / "guides.json").write_text(json.dumps(sorted(published)), encoding="utf-8")
         urls = [IDEAS_URL] + [f"{IDEAS_URL}{i['key']}/" for i, _, _ in built] + [QUIZ_URL]
         (site / "urls.txt").write_text("\n".join(urls) + "\n", encoding="utf-8")
         print(f"✓ quiz → {quiz}, {len(urls)} URLs → {site / 'urls.txt'}")
@@ -678,7 +701,7 @@ def main():
         sections = "".join(f'<div class="pv" id="p{n}"{"" if n == 0 else " hidden"}>{b}</div>' for n, (_, _, b) in enumerate(built))
         pv_css = ".pv-bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}.pv-bar label{font-size:14px;color:var(--muted)}.pv-bar select{font:inherit;padding:8px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--ink);max-width:100%}"
         script = "<script>const s=document.getElementById('pv-select');s.onchange=()=>{document.querySelectorAll('.pv').forEach(p=>p.hidden=p.id!==s.value);window.scrollTo(0,0)};</script>"
-        preview = (f'<title>Idea Guide Samples</title>\n<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">'
+        preview = (f'<title>Idea Guide Samples</title>\n<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">'
                    f"<style>{CSS}{pv_css}</style>"
                    f'<div class="pv-bar"><label for="pv-select">Sample page</label><select id="pv-select">{options}</select>'
                    f'<span class="muted">Links on these pages point to kidharmilega.in paths that go live with the rollout.</span></div>'
