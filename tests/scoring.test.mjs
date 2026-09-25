@@ -2,7 +2,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import { QUESTIONS } from "../docs/questions.js";
-import { hydrate, computeProfile, match, scoreIdea, typeCode, archetype, interestFit, whyCopy } from "../docs/scoring.js";
+import { hydrate, computeProfile, match, scoreIdea, typeCode, archetype, interestFit, whyCopy, fitCheck } from "../docs/scoring.js";
 
 const data = JSON.parse(readFileSync(new URL("../docs/data/ideas.json", import.meta.url)));
 const ideas = hydrate(data);
@@ -162,4 +162,19 @@ test("ideas sharing a model are tie-broken per answer set, not always the same",
   assert.ok(tops.size > 1);
   const fixed = computeProfile(QUESTIONS, answersFor({ likes: ["A", "R"] }));
   assert.equal(match(siblings, fixed).top.idea.id, match(siblings, fixed).top.idea.id);
+});
+
+test("fit check ranks the chosen idea and flags filters it misses", () => {
+  const p = computeProfile(QUESTIONS, answersFor({ likes: ["A", "R"], budget: 1, time: "side" }));
+  const best = match(ideas, p).top.idea;
+  const top = fitCheck(ideas, best, p);
+  assert.equal(top.total, ideas.length);
+  assert.ok(top.rank <= 3, `best match should rank near the top, got #${top.rank}`);
+  assert.equal(top.band, "strong");
+
+  // A capital-heavy, full-time idea is a poor fit for a part-time founder with under ₹50K.
+  const heavy = ideas.find((i) => i.budget === 4 && i.time === "full");
+  const check = fitCheck(ideas, heavy, p);
+  assert.ok(check.gaps.includes("budget") && check.gaps.includes("time"));
+  assert.ok(check.rank >= 1 && check.rank <= ideas.length);
 });

@@ -1,7 +1,7 @@
 import { QUESTIONS, INTEREST_SCALE, AGREE_SCALE } from "./questions.js";
 import {
-  hydrate, computeProfile, match, scoreIdea, whyCopy, typeCode, archetype, topDims,
-  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, formatLakh, formatRupees,
+  hydrate, computeProfile, match, scoreIdea, whyCopy, typeCode, archetype, topDims, fitCheck,
+  DIMS, DIM_LABELS, BUDGET_LABELS, RELAX_LABELS, FIT_BANDS, GAP_LABELS, formatLakh, formatRupees,
 } from "./scoring.js";
 
 const $ = (id) => document.getElementById(id);
@@ -19,7 +19,19 @@ let districts = []; // ODOP index: one entry per district
 let answers = {};
 let idx = 0;
 
-const ideasReady = fetch("data/ideas.json").then((r) => r.json()).then((d) => { ideas = hydrate(d); });
+// Fit-check mode: guide pages link here as ?idea=<key>, and the result opens with that idea's fit.
+const checkKey = new URLSearchParams(location.search).get("idea");
+let checkIdea = null;
+
+const ideasReady = fetch("data/ideas.json").then((r) => r.json()).then((d) => {
+  ideas = hydrate(d);
+  checkIdea = checkKey ? ideas.find((i) => i.key === checkKey) || null : null;
+  if (checkIdea) {
+    $("intro-eyebrow").textContent = "KidharMilega · Fit check";
+    $("intro-title").innerHTML = `Does <em>${esc(checkIdea.name)}</em> fit you?`;
+    $("intro-lede").textContent = `33 quick taps, about 3 minutes. We'll score how well ${checkIdea.name} matches your interests, personality, budget and location, and show the ideas that fit you even better.`;
+  }
+});
 const districtsReady = fetch("data/odop.json").then((r) => r.json()).then((d) => { districts = d; });
 
 function show(id) {
@@ -102,7 +114,8 @@ async function finish() {
   await Promise.all([ideasReady, districtsReady]);
   const profile = computeProfile(QUESTIONS, answers);
   const result = match(ideas, profile);
-  renderResult(profile, result);
+  const check = checkIdea ? fitCheck(ideas, checkIdea, profile) : null;
+  renderResult(profile, result, check);
   show("result");
 }
 
@@ -187,7 +200,21 @@ function ideaCard(r, profile, isTop) {
     </article>`;
 }
 
-function renderResult(profile, { top, runnersUp, relaxed }) {
+function fitCard(check, profile) {
+  const i = check.result.idea;
+  const gaps = check.gaps.map((g) => `<li>${esc(GAP_LABELS[g])}</li>`).join("");
+  return `
+    <article class="card top fit-check">
+      <p class="eyebrow">Your fit check · ${FIT_BANDS[check.band]}</p>
+      <h3>${esc(i.name)}: ${Math.round(check.result.score * 100)}% fit</h3>
+      <p>It ranks <strong>#${check.rank.toLocaleString("en-IN")} of ${check.total.toLocaleString("en-IN")}</strong> ideas for you.</p>
+      <p class="why">${esc(whyCopy(check.result, profile, { withIntro: false, district: answers.district }))}</p>
+      ${gaps ? `<p class="fine">Watch out:</p><ul class="fine">${gaps}</ul>` : ""}
+      <a class="btn" href="../ideas/${encodeURIComponent(i.key)}/">Back to the ${esc(i.name)} guide</a>
+    </article>`;
+}
+
+function renderResult(profile, { top, runnersUp, relaxed }, check = null) {
   const code = typeCode(profile.traits);
   const arch = archetype(profile.riasec);
   const [a, b] = topDims(profile.riasec, 2);
@@ -208,8 +235,10 @@ function renderResult(profile, { top, runnersUp, relaxed }) {
     <p class="lede">You're strongest as a ${DIM_LABELS[a]} and ${DIM_LABELS[b]}.</p>
     <div class="bars">${bars}</div>
     ${relaxNote}
-    ${ideaCard(top, profile, true)}
-    ${runnersUp.map((r) => ideaCard(r, profile, false)).join("")}
+    ${check ? fitCard(check, profile) : ""}
+    ${check ? `<h2 class="section-head">${check.rank === 1 ? "Your other strong matches" : "Ideas that fit you even better"}</h2>` : ""}
+    ${[top, ...runnersUp].filter((r) => !check || r.idea !== check.result.idea)
+      .map((r, n) => ideaCard(r, profile, !check && n === 0)).join("")}
     ${districtCard(answers.district, profile)}
     <div class="actions">
       <button id="share" class="btn primary">Share my result</button>
@@ -218,8 +247,11 @@ function renderResult(profile, { top, runnersUp, relaxed }) {
     <p class="fine">The four-letter type is a Myers-Briggs-style shorthand worked out from your personality answers.</p>`;
 
   $("retake").onclick = () => { answers = {}; idx = 0; show("intro"); };
+  const shareName = check ? check.result.idea.name : top.idea.name;
   $("share").onclick = async () => {
-    const text = `I'm ${code} · ${arch} — my best-fit business is ${top.idea.name}. Find yours:`;
+    const text = check
+      ? `I'm ${code} · ${arch} — ${shareName} is a ${FIT_BANDS[check.band].toLowerCase()} for me. Check yours:`
+      : `I'm ${code} · ${arch} — my best-fit business is ${shareName}. Find yours:`;
     const url = location.href.split("#")[0];
     try {
       if (navigator.share) await navigator.share({ text, url });

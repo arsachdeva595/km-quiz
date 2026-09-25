@@ -99,3 +99,7 @@ h3 { margin: 0 0 4px; font-size: 18px; }
 .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
 .site-footer { max-width: 640px; margin: 0 auto; padding: 0 16px 32px; font-size: 12px; color: var(--muted); }
 .site-footer a { color: inherit; }
+
+/* Fit-check mode (?idea=…) */
+.fit-check .btn { display: inline-block; margin-top: 8px; text-decoration: none; }
+.section-head { font-size: 20px; margin: 28px 0 4px; }

@@ -51,6 +51,23 @@ Add a row to `data/business_models.csv`:
 
 Then run `npm run build`.
 
+## Idea guides and publishing to kidharmilega.in
+
+Guide pages (`/ideas/<key>/`) are built from `content/playbooks/<model>.json` (shared per business model) and
+`content/ideas/<key>.json` (verdict, angle, optional extra FAQs, optional `playbook` override).
+
+```bash
+python3 pipeline/build_pages.py --preview          # all guides → site/, plus site/preview.html for review
+python3 pipeline/build_pages.py --site ../kidharmilega/guides --only content/launch-1.txt
+```
+
+`--site` writes a bundle for kidharmilega: `ideas/` (guides + hub, with `<!--KM:NAV-->`/`<!--KM:FOOTER-->`
+markers), `quiz/` (a copy of `docs/`) and `urls.txt`. kidharmilega's `build.py` copies the bundle into `docs/`,
+fills in its own nav and footer, and adds the URLs to `sitemap.xml`. `--only` limits a release to a list of keys
+(`content/launch-1.txt` is the first batch); guides only link to other guides in the same release.
+
+The quiz reads `?idea=<key>` (every guide's call to action) and opens with a fit check for that idea.
+
 ## Attribution
 
 Occupation interest and work-style data: O*NET® database by the U.S. Department of Labor, Employment and Training Administration, used under CC BY 4.0. Modified for this project.

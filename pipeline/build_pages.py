@@ -120,7 +120,11 @@ def idea_districts(idea, districts):
         exact = [d for d in districts if f"{d['district']}|{d['state']}" in keys]
     if not exact:
         words = significant(idea["name"])
-        exact = [d for d in districts if words & significant(d["product"])]
+        for w in list(words):
+            words |= SYNONYMS.get(w, set())
+        words -= GENERIC
+        # A name match only counts when the district's product also feeds this business model.
+        exact = [d for d in districts if d["idea"] == idea["model"] and words_match(words, significant(d["product"]) - GENERIC)]
     if exact:
         return exact, True
     return [d for d in districts if d["idea"] == idea["model"]], False
@@ -129,6 +133,31 @@ def idea_districts(idea, districts):
 SYNONYMS = {"attar": {"perfume", "fragrance", "attar"}, "perfume": {"perfume", "fragrance", "attar"},
             "makhana": {"makhana", "foxnut"}, "foxnut": {"makhana", "foxnut"}, "kurta": {"kurta", "clothing", "wear"},
             "chikankari": {"chikan", "chikankari", "lucknow"}, "toy": {"toy", "toys", "wooden"}}
+
+
+# Words too broad to identify a product on their own.
+GENERIC = {"home", "natural", "food", "foods", "cloth", "clothing", "fruit", "indian", "premium", "smart", "sugar", "free",
+           "organic", "fiber", "fibre", "machine", "auto", "soft", "hand", "handmade", "ready", "light", "farm", "chemical",
+           "healthy", "health", "wellness", "fashion", "apparel", "textile", "decor", "decorative", "equipment", "plant",
+           "water", "fast", "motor", "tool", "tools", "software", "pant", "patch", "engineering", "processing", "product",
+           "kids", "women", "baby", "traditional", "fresh", "gold", "silver", "sweet", "custom", "customised", "sustainable",
+           "material", "materials", "electric", "cake", "oil", "oils", "kitchen", "utensil", "cotton", "silk", "fabric"}
+
+# Word pairs that share a prefix but mean different things.
+FALSE_FRIENDS = {frozenset({"honey", "honeycomb"}), frozenset({"coco", "cocoa"}), frozenset({"pain", "paint"}),
+                 frozenset({"card", "cardamom"}), frozenset({"lead", "leather"}), frozenset({"mint", "mineral"})}
+
+
+def words_match(a, b):
+    """True when a word in one set equals, or is a 4+ letter prefix of, a word in the other (chikan ↔ chikankari)."""
+    for x in a:
+        for y in b:
+            if x == y:
+                return True
+            short, long_ = sorted((x, y), key=len)
+            if len(short) >= 4 and long_.startswith(short) and frozenset({x, y}) not in FALSE_FRIENDS:
+                return True
+    return False
 
 
 def idea_words(idea):
@@ -246,7 +275,7 @@ def auto_faq(idea, pb, it, ds, exact):
     return faq
 
 
-def render(idea, pb, it, ideas, districts, pitches):
+def render(idea, pb, it, ideas, districts, pitches, published=None):
     m = idea["m"]
     name, key = idea["name"], idea["key"]
     quiz = f"{QUIZ_URL}?idea={key}"
@@ -259,8 +288,9 @@ def render(idea, pb, it, ideas, districts, pitches):
     if "faq" not in it:
         it = {**it, "faq": auto_faq(idea, pb, it, ds, exact)}
     st = m.get("sharktank")
-    alts = alternatives(idea, ideas)
-    sibs = siblings(idea, ideas)
+    live = [i for i in ideas if published is None or i["key"] in published]
+    alts = alternatives(idea, live)
+    sibs = siblings(idea, live)
     snap = pb["snapshot"]
     title = f"Should You Start {it['phrase']} in 2026? Costs, Margins & Fit Check"
     h1 = f"Should You Start {it['phrase']} in 2026?"
@@ -513,11 +543,94 @@ def page(head, body):
     return f"<!doctype html>\n<html lang=\"en\">\n<head>\n{head}\n</head>\n<body>{body}\n</body>\n</html>\n"
 
 
+def arg(name):
+    """Value after a --flag on the command line, or None."""
+    return sys.argv[sys.argv.index(name) + 1] if name in sys.argv else None
+
+
+def scoped_css(css):
+    """Guide CSS for use inside kidharmilega's own pages: variables and rules live under .guide, no dark mode
+    (the site has none) and no global resets that would restyle the site's header and footer."""
+    css = re.sub(r"@media \(prefers-color-scheme:dark\)\{.*?\}\}", "", css, flags=re.S)
+    css = re.sub(r":root\[data-theme=\"dark\"\]\{[^}]*\}", "", css)
+    css = re.sub(r"@media \(prefers-reduced-motion:reduce\)\{.*?\}\}", "", css, flags=re.S)
+    out = []
+    for sel, rules in re.findall(r"([^{}]+)\{([^{}]*)\}", css):
+        sel = sel.strip()
+        if sel in ("*", "body", "html"):
+            continue
+        if sel == ":root":
+            out.append(".guide{" + rules.replace("color-scheme:light", "") + "}")
+            continue
+        parts = []
+        for x in sel.split(","):
+            x = x.strip()
+            parts.append(x if x.startswith(".guide") else ".guide " + x)
+        out.append(",".join(parts) + "{" + rules + "}")
+    # The site's reset strips list padding and link underlines; guides need both.
+    out.append(".guide{color:var(--ink);font:17px/1.65 var(--body)}.guide p a,.guide li a,.guide td a{text-decoration:underline}"
+               ".guide p{color:var(--mid)}.guide .verdict,.guide .dek{color:var(--ink)}")
+    return "".join(out)
+
+
+def site_page(head, body):
+    """A guide wrapped for kidharmilega: its build swaps the markers for the live nav and footer."""
+    head = head.replace(f"<style>{CSS}</style>", f"<style>{scoped_css(CSS)}</style>")
+    head = head.replace('<link rel="preconnect"', '<link rel="icon" type="image/png" href="/assets/logo.png">\n<link rel="stylesheet" href="/assets/style.css">\n<link rel="preconnect"', 1)
+    return (f"<!doctype html>\n<html lang=\"en\">\n<head>\n{head}\n</head>\n<body>\n<!--KM:NAV-->\n{body}\n<!--KM:FOOTER-->\n</body>\n</html>\n")
+
+
+def hub(entries):
+    """/ideas/ index: every published guide, grouped by category."""
+    groups = {}
+    for idea, it in entries:
+        groups.setdefault(idea["m"]["category"], []).append((idea, it))
+    sections = []
+    for cat in sorted(groups):
+        items = sorted(groups[cat], key=lambda x: x[0]["name"])
+        lis = "".join(f'<li><a href="{IDEAS_URL}{i["key"]}/">{esc(i["name"])}</a>'
+                      f'<span class="muted"> · start {BUDGET_LABELS[i["budget"]]}</span></li>' for i, _ in items)
+        sections.append(f'<section id="{slug(cat)}"><h2>{esc(cat)} <span class="muted">({len(items)})</span></h2><ul class="hub-list">{lis}</ul></section>')
+    toc = " · ".join(f'<a href="#{slug(c)}">{esc(c)}</a>' for c in sorted(groups))
+    title = "Business Ideas in India for 2026: Costs, Margins and Fit Check"
+    desc = f"{len(entries)} business ideas for India with setup costs, margins, Shark Tank India lessons, ODOP sourcing districts and a 90-day plan for each."
+    canonical = f"{SITE}{IDEAS_URL}"
+    body = f"""
+<article class="guide">
+  <nav class="crumbs"><a href="/">Home</a> › Business ideas</nav>
+  <h1>Business ideas for India, with an honest fit check</h1>
+  <p class="dek">{len(entries)} ideas, each with real setup costs, what you keep per sale, what Shark Tank India investors asked, where to source in India's ODOP districts, and a 90-day plan.</p>
+  <div class="cta-row"><a class="btn primary" href="{QUIZ_URL}">Find the business that fits you →</a></div>
+  <p class="muted hub-toc">{toc}</p>
+  {"".join(sections)}
+</article>"""
+    ld = {"@context": "https://schema.org", "@type": "CollectionPage", "name": title, "description": desc, "url": canonical}
+    head = f"""<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)} | KidharMilega</title>
+<meta name="description" content="{esc(desc)}">
+<link rel="canonical" href="{canonical}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False)}</script>
+<style>{CSS}</style>"""
+    return head, body
+
+
 def main():
     models, ideas, districts = load()
     pitches = json.loads(PITCHES.read_text(encoding="utf-8"))
     by_key = {i["key"]: i for i in ideas}
-    built = []
+    site = Path(arg("--site")) if arg("--site") else None
+    only = None
+    if arg("--only"):
+        lines = Path(arg("--only")).read_text(encoding="utf-8").splitlines()
+        only = {x.strip() for x in lines if x.strip() and not x.startswith("#")}
+
+    # Work out the published set first, so pages only link to guides that exist.
+    ready = []
     for f in sorted(IDEAS_TXT.glob("*.json")):
         it = json.loads(f.read_text(encoding="utf-8"))
         idea = by_key.get(f.stem)
@@ -530,13 +643,34 @@ def main():
         if not pb_file.exists():
             print(f"! {f.stem}: missing playbook {pb_name}")
             continue
-        pb = json.loads(pb_file.read_text(encoding="utf-8"))
-        head, body = render(idea, pb, it, ideas, districts, pitches)
-        out = OUT / "ideas" / idea["key"] / "index.html"
+        if only is not None and f.stem not in only:
+            continue
+        ready.append((idea, it, json.loads(pb_file.read_text(encoding="utf-8"))))
+    published = {i["key"] for i, _, _ in ready}
+
+    out_root = site or OUT
+    wrap = site_page if site else page
+    built = []
+    for idea, it, pb in ready:
+        head, body = render(idea, pb, it, ideas, districts, pitches, published)
+        out = out_root / "ideas" / idea["key"] / "index.html"
         out.parent.mkdir(parents=True, exist_ok=True)
-        out.write_text(page(head, body), encoding="utf-8")
+        out.write_text(wrap(head, body), encoding="utf-8")
         built.append((idea, head, body))
-    print(f"✓ {len(built)} guide pages → {OUT.relative_to(ROOT)}/ideas/")
+    head, body = hub([(i, it) for i, it, _ in ready])
+    (out_root / "ideas" / "index.html").write_text(wrap(head, body), encoding="utf-8")
+    print(f"✓ {len(built)} guide pages + hub → {out_root}/ideas/")
+
+    if site:
+        # The quiz ships alongside the guides, and kidharmilega's build adds these URLs to its sitemap.
+        import shutil
+        quiz = site / "quiz"
+        if quiz.exists():
+            shutil.rmtree(quiz)
+        shutil.copytree(ROOT / "docs", quiz)
+        urls = [IDEAS_URL] + [f"{IDEAS_URL}{i['key']}/" for i, _, _ in built] + [QUIZ_URL]
+        (site / "urls.txt").write_text("\n".join(urls) + "\n", encoding="utf-8")
+        print(f"✓ quiz → {quiz}, {len(urls)} URLs → {site / 'urls.txt'}")
 
     if "--preview" in sys.argv and built:
         # One file with every page, switchable by a menu, for review on a single link.

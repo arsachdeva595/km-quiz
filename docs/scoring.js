@@ -211,6 +211,28 @@ export function match(ideas, profile, { runnersUp = 2 } = {}) {
   return { top: picks[0], runnersUp: picks.slice(1), relaxed, poolSize: pool.length };
 }
 
+/** Where one chosen idea (the guide the user came from) ranks for this profile, and which filters it misses. */
+export function fitCheck(ideas, target, profile) {
+  const result = scoreIdea(target, profile);
+  const rank = 1 + ideas.filter((i) => i !== target && scoreIdea(i, profile).score > result.score).length;
+  const pct = rank / ideas.length;
+  const band = pct <= 0.1 ? "strong" : pct <= 0.3 ? "good" : pct <= 0.6 ? "partial" : "weak";
+  const gaps = RELAX_ORDER.filter((f) => !FILTERS[f](target, profile.constraints));
+  return { result, rank, total: ideas.length, band, gaps };
+}
+
+export const FIT_BANDS = {
+  strong: "Strong fit",
+  good: "Good fit",
+  partial: "Partial fit",
+  weak: "Weak fit",
+};
+export const GAP_LABELS = {
+  time: "It needs full-time attention, and you said you can only start part-time.",
+  location: "It works best in a different kind of location from the one you chose.",
+  budget: "It usually needs more starting money than the budget you chose.",
+};
+
 // ── Copy ─────────────────────────────────────────────────────────────────────
 
 const TRAIT_LINES = {
