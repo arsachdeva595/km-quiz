@@ -481,10 +481,10 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
 
 
 CSS = """
-/* Hallmark · genre: playful · macrostructure: Long guide (idea pages) · theme: Hum · shares kidharmilega.in tokens */
-:root{--accent:oklch(86% 0.18 95);--accent-deep:oklch(76% 0.20 95);--accent-2:oklch(66% 0.18 235);--accent-soft:oklch(86% 0.18 95 / 0.16);--cyan-soft:oklch(66% 0.18 235 / 0.14);
-  --link:oklch(48% 0.17 240);--ink:oklch(20% 0.012 250);--mid:oklch(38% 0.014 100);--muted:oklch(52% 0.014 90);--line:oklch(86% 0.014 90);--line-2:oklch(70% 0.018 85);
-  --bg:oklch(97% 0.012 95);--bg-2:oklch(94% 0.016 95);--good:oklch(46% 0.13 150);--focus:oklch(66% 0.18 235);
+/* Hallmark · genre: playful · macrostructure: Long guide (idea pages) · theme: Hum in KidharMilega blue · shares kidharmilega.in tokens · hex colours for older browsers */
+:root{--accent:#00B4D8;--accent-deep:#0096B8;--accent-2:#0077A8;--accent-soft:rgba(0,180,216,0.12);--cyan-soft:rgba(246,206,0,0.16);
+  --link:#0077A8;--ink:#12171b;--mid:#44433a;--muted:#6c6960;--line:#d4d1c7;--line-2:#a49e92;
+  --bg:#f7f5ec;--bg-2:#eeebdf;--good:#006b2d;--focus:#0077A8;
   --display:"Plus Jakarta Sans","Geist","Inter",ui-sans-serif,system-ui,sans-serif;--body:"Plus Jakarta Sans","Geist","Inter",ui-sans-serif,system-ui,sans-serif;
   --label:"JetBrains Mono","Geist Mono",ui-monospace,monospace;--ease-press:cubic-bezier(0.2,0.7,0.3,1);color-scheme:light}
 *{box-sizing:border-box}
@@ -506,8 +506,8 @@ li{margin:6px 0}
 .dek{font-size:19px;color:var(--mid)}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 0}
 .btn{--face:var(--bg);--edge:var(--line-2);display:inline-flex;align-items:center;gap:0.5em;border-radius:999px;padding:0.8rem 1.4rem;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--ink);background:var(--face);border:0;
-  box-shadow:0 4px 0 0 var(--edge),0 6px 12px -3px oklch(20% 0.012 250 / 0.12);transition:transform 140ms var(--ease-press),box-shadow 140ms var(--ease-press)}
-.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 0 var(--edge),0 12px 22px -4px oklch(20% 0.012 250 / 0.14)}
+  box-shadow:0 4px 0 0 var(--edge),0 6px 12px -3px rgba(18,23,27,0.12);transition:transform 140ms var(--ease-press),box-shadow 140ms var(--ease-press)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 0 var(--edge),0 12px 22px -4px rgba(18,23,27,0.14)}
 .btn:active{transform:translateY(3px);box-shadow:0 1px 0 0 var(--edge);transition-duration:70ms}
 .btn.primary{--face:var(--accent);--edge:var(--accent-deep)}
 .btn.ghost{--face:transparent;--edge:transparent;box-shadow:inset 0 0 0 1.5px var(--ink)}
@@ -542,7 +542,7 @@ table.ue td:first-child{width:55%}
 .phase{font-family:var(--label);font-size:11px;text-transform:uppercase;letter-spacing:0.10em;color:var(--mid);margin:0}
 .gate{background:var(--ink);color:var(--bg);border:0;border-radius:24px;padding:28px 22px;margin-top:48px}
 .gate h2,.gate h3{color:var(--bg)}
-.gate p,.gate .muted{color:oklch(97% 0.012 95 / 0.7)}
+.gate p,.gate .muted{color:rgba(247,245,236,0.7)}
 .gate a:not(.btn){color:var(--accent)}
 .gate-links{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:4px 24px;margin-top:14px}
 details{border-bottom:1px dashed var(--line-2);padding:14px 0}
