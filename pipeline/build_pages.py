@@ -225,6 +225,27 @@ def pitch_li(kind, e):
             f'<p>{esc(e["what"])}.{rev}</p><p>{outcome}</p></li>')
 
 
+def auto_faq(idea, pb, it, ds, exact):
+    """Standard questions answered from the playbook and district data; idea-specific ones go first."""
+    snap = pb["snapshot"]
+    keep = next((v for k, v in pb["unit_economics"]["rows"] if k.lower().startswith("what you keep")), "")
+    cost = f"{snap['capital_bootstrap']} for a small start; {snap['capital_scaled'][0].lower() + snap['capital_scaled'][1:]}."
+    if exact and ds and ds[0]["cost"][0]:
+        d = ds[0]
+        cost += f" KidharMilega's {d['district']} ODOP data puts a setup at {rupees(d['cost'][0])}–{rupees(d['cost'][1])}."
+    faq = list(it.get("faq_extra", []))
+    asked = " ".join(f["q"].lower() for f in faq)
+    if "cost" not in asked:
+        faq.append({"q": f"How much does it cost to start {it['phrase'][0].lower() + it['phrase'][1:]}?", "a": cost + " " + pb["cost_basis"]})
+    if "licen" not in asked:
+        faq.append({"q": "What licences and registrations do I need?", "a": "; ".join(pb["licences"][:4]) + "."})
+    faq += [
+        {"q": "What profit margin can I expect?", "a": f"{snap['margin_d2c']}; {snap['margin_production'][0].lower() + snap['margin_production'][1:]}. After all costs, expect to keep {keep[0].lower() + keep[1:] if keep else 'less in the first year'}."},
+        {"q": "How long does it take to break even?", "a": f"Usually {snap['breakeven']} for a small setup, if you control costs and build repeat customers early."},
+    ]
+    return faq
+
+
 def render(idea, pb, it, ideas, districts, pitches):
     m = idea["m"]
     name, key = idea["name"], idea["key"]
@@ -235,6 +256,8 @@ def render(idea, pb, it, ideas, districts, pitches):
     via, via_note = cluster_viability(len(ds), is_product)
     idea["phrase"] = it["phrase"]
     exs = shark_examples(idea, pitches)
+    if "faq" not in it:
+        it = {**it, "faq": auto_faq(idea, pb, it, ds, exact)}
     st = m.get("sharktank")
     alts = alternatives(idea, ideas)
     sibs = siblings(idea, ideas)
@@ -501,9 +524,11 @@ def main():
         if not idea:
             print(f"! content/ideas/{f.name}: no idea with key {f.stem}")
             continue
-        pb_file = PLAYBOOKS / f"{idea['model']}.json"
+        # An idea file can name a better-fitting playbook (e.g. a café idea tagged to a packaged-drinks model).
+        pb_name = it.get("playbook", idea["model"])
+        pb_file = PLAYBOOKS / f"{pb_name}.json"
         if not pb_file.exists():
-            print(f"! {f.stem}: missing playbook for model {idea['model']}")
+            print(f"! {f.stem}: missing playbook {pb_name}")
             continue
         pb = json.loads(pb_file.read_text(encoding="utf-8"))
         head, body = render(idea, pb, it, ideas, districts, pitches)

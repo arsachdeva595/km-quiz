@@ -1,0 +1,75 @@
+{
+  "model": "healthtech-startup",
+  "snapshot": {
+    "capital_bootstrap": "₹5–15 lakh",
+    "capital_scaled": "₹1–3 crore for a product team, doctor network and patient acquisition",
+    "margin_d2c": "Consult fees, subscriptions or care packages of ₹500–20,000 per patient",
+    "margin_production": "Doctor and partner fees usually take 40–70% of the patient fee",
+    "breakeven": "2–4 years",
+    "distribution_score": 2,
+    "distribution_note": "Patients trust doctors, not apps; partnerships with clinics and hospitals matter most"
+  },
+  "tailwinds": [
+    "The Ayushman Bharat Digital Mission gives every patient a health ID and lets records move between providers.",
+    "Telemedicine has been legal under national guidelines since 2020, and patients in smaller towns now use it.",
+    "Chronic conditions such as diabetes, heart disease and infertility need long-term care that clinics struggle to provide.",
+    "Insurers and employers are paying for preventive and remote care programmes."
+  ],
+  "headwinds": [
+    "Large players such as Practo, Tata 1mg, Apollo 24|7 and PharmEasy dominate bookings and pharmacy.",
+    "Patients will pay for a doctor, but rarely for an app on its own.",
+    "Health data is sensitive, and the Digital Personal Data Protection Act adds compliance work.",
+    "Many healthtech startups raised money in 2021 and shut down when funding dried up."
+  ],
+  "angle_2026": "Generic doctor booking and medicine delivery are already owned by large companies. The healthtech businesses with a future in 2026 own one condition or one patient journey, such as post-transplant care, fertility or disability, and show measurable outcomes that a patient, insurer or hospital will pay for.",
+  "cost_basis": "Estimated for a team of 3–5 building a care service for one condition in one or two cities, 2026 prices.",
+  "setup_costs": [
+    {"item": "Product build", "low": "₹2,00,000", "high": "₹8,00,000", "covers": "App or web platform, booking, records, payments"},
+    {"item": "Clinical team", "low": "₹1,00,000", "high": "₹5,00,000", "covers": "Doctor, nutritionist or counsellor fees for the first months"},
+    {"item": "Compliance and legal", "low": "₹50,000", "high": "₹2,00,000", "covers": "Company setup, privacy policy, data-protection work, doctor agreements"},
+    {"item": "Hosting and security", "low": "₹30,000", "high": "₹1,50,000", "covers": "Secure cloud hosting, backups, encryption"},
+    {"item": "Patient acquisition", "low": "₹1,00,000", "high": "₹4,00,000", "covers": "Clinic partnerships, community camps, digital ads"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹6,000 three-month care programme:",
+    "rows": [
+      ["Doctor and care-team time", "₹2,000–3,000"],
+      ["Tests or devices included", "₹500–1,200"],
+      ["Platform and payment costs", "₹200–400"],
+      ["Cost to win the patient", "₹800–2,000"],
+      ["What you keep", "₹500–2,000 per programme; more when patients renew"]
+    ],
+    "note": "Renewals and referrals decide whether this works. A patient who renews twice is worth three times as much, at almost no extra acquisition cost."
+  },
+  "investor_probes": [
+    "Who pays: the patient, an employer, an insurer or a hospital?",
+    "What outcomes can you show, in numbers?",
+    "How much does it cost to win a patient, and how long do they stay?",
+    "How do you keep health data safe and compliant?",
+    "Why won't a large health platform add this as a feature?"
+  ],
+  "bootstrap_takeaway": "Start as a service before building an app. Run the care programme with WhatsApp, a spreadsheet and one doctor, prove patients pay and stay, then build software for what you do every day.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "Company registration, GST and Udyam",
+    "Registered medical practitioners for any consultation, following the Telemedicine Practice Guidelines",
+    "Pharmacy licence if you sell medicines",
+    "Privacy policy and consent flows under the Digital Personal Data Protection Act",
+    "ABDM integration if you handle health records (optional, but useful)"
+  ],
+  "schemes": ["startupindia", "udyam", "cgtmse", "standup"],
+  "hard_truths": [
+    {"title": "Patients pay for care, not software", "text": "An app nobody is paid to follow up on gets deleted. The revenue sits in the care team, so plan your business around their time."},
+    {"title": "Trust takes years", "text": "Patients follow their doctor's advice. Partnering with respected doctors or hospitals is slower than ads, but it's what brings patients who stay."},
+    {"title": "Regulation keeps changing", "text": "Telemedicine, online pharmacy and data rules have all changed in recent years. Budget for a lawyer who knows healthcare."},
+    {"title": "Funding cycles", "text": "Healthtech funding rose sharply and then fell. Build a business that can survive on its own revenue for long stretches."}
+  ],
+  "plan_goal": "The aim is 50 paying patients in one programme, with at least half renewing or completing it.",
+  "plan": [
+    {"days": "1–15", "title": "Pick one condition", "steps": ["Choose one condition or patient journey where care breaks down today.", "Interview 20 patients or carers and 5 doctors.", "Check what they pay for today and what they complain about."]},
+    {"days": "16–45", "title": "Run it by hand", "steps": ["Sign one doctor or clinic as a partner.", "Run the programme on WhatsApp and simple forms.", "Put consent forms and a privacy policy in place."]},
+    {"days": "46–75", "title": "Get paying patients", "steps": ["Sign up your first 30–50 paying patients through doctors and communities.", "Track outcomes every week.", "Ask every patient what would make them renew."]},
+    {"days": "76–90", "title": "Review", "steps": ["Measure completion, renewals and cost per patient.", "Decide which parts to automate first.", "Approach an insurer, employer or hospital with your outcome data."]}
+  ]
+}

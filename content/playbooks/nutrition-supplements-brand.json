@@ -1,0 +1,75 @@
+{
+  "model": "nutrition-supplements-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹4–10 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for a wider range, clinical studies and heavy marketing",
+    "margin_d2c": "65–80% gross margin selling online",
+    "margin_production": "30–40% through pharmacies and distributors",
+    "breakeven": "18–30 months",
+    "distribution_score": 2,
+    "distribution_note": "Online and creator-led; buyers are sceptical and ads are expensive"
+  },
+  "tailwinds": [
+    "Buyers in cities are spending more on preventive health, from protein to sleep and skin supplements.",
+    "Contract manufacturers can produce capsules, gummies and powders in small runs.",
+    "Ayurvedic ingredients such as ashwagandha, shilajit and moringa are popular in India and abroad.",
+    "Quick-commerce apps and pharmacies now list new supplement brands."
+  ],
+  "headwinds": [
+    "FSSAI and AYUSH rules restrict what you can claim on the label and in ads.",
+    "Buyers are wary of fake and low-quality supplements, especially online.",
+    "Large brands such as HealthKart, Himalaya and Wellbeing Nutrition spend heavily.",
+    "Many products are bought once and never again if results aren't visible."
+  ],
+  "angle_2026": "Supplement buyers have become far more sceptical: they read labels, check lab reports and follow doctors and nutritionists online. In 2026 the brands that grow publish test results, stick to claims the regulator allows, and focus on one need, such as women's health, ageing or quitting smoking, where they can show results.",
+  "cost_basis": "Estimated for a brand using a certified contract manufacturer, 2–3 products and selling online, 2026 prices.",
+  "setup_costs": [
+    {"item": "Formulation and trial batches", "low": "₹50,000", "high": "₹2,00,000", "covers": "Formulation by a qualified expert, pilot batches"},
+    {"item": "First production run", "low": "₹1,50,000", "high": "₹4,00,000", "covers": "Minimum orders of 2,000–5,000 packs per product"},
+    {"item": "Lab testing", "low": "₹30,000", "high": "₹1,00,000", "covers": "Purity, heavy metals, label-claim tests from accredited labs"},
+    {"item": "Licences and label review", "low": "₹20,000", "high": "₹80,000", "covers": "FSSAI or AYUSH licence, regulatory consultant"},
+    {"item": "Packaging and design", "low": "₹30,000", "high": "₹1,00,000", "covers": "Bottles, jars, labels, cartons"},
+    {"item": "Launch marketing", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Nutritionist and creator partnerships, ads, samples"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹999 pack of 60 capsules or gummies:",
+    "rows": [
+      ["Product and packaging", "₹150–250"],
+      ["Shipping and payment fees", "₹70–110"],
+      ["Ads per order", "₹300–450"],
+      ["Returns and damages", "About 3%"],
+      ["What you keep", "₹250–400 per pack; much more on subscription reorders"]
+    ],
+    "note": "Supplements are a monthly habit. A buyer who reorders three times makes the ad cost worthwhile; a one-time buyer usually doesn't."
+  },
+  "investor_probes": [
+    "What evidence supports your claims, and are they allowed under FSSAI or AYUSH rules?",
+    "What share of buyers reorder within 60 days?",
+    "What does each first order cost in ads?",
+    "Who makes your products, and how do you check quality?"
+  ],
+  "bootstrap_takeaway": "Launch one product for one clear need, publish your lab reports, and sell subscriptions from day one. Partner with a few doctors or nutritionists instead of spending on broad ads.",
+  "cluster_based": false,
+  "sourcing_edge": "Himachal Pradesh (Baddi), Gujarat and Uttarakhand have many certified nutraceutical and ayurvedic contract manufacturers. Choose one with the licences and test reports for your product type.",
+  "licences": [
+    "FSSAI central licence for health supplements and nutraceuticals, following the 2022 nutraceutical regulations",
+    "AYUSH licence from the state licensing authority for ayurvedic products",
+    "Label and advertising claims that follow FSSAI and ASCI guidelines",
+    "GST registration and Udyam registration",
+    "Trademark application"
+  ],
+  "schemes": ["udyam", "pmfme", "mudra", "startupindia"],
+  "hard_truths": [
+    {"title": "Claims can land you in trouble", "text": "Saying a product cures or prevents a disease can bring notices from FSSAI, AYUSH or the advertising regulator. Have every claim checked before you publish it."},
+    {"title": "Trust is hard to win", "text": "Buyers expect fake products and exaggerated claims. Independent lab reports and honest labels are what make a small brand believable."},
+    {"title": "One-time buyers", "text": "If buyers don't feel a difference in 4–6 weeks, they won't reorder. Choose products where results are noticeable, and set expectations clearly."},
+    {"title": "Ad costs", "text": "Health is a crowded ad category. Without a doctor, nutritionist or community channel, customer acquisition can cost more than a customer's first three orders."}
+  ],
+  "plan_goal": "The aim is 500 packs sold, with at least a quarter of buyers reordering.",
+  "plan": [
+    {"days": "1–15", "title": "Choose one need", "steps": ["Pick one health need and one buyer group.", "Talk to 5 doctors or nutritionists and 30 potential buyers.", "Shortlist 3 certified contract manufacturers."]},
+    {"days": "16–45", "title": "Product and licences", "steps": ["Finalise the formulation and get your FSSAI or AYUSH licence.", "Run the first batch and send samples to an accredited lab.", "Have your label and claims reviewed."]},
+    {"days": "46–75", "title": "Launch", "steps": ["Launch with lab reports on your website.", "Partner with 5–10 nutritionists or doctors.", "Offer a subscription discount."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Measure reorder rate, ad cost and reviews.", "Decide whether to add a second product.", "Consider pharmacies or quick commerce if reorders are strong."]}
+  ]
+}

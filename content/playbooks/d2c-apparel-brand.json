@@ -1,0 +1,77 @@
+{
+  "model": "d2c-apparel-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹2–6 lakh",
+    "capital_scaled": "₹40 lakh–2 crore for a full range, stock in several sizes and steady ad spend",
+    "margin_d2c": "55–70% gross margin on your own site, before returns and ads",
+    "margin_production": "25–35% on marketplaces after commissions and returns",
+    "breakeven": "12–24 months",
+    "distribution_score": 3,
+    "distribution_note": "Instagram and creators work, but ad costs and returns decide whether you make money"
+  },
+  "tailwinds": [
+    "India has deep garment clusters such as Tiruppur, Ludhiana, Surat and Jaipur that make small runs possible.",
+    "Instagram, creators and quick-commerce fashion have made it cheaper to reach a niche audience.",
+    "Shark Tank India funded more apparel brands than almost any other category, from innerwear to streetwear.",
+    "Buyers in tier-2 and tier-3 cities now shop online for branded clothing, not just metros."
+  ],
+  "headwinds": [
+    "Return rates of 20–35% are common for online apparel, driven by size and fit.",
+    "Meta and Google ad costs keep rising, and many brands spend 25–40% of revenue on ads.",
+    "Fast-fashion players like Myntra's own labels, Zudio and Shein-backed brands price very aggressively.",
+    "Unsold sizes and colours turn into dead stock that you clear at a loss."
+  ],
+  "angle_2026": "Generic basics are a price war you can't win against Zudio and marketplace labels. The apparel brands that grew on Shark Tank each solved one specific problem for one specific buyer: innerwear for teenage girls, shapewear, modest fashion, army-inspired designs. In 2026, a narrow customer and a fit that works are worth more than a big catalogue.",
+  "cost_basis": "Estimated for a brand that uses a contract manufacturer, launches 8–15 designs and sells mainly on its own site and Instagram, 2026 prices.",
+  "setup_costs": [
+    {"item": "First production run", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Fabric, stitching and trims for 300–800 pieces across sizes"},
+    {"item": "Design and sampling", "low": "₹20,000", "high": "₹80,000", "covers": "Patterns, 2–3 sample rounds, size grading"},
+    {"item": "Photoshoot and content", "low": "₹20,000", "high": "₹80,000", "covers": "Model shoot, reels, size-guide photos"},
+    {"item": "Website and marketplace setup", "low": "₹15,000", "high": "₹50,000", "covers": "Shopify or similar store, payment gateway, listings"},
+    {"item": "Packaging and labels", "low": "₹10,000", "high": "₹40,000", "covers": "Poly bags, boxes, woven labels, hang tags"},
+    {"item": "Launch marketing", "low": "₹50,000", "high": "₹2,00,000", "covers": "Creator seeding, ad tests, launch offers"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹1,299 T-shirt or co-ord sold on your own site:",
+    "rows": [
+      ["Fabric and stitching", "₹250–400"],
+      ["Packaging and labels", "₹30–50"],
+      ["Shipping and payment fees", "₹90–140"],
+      ["Ads per order", "₹250–450"],
+      ["Returns reserve", "15–25% of the price"],
+      ["What you keep", "10–20% after ads and returns; more on repeat customers"]
+    ],
+    "note": "Repeat customers cost almost nothing in ads. Brands that get 30%+ of orders from repeat buyers can afford to grow; brands that rely on new customers every month rarely do."
+  },
+  "investor_probes": [
+    "What is your return rate, and how much of it is size-related?",
+    "How much do you spend on ads for each first order?",
+    "What share of revenue comes from repeat customers?",
+    "How much stock is sitting unsold, and how old is it?",
+    "Why would someone buy from you instead of a marketplace label at half the price?"
+  ],
+  "bootstrap_takeaway": "Launch with a small range in one niche, produce in batches of 50–100 per design, and reorder only what sells at full price. Pre-orders and drops keep stock low while you learn your sizes.",
+  "cluster_based": true,
+  "sourcing_edge": "Garment clusters such as Tiruppur (knitwear), Ludhiana (woollens), Surat (synthetics), Jaipur (prints) and Kolkata (innerwear) will take smaller orders and move faster than big exporters. Visiting in person gets you better prices and more honest timelines.",
+  "licences": [
+    "GST registration (needed for marketplaces)",
+    "Udyam registration",
+    "Trademark application for your brand name",
+    "Shops and Establishments registration if you run an office or warehouse",
+    "Correct labelling on each garment: fibre content, size, care and maker details"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "cgtmse", "standup"],
+  "hard_truths": [
+    {"title": "Returns eat your profit", "text": "Every return costs shipping both ways, repacking and sometimes a damaged piece. A brand with 30% returns needs a much higher price just to break even. Invest in size charts, fit notes and exchanges instead of refunds."},
+    {"title": "You rent your customers from Meta", "text": "If most sales come from paid ads, a rise in ad costs can wipe out your margin overnight. Build an email, WhatsApp and community list from day one."},
+    {"title": "Dead stock", "text": "The sizes and colours that don't sell tie up cash. Brands that run out of S and M while holding XXL are common. Reorder in small batches and track sell-through by size."},
+    {"title": "Copying is instant", "text": "A successful design can appear on marketplaces within weeks at a lower price. Your protection is the brand, the fit and the community, not the design itself."}
+  ],
+  "plan_goal": "The aim is ₹2 lakh in sales with at least 20% from repeat buyers, and a return rate below 20%.",
+  "plan": [
+    {"days": "1–15", "title": "Pick your niche and sample", "steps": ["Define one buyer and one problem your clothing solves for them.", "Visit a cluster or contact 5 manufacturers and get quotes for 50–100 pieces per design.", "Make samples of 4–6 designs and try them on real people of different sizes."]},
+    {"days": "16–45", "title": "Small first run", "steps": ["Register for GST and Udyam and apply for your trademark.", "Produce a small run of the best 3–4 designs.", "Shoot content that shows fit on different body types."]},
+    {"days": "46–75", "title": "Sell and learn", "steps": ["Launch on Instagram with 10–20 creators in your niche.", "Test small ad budgets on 2–3 designs.", "Call every buyer who returns a piece and ask why."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Check ad cost per order, returns by size and repeat orders.", "Reorder the designs that sold at full price.", "Decide whether to add marketplaces or stay direct."]}
+  ]
+}

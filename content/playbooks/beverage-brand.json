@@ -1,0 +1,77 @@
+{
+  "model": "beverage-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹4–10 lakh",
+    "capital_scaled": "₹50 lakh–3 crore for your own line or large co-packer runs, cold chain and distribution",
+    "margin_d2c": "50–60% gross margin selling online in multi-packs",
+    "margin_production": "25–35% through distributors and retail",
+    "breakeven": "24–36 months",
+    "distribution_score": 1,
+    "distribution_note": "Getting into fridges and shelves is expensive; distributors want proven demand"
+  },
+  "tailwinds": [
+    "Buyers are cutting sugar and looking for low-calorie, functional and natural drinks.",
+    "Quick-commerce apps have become a strong launch channel for new drinks in metros.",
+    "Co-packers now offer smaller runs for cans, PET bottles and tetra packs.",
+    "Indian flavours such as shikanji, kokum, jaljeera and regional teas have a loyal audience that global brands underserve."
+  ],
+  "headwinds": [
+    "Coca-Cola, PepsiCo and Reliance's Campa compete hard on price and own most shop fridges.",
+    "Minimum order quantities for cans and bottles are high, so your first run ties up a lot of cash.",
+    "Freight is a large share of the cost because drinks are heavy and low value per kilo.",
+    "Sales depend heavily on summer; winter months can be very slow."
+  ],
+  "angle_2026": "The big soft-drink companies have restarted a price war, so a cheaper cola or lemon drink will not survive. New beverage brands that work in 2026 either own a functional claim (no sugar, electrolytes, gut health), an Indian flavour with a story, or a premium occasion such as mixers and cafés.",
+  "cost_basis": "Estimated for a brand using a co-packer, 2–3 SKUs and launching in one metro, 2026 prices.",
+  "setup_costs": [
+    {"item": "Recipe development and shelf-life tests", "low": "₹50,000", "high": "₹2,00,000", "covers": "Food technologist, trial batches, stability testing"},
+    {"item": "First co-packer run", "low": "₹2,00,000", "high": "₹6,00,000", "covers": "Minimum order of 10,000–30,000 units including cans or bottles"},
+    {"item": "Packaging design and printing", "low": "₹40,000", "high": "₹1,50,000", "covers": "Label or can design, printing plates, cartons"},
+    {"item": "FSSAI licence and lab tests", "low": "₹15,000", "high": "₹50,000", "covers": "Licence, nutrition and label claim testing"},
+    {"item": "Warehousing and freight", "low": "₹30,000", "high": "₹1,00,000", "covers": "Storage, delivery to quick-commerce dark stores and distributors"},
+    {"item": "Launch marketing and sampling", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Free samples at gyms, offices and events, creators, listing fees"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹60 can or bottle sold through retail:",
+    "rows": [
+      ["Liquid and ingredients", "₹6–12"],
+      ["Can or bottle and label", "₹10–18"],
+      ["Co-packer charge", "₹4–8"],
+      ["Freight and warehousing", "₹4–8"],
+      ["Retailer and distributor margin", "₹18–24"],
+      ["What you keep", "₹6–12 per unit before marketing"]
+    ],
+    "note": "Beverages make money only at volume. Selling online in packs of 6–24 improves margins, but freight on heavy parcels can wipe out the gain."
+  },
+  "investor_probes": [
+    "What is your cost per unit at 10,000 units, and at 1 lakh?",
+    "How many stores reorder without you visiting?",
+    "Why won't a big brand launch the same flavour at a lower price?",
+    "How much of your yearly sales comes in summer?",
+    "What do distributors and retailers take as margin?"
+  ],
+  "bootstrap_takeaway": "Start in one city with one hero flavour, sell in cafés, gyms and quick commerce first, and prove repeat orders before you pay for wide retail distribution.",
+  "cluster_based": false,
+  "sourcing_edge": "Work with a co-packer that already makes a similar drink; they'll handle licensing, filling and quality checks. Buying cans or bottles jointly with other small brands can lower the minimum order.",
+  "licences": [
+    "FSSAI state or central licence (manufacturing through a co-packer still needs your own licence as brand owner)",
+    "BIS certification for packaged drinking water or mineral water, if relevant",
+    "Legal Metrology labelling for packaged goods",
+    "GST registration",
+    "Excise licence from the state for any alcoholic drink"
+  ],
+  "schemes": ["udyam", "pmfme", "mudra", "cgtmse", "startupindia"],
+  "hard_truths": [
+    {"title": "Minimum orders lock up cash", "text": "A single run of cans can cost several lakh. If the flavour doesn't sell, you are left with stock that expires in 6–12 months."},
+    {"title": "Fridge space is controlled", "text": "The big brands give shops free fridges in exchange for keeping them stocked with their drinks. You'll mostly be on warm shelves unless you pay for placement."},
+    {"title": "Freight is brutal", "text": "A carton of drinks is heavy and cheap. Shipping it across the country can cost more than your margin, so build demand city by city."},
+    {"title": "Seasonality", "text": "Cold drinks sell most from March to June. Plan cash for slow winters, or add hot or all-season products."}
+  ],
+  "plan_goal": "The aim is 3,000 units sold, with at least 30 outlets or online buyers reordering on their own.",
+  "plan": [
+    {"days": "1–15", "title": "Recipe and costing", "steps": ["Develop 2–3 recipes with a food technologist.", "Run blind taste tests with 50 people from your target audience.", "Get quotes from 3 co-packers for minimum runs and cost per unit."]},
+    {"days": "16–45", "title": "First run", "steps": ["Get your FSSAI licence and test the label claims in a lab.", "Produce the smallest run you can for one hero flavour.", "List on one or two quick-commerce apps in your city."]},
+    {"days": "46–75", "title": "Sample hard", "steps": ["Give away samples at gyms, offices, colleges and events.", "Pitch 20 cafés and restaurants and offer sale-or-return for the first month.", "Collect feedback and reorder data every week."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Calculate margin per unit after all freight and listing fees.", "Keep the channels where buyers reorder.", "Decide whether to add a flavour or a second city."]}
+  ]
+}

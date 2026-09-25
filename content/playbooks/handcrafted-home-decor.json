@@ -1,0 +1,75 @@
+{
+  "model": "handcrafted-home-decor",
+  "snapshot": {
+    "capital_bootstrap": "₹1–4 lakh",
+    "capital_scaled": "₹20–60 lakh for your own studio, a larger artisan network and export orders",
+    "margin_d2c": "55–70% gross margin selling direct",
+    "margin_production": "25–40% selling to stores, designers and exporters",
+    "breakeven": "12–24 months",
+    "distribution_score": 3,
+    "distribution_note": "Instagram, interior designers and exhibitions work well; breakage in shipping is the headache"
+  },
+  "tailwinds": [
+    "Home buyers and renters are spending more on decor, and Instagram has made styled homes aspirational.",
+    "Buyers increasingly want handmade, sustainable pieces over mass-produced imports.",
+    "India's craft clusters, from Moradabad brass to Jaipur marble and Saharanpur wood, supply global decor retailers.",
+    "Gifting for weddings, housewarmings and corporate events is a large, steady market."
+  ],
+  "headwinds": [
+    "Cheap imported decor sells at a fraction of the price on marketplaces.",
+    "Fragile pieces break in shipping, and returns are costly.",
+    "Artisan output is limited and slow, which makes big orders hard.",
+    "Designs are easy to copy once they sell."
+  ],
+  "angle_2026": "Decor buyers now scroll past mass-made pieces and look for a story: who made it, which craft, which town. The brands that grow in 2026 pair one craft cluster with modern design, and sell as much to interior designers and corporate gifting buyers as to individual customers.",
+  "cost_basis": "Estimated for a brand working with artisans in one or two clusters and selling online and through designers, 2026 prices.",
+  "setup_costs": [
+    {"item": "First production batch", "low": "₹50,000", "high": "₹1,50,000", "covers": "Materials and artisan work for 100–300 pieces"},
+    {"item": "Design and sampling", "low": "₹15,000", "high": "₹60,000", "covers": "New designs, sample pieces, finishing trials"},
+    {"item": "Photoshoot", "low": "₹15,000", "high": "₹50,000", "covers": "Styled room shots, close-ups, videos"},
+    {"item": "Protective packaging", "low": "₹15,000", "high": "₹50,000", "covers": "Boxes, foam, honeycomb paper, fragile labels"},
+    {"item": "Website and marketplaces", "low": "₹10,000", "high": "₹40,000", "covers": "Store, listings, payment gateway"},
+    {"item": "Exhibitions and marketing", "low": "₹30,000", "high": "₹1,50,000", "covers": "Craft fairs, pop-ups, creators, designer outreach"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹3,000 handcrafted decor piece:",
+    "rows": [
+      ["Materials and artisan work", "₹700–1,100"],
+      ["Protective packaging", "₹120–250"],
+      ["Shipping and payment fees", "₹200–350"],
+      ["Breakage and returns reserve", "5–10% of the price"],
+      ["What you keep", "₹800–1,300 per piece before marketing"]
+    ],
+    "note": "Bulk orders from designers and corporate gifting come with lower prices but no ad cost and no breakage returns, so they often make more money per piece."
+  },
+  "investor_probes": [
+    "How many pieces can your artisans produce each month?",
+    "What share of shipments break or come back?",
+    "How much comes from designers, businesses and repeat buyers?",
+    "What stops someone copying your best-sellers?"
+  ],
+  "bootstrap_takeaway": "Start with a small collection from one craft cluster, sell through Instagram and exhibitions, and pitch interior designers and corporate buyers for bulk orders early. Those orders fund your stock.",
+  "cluster_based": true,
+  "sourcing_edge": "Buying directly from artisans or craft cooperatives in the cluster, rather than through city wholesalers, typically cuts cost by a quarter to a third and lets you control finish and design.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "Trademark application",
+    "Import-export code for export orders",
+    "GI authorised-user registration if you use a GI craft name"
+  ],
+  "schemes": ["udyam", "vishwakarma", "mudra", "pmegp"],
+  "hard_truths": [
+    {"title": "Breakage", "text": "Marble, ceramic and glass pieces break in courier networks. Budget for proper packaging and a breakage reserve, or you'll lose money on every broken order."},
+    {"title": "Slow, limited output", "text": "Handwork can't be rushed. A corporate order of 1,000 pieces may need months, so confirm capacity before you accept."},
+    {"title": "Copies", "text": "Once a design sells, cheaper copies appear quickly. Keep releasing new designs and tell the story of your makers."},
+    {"title": "Seasonal demand", "text": "Diwali, weddings and year-end gifting bring a large share of sales. Place production orders months ahead."}
+  ],
+  "plan_goal": "The aim is ₹1.5 lakh in sales, including at least one bulk order from a designer or business.",
+  "plan": [
+    {"days": "1–15", "title": "Choose your craft", "steps": ["Visit one craft cluster and meet 3–5 artisans or cooperatives.", "Order 10–15 sample pieces in modern designs.", "Show them to 20 target buyers and 5 interior designers."]},
+    {"days": "16–45", "title": "First collection", "steps": ["Register for GST and Udyam.", "Produce a small collection of the designs people liked most.", "Shoot styled photos and set up your store."]},
+    {"days": "46–75", "title": "Sell", "steps": ["Launch on Instagram and at one exhibition or pop-up.", "Pitch 20 interior designers and corporate gifting buyers.", "Test your packaging by shipping to friends in other cities."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Check breakage, margins and which designs sold.", "Plan the festive collection and place orders early.", "Decide whether to add a second craft or cluster."]}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "model": "jewellery-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹2–6 lakh for fashion or demi-fine jewellery",
+    "capital_scaled": "₹50 lakh–3 crore for gold, silver or lab-grown diamond stock and stores",
+    "margin_d2c": "60–75% gross margin on fashion and demi-fine jewellery",
+    "margin_production": "10–25% on gold and diamond pieces, where the metal is most of the price",
+    "breakeven": "12–24 months for demi-fine; longer for fine jewellery",
+    "distribution_score": 3,
+    "distribution_note": "Instagram and creators sell fashion pieces well; fine jewellery needs trust and a store or strong returns policy"
+  },
+  "tailwinds": [
+    "Young buyers want everyday jewellery they can wear to work, between cheap fashion pieces and expensive gold.",
+    "Lab-grown diamonds have fallen sharply in price, opening a new category of affordable diamond jewellery.",
+    "Jaipur, Surat, Mumbai and Kolkata give you access to skilled karigars, stone cutters and manufacturers.",
+    "Gifting, weddings and festivals keep demand steady through the year."
+  ],
+  "headwinds": [
+    "Tanishq, CaratLane, Giva and other well-funded brands spend heavily on marketing.",
+    "Gold and silver prices swing, which changes your costs and your customers' budgets.",
+    "Fashion jewellery is copied quickly, and cheap imports flood marketplaces.",
+    "Buyers need to trust purity and quality before paying for fine jewellery online."
+  ],
+  "angle_2026": "Demi-fine silver and gold-plated jewellery and lab-grown diamonds have created a middle market that barely existed five years ago. In 2026, the jewellery brands that grow pick one style and one buyer, prove quality with hallmarks or certificates, and use Instagram to show the pieces being worn every day.",
+  "cost_basis": "Estimated for a demi-fine or fashion jewellery brand using contract karigars and selling online, 2026 prices.",
+  "setup_costs": [
+    {"item": "First collection", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Metal, plating, stones and making charges for 200–500 pieces"},
+    {"item": "Design and sampling", "low": "₹20,000", "high": "₹80,000", "covers": "Designs, CAD models, sample pieces"},
+    {"item": "Photoshoot", "low": "₹20,000", "high": "₹60,000", "covers": "Model shots, close-ups, reels"},
+    {"item": "Packaging", "low": "₹15,000", "high": "₹50,000", "covers": "Boxes, pouches, anti-tarnish packs, certificates"},
+    {"item": "Website and marketplaces", "low": "₹15,000", "high": "₹50,000", "covers": "Store, payment gateway, listings"},
+    {"item": "Launch marketing", "low": "₹50,000", "high": "₹2,00,000", "covers": "Creators, ads, gifting"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹2,000 gold-plated silver pendant:",
+    "rows": [
+      ["Silver, plating and making charges", "₹400–650"],
+      ["Packaging and certificate", "₹60–120"],
+      ["Shipping and payment fees", "₹80–130"],
+      ["Ads per order", "₹300–500"],
+      ["What you keep", "₹500–900 per piece; more from repeat and gifting orders"]
+    ],
+    "note": "Jewellery is light and rarely returned for fit, so shipping and returns cost less than in clothing. Ad costs are the main expense."
+  },
+  "investor_probes": [
+    "How do you prove quality and purity to buyers online?",
+    "What does each first order cost in ads?",
+    "What share of buyers come back within six months?",
+    "How do you handle changes in gold or silver prices?"
+  ],
+  "bootstrap_takeaway": "Start with 30–50 designs in one style, produce in small batches, and let Instagram and early buyers tell you which pieces to reorder. Add fine jewellery only once you have a loyal customer base.",
+  "cluster_based": true,
+  "sourcing_edge": "Jaipur (gemstones and silver), Surat (diamonds and lab-grown diamonds), Mumbai's Zaveri Bazaar and Kolkata's karigar workshops will make small batches. Working directly with a trusted karigar is cheaper than going through wholesalers.",
+  "licences": [
+    "GST registration",
+    "BIS hallmarking for gold jewellery (with HUID), and registration as a jeweller if you sell gold",
+    "Certificates from recognised labs for diamonds and lab-grown diamonds",
+    "Udyam registration",
+    "Trademark application"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "vishwakarma", "cgtmse"],
+  "hard_truths": [
+    {"title": "Ads get expensive", "text": "Jewellery is one of the most competitive categories on Instagram and Google. Without repeat buyers or a strong community, ad costs will eat your margin."},
+    {"title": "Metal prices move", "text": "A rise in silver or gold prices hits your costs immediately. Update prices regularly and don't hold too much metal stock."},
+    {"title": "Plating wears off", "text": "Cheap plating fades in weeks and brings angry reviews. Pay for thicker plating and give care instructions."},
+    {"title": "Trust for fine jewellery", "text": "Selling gold or diamonds online needs certificates, easy returns and buyback promises. Big brands offer all of these."}
+  ],
+  "plan_goal": "The aim is ₹2 lakh in sales with a clear best-selling style.",
+  "plan": [
+    {"days": "1–15", "title": "Define your style", "steps": ["Pick one buyer and one style, such as office wear, minimal gold or bridal fashion.", "Meet 3 karigars or manufacturers and compare samples.", "Price your range against 3 competing brands."]},
+    {"days": "16–45", "title": "First collection", "steps": ["Produce 30–50 designs in small quantities.", "Shoot model photos and reels.", "Register your brand and open your store."]},
+    {"days": "46–75", "title": "Sell", "steps": ["Send pieces to 20–30 creators in your style.", "Run small ad tests on your best 5 designs.", "Offer gift wrapping and personalised notes."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Check ad cost per order and repeat purchases.", "Reorder the best-sellers.", "Plan a festive or wedding collection."]}
+  ]
+}

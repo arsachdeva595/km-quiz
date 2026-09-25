@@ -1,0 +1,75 @@
+{
+  "model": "quick-service-food-outlet",
+  "snapshot": {
+    "capital_bootstrap": "₹3–8 lakh for a kiosk or cart",
+    "capital_scaled": "₹15–40 lakh for a small café-style outlet, or several kiosks",
+    "margin_d2c": "60–70% gross margin on each item at the counter",
+    "margin_production": "Delivery apps take 20–30% of each order in commission",
+    "breakeven": "6–15 months",
+    "distribution_score": 4,
+    "distribution_note": "Location does most of the selling; delivery apps add reach at a cost"
+  },
+  "tailwinds": [
+    "Young buyers in cities eat out and order in more often, and try new food trends quickly.",
+    "One hero item, such as bubble tea, rolls, momos or coconut drinks, keeps the menu, training and wastage simple.",
+    "UPI makes small, fast transactions easy, and delivery apps reach buyers beyond your street.",
+    "Kiosks in malls, colleges, offices and metro stations can be rented for short terms."
+  ],
+  "headwinds": [
+    "Rent in busy locations is high, and a poor location can sink the business.",
+    "Food trends fade; a hot item this year can be ordinary next year.",
+    "Staff turnover is high, and taste suffers when trained people leave.",
+    "Delivery-app commissions and discounts eat into margins."
+  ],
+  "angle_2026": "Food trends reach tier-2 cities within months of taking off in metros, so a single-item outlet can do well if it's early to its town. In 2026, the outlets that last keep the menu short, choose locations with steady footfall, and build regular customers instead of relying on the trend.",
+  "cost_basis": "Estimated for a kiosk or small counter in a busy location in a metro or large city, 2026 prices.",
+  "setup_costs": [
+    {"item": "Equipment", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Blenders, chillers, cooking equipment, counters"},
+    {"item": "Fit-out and branding", "low": "₹50,000", "high": "₹2,00,000", "covers": "Kiosk structure, signage, menu boards, lighting"},
+    {"item": "Rent deposit", "low": "₹50,000", "high": "₹3,00,000", "covers": "Security deposit and first month's rent"},
+    {"item": "Opening stock", "low": "₹20,000", "high": "₹60,000", "covers": "Ingredients, cups, packaging"},
+    {"item": "Licences", "low": "₹5,000", "high": "₹30,000", "covers": "FSSAI registration, trade licence, fire safety where needed"},
+    {"item": "Franchise fee (if you join a brand)", "low": "₹0", "high": "₹5,00,000", "covers": "Brand, recipes, training, supply"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹180 drink or snack sold at the counter:",
+    "rows": [
+      ["Ingredients and packaging", "₹45–65"],
+      ["Staff, per item at 150 items a day", "₹15–25"],
+      ["Rent, per item at 150 items a day", "₹20–40"],
+      ["Power, gas and wastage", "₹8–15"],
+      ["What you keep", "₹40–70 per item at the counter; about half that on delivery apps"]
+    ],
+    "note": "Everything depends on daily volume. At 150 items a day a kiosk usually makes money; at 60 it usually doesn't, because rent and staff stay the same."
+  },
+  "investor_probes": [
+    "How many items do you sell per day, and on weekdays versus weekends?",
+    "What share of sales comes from repeat customers?",
+    "What happens to sales if this food trend fades?",
+    "How many outlets are profitable, not just open?"
+  ],
+  "bootstrap_takeaway": "Test with a cart, pop-up or weekend stall before signing a long lease. Count footfall at the location for a week, and move only when you know your daily sales can cover rent.",
+  "cluster_based": false,
+  "sourcing_edge": "Buy cups, ingredients and packaging from wholesale markets or distributors, not retail. For imported items such as tapioca pearls or syrups, order in bulk with other outlets to lower the price.",
+  "licences": [
+    "FSSAI registration or state licence depending on turnover",
+    "Trade licence or health licence from the municipality",
+    "Shops and Establishments registration",
+    "GST registration once you cross the threshold, or if you sell on delivery apps",
+    "Fire safety clearance where needed for gas cylinders"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "standup"],
+  "hard_truths": [
+    {"title": "Location is everything", "text": "Two kiosks with the same menu can have completely different sales depending on the street. Count footfall before you sign, and avoid long lock-in leases."},
+    {"title": "Trends fade", "text": "Many food trends peak within a couple of years. Keep costs low and add a second hero item before the first one slows."},
+    {"title": "Staff decide the taste", "text": "When a trained cook or barista leaves, quality drops. Use written recipes, measured portions and train two people for every role."},
+    {"title": "Delivery apps are expensive", "text": "Commissions and discounts can halve your margin on delivery orders. Use apps for reach, but build counter sales and regulars."}
+  ],
+  "plan_goal": "The aim is 150 items a day at one location, with regular customers making up a good share of sales.",
+  "plan": [
+    {"days": "1–15", "title": "Test the product", "steps": ["Perfect 3–5 menu items and cost each one.", "Run tastings with 50 people in your target age group.", "Shortlist 3 locations and count footfall at different times."]},
+    {"days": "16–45", "title": "Pop-up", "steps": ["Get FSSAI registration and a trade licence.", "Run a cart, pop-up or weekend stall at your best location.", "Track sales by hour and by item."]},
+    {"days": "46–75", "title": "Open", "steps": ["Sign a short lease for a kiosk at the location with proven sales.", "List on one delivery app.", "Start a loyalty card or WhatsApp group for regulars."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Check daily sales, margin per item and wastage.", "Drop slow items and push best-sellers.", "Decide whether to open a second outlet."]}
+  ]
+}

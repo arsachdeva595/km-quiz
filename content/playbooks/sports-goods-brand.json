@@ -1,0 +1,74 @@
+{
+  "model": "sports-goods-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹3–8 lakh",
+    "capital_scaled": "₹30 lakh–1.5 crore for your own workshop or tooling, stock and dealer network",
+    "margin_d2c": "45–60% gross margin selling direct",
+    "margin_production": "20–30% through sports shops and dealers",
+    "breakeven": "18–30 months",
+    "distribution_score": 3,
+    "distribution_note": "Coaches, academies and sports communities sell more than ads do"
+  },
+  "tailwinds": [
+    "India's sports clusters, Jalandhar and Meerut in particular, make most of the country's sports equipment and can produce small batches.",
+    "New sports such as pickleball, padel and trekking are growing quickly in cities.",
+    "Fitness, yoga and outdoor activity are now year-round habits for many urban buyers.",
+    "Khelo India, school sports programmes and new academies are adding buyers in smaller towns."
+  ],
+  "headwinds": [
+    "Decathlon sells good-quality basics at very low prices.",
+    "Cheap imports dominate many categories, from yoga mats to rackets.",
+    "Serious players trust established international brands for bats, shoes and rackets.",
+    "Many products are seasonal or tied to one sport's popularity."
+  ],
+  "angle_2026": "Decathlon has made basic sports gear cheap, so a generic brand struggles. What works in 2026 is depth in one sport: gear designed with coaches for Indian conditions, a new sport that is growing before big brands arrive, or a craft product such as Kashmir willow bats with a clear origin.",
+  "cost_basis": "Estimated for a brand that sources from a sports cluster or contract maker and sells online and through academies, 2026 prices.",
+  "setup_costs": [
+    {"item": "Product development and samples", "low": "₹50,000", "high": "₹2,00,000", "covers": "Design, prototypes, testing with players"},
+    {"item": "First production batch", "low": "₹1,50,000", "high": "₹4,00,000", "covers": "200–1,000 units depending on the product"},
+    {"item": "Branding and packaging", "low": "₹30,000", "high": "₹1,00,000", "covers": "Logo, packaging, product photos"},
+    {"item": "Website and marketplaces", "low": "₹15,000", "high": "₹50,000", "covers": "Store, listings, payment gateway"},
+    {"item": "Launch marketing", "low": "₹50,000", "high": "₹2,00,000", "covers": "Sponsoring players and academies, creators, events"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹2,500 piece of equipment sold online:",
+    "rows": [
+      ["Product cost", "₹700–1,100"],
+      ["Packaging", "₹60–120"],
+      ["Shipping and payment fees", "₹150–250"],
+      ["Marketplace commission or ads", "₹350–600"],
+      ["What you keep", "₹500–900 per unit"]
+    ],
+    "note": "Bulky items such as bats and machines are expensive to ship. Price for shipping from the start, and sell in sets or bundles where you can."
+  },
+  "investor_probes": [
+    "Why would a serious player choose you over an established brand?",
+    "What share of sales comes through coaches and academies?",
+    "How seasonal are your sales?",
+    "How do you control quality across batches?"
+  ],
+  "bootstrap_takeaway": "Win one community first. Give gear to 10–20 coaches and players who others follow, build your reputation there, and expand to a second sport only after the first sells on referrals.",
+  "cluster_based": true,
+  "sourcing_edge": "Jalandhar and Meerut make most of India's balls, bats, rackets and fitness gear, and Kashmir's willow clusters make cricket bats. Buying directly from these makers, instead of through city traders, cuts costs and lets you control specifications.",
+  "licences": [
+    "GST registration",
+    "Udyam registration",
+    "Trademark application",
+    "BIS or safety standards where they apply (for example, helmets and some fitness equipment)",
+    "Import-export code if you export"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "cgtmse"],
+  "hard_truths": [
+    {"title": "Trust is earned on the field", "text": "Players try gear because someone they respect uses it. Ads alone rarely convince serious players."},
+    {"title": "Decathlon sets the price", "text": "For any basic product, buyers will compare you with Decathlon. Compete on features, fit or sport-specific design, not price."},
+    {"title": "Trends fade", "text": "New sports grow fast and then level off. Don't buy stock for next year's boom."},
+    {"title": "Quality complaints spread", "text": "A bat that breaks or a paddle that chips is discussed in every club. One bad batch can undo years of reputation."}
+  ],
+  "plan_goal": "The aim is ₹1.5 lakh in sales with at least 5 coaches or academies buying again.",
+  "plan": [
+    {"days": "1–15", "title": "Pick your sport", "steps": ["Choose one sport and one type of player.", "Interview 10 coaches and 20 players about what they use and what frustrates them.", "Visit or contact 3 makers in a sports cluster."]},
+    {"days": "16–45", "title": "Sample and test", "steps": ["Make samples and have players test them for 2–3 weeks.", "Fix what they complain about.", "Register your brand and set up a simple store."]},
+    {"days": "46–75", "title": "Launch through players", "steps": ["Give gear to 10–20 coaches and players with a following.", "Set up an academy discount or referral scheme.", "Show up at tournaments and club events."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Check margins after shipping and returns.", "See which coaches reorder and why.", "Decide on the next product or the next city."]}
+  ]
+}

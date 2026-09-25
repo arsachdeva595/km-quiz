@@ -1,0 +1,75 @@
+{
+  "model": "medical-devices-startup",
+  "snapshot": {
+    "capital_bootstrap": "₹10–30 lakh",
+    "capital_scaled": "₹1–5 crore for clinical validation, certification, manufacturing and a sales team",
+    "margin_d2c": "50–70% gross margin on devices once you make them at scale",
+    "margin_production": "Distributors and hospital dealers take 20–35%",
+    "breakeven": "3–6 years",
+    "distribution_score": 1,
+    "distribution_note": "Hospitals buy slowly, through doctors, tenders and dealers"
+  },
+  "tailwinds": [
+    "India imports most of its medical devices, and the government is pushing local manufacturing through production incentives and device parks.",
+    "Home care, diagnostics and monitoring are growing as hospitals discharge patients sooner.",
+    "Grants from BIRAC, state startup missions and incubators at IITs and medical colleges fund early prototypes.",
+    "Indian devices priced for Indian hospitals can also sell in Africa, South-East Asia and the Middle East."
+  ],
+  "headwinds": [
+    "Every medical device now needs a CDSCO licence, and higher-risk devices need clinical data.",
+    "Hospitals are slow to try new devices and prefer known brands.",
+    "Government tenders favour the lowest price and pay late.",
+    "Development takes years, and most founders underestimate the time to first revenue."
+  ],
+  "angle_2026": "India now regulates every medical device, which raises the cost of entry but also makes a certified Indian device more credible. In 2026 the startups that get traction solve a problem specific to Indian care, such as low-cost screening, home monitoring or rural clinics, and plan for certification from day one.",
+  "cost_basis": "Estimated for a small team building a low- to moderate-risk device (CDSCO Class A or B) through to a certified first batch, 2026 prices.",
+  "setup_costs": [
+    {"item": "Prototype development", "low": "₹3,00,000", "high": "₹15,00,000", "covers": "Engineering, electronics, 3D printing, several design rounds"},
+    {"item": "Testing and certification", "low": "₹2,00,000", "high": "₹10,00,000", "covers": "Electrical safety and biocompatibility tests, CDSCO licence, ISO 13485"},
+    {"item": "Clinical validation", "low": "₹2,00,000", "high": "₹20,00,000", "covers": "Hospital studies, ethics committee approval, data collection"},
+    {"item": "Tooling and first batch", "low": "₹3,00,000", "high": "₹15,00,000", "covers": "Moulds, contract manufacturing of the first 100–500 units"},
+    {"item": "Company, IP and legal", "low": "₹1,00,000", "high": "₹4,00,000", "covers": "Patents, company registration, agreements with hospitals"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹25,000 diagnostic device sold to clinics:",
+    "rows": [
+      ["Components and assembly", "₹6,000–9,000"],
+      ["Packaging, calibration and quality checks", "₹800–1,500"],
+      ["Dealer or distributor margin", "₹5,000–8,000"],
+      ["Service and warranty reserve", "₹1,000–2,000"],
+      ["What you keep", "₹5,000–10,000 per device before sales and R&D costs"]
+    ],
+    "note": "Consumables, test strips and service contracts often earn more than the device itself. Plan for recurring revenue from each device you place."
+  },
+  "investor_probes": [
+    "What class is the device under CDSCO rules, and where are you in the licence process?",
+    "What clinical evidence do you have, and from which hospitals?",
+    "Who pays: the patient, the hospital, an insurer or the government?",
+    "What does each device earn after the sale, from consumables or service?",
+    "How long is the sales cycle for a hospital?"
+  ],
+  "bootstrap_takeaway": "Join a medical-technology incubator, apply for BIRAC and state grants, and run a pilot with one hospital before raising equity. Grants and pilot data together make the first funding round far easier.",
+  "cluster_based": false,
+  "sourcing_edge": "Medical device parks and incubators in places such as Visakhapatnam (AMTZ), Hyderabad and Bengaluru offer shared testing labs, which cuts the cost of certification significantly.",
+  "licences": [
+    "CDSCO manufacturing licence under the Medical Devices Rules, 2017 (class decides the process)",
+    "ISO 13485 quality management certification",
+    "Electrical safety and other testing from accredited labs",
+    "Ethics committee approval for any clinical study",
+    "Company registration, GST and Udyam"
+  ],
+  "schemes": ["startupindia", "udyam", "cgtmse", "standup"],
+  "hard_truths": [
+    {"title": "It takes years", "text": "From prototype to certified product usually takes 2–4 years. Plan your funding for the long route, not the optimistic one."},
+    {"title": "Doctors must believe it", "text": "No hospital will buy a device doctors don't trust. You need clinical champions, published data and patience."},
+    {"title": "Tenders are a trap for small firms", "text": "Government tenders buy the cheapest certified option and can pay months late. Treat them as a later channel, not the first one."},
+    {"title": "Service is part of the product", "text": "A device that breaks without quick service gets you blacklisted. Budget for training, service engineers and spare parts."}
+  ],
+  "plan_goal": "The aim is a working prototype, a signed pilot with one hospital and a clear route to your CDSCO licence.",
+  "plan": [
+    {"days": "1–15", "title": "Validate the problem", "steps": ["Spend time in 3–5 hospitals or clinics watching the problem you want to solve.", "Interview 20 doctors, nurses and buyers about what they use today and what they pay.", "Check how CDSCO classifies similar devices."]},
+    {"days": "16–45", "title": "Prototype and plan", "steps": ["Build a rough prototype you can show doctors.", "Apply to a medical-technology incubator and for a BIRAC or state grant.", "Map the tests and certifications you'll need, with costs."]},
+    {"days": "46–75", "title": "Find a clinical partner", "steps": ["Sign a pilot or study agreement with one hospital.", "Start the ethics committee process.", "Register the company and file a provisional patent if there's something new."]},
+    {"days": "76–90", "title": "Review", "steps": ["Collect doctor feedback on the prototype.", "Estimate cost per unit at 1,000 units.", "Decide whether to pursue grants, a pilot sale or an angel round next."]}
+  ]
+}
