@@ -1,0 +1,75 @@
+{
+  "model": "pet-grooming",
+  "snapshot": {
+    "capital_bootstrap": "₹1.5–3 lakh",
+    "capital_scaled": "₹12–25 lakh for a fitted grooming van with water tank, power and two groomers",
+    "margin_d2c": "30–45% operating margin per groom, before van loan payments",
+    "margin_production": "Groomer pay and consumables are 35–45% of each booking",
+    "breakeven": "10–18 months for the van model; faster for home visits",
+    "distribution_score": 4,
+    "distribution_note": "Local word of mouth, Google Maps and vet referrals bring most clients"
+  },
+  "tailwinds": [
+    "Pet ownership has grown fast in Indian cities, and owners increasingly treat pets as family.",
+    "Busy owners pay extra for doorstep services instead of taking an anxious pet to a salon.",
+    "Pet parents are loyal once they trust a groomer, which makes repeat bookings likely every 4–6 weeks.",
+    "Vets, pet stores and apartment communities are easy referral partners."
+  ],
+  "headwinds": [
+    "Skilled groomers are scarce and often leave to start on their own.",
+    "Traffic limits a van to a handful of appointments a day in big cities.",
+    "Parking, water and wastewater disposal at each stop can be a daily headache.",
+    "Anxious or aggressive pets bring injury risk to the pet and the groomer."
+  ],
+  "angle_2026": "Pet services have moved from a luxury to a routine expense for many urban owners, and booking apps have made doorstep grooming normal. That also means more competition, so in 2026 the grooming businesses that last compete on trust: the same groomer every time, gentle handling and clear hygiene standards.",
+  "cost_basis": "Estimated for a home-visit start with a portable kit, and a fitted van as the scaled option, in a metro, 2026 prices.",
+  "setup_costs": [
+    {"item": "Grooming training and certification", "low": "₹30,000", "high": "₹1,00,000", "covers": "Professional course, practice on animals under supervision"},
+    {"item": "Portable grooming kit", "low": "₹40,000", "high": "₹1,00,000", "covers": "Folding table, high-velocity dryer, clippers, blades, scissors, shampoos"},
+    {"item": "Transport", "low": "₹0", "high": "₹90,000", "covers": "Your own scooter, or a second-hand one for home visits"},
+    {"item": "Insurance and registration", "low": "₹10,000", "high": "₹40,000", "covers": "Liability cover, trade licence or Shops and Establishments registration"},
+    {"item": "Booking and branding", "low": "₹10,000", "high": "₹40,000", "covers": "Google Business profile, booking form, uniforms, logo"},
+    {"item": "Fitted grooming van (scaled route)", "low": "₹8,00,000", "high": "₹18,00,000", "covers": "Van, water tank, heater, generator or inverter, tub, table, fit-out"}
+  ],
+  "unit_economics": {
+    "example": "For a ₹1,500 full groom at home:",
+    "rows": [
+      ["Shampoos and consumables", "₹120–200"],
+      ["Groomer pay (if you employ one)", "₹300–450"],
+      ["Fuel, water and power", "₹100–200"],
+      ["Booking app commission, if used", "₹0–300"],
+      ["What you keep", "₹450–700 per groom before any van loan"]
+    ],
+    "note": "A van only pays off once it does 4–6 grooms a day, most days. Until then, home visits with a portable kit earn more per rupee invested."
+  },
+  "investor_probes": [
+    "How many grooms can one van or groomer do per day in real traffic?",
+    "What share of clients rebook within six weeks?",
+    "How do you keep good groomers from leaving?",
+    "What happens when a pet is injured during a groom?"
+  ],
+  "bootstrap_takeaway": "Start with home visits using a portable kit, build a list of 100–150 regular clients through vets and apartment groups, and buy a van only when your calendar is full most weeks.",
+  "cluster_based": false,
+  "sourcing_edge": "Buy shampoos, blades and consumables from pet wholesale suppliers in bulk; professional-grade supplies cost much less per groom than retail packs.",
+  "licences": [
+    "Trade licence or Shops and Establishments registration",
+    "Commercial registration and permits for a grooming van",
+    "GST registration once you cross the turnover threshold",
+    "Udyam registration",
+    "Liability insurance covering the pets in your care"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "standup"],
+  "hard_truths": [
+    {"title": "Travel eats your day", "text": "In a big city, driving between appointments can take as long as the grooms themselves. Group bookings by area and day of the week, or your income stalls at three grooms a day."},
+    {"title": "Groomers leave", "text": "A trained groomer can start their own service with a few thousand rupees of equipment. Pay well, share bookings fairly, and make sure clients know the business, not just the person."},
+    {"title": "Cancellations", "text": "Last-minute cancellations leave empty slots you can't fill. Take a small advance on booking and keep a waiting list."},
+    {"title": "The van loan", "text": "A van EMI of ₹25,000–40,000 a month is fixed whether it's busy or not. Buying a van before demand is proven is the most common way this business fails."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in bookings and a list of repeat clients before you buy a van.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and prepare", "steps": ["Complete a grooming course or hire a certified groomer.", "Talk to 30 pet owners and 5 vets about what they pay and what worries them.", "Price your services against 3 salons and 2 apps nearby."]},
+    {"days": "16–45", "title": "Launch home visits", "steps": ["Buy a portable kit and get liability insurance.", "Set up a Google Business profile and a simple booking form.", "Do 20 discounted first grooms for friends' and neighbours' pets."]},
+    {"days": "46–75", "title": "Build referrals", "steps": ["Leave cards with 5 vets and 3 pet stores and offer them a referral fee.", "Post before-and-after photos (with owners' permission) in apartment groups.", "Offer a discount for booking the next groom on the spot."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Count grooms per day, rebooking rate and income per hour including travel.", "Decide whether to hire a second groomer or add a van.", "Raise prices for difficult breeds and long coats."]}
+  ]
+}

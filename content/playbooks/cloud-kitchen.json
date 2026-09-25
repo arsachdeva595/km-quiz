@@ -1,0 +1,77 @@
+{
+  "model": "cloud-kitchen",
+  "snapshot": {
+    "capital_bootstrap": "₹3–8 lakh",
+    "capital_scaled": "₹20–50 lakh for several brands across 2–3 kitchens",
+    "margin_d2c": "10–15% operating margin is good after aggregator fees",
+    "margin_production": "Food cost should stay at 30–35% of menu price",
+    "breakeven": "10–18 months",
+    "distribution_score": 3,
+    "distribution_note": "Swiggy and Zomato give instant reach but own the customer relationship"
+  },
+  "tailwinds": [
+    "Ordering food online is a daily habit in metros and fast-growing in tier-2 cities.",
+    "ONDC buyer apps and direct WhatsApp ordering let repeat customers skip part of the aggregator commission.",
+    "Office lunch subscriptions and healthy meal plans bring predictable weekday volume.",
+    "A delivery-only kitchen needs no dine-in space, so rent is far lower than a restaurant."
+  ],
+  "headwinds": [
+    "Aggregator commissions and fees commonly total 25–30% of the order, and visibility increasingly depends on paid ads.",
+    "Ratings swing with a few bad reviews, and a drop in rating cuts orders quickly.",
+    "Kitchens in the best delivery zones have high rents.",
+    "Many cloud kitchens shut within two years because they launch too many brands before one works."
+  ],
+  "angle_2026": "Aggregators now push paid visibility hard, so a new kitchen that relies only on organic listing struggles. The kitchens doing well in 2026 use the apps to find customers and then move regulars to direct ordering on WhatsApp or ONDC apps, where they keep more of each order.",
+  "cost_basis": "Estimated for one delivery-only brand in a small rented kitchen in a metro or large tier-2 city, 2026 prices.",
+  "setup_costs": [
+    {"item": "Kitchen rent deposit and fit-out", "low": "₹50,000", "high": "₹2,00,000", "covers": "Deposit, exhaust, gas lines, washing area"},
+    {"item": "Kitchen equipment", "low": "₹1,50,000", "high": "₹4,00,000", "covers": "Burners, fryer, refrigerator, freezer, utensils, packing station"},
+    {"item": "Licences", "low": "₹10,000", "high": "₹40,000", "covers": "FSSAI, trade licence, fire NOC, Shops and Establishments registration"},
+    {"item": "Packaging stock", "low": "₹20,000", "high": "₹50,000", "covers": "Leak-proof containers, bags, branded stickers"},
+    {"item": "Aggregator onboarding and photos", "low": "₹10,000", "high": "₹30,000", "covers": "Menu photos, listing setup, onboarding fees where charged"},
+    {"item": "Launch discounts and ads", "low": "₹50,000", "high": "₹1,50,000", "covers": "Platform ads and discounts in the first 8–12 weeks"},
+    {"item": "Working capital", "low": "₹50,000", "high": "₹1,00,000", "covers": "Staff salaries and raw material until payouts settle"}
+  ],
+  "unit_economics": {
+    "example": "For a typical ₹300 order:",
+    "rows": [
+      ["Food cost", "₹90–105"],
+      ["Packaging", "₹20–30"],
+      ["Aggregator commission and fees", "₹75–90"],
+      ["Discounts and platform ads", "₹20–45"],
+      ["Staff and rent share", "₹45–60"],
+      ["What you keep", "₹10–40 per order"]
+    ],
+    "note": "Every repeat customer who orders directly instead of through an app adds ₹60–80 to your profit on that order."
+  },
+  "investor_probes": [
+    "What share of orders comes from repeat customers?",
+    "How many orders does the kitchen do per day, and what is breakeven?",
+    "How much of your business would survive if an aggregator changed its commission or ranking?",
+    "Is the profit coming from the food or from discounts you can't sustain?"
+  ],
+  "bootstrap_takeaway": "Launch one tight menu of 8–10 items that travel well, serve a 3–4 km radius, and move repeat customers to direct WhatsApp ordering within the first month.",
+  "cluster_based": false,
+  "sourcing_edge": "Buy vegetables and staples from the wholesale mandi two or three times a week and track food cost daily; a 5-point swing in food cost is the difference between profit and loss.",
+  "licences": [
+    "FSSAI registration or state licence, depending on turnover",
+    "Trade licence and fire NOC from your municipality",
+    "Shops and Establishments registration",
+    "GST registration (aggregators require it)",
+    "Udyam registration"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "standup"],
+  "hard_truths": [
+    {"title": "Discounts are your real marketing cost", "text": "Platform discounts and paid visibility are how most new kitchens get orders, and they often cost more than the profit on the order. If customers only order during a discount, you don't have a business yet."},
+    {"title": "Payouts come with deductions", "text": "Aggregator payouts arrive weekly, but after commissions, ads, penalties and refunds for complaints. Reconcile every payout, because small deductions add up."},
+    {"title": "Wastage", "text": "Over-prepping for demand that doesn't come can waste 5–10% of food cost. Start with a small menu so fewer ingredients can go bad."},
+    {"title": "The second-kitchen trap", "text": "A second brand or kitchen doubles fixed costs long before it doubles orders. Expand only when the first kitchen is profitable without discounts."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in monthly sales with a known repeat rate before you add brands or kitchens.",
+  "plan": [
+    {"days": "1–15", "title": "Validate the menu", "steps": ["Pick a cuisine that is under-served within 3–4 km, based on what aggregator apps show.", "Cook the menu for 30 people from your target area and ask what they would reorder.", "Cost every dish to keep food cost at 30–35%."]},
+    {"days": "16–45", "title": "Licences and soft launch", "steps": ["Get FSSAI, trade licence and GST, and list on one aggregator.", "Run a soft launch with friends and nearby offices for honest feedback.", "Test packaging on real deliveries."]},
+    {"days": "46–75", "title": "Build repeat customers", "steps": ["Add a card in every order inviting customers to order on WhatsApp.", "Pitch weekday lunch plans to 10 nearby offices or PGs.", "Answer every review within a day."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Measure profit per order after all fees and discounts.", "Cut the dishes that sell slowly or travel badly.", "Decide whether to add a second aggregator or ONDC before any new brand."]}
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "model": "b2b-saas-startup",
+  "snapshot": {
+    "capital_bootstrap": "₹2–8 lakh",
+    "capital_scaled": "₹50 lakh–2 crore for a team of 6–10 with sales and infrastructure",
+    "margin_d2c": "Subscriptions of ₹999–15,000 per business per month",
+    "margin_production": "70–85% gross margin once AI and hosting costs are under control",
+    "breakeven": "18–36 months",
+    "distribution_score": 2,
+    "distribution_note": "Small businesses are slow to buy and quick to cancel"
+  },
+  "tailwinds": [
+    "Indian small businesses are digitising fast, and many now pay for software through UPI AutoPay.",
+    "AI models handle Indian languages far better than a few years ago, and government efforts such as Bhashini are adding more language data.",
+    "Businesses in tier-2 and tier-3 cities want tools in their own language, which global products rarely offer.",
+    "A small team can now build a usable product in weeks, so you can test demand cheaply."
+  ],
+  "headwinds": [
+    "Big platforms keep adding AI features for free, which can wipe out a standalone product overnight.",
+    "Small businesses have low budgets and cancel when a month goes badly.",
+    "AI costs and quality are harder to control in low-resource languages.",
+    "India's Digital Personal Data Protection Act adds obligations for any product that handles customer data."
+  ],
+  "angle_2026": "Generic AI features are now free inside every major tool, so selling 'AI that writes' is hard. What still works in 2026 is owning one complete workflow for one type of business, in the languages its customers use, with results the owner can see in money or time saved.",
+  "cost_basis": "Estimated for a founder plus one technical co-founder or developer, with six months of runway, 2026 prices.",
+  "setup_costs": [
+    {"item": "Prototype build", "low": "₹50,000", "high": "₹3,00,000", "covers": "First working version, or freelance development if you don't code"},
+    {"item": "AI and hosting costs, first 6 months", "low": "₹30,000", "high": "₹1,50,000", "covers": "Model API usage, cloud hosting, databases"},
+    {"item": "Language reviewers", "low": "₹30,000", "high": "₹1,50,000", "covers": "Native speakers checking output quality in each language"},
+    {"item": "Company setup and legal", "low": "₹20,000", "high": "₹80,000", "covers": "Private limited or LLP, contracts, privacy policy, data-protection basics"},
+    {"item": "Sales and demos", "low": "₹30,000", "high": "₹2,00,000", "covers": "Travel, events, trial incentives, a simple CRM"}
+  ],
+  "unit_economics": {
+    "example": "For a customer paying ₹2,999 a month:",
+    "rows": [
+      ["AI and hosting cost", "₹300–700"],
+      ["Payment gateway and taxes on fees", "About 2%"],
+      ["Customer support", "₹200–400"],
+      ["Cost to win the customer", "₹6,000–20,000 one time"],
+      ["Months to pay back that cost", "3–8, if fewer than 5% of customers cancel each month"]
+    ],
+    "note": "Churn decides everything. If a tenth of customers cancel each month, the business never pays back what it spends to win them."
+  },
+  "investor_probes": [
+    "Why won't the big platforms build this into their product for free?",
+    "How many months does it take to earn back what you spend to win a customer?",
+    "What share of customers cancel each month?",
+    "Who inside the customer's business pays, and who uses it every day?",
+    "How do you handle customer data under India's data-protection law?"
+  ],
+  "bootstrap_takeaway": "Sell to ten paying customers by hand, before building features. Do the work manually behind the scenes if you have to, and only automate what those customers use every week.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "Company or LLP registration",
+    "GST registration (needed for most business customers)",
+    "DPIIT Startup India recognition (optional, but useful)",
+    "Privacy policy, terms of service and data-processing agreements",
+    "Udyam registration"
+  ],
+  "schemes": ["startupindia", "udyam", "cgtmse", "standup"],
+  "hard_truths": [
+    {"title": "Free features eat your product", "text": "If your product is one feature a big platform could add, assume it will. Build around a specific workflow, the data it produces, and a customer relationship the platform doesn't have."},
+    {"title": "Small businesses cancel", "text": "Monthly plans for small businesses often lose 5–10% of customers a month. Annual plans, onboarding calls and visible results each month are what keep them."},
+    {"title": "AI costs can spike", "text": "One heavy user or a pricing change from your model provider can wipe out your margin. Set usage limits per plan and track cost per customer every week."},
+    {"title": "From founder sales to a sales team", "text": "Most B2B products stall when the founder stops selling. Write down what works before you hire, and expect the first sales hire to take 3–6 months to become productive."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in monthly recurring revenue from real customers, or clear proof that customers won't pay.",
+  "plan": [
+    {"days": "1–15", "title": "Validate the problem", "steps": ["Interview 20 target business owners about the task you want to solve and what it costs them today.", "Pick one type of business and one or two languages.", "Show a rough mock-up and ask for a pre-order or pilot fee."]},
+    {"days": "16–45", "title": "Build the smallest useful version", "steps": ["Build only the workflow those customers asked for.", "Have native speakers check every output before it reaches customers.", "Register the company and put basic privacy terms in place."]},
+    {"days": "46–75", "title": "Sell by hand", "steps": ["Onboard your first 10 paying customers personally.", "Ask trade associations and local industry groups for introductions.", "Track weekly usage for every account."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Measure cancellations, cost to win a customer and AI cost per account.", "Raise prices for the customers getting the most value.", "Decide whether to automate, change the target customer or stop."]}
+  ]
+}

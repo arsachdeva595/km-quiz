@@ -1,0 +1,74 @@
+{
+  "model": "physio-and-massage",
+  "snapshot": {
+    "capital_bootstrap": "₹50,000–1.5 lakh",
+    "capital_scaled": "₹10–25 lakh for a clinic plus a team of home-visit therapists",
+    "margin_d2c": "Sessions sell for ₹500–1,500 each",
+    "margin_production": "Therapist pay is 40–60% of the fee once you run a team",
+    "breakeven": "3–9 months on your own; 12–18 months for a team or clinic",
+    "distribution_score": 4,
+    "distribution_note": "Orthopaedic doctors, hospitals and satisfied patients send most new patients"
+  },
+  "tailwinds": [
+    "India's population is ageing, and more people need rehab after surgery or a stroke.",
+    "Desk jobs, gym injuries and sports have created steady demand for pain and posture treatment.",
+    "Hospitals discharge patients earlier, and families prefer rehab at home over daily hospital visits.",
+    "Physiotherapists are coming under formal registration through the 2021 allied-health law, which makes registered therapists easier to trust."
+  ],
+  "headwinds": [
+    "You need a recognised physiotherapy degree (BPT or MPT); this isn't a business you can run without one.",
+    "Booking apps take a large share of the fee for each patient they send.",
+    "Travel between home visits limits how many patients one therapist can see.",
+    "Patients often stop coming as soon as the pain eases, before treatment is finished."
+  ],
+  "angle_2026": "Home physiotherapy has become normal in Indian cities, helped by apps and hospitals that discharge patients sooner. In 2026 the independent therapists who do best have their own referral network of surgeons and hospitals and track patient progress in writing, which keeps patients coming until treatment is done.",
+  "cost_basis": "Estimated for a qualified physiotherapist starting home visits, with a clinic as the scaled option, 2026 prices.",
+  "setup_costs": [
+    {"item": "Portable equipment", "low": "₹40,000", "high": "₹1,50,000", "covers": "TENS or IFT unit, therapeutic ultrasound, exercise bands, portable table"},
+    {"item": "Transport", "low": "₹0", "high": "₹80,000", "covers": "Your own vehicle, or a second-hand scooter"},
+    {"item": "Registration and insurance", "low": "₹10,000", "high": "₹30,000", "covers": "Professional registration, indemnity insurance"},
+    {"item": "Branding and booking", "low": "₹5,000", "high": "₹20,000", "covers": "Google Business profile, visiting cards, referral letters"},
+    {"item": "Clinic (scaled route)", "low": "₹5,00,000", "high": "₹15,00,000", "covers": "Rent deposit, fit-out, treatment tables, equipment"}
+  ],
+  "unit_economics": {
+    "example": "For an ₹800 home session:",
+    "rows": [
+      ["Travel", "₹80–150"],
+      ["Consumables", "₹20–50"],
+      ["App or referral share, if used", "₹0–200"],
+      ["Time per visit, including travel", "About 1.5 hours"],
+      ["What you keep", "₹550–700 per session working on your own"]
+    ],
+    "note": "Five to six home visits a day is the practical ceiling for one therapist, so income grows through higher fees, clustered appointments or a team."
+  },
+  "investor_probes": [
+    "How many sessions does each therapist do per day, including travel?",
+    "What share of patients complete their full treatment plan?",
+    "How dependent are you on one hospital or one app for patients?",
+    "How do you check the quality of therapists you employ?"
+  ],
+  "bootstrap_takeaway": "Build relationships with three to five orthopaedic surgeons and a hospital discharge team, cluster your appointments by neighbourhood, and sell treatment packages instead of single sessions.",
+  "cluster_based": false,
+  "sourcing_edge": "",
+  "licences": [
+    "A recognised BPT or MPT degree",
+    "Registration with your state physiotherapy council or allied-health council where it is in place",
+    "Professional indemnity insurance",
+    "Shops and Establishments registration for a clinic",
+    "Healthcare services by qualified practitioners are generally exempt from GST; confirm your case with a CA"
+  ],
+  "schemes": ["udyam", "mudra", "standup"],
+  "hard_truths": [
+    {"title": "Travel caps your income", "text": "Every hour in traffic is an hour you can't bill. Group patients by area and time of day, and charge more for visits outside your core area."},
+    {"title": "Patients drop off early", "text": "Many patients stop once the pain eases, which hurts both their recovery and your income. Sell packages of sessions, set goals in writing and show progress."},
+    {"title": "Collecting payment", "text": "Collecting cash after each visit leads to missed payments. Take payment in advance for packages, and use UPI."},
+    {"title": "Growing beyond yourself", "text": "Once you hire other therapists, your reputation depends on their work. Standard protocols, patient feedback and regular reviews are needed before you add a second person."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh a month in sessions and a steady stream of doctor referrals.",
+  "plan": [
+    {"days": "1–15", "title": "Set up", "steps": ["Check your registration status and buy indemnity insurance.", "Buy portable equipment for the conditions you treat most.", "Set your fees against clinics and apps in your area."]},
+    {"days": "16–45", "title": "Build referrals", "steps": ["Meet 10 orthopaedic surgeons, GPs and hospital discharge teams.", "Offer a free first assessment for referred patients.", "Set up a Google Business profile and ask early patients for reviews."]},
+    {"days": "46–75", "title": "Fill your calendar", "steps": ["Sell 10- and 20-session packages with written goals.", "Group appointments by neighbourhood.", "Run a free posture camp in an office or housing society."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Track sessions per day, completion rates and income per hour.", "Drop areas that take too long to reach.", "Decide whether to open a small clinic or hire a second therapist."]}
+  ]
+}

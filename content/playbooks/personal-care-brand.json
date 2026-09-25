@@ -1,0 +1,77 @@
+{
+  "model": "personal-care-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹1.5–3 lakh",
+    "capital_scaled": "₹15–40 lakh for 10+ products, own brand store and paid marketing",
+    "margin_d2c": "60–75% on your own website",
+    "margin_production": "Contract manufacturing usually costs 15–25% of MRP; marketplaces leave you 35–45%",
+    "breakeven": "12–24 months",
+    "distribution_score": 2,
+    "distribution_note": "Instagram and marketplaces are crowded; repeat buyers decide who survives"
+  },
+  "tailwinds": [
+    "Quick-commerce apps now list small beauty and fragrance brands within weeks, and buyers in tier-2 cities order from them.",
+    "Contract manufacturers in Baddi, Delhi NCR, Ahmedabad and Bengaluru take first orders of 500–1,000 units, so you don't need a factory to launch.",
+    "Buyers actively look for Indian ingredients and origin stories: attars, Ayurvedic oils, saffron, rice water, sandalwood.",
+    "ONDC buyer apps let small sellers reach customers with lower commissions than the big marketplaces."
+  ],
+  "headwinds": [
+    "Meta and Google ad costs keep rising; ₹400–1,200 to win a first order is common for new brands.",
+    "Large brands copy a trending ingredient within one or two quarters and outspend you on shelf space.",
+    "Cosmetic licensing, labelling and claims rules are stricter than most first-time founders expect.",
+    "Glass bottles and liquids mean breakage, leakage and returns on every courier route."
+  ],
+  "angle_2026": "Three years ago a new personal-care brand could grow on Instagram ads alone. In 2026 the brands that last start narrow: one hero product, one clear community (men's grooming, curly hair, a regional ingredient) and a second sales channel such as salons, gyms, quick commerce or pop-ups before they scale ads.",
+  "cost_basis": "Estimated for a small launch with a licensed contract manufacturer, 2–3 products and one city of focus, 2026 prices.",
+  "setup_costs": [
+    {"item": "Formulation and first production batch", "low": "₹60,000", "high": "₹2,00,000", "covers": "500–1,000 units per product from a licensed contract manufacturer, including formulation tweaks"},
+    {"item": "Packaging design and printing", "low": "₹15,000", "high": "₹60,000", "covers": "Bottles or jars, labels, outer cartons and shipping inserts"},
+    {"item": "Testing, labels and compliance", "low": "₹10,000", "high": "₹50,000", "covers": "Stability and patch tests, legal-metrology label review, trademark filing"},
+    {"item": "Website and marketplace onboarding", "low": "₹10,000", "high": "₹40,000", "covers": "Store setup, payment gateway, product listings on 1–2 marketplaces"},
+    {"item": "Photography and launch content", "low": "₹10,000", "high": "₹50,000", "covers": "Product shots, short videos, ingredient story"},
+    {"item": "First three months of marketing", "low": "₹50,000", "high": "₹3,00,000", "covers": "Sampling, micro-influencers, small ad tests"},
+    {"item": "Working capital", "low": "₹30,000", "high": "₹1,00,000", "covers": "Courier costs, returns, packaging top-ups"}
+  ],
+  "unit_economics": {
+    "example": "For a product priced at ₹499 MRP:",
+    "rows": [
+      ["Cost of goods (contract manufacturing)", "15–25% of MRP (₹75–125)"],
+      ["Packaging and shipping per order", "₹60–110"],
+      ["Marketplace commission and fees", "25–35% of the selling price"],
+      ["Marketing per order in the first year", "20–40% of the selling price"],
+      ["What you keep", "5–15% early on; 20–25% once repeat buyers are over a third of orders"]
+    ],
+    "note": "The gross margin looks generous on paper. Marketing and marketplace fees are where it disappears, which is why repeat purchase matters more than any other number."
+  },
+  "investor_probes": [
+    "What share of customers buy again within 60 days?",
+    "How much does it cost to acquire a customer, compared with the average order value?",
+    "Why would a buyer choose you over a large brand's version of the same ingredient?",
+    "What happens if your only contract manufacturer raises prices or stops production?",
+    "Can every claim on the label be backed by a test?"
+  ],
+  "bootstrap_takeaway": "Launch with one product people reorder every month. Sell the first 500 units through WhatsApp, salons, gyms and friends-of-friends, and only start paid ads once more than a quarter of buyers come back within 30 days.",
+  "cluster_based": true,
+  "sourcing_edge": "If your story is built on a regional ingredient, buy it where it is made. Direct purchase from the cluster usually cuts raw-material cost by 20–40% and gives you a provenance story (and sometimes a GI tag) that a big brand can't copy.",
+  "licences": [
+    "Cosmetic manufacturing licence from your State Licensing Authority, or a licensed contract manufacturer named on your label",
+    "Legal Metrology declarations on every retail pack (MRP, net quantity, manufacturer and customer-care details)",
+    "GST registration (marketplaces ask for it at onboarding)",
+    "Udyam registration",
+    "Trademark application for your brand name"
+  ],
+  "schemes": ["udyam", "mudra", "pmegp", "cgtmse", "standup"],
+  "hard_truths": [
+    {"title": "The CAC trap", "text": "Many new brands pay ₹500–1,000 in ads to win a first order worth under ₹500. That only works if the customer comes back two or three times. If your 60-day repeat rate is under 20%, more ad spend makes the loss bigger, not smaller."},
+    {"title": "Marketplace margin squeeze", "text": "Commissions, fixed fees, shipping charges and the discounts marketplaces push during sales can take 35–45% of MRP. Price your products for that reality from day one instead of assuming your website margin."},
+    {"title": "Shelf life and dead stock", "text": "Most cosmetics carry an 18–36 month shelf life, and marketplaces reject stock close to expiry. Slow products tie up cash and then have to be written off or sold at a steep discount."},
+    {"title": "The scale bottleneck", "text": "Somewhere around 2,000–3,000 orders a month, manufacturer minimum orders across 8–10 products can lock ₹10–15 lakh into stock. That's the point where many founders run out of cash even though sales are growing."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales and a real repeat-purchase number before you commit to bigger batches.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and source", "steps": ["Shortlist 3 licensed contract manufacturers and ask each for samples of your hero product.", "Test 3–5 variants (fragrance, texture, pack size) with 30 people from your target buyers.", "Price the product against 5 competitors, including one big brand."]},
+    {"days": "16–45", "title": "Compliance and pilot batch", "steps": ["Get Udyam and GST registration and file your trademark.", "Produce a pilot batch of 500 units with full, compliant labels.", "Set up a simple website with UPI and cash-on-delivery."]},
+    {"days": "46–75", "title": "Sell directly", "steps": ["Sell through WhatsApp groups, salons, gyms and a weekend pop-up before paying for ads.", "Send 50 samples to micro-creators whose followers match your buyer.", "Ask every buyer for a review and a photo."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Measure repeat purchase, returns and cost per order across each channel.", "Keep the channels that paid back; drop the rest.", "Only then order the next batch and list on a marketplace."]}
+  ]
+}

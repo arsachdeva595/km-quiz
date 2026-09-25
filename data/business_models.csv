@@ -146,7 +146,7 @@ id,slug,name,category,sub_category,pitch,onet_codes,budget_band,location,team,ti
 147,traditional-health-foods,Traditional & Ayurvedic Foods Brand,Food,Packaged Foods,"Postpartum ladoos, herbal teas and ferments made from grandma's recipes.",51-3092.00;29-1031.00;11-3051.00,2,any,small,both,
 148,cold-pressed-oil-mill,Cold-Pressed Oil Mill,Food,Food Processing,"Wood-pressed (ghani) mustard, groundnut and coconut oils sold locally and online.",51-9111.00;51-3092.00;11-3051.00,3,any,small,full,
 149,fresh-meat-and-fish-store,Fresh Meat & Fish Store,Food,Retail Food,"Hygienic, cleanly cut meat and fish with home delivery.",51-3021.00;41-2031.00;11-9051.00,3,local,small,full,
-150,personal-care-brand,Skincare & Personal Care Brand,Health & Wellness,Personal Care,"Skincare, hygiene or fragrance products made by a contract manufacturer and sold online.",19-4031.00;11-2021.00,3,online,small,full,
+150,personal-care-brand,Skincare & Personal Care Brand,Health & Wellness,Personal Care,"Skincare, hygiene or fragrance products made by a contract manufacturer and sold online.",11-2021.00;27-1021.00,3,online,small,full,
 151,handmade-soap-and-cosmetics,Handmade Soaps & Natural Cosmetics,Crafts & Manufacturing,Personal Care,"Small-batch soaps, lip balms and body butters made at home.",27-1012.00;19-4031.00,1,any,solo,both,
 152,eco-friendly-products-brand,Eco-Friendly Products Brand,Crafts & Manufacturing,Sustainable Goods,"Bamboo, compostable or plastic-free everyday products for homes and businesses.",11-2021.00;51-9111.00,3,any,small,full,
 153,florist-and-flower-delivery,Florist & Flower Delivery,Retail & Trading,Gifting,"Fresh bouquets and flower arrangements for gifting, events and offices.",27-1023.00;41-2031.00;41-1011.00,2,local,small,full,

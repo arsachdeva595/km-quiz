@@ -1,0 +1,75 @@
+{
+  "model": "pottery-studio",
+  "snapshot": {
+    "capital_bootstrap": "₹50,000–2 lakh",
+    "capital_scaled": "₹8–25 lakh for your own studio with kiln, wheels and staff",
+    "margin_d2c": "55–70% selling direct to customers",
+    "margin_production": "Potters sell most pieces at ₹80–400; your markup covers packing, breakage and marketing",
+    "breakeven": "8–14 months",
+    "distribution_score": 3,
+    "distribution_note": "Sells well on Instagram and gifting, but heavy and fragile to ship"
+  },
+  "tailwinds": [
+    "Clay and terracotta cookware became a mainstream kitchen trend, driven by health-conscious home cooks.",
+    "Handmade decor and corporate gifting pay premium prices for craft with a clear origin.",
+    "GI-tagged clusters (such as Gorakhpur terracotta) give you a provenance story that buyers trust.",
+    "Export marketplaces and diaspora buyers pay well for authentic Indian pottery."
+  ],
+  "headwinds": [
+    "Breakage in transit is common, often 5–15% of shipments without proper packing.",
+    "Handmade pieces vary in size and finish, which leads to returns from buyers expecting identical items.",
+    "Cheap machine-made and imported imitations undercut prices on marketplaces.",
+    "Weight makes shipping expensive, especially for cookware sets."
+  ],
+  "angle_2026": "Buyers now ask harder questions: is the glaze food-safe, is this really handmade, where does it come from? Brands that answer clearly (unglazed or lead-free-certified pieces, named artisans, the cluster of origin) charge two to three times more than generic sellers.",
+  "cost_basis": "Estimated for a brand that buys from potter families and sells online, with the studio route shown as the scaled option, 2026 prices.",
+  "setup_costs": [
+    {"item": "Sourcing trips and samples", "low": "₹10,000", "high": "₹30,000", "covers": "Visits to 2–3 clusters, sample sets, first artisan agreements"},
+    {"item": "First stock", "low": "₹30,000", "high": "₹1,50,000", "covers": "5–8 products, 50–150 pieces each, with an advance to the potters"},
+    {"item": "Protective packaging", "low": "₹10,000", "high": "₹40,000", "covers": "Corrugated boxes, honeycomb paper, dividers, fragile labels"},
+    {"item": "Photography and website", "low": "₹15,000", "high": "₹60,000", "covers": "Product and in-use photos, store setup, marketplace listings"},
+    {"item": "Launch marketing", "low": "₹20,000", "high": "₹1,00,000", "covers": "Creator seeding, gifting samples, small ad tests"},
+    {"item": "Own studio (scaled route)", "low": "₹1,50,000", "high": "₹6,00,000", "covers": "Electric or gas kiln, potter's wheels, clay mixer, shelving"}
+  ],
+  "unit_economics": {
+    "example": "For a clay kadhai priced at ₹1,200:",
+    "rows": [
+      ["Price paid to the potter", "₹250–400"],
+      ["Protective packaging", "₹80–150"],
+      ["Shipping (heavy item)", "₹120–250"],
+      ["Marketplace commission", "20–30% of the selling price"],
+      ["Breakage reserve", "5–10%"],
+      ["What you keep", "15–25% on marketplaces, more on your own site"]
+    ],
+    "note": "Selling sets and gift boxes raises the order value enough to absorb shipping, which is why most profitable pottery brands push bundles."
+  },
+  "investor_probes": [
+    "What is your breakage and return rate, and who absorbs it?",
+    "Can your artisans deliver 5 times the volume without quality dropping?",
+    "Are you paying artisans fairly, and can you prove it?",
+    "Why would a buyer choose you over the many sellers of similar handmade pots?"
+  ],
+  "bootstrap_takeaway": "Work with two or three potter families in one cluster, co-design five products, pay an advance to lock their capacity, and pre-sell through Instagram and WhatsApp before holding large stock.",
+  "cluster_based": true,
+  "sourcing_edge": "Buying at the kiln from the potter families usually costs 50–70% less than city wholesalers, and you can agree on sizes, finishes and packing standards directly.",
+  "licences": [
+    "GST registration (needed to sell on most marketplaces)",
+    "Udyam registration",
+    "No food licence is needed for cookware, but avoid unverified health claims on listings",
+    "Trademark application for your brand name"
+  ],
+  "schemes": ["udyam", "vishwakarma", "mudra", "pmegp"],
+  "hard_truths": [
+    {"title": "Breakage eats margin", "text": "Without double-boxing and proper dividers, one in ten pieces can arrive broken. Replacements double your shipping cost for that order. Test your packaging with a few couriers before you launch."},
+    {"title": "Handmade means variation", "text": "Buyers who expect identical pieces will return them. Say clearly in listings that sizes and colours vary, and photograph the actual range."},
+    {"title": "Seasonal demand", "text": "Diwali, weddings and gifting seasons can be half your yearly sales. Plan stock and cash for the spike, and use the slow months to build new designs."},
+    {"title": "The capacity ceiling", "text": "A potter family can only make so many pieces a week, especially in monsoon when drying slows. Bigger orders need more artisans or your own studio, and quality control gets harder at every step."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales and a breakage rate you can live with before you commit to bigger stock.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and source", "steps": ["Visit a pottery cluster and shortlist 2–3 artisan families.", "Order sample sets of 5 products and cook or use them for a week.", "Show photos to 30 potential buyers and note which products they would pay for."]},
+    {"days": "16–45", "title": "Pilot batch and packaging", "steps": ["Place a small paid order with an advance to the artisans.", "Test your packaging by shipping 10 pieces to friends in different cities.", "Register for Udyam and GST and set up your store."]},
+    {"days": "46–75", "title": "Sell directly", "steps": ["Sell through Instagram, WhatsApp and one craft fair or pop-up.", "Pitch gift sets to 10 local businesses for corporate gifting.", "Collect photos and reviews from every buyer."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Calculate profit per product after breakage and returns.", "Drop the products that break or return most.", "Agree monthly volumes with your artisans before scaling."]}
+  ]
+}

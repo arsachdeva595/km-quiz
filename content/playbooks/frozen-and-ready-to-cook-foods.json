@@ -1,0 +1,77 @@
+{
+  "model": "frozen-and-ready-to-cook-foods",
+  "snapshot": {
+    "capital_bootstrap": "₹3–6 lakh",
+    "capital_scaled": "₹40 lakh–1.5 crore for a licensed unit with blast freezer and cold room",
+    "margin_d2c": "50–60% on direct orders, before cold delivery",
+    "margin_production": "35–45% when you supply cafés, caterers and distributors",
+    "breakeven": "12–20 months",
+    "distribution_score": 2,
+    "distribution_note": "Every step needs a freezer: your unit, the vehicle, the shop"
+  },
+  "tailwinds": [
+    "Quick-commerce dark stores stock frozen snacks in most metros and some tier-2 cities, so a new brand can get freezer space faster than in kirana stores.",
+    "Cafés, hostels, caterers and cloud kitchens buy ready momos, parathas and snacks to save on skilled kitchen staff.",
+    "Working households are replacing some home cooking with ready-to-cook food.",
+    "PMFME gives a capital subsidy to micro food-processing units, which reduces the cost of freezers and machines."
+  ],
+  "headwinds": [
+    "Cold-chain logistics costs two to three times more than regular delivery, and one broken link spoils a batch.",
+    "Retail freezer space is limited and often goes to the big brands that pay for placement.",
+    "Large players and private labels compete on price in the most popular products.",
+    "A commercial food-processing setup needs an FSSAI licence, fire safety and a proper cold room, which is a big jump from a home kitchen."
+  ],
+  "angle_2026": "Quick commerce changed the entry route. A small frozen-food brand can now get shelf space in dark stores within weeks instead of fighting for kirana freezers. The catch: they expect steady supply, consistent quality and 25–35% margin, so the brands that last usually build volume with cafés and caterers first.",
+  "cost_basis": "Estimated for a small unit in a rented space supplying one city, 2026 prices.",
+  "setup_costs": [
+    {"item": "FSSAI licence and lab tests", "low": "₹5,000", "high": "₹25,000", "covers": "Registration or state licence, shelf-life and microbial tests"},
+    {"item": "Kitchen equipment", "low": "₹80,000", "high": "₹3,00,000", "covers": "Steamers, dough mixer, work tables, weighing and sealing machines"},
+    {"item": "Freezing", "low": "₹60,000", "high": "₹6,00,000", "covers": "Deep freezers at the small end; a blast freezer as you grow"},
+    {"item": "Packaging", "low": "₹20,000", "high": "₹80,000", "covers": "Food-grade pouches or trays, printed cartons, labels"},
+    {"item": "Cold delivery", "low": "₹20,000", "high": "₹1,00,000", "covers": "Insulated boxes and gel packs, or a rented refrigerated van"},
+    {"item": "Rent deposit and fit-out", "low": "₹50,000", "high": "₹2,00,000", "covers": "A small commercial kitchen with drainage and power backup"},
+    {"item": "Working capital", "low": "₹1,00,000", "high": "₹3,00,000", "covers": "Raw material, salaries and 30–60 days of unpaid B2B invoices"}
+  ],
+  "unit_economics": {
+    "example": "For a pack of 20 frozen momos priced at ₹250 MRP:",
+    "rows": [
+      ["Ingredients and labour", "30–40% of MRP"],
+      ["Packaging and cold delivery per pack", "₹25–50"],
+      ["Distributor or quick-commerce margin", "25–35% of MRP"],
+      ["Wastage and damage reserve", "3–5%"],
+      ["What you keep", "8–15% of MRP"]
+    ],
+    "note": "Supplying cafés in bulk earns less per piece but costs far less to deliver, which is why many frozen-food founders start B2B."
+  },
+  "investor_probes": [
+    "What does cold chain cost per unit, and who pays when a delivery thaws?",
+    "How much of revenue comes from B2B customers versus retail, and which one is profitable?",
+    "What is your production capacity per day, and what is it running at now?",
+    "What is the real shelf life once the pack leaves your freezer?",
+    "Why won't a bigger brand or a private label match your product at a lower price?"
+  ],
+  "bootstrap_takeaway": "Start by supplying 10–20 cafés, hostels and caterers who order every week and pay within 15 days. That steady volume justifies a blast freezer and FSSAI licence before you chase retail shelves.",
+  "cluster_based": false,
+  "sourcing_edge": "Buy flour, vegetables and meat from wholesale mandis. The bigger saving is location: set up close to your buyers, because cold transport costs more than most ingredients.",
+  "licences": [
+    "FSSAI registration (turnover under ₹12 lakh) or state licence for a manufacturing unit",
+    "GST registration",
+    "Udyam registration",
+    "Trade licence from your municipality and fire safety clearance for a commercial unit",
+    "Legal Metrology declarations on retail packs"
+  ],
+  "schemes": ["udyam", "pmfme", "pmegp", "mudra", "cgtmse"],
+  "hard_truths": [
+    {"title": "The cold-chain leak", "text": "A single power cut, a late van or a shop that switches off its freezer at night can thaw a whole delivery. Refrozen products lose texture and get returned. Budget for losses and insist on temperature logs from partners."},
+    {"title": "The payment cycle", "text": "Distributors and modern retail often pay in 45–90 days, while you pay for flour and meat in cash. Growing retail sales can drain your bank account faster than slow sales."},
+    {"title": "Freezer space politics", "text": "Retail freezers are small and crowded. Stores prefer brands that pay for placement, fill gaps reliably and don't need chasing. A missed restock can lose you the slot."},
+    {"title": "The scale bottleneck", "text": "Moving from a home or shared kitchen to a licensed unit with a blast freezer and cold room is a jump of ₹20–50 lakh. Plan that step with a PMFME or PMEGP loan well before you run out of capacity."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales, mostly from repeat B2B orders, before you invest in a larger unit.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and source", "steps": ["Cook three versions of your hero product and test them with 30 target customers and 5 café owners.", "Freeze samples for two weeks and check taste and texture after reheating.", "Get quotes for ingredients, packaging and a deep freezer."]},
+    {"days": "16–45", "title": "Compliance and pilot batch", "steps": ["Get FSSAI, Udyam and GST registration.", "Produce a pilot run of 200–300 packs with proper labels and batch codes.", "Set up cold delivery for a 5 km radius."]},
+    {"days": "46–75", "title": "Sell directly", "steps": ["Offer free trial packs to 20 cafés, hostels and caterers; convert them to weekly orders.", "Sell to households through apartment WhatsApp groups and a weekend stall.", "Track reorders and complaints for every customer."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Calculate the real cost per pack, including wastage and delivery.", "Check how quickly B2B customers pay.", "Decide whether to approach quick commerce or add capacity first."]}
+  ]
+}

@@ -27,7 +27,7 @@ Run:  python3 pipeline/tag_ideas.py
 Output: docs/data/ideas.json
 """
 
-import csv, json, statistics, sys
+import csv, json, re, statistics, sys
 from datetime import date
 from pathlib import Path
 
@@ -251,11 +251,22 @@ def main():
     def is_d2c(sector, name, model):
         return model in D2C_MODELS or sector.lower().startswith("d2c") or any(w in name.lower() for w in D2C_WORDS)
 
-    ideas = []
+    ideas, used_keys = [], set()
+
+    def page_key(name):
+        """URL slug for the idea's guide page, e.g. "Foxnut (Makhana) Snacks" → "foxnut-makhana-snacks"."""
+        base = re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
+        key, n = base, 2
+        while key in used_keys:
+            key, n = f"{base}-{n}", n + 1
+        used_keys.add(key)
+        return key
+
     for r in catalog:
         m = model_by_slug[r["model_slug"]]
         ideas.append({
             "id":       int(r["id"]),
+            "key":      page_key(r["name"]),
             "name":     r["name"],
             "pitch":    r["pitch"],
             "market":   r["target_market"],
@@ -277,7 +288,7 @@ def main():
     for m in models:
         if m["slug"] not in used:  # keep uncovered models reachable, with their evidence
             ideas.append({
-                "id": 1000 + m["id"], "name": m["name"], "pitch": m["pitch"], "market": "",
+                "id": 1000 + m["id"], "key": page_key(m["name"]), "name": m["name"], "pitch": m["pitch"], "market": "",
                 "sector": m["category"], "model": m["slug"], "budget": m["budget"],
                 "location": m["location"], "team": m["team"], "time": m["time"],
                 "d2c": is_d2c("", m["name"], m["slug"]), "source": "model",

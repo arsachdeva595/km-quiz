@@ -1,0 +1,23 @@
+{
+ "phrase": "an AI Copywriter for Indian Languages",
+ "verdict": "Only if you narrow it to one workflow for one kind of business. General AI writing is now a free feature inside most tools, so a broad AI copywriter is hard to sell. A tool that produces ready-to-use marketing copy in Tamil, Marathi or Bengali for a specific kind of business, checked by native speakers, can still win paying customers.",
+ "angle": "Most Indian small businesses sell to customers who read in their own language, yet most marketing tools are built for English first. The opportunity is not the AI model itself but everything around it: templates for WhatsApp catalogues, festival offers and marketplace listings, correct regional usage, and results a shop owner can post without editing. Choosing one vertical, such as sweet shops, clinics or coaching centres, makes that possible.",
+ "faq": [
+  {
+   "q": "How much does it cost to build an AI copywriting tool?",
+   "a": "A founder with a technical co-founder can build and test a first version for ₹2–8 lakh over six months, covering development, AI costs, language reviewers and company setup."
+  },
+  {
+   "q": "Will small businesses pay for AI copywriting?",
+   "a": "Some will, if the tool saves them clear time or money every week. Expect low budgets and high cancellation rates, so start with one vertical and sell annual plans where possible."
+  },
+  {
+   "q": "Do AI models work well in Indian languages?",
+   "a": "They have improved a lot, but quality still varies by language and topic. Native-speaker review of templates and outputs is what makes the product trustworthy."
+  },
+  {
+   "q": "What laws apply to an AI tool that handles customer data?",
+   "a": "India's Digital Personal Data Protection Act applies if you process personal data. You'll need a privacy policy, consent flows and data-processing terms with customers."
+  }
+ ]
+}

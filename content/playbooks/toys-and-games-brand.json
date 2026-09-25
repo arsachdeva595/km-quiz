@@ -1,0 +1,75 @@
+{
+  "model": "toys-and-games-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹75,000–3 lakh",
+    "capital_scaled": "₹10–30 lakh for your own workshop, safety testing and retail or export orders",
+    "margin_d2c": "55–70% selling direct to parents",
+    "margin_production": "Artisans typically sell at 25–40% of the final retail price",
+    "breakeven": "10–16 months",
+    "distribution_score": 3,
+    "distribution_note": "Parents discover wooden toys on Instagram and gifting sites; retail wants large volumes"
+  },
+  "tailwinds": [
+    "Higher import duties and mandatory BIS certification since 2021 cut the flood of cheap imported toys and pushed buyers toward Indian-made ones.",
+    "Parents increasingly choose plastic-free, Montessori-style and educational toys.",
+    "Traditional toy clusters such as Channapatna and Kondapalli have GI tags and strong gifting appeal.",
+    "Export buyers and diaspora families pay well for safe, handmade wooden toys."
+  ],
+  "headwinds": [
+    "Toys sold in India need BIS certification under the Toys Quality Control Order; the artisan exemption only covers certain registered makers and products.",
+    "Parents compare prices with mass-produced toys and baulk at handmade price tags.",
+    "Paints and lacquers must be non-toxic, and any safety complaint can end a small brand.",
+    "Sales spike at Diwali, birthdays and gifting seasons and dip in between."
+  ],
+  "angle_2026": "With cheap imports curbed, the question in 2026 is no longer 'Indian or imported' but 'why yours'. The brands winning now sell a learning outcome (fine motor skills, counting, colours) and a safety promise with test reports, not just a pretty toy.",
+  "cost_basis": "Estimated for a brand that buys from artisan workshops and sells online, 2026 prices.",
+  "setup_costs": [
+    {"item": "Design development with artisans", "low": "₹10,000", "high": "₹50,000", "covers": "Prototypes of 5–8 toys, revisions, sample sets"},
+    {"item": "First stock", "low": "₹40,000", "high": "₹1,50,000", "covers": "50–200 pieces of each toy, with an advance to artisans"},
+    {"item": "Safety testing and certification", "low": "₹20,000", "high": "₹1,50,000", "covers": "Lab tests for paints and small parts, BIS certification where the exemption doesn't apply"},
+    {"item": "Packaging", "low": "₹15,000", "high": "₹60,000", "covers": "Gift boxes, age and safety labels, inserts"},
+    {"item": "Photography and website", "low": "₹15,000", "high": "₹50,000", "covers": "Photos of children playing (with consent), store setup, listings"},
+    {"item": "Launch marketing", "low": "₹30,000", "high": "₹1,50,000", "covers": "Parenting creators, preschool tie-ups, gifting samples"}
+  ],
+  "unit_economics": {
+    "example": "For a wooden stacking toy priced at ₹900:",
+    "rows": [
+      ["Price paid to the artisan workshop", "₹200–320"],
+      ["Gift box and labels", "₹40–80"],
+      ["Shipping", "₹70–120"],
+      ["Marketplace commission", "20–30% of the selling price"],
+      ["What you keep", "15–25% on marketplaces, 35–45% on your own site"]
+    ],
+    "note": "Bundles such as a 'first-year play kit' raise the order value and make shipping and marketing costs easier to absorb."
+  },
+  "investor_probes": [
+    "Do your toys have the certification they need, and who carries the liability?",
+    "Can your artisans deliver 10 times the volume for a retail or export order?",
+    "Why would a parent pick your toy over another seller of similar wooden toys?",
+    "Do customers buy again as their child grows, or is it a one-time gift?"
+  ],
+  "bootstrap_takeaway": "Co-design a small range with one artisan cluster, get the paints and small parts tested, and sell to parents directly and through preschools before approaching retail chains.",
+  "cluster_based": true,
+  "sourcing_edge": "Buying directly from cluster workshops costs far less than buying from city retailers, and you can agree designs, finishes and non-toxic lacquers with the makers. Many artisans also qualify for PM Vishwakarma support, which helps them add capacity for you.",
+  "licences": [
+    "BIS certification under the Toys Quality Control Order (check whether your artisans' products fall under the exemption for registered artisans)",
+    "Legal Metrology declarations and age warnings on packs",
+    "GST registration",
+    "Udyam registration",
+    "Trademark application"
+  ],
+  "schemes": ["udyam", "vishwakarma", "mudra", "pmegp"],
+  "hard_truths": [
+    {"title": "Safety is not optional", "text": "One complaint about a sharp edge, loose part or peeling paint can get your listings removed. Test every new design, keep reports, and don't sell anything your artisans can't make consistently safe."},
+    {"title": "Retail pays late and returns stock", "text": "Toy stores and chains want big volumes on credit and often return unsold stock after the season. Grow direct-to-parent sales first."},
+    {"title": "Gifting seasons dominate", "text": "Many toy brands make a large share of their year's sales in the October–December gifting season. You need stock and cash ready months before."},
+    {"title": "The capacity ceiling", "text": "Handmade toy workshops produce slowly, and quality varies between artisans. A big order can overwhelm a cluster and delay delivery, so agree capacity before you promise volume."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales and safety test reports in hand before you take on bigger orders.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and source", "steps": ["Visit a toy cluster and shortlist 2–3 workshops.", "Order samples of 5–8 designs and test them with 30 parents and 2 preschool teachers.", "Check which products need BIS certification."]},
+    {"days": "16–45", "title": "Testing and pilot batch", "steps": ["Get paint and small-parts tests done on your shortlisted designs.", "Place a small first order with an advance.", "Register for Udyam and GST and set up your store."]},
+    {"days": "46–75", "title": "Sell directly", "steps": ["Sell through parenting WhatsApp groups, Instagram and a weekend market.", "Offer preschools and daycares a bulk classroom set.", "Collect photos and reviews from parents."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Work out which toys sell, which get returned and why.", "Agree monthly capacity with your artisans.", "Plan stock and cash for the next gifting season."]}
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "model": "healthy-snacks-brand",
+  "snapshot": {
+    "capital_bootstrap": "₹2–5 lakh",
+    "capital_scaled": "₹25–80 lakh for your own roasting line and distribution in several cities",
+    "margin_d2c": "55–65% on your own site and quick commerce, before marketing",
+    "margin_production": "30–40% when selling through distributors",
+    "breakeven": "14–24 months",
+    "distribution_score": 2,
+    "distribution_note": "Snack shelves are crowded; quick commerce, gyms and offices are easier doors"
+  },
+  "tailwinds": [
+    "Buyers are swapping fried snacks for roasted, baked and millet-based options, especially in metros.",
+    "Quick-commerce apps list new snack brands quickly and put them in front of impulse buyers.",
+    "Millets, makhana and other Indian superfoods have government backing and strong export interest.",
+    "Co-packers now roast, flavour and pack small runs, so you can launch without a factory."
+  ],
+  "headwinds": [
+    "Dozens of brands sell the same product, and price wars are common on marketplaces.",
+    "Raw-material prices swing a lot; makhana, for example, rose sharply in 2024–25.",
+    "Distributors and modern retail ask for margins of 25–35% and pay late.",
+    "Products go stale or soggy quickly without nitrogen-flushed packaging."
+  ],
+  "angle_2026": "Healthy snacking is no longer a niche, which means 'healthy' alone doesn't sell. The brands growing in 2026 own one clear hook: a regional ingredient with a traceable source, a high-protein claim they can prove, or a flavour range built for one audience such as gym-goers or kids' tiffins.",
+  "cost_basis": "Estimated for a brand that uses a co-packer, 3 products and one city of focus, 2026 prices.",
+  "setup_costs": [
+    {"item": "First batch of raw material", "low": "₹60,000", "high": "₹1,50,000", "covers": "Graded raw material, seasonings and oils for 3 products"},
+    {"item": "Roasting and flavouring", "low": "₹50,000", "high": "₹2,00,000", "covers": "Co-packer charges, or a small roaster and tumbler of your own"},
+    {"item": "Packaging", "low": "₹30,000", "high": "₹1,00,000", "covers": "Printed nitrogen-flush pouches, cartons, minimum order quantities"},
+    {"item": "FSSAI licence and lab tests", "low": "₹10,000", "high": "₹30,000", "covers": "Licence, nutrition label testing, shelf-life test"},
+    {"item": "Brand and design", "low": "₹20,000", "high": "₹80,000", "covers": "Name, logo, pack design, product photos"},
+    {"item": "Launch marketing", "low": "₹50,000", "high": "₹2,00,000", "covers": "Sampling in gyms and offices, creators, quick-commerce listing support"}
+  ],
+  "unit_economics": {
+    "example": "For an 80 g pack priced at ₹150 MRP:",
+    "rows": [
+      ["Raw material and flavouring", "30–38% of MRP"],
+      ["Pouch and carton", "₹12–20"],
+      ["Distributor or quick-commerce margin", "25–35% of MRP"],
+      ["Freight and warehousing", "5–8% of MRP"],
+      ["What you keep", "8–15% of MRP"]
+    ],
+    "note": "Larger packs and multi-pack boxes on your own website carry much better margins than single packs through distributors."
+  },
+  "investor_probes": [
+    "What makes your product different from the many brands already on the shelf?",
+    "How many stores or dark stores stock you, and how fast does each sell through?",
+    "How do you protect margins when raw-material prices jump?",
+    "What share of buyers reorder?",
+    "How much are you spending on marketing for each rupee of sales?"
+  ],
+  "bootstrap_takeaway": "Buy graded raw material directly from the producing region, launch two or three flavours in one city through gyms, offices and quick commerce, and prove reorders before you pay distributors to spread you thin.",
+  "cluster_based": true,
+  "sourcing_edge": "Buying from processors in the producing districts instead of city wholesalers saves 15–30% and lets you choose the grade (size, colour, moisture), which decides how your product tastes and how long it lasts.",
+  "licences": [
+    "FSSAI licence for the brand owner (and a licensed co-packer if you outsource production)",
+    "Legal Metrology declarations and FSSAI-compliant nutrition labels",
+    "GST registration",
+    "Udyam registration",
+    "Trademark application"
+  ],
+  "schemes": ["udyam", "pmfme", "pmegp", "mudra", "cgtmse"],
+  "hard_truths": [
+    {"title": "Shelf space costs money", "text": "Modern retail and some quick-commerce listings come with listing fees, visibility charges and free-stock demands. A product that doesn't sell through in 60 days gets delisted."},
+    {"title": "The distributor credit trap", "text": "Distributors often pay in 30–60 days and push returns back to you. Growing through distribution needs working capital you might not have."},
+    {"title": "Moisture and rancidity", "text": "Roasted snacks absorb moisture and oils go rancid. Without nitrogen flushing and good pouches, shelf life drops from months to weeks and returns rise."},
+    {"title": "The co-packer ceiling", "text": "Co-packers are great for launch but charge more per kg and may make similar products for others. Moving to your own line needs ₹20 lakh or more and steady demand to keep it busy."}
+  ],
+  "plan_goal": "The aim is ₹1 lakh in sales and a clear reorder rate in one city before you add distributors.",
+  "plan": [
+    {"days": "1–15", "title": "Validate and source", "steps": ["Order samples of raw material from 3 suppliers in the producing region and compare grades.", "Make 3–5 flavours and test them blind with 30 target buyers.", "Price your pack against 5 brands on quick-commerce apps."]},
+    {"days": "16–45", "title": "Compliance and pilot batch", "steps": ["Get FSSAI, Udyam and GST registration.", "Run a pilot batch with a co-packer and test shelf life.", "Finalise pack design with compliant labels."]},
+    {"days": "46–75", "title": "Sell directly", "steps": ["Sample at 10 gyms, offices and cafés and take bulk orders.", "Sell on your website and WhatsApp with a 3-pack offer.", "Apply for listing on one quick-commerce app in your city."]},
+    {"days": "76–90", "title": "Review the numbers", "steps": ["Measure reorders, sell-through per outlet and cost per pack.", "Keep the best-selling flavour and drop the weakest.", "Decide whether to add a distributor or deepen the city you're in."]}
+  ]
+}
