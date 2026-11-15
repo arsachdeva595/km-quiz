@@ -368,6 +368,19 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
             {"@type": "ListItem", "position": 3, "name": name, "item": canonical}]},
     ]
 
+    # Optional per-idea answers to "what is X" and "X cost in India" searches. They only restate figures the guide
+    # already has; the idea file supplies the wording.
+    definition_html = f'\n  <p class="definition">{esc(it["definition"])}</p>' if it.get("definition") else ""
+    cost_summary_html = ""
+    if it.get("cost_summary"):
+        cs = it["cost_summary"]
+        cs_rows = "".join(f"<tr><td>{esc(k)}</td><td>{esc(v)}</td></tr>" for k, v in cs["rows"])
+        cost_summary_html = (f'<section id="cost-summary"><h2>{esc(cs["heading"])}</h2>'
+                             + (f'<p>{esc(cs["intro"])}</p>' if cs.get("intro") else "")
+                             + f'<div class="table-wrap"><table class="ue"><tbody>{cs_rows}</tbody></table></div>'
+                             + (f'<p class="muted">{esc(cs["note"])}</p>' if cs.get("note") else "")
+                             + "</section>\n  ")
+
     shark_cta = '<a class="btn ghost" href="#shark-tank">Shark Tank examples ↓</a>' if exs else '<a class="btn ghost" href="#sourcing">See where to source ↓</a>'
 
     body = f"""
@@ -375,7 +388,7 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
   <nav class="crumbs"><a href="/">Home</a> › <a href="{IDEAS_URL}">Business ideas</a> › {esc(m['category'])}</nav>
   <p class="eyebrow">{esc(m['category'])} · Updated {UPDATED}</p>
   <h1>{esc(h1)}</h1>
-  <p class="dek">An honest reality check and setup guide: what it costs, what you keep, what Shark Tank India taught founders in this space, and a 90-day plan to test it.</p>
+  <p class="dek">An honest reality check and setup guide: what it costs, what you keep, what Shark Tank India taught founders in this space, and a 90-day plan to test it.</p>{definition_html}
   <div class="cta-row">
     <a class="btn primary" href="{quiz}">Check your readiness →</a>
     {shark_cta}
@@ -388,7 +401,7 @@ def render(idea, pb, it, ideas, districts, pitches, published=None):
     <p class="fit-line">Best suited to <strong>{arch}</strong>: people who {DIM_PHRASES[d1]} and {DIM_PHRASES[d2]}. <a href="{quiz}">Take the fit check</a> to see how close you are.</p>
   </section>
 
-  <section id="market">
+  {cost_summary_html}<section id="market">
     <h2>Market reality 2026: why now, or why not now?</h2>
     <div class="two-col">
       <div><h3>Tailwinds</h3><ul>{tw}</ul></div>
@@ -504,6 +517,7 @@ li{margin:6px 0}
 .crumbs,.muted{color:var(--muted);font-size:14px}
 .eyebrow{font-family:var(--label);font-size:11px;letter-spacing:0.10em;text-transform:uppercase;color:var(--mid);margin:18px 0 0}
 .dek{font-size:19px;color:var(--mid)}
+.definition{font-size:17px;color:var(--ink);background:var(--bg-2);border-radius:16px;padding:14px 16px;margin:16px 0 0}
 .cta-row{display:flex;flex-wrap:wrap;gap:14px;margin:20px 0 0}
 .btn{--face:var(--bg);--edge:var(--line-2);display:inline-flex;align-items:center;gap:0.5em;border-radius:999px;padding:0.8rem 1.4rem;font-weight:600;text-decoration:none;white-space:nowrap;color:var(--ink);background:var(--face);border:0;
   box-shadow:0 4px 0 0 var(--edge),0 6px 12px -3px rgba(18,23,27,0.12);transition:transform 140ms var(--ease-press),box-shadow 140ms var(--ease-press)}
