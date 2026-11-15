@@ -53,6 +53,17 @@ Then run `npm run build`.
 
 ## Idea guides and publishing to kidharmilega.in
 
+> **Do not run a full guide re-export yet (as of 2026-11-15).** The live guides on kidharmilega.in have scheme
+> figures that were corrected there after the September 2026 export and never ported back here: Mudra's April 2026
+> collateral-free rule, PMEGP under the December 2023 guidelines, and Stand-Up India terms. A `--site` export from
+> this repo would quietly bring the old figures back on every guide.
+>
+> Before any full export: port those corrections into this repo's guide source (`SCHEMES` in
+> `pipeline/build_pages.py` and the playbooks/idea files), then build and compare the output against `guides/` in
+> the kidharmilega repo; the only differences should be changes you intend. Until then, publish single guides only,
+> by merging each one into the live copy in the kidharmilega repo (as was done for `cloud-kitchens`).
+> `build_pages.py --site` refuses to run unless you pass `--live-fixes-ported`.
+
 Guide pages (`/ideas/<key>/`) are built from `content/playbooks/<model>.json` (shared per business model) and
 `content/ideas/<key>.json` (verdict, angle, optional extra FAQs, optional `playbook` override).
 

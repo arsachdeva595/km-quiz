@@ -659,6 +659,13 @@ def main():
     pitches = json.loads(PITCHES.read_text(encoding="utf-8"))
     by_key = {i["key"]: i for i in ideas}
     site = Path(arg("--site")) if arg("--site") else None
+    if site and "--live-fixes-ported" not in sys.argv:
+        # The live guides carry scheme corrections (Mudra April 2026, PMEGP Dec 2023 guidelines, Stand-Up India)
+        # made on kidharmilega.in after the September export. Exporting from here would undo them. See README.
+        sys.exit("Refusing --site export: the live guides have scheme fixes not yet ported into km-quiz "
+                 "(Mudra April 2026, PMEGP Dec 2023 guidelines, Stand-Up India). Port them, compare a build against "
+                 "kidharmilega's guides/, then re-run with --live-fixes-ported. Until then, merge single guides "
+                 "into the live copy. See README, 'Idea guides and publishing'.")
     only = None
     if arg("--only"):
         lines = Path(arg("--only")).read_text(encoding="utf-8").splitlines()
