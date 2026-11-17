@@ -175,6 +175,27 @@ function districtCard(district, profile) {
     </article>`;
 }
 
+// On kidharmilega.in (guides.json present) the result ends with the site's other routes for idea-seekers: the homepage
+// "Business idea" door sends people straight here, so these links replace the options that door used to show.
+const BUDGET_RUPEES = { 1: 50000, 2: 200000, 3: 500000, 4: 1000000 };   // what the budget answer prefills in the Budget Matcher
+const LAKH_PAGE = { 1: "2-lakh", 2: "2-lakh", 3: "5-lakh", 4: "20-lakh" };
+function moreRoutes() {
+  if (!guides.size) return "";
+  const b = answers.budget, d = answers.district;
+  const bm = "../tools/budget-matcher/?" + new URLSearchParams({ ...(BUDGET_RUPEES[b] ? { budget: BUDGET_RUPEES[b] } : {}), ...(d ? { state: d.state } : {}) });
+  const routes = [
+    [bm, "Budget fix hai? Usi mein kya ho sakta hai", "Real district businesses with setup cost, margins and PMEGP loan maths, plus other ideas for your budget."],
+    [`../business-under/${LAKH_PAGE[b] || ""}${LAKH_PAGE[b] ? "/" : ""}`, "1, 2, 5, 10 ya 20 lakh mein kya shuru karun", "Business lists by budget, with setup cost, margin and payback."],
+    ["../blog/small-business-ideas-from-home-india/", "Ghar se ya part-time karna hai", "Ideas you can start from home, with what they cost."],
+    ["../ideas/", "Saare ideas khud dekhunga", "Every idea guide on KidharMilega, each with an honest fit check."],
+  ];
+  return `
+    <section class="more-routes">
+      <h2 class="section-head">Aur raste</h2>
+      ${routes.map(([href, t, sub]) => `<a class="route" href="${esc(href)}" data-route="${esc(t)}"><strong>${esc(t)} →</strong><span>${esc(sub)}</span></a>`).join("")}
+    </section>`;
+}
+
 function similarIdeas(i) {
   const sibs = ideas.filter((x) => x.model === i.model && x.id !== i.id).slice(0, 4);
   return sibs.length ? `<p class="fine">Similar ideas: ${sibs.map((x) => esc(x.name)).join(" · ")}</p>` : "";
@@ -260,6 +281,7 @@ function renderResult(profile, { top, runnersUp, relaxed }, check = null) {
     ${[top, ...runnersUp].filter((r) => !check || r.idea !== check.result.idea)
       .map((r, n) => ideaCard(r, profile, !check && n === 0)).join("")}
     ${districtCard(answers.district, profile)}
+    ${moreRoutes()}
     <div class="actions">
       <button id="share" class="btn primary">Share my result</button>
       <button id="retake" class="btn">Retake quiz</button>
